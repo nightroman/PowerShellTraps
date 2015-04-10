@@ -22,12 +22,12 @@ function Invoke-ScriptBlockParameter {
 	. $properties
 
 	# $message depends on where this function is defined:
-	# in a module: 'New local message.'
 	# in a script: 'New custom message.'
+	# in a module: 'New local message.'
 	"Local message: $message"
 
 	# $global:message depends on where this function is defined:
 	# in a script: 'Default global message.'
-	# in a module: 'New custom message.'
+	# in a module: 'Default global message.' or 'New custom message.', see .test.ps1
 	"Global message: $global:message"
 }
