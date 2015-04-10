@@ -1,9 +1,9 @@
 
 [1]: http://stackoverflow.com/q/25033346/323582
 
-The problem. If a module imports functions from several modules and a function
-from one module calls a function from another then the latter may be not found.
-The script *Test-Fails.ps1* shows the problem.
+If a module imports functions from several modules and a function from one
+module calls a function from another then the latter may be not found. The
+script *Test-Fails.ps1* shows the problem.
 
 This problem is specific for a module function which imports other modules. If
 a script function repeats the same scenario with other modules then it works,
