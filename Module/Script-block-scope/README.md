@@ -12,7 +12,7 @@ Scripts
 - *Module1.psm1* dot-sources *Script1.ps1* and exports *Invoke-ScriptBlockParameter* for testing.
 - *Test-Module1.ps1* imports *Module1.psm1* and calls *Invoke-ScriptBlockParameter*, the results are strange.
 - *Test-Script1.ps1* dot-sources *Script1.ps1* and calls *Invoke-ScriptBlockParameter*, the result is expected.
-- *.test.ps1* tests *Test-Script1.ps1* and two ways of invoking *Test-Script1.ps1* with two different results.
+- *.test.ps1* tests *Test-Script1.ps1* and two ways of invoking *Test-Module1.ps1* with two different results.
 
 #### Workaround
 
