@@ -5,7 +5,7 @@ properly. But how it actually works is not always obvious. It may be a trap.
 Logical operators do not return logical true or false for collections, as one
 may expect. Instead, they return all collection items that gets true with an
 operator applied to them. In other words, operators work more like filters
-allied to a collection.
+applied to collections.
 
 Scripts
 
