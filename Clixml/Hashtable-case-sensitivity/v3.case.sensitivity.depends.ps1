@@ -14,7 +14,7 @@ $hash | Export-Clixml $temp
 $hash = Import-Clixml $temp
 
 # the dehydrated is still case sensitive, it contains keys 'A' and 'a'
-$hash.Keys | Sort-Object
+$hash.Keys | Sort-Object -CaseSensitive
 
 ### TEST 2: case sensitive becomes case insensitive
 
@@ -34,4 +34,4 @@ $hash = Import-Clixml $temp
 $hash.Contains('A')
 
 # remove temp clixml
-#[System.IO.File]::Delete($temp)
+[System.IO.File]::Delete($temp)

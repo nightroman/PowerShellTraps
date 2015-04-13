@@ -2,8 +2,8 @@
 task v3.case.sensitivity.depends {
 	($r = .\v3.case.sensitivity.depends.ps1)
 	assert ($r.Count -eq 4)
-	assert ($r[0] -ceq 'A')
-	assert ($r[1] -ceq 'a')
+	assert ($r[0] -ceq 'a')
+	assert ($r[1] -ceq 'A')
 	assert ($r[2] -eq $false)
 	if ($PSVersionTable.PSVersion.Major -ge 3) {
 		assert ($r[3] -eq $true)
