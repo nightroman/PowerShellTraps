@@ -1,12 +1,7 @@
 
 $ps = [PowerShell]::Create().AddScript({
-
-	function Test {
-		throw 'Oops!'
-	}
-
 	try {
-		Test
+		throw 'Oops!'
 	}
 	catch {
 		'Error {'
@@ -15,5 +10,4 @@ $ps = [PowerShell]::Create().AddScript({
 		$Error[0]
 	}
 })
-
 $ps.Invoke()
