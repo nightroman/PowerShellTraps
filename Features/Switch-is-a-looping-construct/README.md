@@ -14,3 +14,10 @@ When `switch` is used in a script block with `ForEach-Object` or `. {process{
 variable `$_` for the current object. This variable hides the automatic
 variable `$_` of the current pipeline object. The script
 *switch-hides-current-item.ps1* shows a typical mistake.
+
+Yet another trap is use of `break` in order to skip next switch cases. This is
+tempting because exactly `break` is used with `switch` in other languages. It
+even works fine when `switch` is used on a single value. But when `switch` is
+used on a collection, i.e. as a loop, then `continue` should be used for
+skipping next cases. `break` stops the whole loop. The script
+*use-continue-not-break.ps1* shows some examples.
