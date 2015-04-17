@@ -8,8 +8,8 @@ invoked then the exit code is 0.
 
 Scripts
 
-- *script.with.Write-Error.ps1* contains the command.
-- *Test-script.with.Write-Error.ps1* invokes 3 tests:
+- *Script.with.command.ps1* contains the command.
+- *Test-Script.with.command.ps1* invokes 3 tests:
     - invokes the command directly
     - invokes it as the script
     - dot-sources the script
