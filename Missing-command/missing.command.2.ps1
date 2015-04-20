@@ -6,15 +6,11 @@ The below test writes 'Caught' and nothing else. That is 'Continued' is not
 called, i.e. the missing command is terminating.
 #>
 
-function MissingCommandIsTerminatingInTry {
-	$ErrorActionPreference = 'Continue'
-	try {
-		missing-command
-		'Continued'
-	}
-	catch {
-		'Caught'
-	}
+$ErrorActionPreference = 'Continue'
+try {
+	missing-command
+	'Continued'
 }
-
-MissingCommandIsTerminatingInTry
+catch {
+	'Caught'
+}

@@ -1,18 +1,13 @@
 
 <#
-Fact 3: A missing command can be a terminating error in the same function
-MissingCommandIsNotTerminating ("missing.command.1.ps1") if it is called
-from a try block.
+Fact 3: A missing command is a terminating error in the same script
+"missing.command.1.ps1" where it was not terminating.
+
+The difference is that the script is now called from a try block.
 #>
 
-function MissingCommandIsNotTerminating {
-	$ErrorActionPreference = 'Continue'
-	missing-command
-	'Continued'
-}
-
 try {
-	MissingCommandIsNotTerminating
+	.\missing.command.1.ps1
 }
 catch {
 	'Caught'
