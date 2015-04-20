@@ -14,5 +14,3 @@ Scripts
     - invokes it as the script
     - dot-sources the script
 - *.test.ps1* tests the results.
-
-P.S. So far this is tested with v2 and v3.
