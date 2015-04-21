@@ -22,6 +22,6 @@ Invoke all tests in *Some.test.ps1*:
 
 Invoke all `*.test.ps1` files in the current directory recursively:
 
-    PS> Invoke-Build **
+    PS> Invoke-Build ** -Safe -Summary
 
 [Invoke-Build.ps1]: https://github.com/nightroman/Invoke-Build/blob/master/Invoke-Build.ps1
