@@ -1,0 +1,2 @@
+
+'apple', 'Apple' | Get-Unique
