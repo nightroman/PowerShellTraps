@@ -1,55 +1,58 @@
 
-# Synopsis: PS 2.0 correctly fails due to a valid #requires
-task requires.v2 {
-	($e = PowerShell -Version 2 -NoProfile .\requires.ps1 | Out-String)
-	assert ($LASTEXITCODE -eq 1)
-	assert ($e -like '*FullyQualifiedErrorId : ScriptRequiresUnmatchedPSVersion*')
-}
+<#
+.Synopsis
+	Tests #requires
 
-# Synopsis: PS 2.0 ignores `42 #requires ...`
-task requires-not-first.v2 {
-	($r = PowerShell -Version 2 -NoProfile .\requires-not-first.ps1)
-	assert ($LASTEXITCODE -eq 0)
-	assert ($r -eq 42)
-}
+.Description
+	PowerShell v2 and v3 treat #requires differently.
 
-# Synopsis: PS 2.0 recognizes incorrect format of #requiresGarbage
-task requires-with-garbage.v2 {
-	($e = PowerShell -Version 2 -NoProfile .\requires-with-garbage.ps1 | Out-String)
-	assert ($LASTEXITCODE -eq 1)
-	assert ($e -like '*#requires -shellid <shellID>*FullyQualifiedErrorId : CommandNotFoundException*')
-}
+	Invoke in v3+
 
-# Synopsis: PS 2.0 ignores `<space> #requires`
-task requires-with-leading-space.v2 {
-	($r = PowerShell -Version 2 -NoProfile .\requires-with-leading-space.ps1)
-	assert ($LASTEXITCODE -eq 0)
-	assert ($r -eq 42)
-}
+		Invoke-Build * .test.ps1
 
-# The next tasks are for v3+
-if ($PSVersionTable.PSVersion.Major -le 2) {return}
+	Invoke in v2
 
-# Synopsis: PS 3.0 correctly fails due to a valid #requires
-task requires.v3 {
+		PowerShell -Version 2 -NoProfile Invoke-Build * .test.ps1
+#>
+
+# is it v3+?
+$v3 = $PSVersionTable.PSVersion.Major -ge 3
+
+# Synopsis: Correct failure due to a valid #requires
+task requires {
 	($e = try {.\requires.ps1} catch {$_})
 	assert ($e.FullyQualifiedErrorId -eq 'ScriptRequiresUnmatchedPSVersion')
 }
 
-# Synopsis: PS 3.0 treats `42 #requires ...` as #requires, unlike PS 2.0
-task requires-not-first.v3 {
-	($e = try {.\requires-not-first.ps1} catch {$_})
-	assert ($e.FullyQualifiedErrorId -eq 'ScriptRequiresUnmatchedPSVersion')
+# Synopsis: v2 ignores `42 #requires ...`, v3 does not
+task requires-not-first {
+	($r = try {.\requires-not-first.ps1} catch {$_})
+	if ($v3) {
+		assert ($r.FullyQualifiedErrorId -eq 'ScriptRequiresUnmatchedPSVersion')
+	}
+	else {
+		assert ($r -eq 42)
+	}
 }
 
-# Synopsis: PS 3.0 treats `#requiresGarbage ...` as #requires, unlike PS 2.0
-task requires-with-garbage.v3 {
-	($e = try {.\requires-with-garbage.ps1} catch {$_})
-	assert ($e.FullyQualifiedErrorId -eq 'ScriptRequiresUnmatchedPSVersion')
+# Synopsis: v2 recognizes garbage, v3 behaves strange
+task requires-with-garbage {
+	($r = try {.\requires-with-garbage.ps1} catch {$_})
+	if ($v3) {
+		assert ($r.FullyQualifiedErrorId -eq 'ScriptRequiresUnmatchedPSVersion')
+	}
+	else {
+		assert (($r | Out-String) -like '*#requires -version *FullyQualifiedErrorId : CommandNotFoundException*')
+	}
 }
 
-# Synopsis: PS 3.0 treats `<space> #requires` as #requires, unlike PS 2.0
-task requires-with-leading-space.v3 {
-	($e = try {.\requires-with-leading-space.ps1} catch {$_})
-	assert ($e.FullyQualifiedErrorId -eq 'ScriptRequiresUnmatchedPSVersion')
+# Synopsis: v2 ignores `<space> #requires`, v3 does not
+task requires-with-leading-space {
+	($r = try {.\requires-with-leading-space.ps1} catch {$_})
+	if ($v3) {
+		assert ($r.FullyQualifiedErrorId -eq 'ScriptRequiresUnmatchedPSVersion')
+	}
+	else {
+		assert ($r -eq 42)
+	}
 }
