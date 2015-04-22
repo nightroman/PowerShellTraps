@@ -11,6 +11,8 @@ case then one has to use `Sort-Object`. But `Sort-Object` has the option
 `Sort-Object` provides other useful options missing in `Get-Unique`
 (`Property`, `CaseSensitive`, `Culture`).
 
+Yet another alternative is `Select-Object -Unique`.
+
 Scripts
 
 - *case.sensitive.ps1* shows that `Get-Unique` is case sensitive
