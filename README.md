@@ -24,4 +24,7 @@ Invoke all `*.test.ps1` files in the current directory recursively:
 
     PS> Invoke-Build ** -Safe -Summary
 
+Contributions are welcome. Please read [CONTRIBUTING].
+
 [Invoke-Build.ps1]: https://github.com/nightroman/Invoke-Build/blob/master/Invoke-Build.ps1
+[CONTRIBUTING]: https://github.com/nightroman/PowerShellTraps/blob/master/CONTRIBUTING.md
