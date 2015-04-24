@@ -9,8 +9,8 @@ location is set to their directory. But this is not needed for automated tests,
 they take care of proper current locations themselves.
 
 Demo scripts are accompanied with `*.test.ps1` files. They are collections of
-test tasks invoked by the standalone script [Invoke-Build.ps1]. Examples of
-using *Invoke-Build* for testing:
+test tasks invoked by the standalone script [Invoke-Build.ps1]. v2.11.1 or
+above is recommended. Examples of using *Invoke-Build* for testing:
 
 Invoke the task *SomeTest* in *Some.test.ps1*:
 
