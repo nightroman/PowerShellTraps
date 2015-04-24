@@ -1,6 +1,7 @@
 
-Contributions are welcome. Please post any questions, suggestions, descriptions
-of traps as [issues](https://github.com/nightroman/PowerShellTraps/issues).
+[issues]: https://github.com/nightroman/PowerShellTraps/issues
+
+Please post any questions, suggestions, descriptions of traps as [issues].
 Mention known references to *Microsoft Connect*, *Stack Overflow*, and etc.
 
 Pull requests are welcome. Ideally, they should follow the common pattern:
