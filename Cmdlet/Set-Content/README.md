@@ -22,6 +22,11 @@ the original location is restored. Otherwise if such a command is used in the
 pipeline with `Set-Content` or `Add-Content` then the output may be created
 where it is not expected.
 
+Scripts
+
+- *unexpected.output.location.ps1* shows the problem.
+- *.test.ps1* tests the results.
+
 ---
 
 - Microsoft Connect [686310](https://connect.microsoft.com/PowerShell/Feedback/Details/686310)
