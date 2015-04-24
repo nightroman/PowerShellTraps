@@ -1,5 +1,5 @@
 
-:: Make directory "Test 1", cd, run PowerShell Get-Location
+:: Make directory "Test [2]", cd, run PowerShell Get-Location
 
 @echo off
 if "%1" == "" (
