@@ -1,0 +1,30 @@
+
+### It is tricky to operate on properties of classes implementing IDictionary
+
+PowerShell dot-notation for dictionaries allows retrieval and assignment of
+key/value pairs as if keys were properties. It is handy but it introduces a
+problem for classes that implement `IDictionary` and have extra properties.
+
+For example, the property `ConnectionString` of `DbConnectionStringBuilder`.
+Assigning it as
+
+    $builder.ConnectionString = '...'
+
+does not actually invokes the property setter but adds the key/value pair to
+the dictionary and bypasses the connection string parsing which is done by the
+setter.
+
+A workaround:
+
+    $builder.set_ConnectionString('...')
+
+Scripts
+
+- *Test-1.incorrect.assignment.ps1* shows incorrect assignment of a property.
+- *Test-2.correct.assignment.ps1* shows correct assignment of a property.
+- *.test.ps1* tests the above.
+
+---
+
+- Stack Overflow [question](http://stackoverflow.com/q/6237708/323582)
+- Microsoft Connect [674159](https://connect.microsoft.com/PowerShell/Feedback/Details/674159)
