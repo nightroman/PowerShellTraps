@@ -1,6 +1,4 @@
 
-Set-StrictMode -Version 2
-
 task Current.directory.with.odd.name {
 	($r = .\Current.directory.with.odd.name.ps1)
 
