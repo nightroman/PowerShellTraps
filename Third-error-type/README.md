@@ -1,5 +1,5 @@
 
-According to the documentation, there are two types PowerShell errors,
+According to the documentation, there are two types of PowerShell errors,
 terminating and non-terminating.
 
 There is yet another obscure third type of errors. Such errors are caught by
@@ -16,7 +16,7 @@ terminating. Otherwise it is not unless the code being invoked is inside a
 
 It looks like constant use of either error action preference *Stop* or `try` or
 `trap` blocks in scripts is a good idea. Otherwise simple typos in command
-names and some other "third type" errors may cause issues because invocation
+names and other "third type" errors may cause issues because invocation
 continues. Note that the default error action preference is *Continue*.
 
 Some "third type" errors
