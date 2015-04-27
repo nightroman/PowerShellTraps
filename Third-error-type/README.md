@@ -30,7 +30,11 @@ Scripts
 - *missing.command.1.ps1* - shows a not terminating error.
 - *missing.command.2.ps1* - shows a terminating error with `try` in the same scope.
 - *missing.command.3.ps1* - shows a terminating error with `try` in the parent scope.
-- *.test.ps1* - calls the above scripts and checks for the expected results.
+- *test.2.1.division.by.zero.ps1* - non-terminating error.
+- *test.2.2.division.by.zero.ps1* - terminating error.
+- *test.3.1.method.arguments.ps1* - non-terminating error.
+- *test.3.2.method.arguments.ps1* - terminating error.
+- *.test.ps1* - tests the above scripts.
 
 ---
 
