@@ -12,5 +12,5 @@ try {
 	'Continued'
 }
 catch {
-	'Caught'
+	"Caught $($_.FullyQualifiedErrorId)"
 }

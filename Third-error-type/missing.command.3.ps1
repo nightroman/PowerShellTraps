@@ -10,5 +10,5 @@ try {
 	.\missing.command.1.ps1
 }
 catch {
-	'Caught'
+	"Caught $($_.FullyQualifiedErrorId)"
 }
