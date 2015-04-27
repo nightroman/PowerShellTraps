@@ -1,4 +1,5 @@
 
+$ErrorActionPreference = 'Continue'
 try {
 	'a'.Split([object[]])
 	'Continued'

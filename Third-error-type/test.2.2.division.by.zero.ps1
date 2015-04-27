@@ -1,4 +1,5 @@
 
+$ErrorActionPreference = 'Continue'
 try {
 	1/$null
 	'Continued'
