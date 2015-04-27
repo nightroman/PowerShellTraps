@@ -5,7 +5,7 @@ exit code of 0 when `-File` is used.
 Using `-Command` to execute the script causes the correct (failing) exit code
 to be returned when the script throws an error.
 
-As far as `-Command` return the correct exit code, this issue may look not
+As far as `-Command` returns correct exit codes, this issue may look not
 serious until a script path or arguments contain special characters or just
 spaces. Quoting and escaping everything correctly for `-Command` is difficult.
 
