@@ -19,3 +19,26 @@ task TestV2 {
 	PowerShell -Version 2 -NoProfile Invoke-Build **
 	if ($LASTEXITCODE) {Write-Warning 'V2 tests failed.'}
 }
+
+# Synopsis: Generate Traps in README.
+task traps {
+	function Get-List($Path, $Indent) {
+		$tab = '    ' * $Indent
+		foreach($_ in Get-ChildItem -Path $Path -Name -Directory) {
+			'{0}- [{1}]({2})' -f $tab, $_, "$Path/$_"
+			Get-List "$Path/$_" ($Indent + 1)
+		}
+	}
+
+	$(
+		foreach($_ in Get-Content README.md) {
+			$_
+			if ($_ -eq '<!--Generated-->') {break}
+		}
+
+		Get-List '.' 0
+
+		''
+		'---'
+	) | Set-Content README.md
+}
