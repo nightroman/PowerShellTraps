@@ -37,6 +37,7 @@ Contributions are welcome. Please read [CONTRIBUTING].
     - [Third-error-type](./Errors/Third-error-type)
 - [Features](./Features)
     - [And-and-or-have-same-precedence](./Features/And-and-or-have-same-precedence)
+    - [Break-and-Continue-without-loop](./Features/Break-and-Continue-without-loop)
     - [Dynamic-switch-parameter](./Features/Dynamic-switch-parameter)
     - [Enums-are-always-evaluated-to-true](./Features/Enums-are-always-evaluated-to-true)
     - [Extra-properties-of-IDictionary](./Features/Extra-properties-of-IDictionary)
