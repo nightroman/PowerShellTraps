@@ -8,7 +8,7 @@
 task Test TestV2, TestV3
 
 # Synopsis: Test with PowerShell 3.0+.
-# Invoke safe with summary to allow test file failues and print them.
+# Invoke safe with summary to allow test file failures and print them.
 task TestV3 {
 	Invoke-Build ** -Safe -Summary
 }
@@ -20,11 +20,12 @@ task TestV2 {
 	if ($LASTEXITCODE) {Write-Warning 'V2 tests failed.'}
 }
 
-# Synopsis: Generate Traps in README.
-task traps {
+# Synopsis: Generate index in README.
+task Index {
 	function Get-List($Path, $Indent) {
 		$tab = '    ' * $Indent
 		foreach($_ in Get-ChildItem -Path $Path -Name -Directory) {
+			if ($_ -eq 'Workaround') {continue}
 			'{0}- [{1}]({2})' -f $tab, $_, "$Path/$_"
 			Get-List "$Path/$_" ($Indent + 1)
 		}
