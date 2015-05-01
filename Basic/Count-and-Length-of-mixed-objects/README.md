@@ -8,6 +8,7 @@ $totalLength = 0
 Get-ChildItem -Force -Recurse | %{
     $totalLength += $_.Length
 }
+```
 
 `Length` gets the file length for file items and gets 0 (converted null) for
 directory items because directory items do not have the property `Length`.
