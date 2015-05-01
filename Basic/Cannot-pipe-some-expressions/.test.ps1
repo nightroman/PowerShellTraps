@@ -9,6 +9,11 @@ task ThisFails {
 	assert ($r.FullyQualifiedErrorId -eq 'EmptyPipeElement')
 }
 
+task AndThisFails {
+	($r = try {.\foreach-cannot-be-redirected.ps1} catch {$_})
+	assert ($r[-1].FullyQualifiedErrorId -eq 'CommandNotFoundException')
+}
+
 task Workaround1 {
 	$(foreach($e in 1..5) {$e}) | %{"Result is $_"}
 }
