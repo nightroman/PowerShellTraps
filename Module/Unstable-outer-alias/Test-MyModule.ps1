@@ -1,9 +1,6 @@
 
-# $PSScriptRoot for v2
-$PSScriptRoot2 = Split-Path $MyInvocation.MyCommand.Definition
-
 # import the test module
-Import-Module $PSScriptRoot2\MyModule.psm1
+Import-Module .\MyModule.psm1
 
 # Now it works "correctly", it calls MyCommand from the module.
 Test-ModuleFunction
