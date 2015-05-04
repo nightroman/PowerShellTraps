@@ -4,7 +4,7 @@
 # the current major version
 $Version = $PSVersionTable.PSVersion.Major
 
-# ConvertTo-Json was introduced in PS 3.0
+# ConvertTo-Json was introduced in v3, hence -If
 task ConvertTo-Json.changes.data -If ($Version -ge 3) {
 	($r = .\ConvertTo-Json.changes.data.ps1)
 
