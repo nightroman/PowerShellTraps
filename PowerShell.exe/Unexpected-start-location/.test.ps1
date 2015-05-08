@@ -7,7 +7,7 @@ task Expected.start.location {
 	Remove-Item 'Test 1'
 }
 
-task Unxpected.start.location {
+task Unexpected.start.location {
 	($r = .\Unexpected.start.location.cmd $Version)
 	if ($Version -eq 2) {
 		assert ($r[-3].Trim() -eq 'C:\')
