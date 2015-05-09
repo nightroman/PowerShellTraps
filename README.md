@@ -33,6 +33,7 @@ Contributions are welcome. Please read [CONTRIBUTING].
     - [Switch-is-a-looping-construct](./Basic/Switch-is-a-looping-construct)
     - [Too-simple-function-names](./Basic/Too-simple-function-names)
     - [Trap-creates-a-new-scope](./Basic/Trap-creates-a-new-scope)
+    - [Unexpected-output](./Basic/Unexpected-output)
     - [Unrolled-collections](./Basic/Unrolled-collections)
 - [Clixml](./Clixml)
     - [Hashtable-case-sensitivity](./Clixml/Hashtable-case-sensitivity)
