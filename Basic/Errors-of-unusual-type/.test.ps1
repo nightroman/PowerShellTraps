@@ -42,3 +42,25 @@ task test.3.2.method.arguments {
 	assert ($LASTEXITCODE -eq 0)
 	assert ($r -eq 'Caught MethodCountCouldNotFindBest')
 }
+
+task test.4.1.cannot.convert {
+	($r = PowerShell -Version $Version -NoProfile .\test.4.1.cannot.convert.ps1 | Out-String)
+	assert ($LASTEXITCODE -eq 0)
+	if ($Version.Major -eq 2) {
+		assert ($r -like '*FullyQualifiedErrorId : RuntimeException*Continued after error*')
+	}
+	else {
+		assert ($r -like '*FullyQualifiedErrorId : ConvertToFinalInvalidCastException*Continued after error*')
+	}
+}
+
+task test.4.2.cannot.convert {
+	($r = PowerShell -Version $Version -NoProfile .\test.4.2.cannot.convert.ps1)
+	assert ($LASTEXITCODE -eq 0)
+	if ($Version.Major -eq 2) {
+		assert ($r -eq 'Caught RuntimeException')
+	}
+	else {
+		assert ($r -eq 'Caught ConvertToFinalInvalidCastException')
+	}
+}

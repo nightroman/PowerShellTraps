@@ -24,6 +24,7 @@ Some "third type" errors
 - Missing command.
 - Division by zero.
 - Calling .NET methods with wrong arguments.
+- PowerShell cannot convert data to some type.
 
 Scripts
 
@@ -34,6 +35,8 @@ Scripts
 - *test.2.2.division.by.zero.ps1* - terminating error.
 - *test.3.1.method.arguments.ps1* - non-terminating error.
 - *test.3.2.method.arguments.ps1* - terminating error.
+- *test.4.1.cannot.convert.ps1* - non-terminating error.
+- *test.4.2.cannot.convert.ps1* - terminating error.
 - *.test.ps1* - tests the above scripts.
 
 ---
