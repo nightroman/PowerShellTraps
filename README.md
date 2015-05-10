@@ -27,6 +27,7 @@ Contributions are welcome. Please read [CONTRIBUTING].
     - [Enums-are-always-evaluated-to-true](./Basic/Enums-are-always-evaluated-to-true)
     - [Errors-of-unusual-type](./Basic/Errors-of-unusual-type)
     - [Extra-properties-of-IDictionary](./Basic/Extra-properties-of-IDictionary)
+    - [Function-invoked-like-method](./Basic/Function-invoked-like-method)
     - [Logical-operators-with-collections](./Basic/Logical-operators-with-collections)
     - [Null-converted-to-empty-string](./Basic/Null-converted-to-empty-string)
     - [Requires](./Basic/Requires)
