@@ -30,6 +30,7 @@ Contributions are welcome. Please read [CONTRIBUTING].
     - [Function-invoked-like-method](./Basic/Function-invoked-like-method)
     - [Logical-operators-with-collections](./Basic/Logical-operators-with-collections)
     - [Null-converted-to-empty-string](./Basic/Null-converted-to-empty-string)
+    - [Number-of-returned-objects](./Basic/Number-of-returned-objects)
     - [Requires](./Basic/Requires)
     - [Switch-is-a-looping-construct](./Basic/Switch-is-a-looping-construct)
     - [Too-simple-function-names](./Basic/Too-simple-function-names)
