@@ -1,4 +1,7 @@
 
+# allow Length
+Set-StrictMode -Off
+
 # to show and test
 $data = New-Object System.Collections.Specialized.OrderedDictionary
 

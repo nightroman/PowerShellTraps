@@ -4,19 +4,20 @@
 	Build script (https://github.com/nightroman/Invoke-Build)
 #>
 
-# Synopsis: Test with PowerShell 2.0 and the current.
-task Test TestV2, TestV3
+# Synopsis: Test v2 and v3+.
+task Test TestV2, TestStrict
 
-# Synopsis: Test with PowerShell 3.0+.
-# Invoke safe with summary to allow test file failures and print them.
-task TestV3 {
+# Synopsis: Test all in the strict mode.
+# Allow test file failures and show summary.
+task TestStrict {
+	Set-StrictMode -Version Latest
 	Invoke-Build ** -Safe -Summary
 }
 
 # Synopsis: Test with PowerShell 2.0.
-# Invoke normally, check for the exit code, and warn about a failure.
+# Check for the exit code, warn about failures.
 task TestV2 {
-	PowerShell -Version 2 -NoProfile Invoke-Build **
+	PowerShell -Version 2 -NoProfile Invoke-Build TestStrict
 	if ($LASTEXITCODE) {Write-Warning 'V2 tests failed.'}
 }
 

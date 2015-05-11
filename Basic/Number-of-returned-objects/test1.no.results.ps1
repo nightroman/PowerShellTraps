@@ -1,4 +1,6 @@
 
+Set-StrictMode -Off
+
 function Get-Something {
 }
 

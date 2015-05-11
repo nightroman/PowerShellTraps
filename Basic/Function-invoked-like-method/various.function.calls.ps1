@@ -1,4 +1,6 @@
 
+Set-StrictMode -Off
+
 # A function with two parameters.
 function Test-Parameter($Param1, $Param2) {
 	"Param1 = $Param1; Param2 = $Param2"
