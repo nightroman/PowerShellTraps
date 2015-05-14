@@ -56,6 +56,7 @@ Contributions are welcome. Please read [CONTRIBUTING].
     - [Out-String](./Cmdlets/Out-String)
     - [Set-Content](./Cmdlets/Set-Content)
     - [Test-Path](./Cmdlets/Test-Path)
+    - [Where-Object](./Cmdlets/Where-Object)
     - [Write-Progress](./Cmdlets/Write-Progress)
 - [Module](./Module)
     - [Function-not-found](./Module/Function-not-found)
