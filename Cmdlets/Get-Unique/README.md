@@ -13,6 +13,8 @@ case then one has to use `Sort-Object`. But `Sort-Object` has the option
 
 Yet another alternative is `Select-Object -Unique`.
 
+`Get-Unique` is still useful when only adjacent duplicates should be removed.
+
 Scripts
 
 - *case.sensitive.ps1* shows that `Get-Unique` is case sensitive
