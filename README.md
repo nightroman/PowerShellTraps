@@ -36,6 +36,7 @@ Contributions are welcome. Please read [CONTRIBUTING].
     - [Too-simple-function-names](./Basic/Too-simple-function-names)
     - [Trap-creates-a-new-scope](./Basic/Trap-creates-a-new-scope)
     - [Trap-with-continue](./Basic/Trap-with-continue)
+    - [Trap-with-no-break-or-continue](./Basic/Trap-with-no-break-or-continue)
     - [Try-and-trap-catch-terminating-errors](./Basic/Try-and-trap-catch-terminating-errors)
     - [Unexpected-output](./Basic/Unexpected-output)
     - [Unrolled-collections](./Basic/Unrolled-collections)
