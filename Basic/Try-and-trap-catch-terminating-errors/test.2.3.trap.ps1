@@ -9,4 +9,5 @@ Get-Item missing.txt
 
 trap {
 	"Caught $($_.FullyQualifiedErrorId)"
+	break
 }

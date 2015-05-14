@@ -13,7 +13,7 @@ Scripts
 - *test.1.2.try.ps1* - `try` catches an error.
 - *test.2.1.trap.ps1* - `trap` does not catch an error.
 - *test.2.2.trap.ps1* - `trap` catches an error, then `continue`.
-- *test.2.3.trap.ps1* - `trap` catches an error and `break`, implicitly.
+- *test.2.3.trap.ps1* - `trap` catches an error, then `break`.
 
 ---
 
