@@ -11,3 +11,7 @@ Scripts
 - *test1.ForEach-Object.bad.error.info.ps1* uses `ForEach-Object` and shows bad error information.
 - *test2.ScriptBlock.good.error.info.ps1* uses `.{process{...}}` and shows clear error information.
 - *test3.measure.performance.ps1* shows that `.{process{...}}` is much faster than `ForEach-Object`.
+
+See also
+
+- [Where-Object](../Where-Object)
