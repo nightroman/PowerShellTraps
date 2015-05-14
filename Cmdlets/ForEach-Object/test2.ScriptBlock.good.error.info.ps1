@@ -10,5 +10,5 @@ The information tells where the error is exactly, unlike with ForEach-Object.
 #>
 
 Get-ChildItem | .{process{
-	.\Oops.ps1
+	.\Oops.ps1 $_
 }}
