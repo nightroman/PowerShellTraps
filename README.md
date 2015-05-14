@@ -46,6 +46,7 @@ Contributions are welcome. Please read [CONTRIBUTING].
     - [v2-no-LiteralPath](./Clixml/v2-no-LiteralPath)
 - [Cmdlets](./Cmdlets)
     - [ConvertTo-Json](./Cmdlets/ConvertTo-Json)
+    - [ForEach-Object](./Cmdlets/ForEach-Object)
     - [Get-ChildItem](./Cmdlets/Get-ChildItem)
         - [Different-FileInfo-ToString](./Cmdlets/Get-ChildItem/Different-FileInfo-ToString)
         - [Missing-path-and-Recurse](./Cmdlets/Get-ChildItem/Missing-path-and-Recurse)
