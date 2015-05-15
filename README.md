@@ -53,6 +53,7 @@ Contributions are welcome. Please read [CONTRIBUTING].
     - [Get-Item](./Cmdlets/Get-Item)
     - [Get-Unique](./Cmdlets/Get-Unique)
     - [Import-Csv](./Cmdlets/Import-Csv)
+    - [Join-Path](./Cmdlets/Join-Path)
     - [Out-String](./Cmdlets/Out-String)
     - [Set-Content](./Cmdlets/Set-Content)
     - [Test-Path](./Cmdlets/Test-Path)
