@@ -56,6 +56,7 @@ Contributions are welcome. Please read [CONTRIBUTING].
     - [Join-Path](./Cmdlets/Join-Path)
     - [Out-String](./Cmdlets/Out-String)
     - [Set-Content](./Cmdlets/Set-Content)
+    - [Split-Path](./Cmdlets/Split-Path)
     - [Test-Path](./Cmdlets/Test-Path)
     - [Where-Object](./Cmdlets/Where-Object)
     - [Write-Progress](./Cmdlets/Write-Progress)

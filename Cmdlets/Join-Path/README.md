@@ -14,3 +14,4 @@ mistake. The script *Test-mind-the-provider.ps1* shows the issue.
 ---
 
 - Microsoft Connect [779068](https://connect.microsoft.com/PowerShell/feedback/details/779068)
+- [Split-Path](../Split-Path)
