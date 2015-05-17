@@ -40,6 +40,7 @@ Contributions are welcome. Please read [CONTRIBUTING].
     - [Try-and-trap-catch-terminating-errors](./Basic/Try-and-trap-catch-terminating-errors)
     - [Unexpected-output](./Basic/Unexpected-output)
     - [Unrolled-collections](./Basic/Unrolled-collections)
+    - [ValidateScript-attribute](./Basic/ValidateScript-attribute)
 - [Clixml](./Clixml)
     - [Hashtable-case-sensitivity](./Clixml/Hashtable-case-sensitivity)
     - [OrderedDictionary-becomes-Hashtable](./Clixml/OrderedDictionary-becomes-Hashtable)
