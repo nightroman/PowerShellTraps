@@ -1,5 +1,5 @@
 
-# the script with throw produces user friendly error messages
+# the script with throw produces user friendly error messages,
 # it not yet correct though, see 2.2
 function Test-Parameter {
 	param(

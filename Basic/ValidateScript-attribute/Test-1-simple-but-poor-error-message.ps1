@@ -1,5 +1,5 @@
 
-# the simple validation script results in cryptic error messages.
+# the simple validation script results in cryptic error messages
 function Test-Parameter {
 	param(
 		[ValidateScript({$_ -match '^\w+$'})]

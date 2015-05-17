@@ -1,4 +1,5 @@
 
+# the validation script just gets $true for all values
 function Test-Parameter {
 	param(
 		[ValidateScript({$true})]
@@ -6,4 +7,5 @@ function Test-Parameter {
 	)
 }
 
+# fails because null is not allowed with ValidateScript
 Test-Parameter $null
