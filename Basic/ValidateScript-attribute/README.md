@@ -31,7 +31,7 @@ It may be not obvious but when an input value is a collection then a script is
 invoked for each item in it. In many cases this is a handy feature, it just has
 to be kept in mind.
 
-- *Test-4-works-for-each-item.ps1* shows multiple invocations of a script.
+- *Test-4-invoked-for-each-item.ps1* shows multiple invocations of a script.
 - Microsoft Connect [812137](https://connect.microsoft.com/PowerShell/feedback/details/812137)
 
 ### ValidateScript does not allow null
