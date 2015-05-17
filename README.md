@@ -10,8 +10,8 @@ they take care of proper current locations themselves. See also [TESTS].
 
 Contributions are welcome. Please read [CONTRIBUTING].
 
-[CONTRIBUTING]: https://github.com/nightroman/PowerShellTraps/blob/master/CONTRIBUTING.md
-[TESTS]: https://github.com/nightroman/PowerShellTraps/blob/master/TESTS.md
+[CONTRIBUTING]: ./CONTRIBUTING.md
+[TESTS]: ./TESTS.md
 
 ---
 
