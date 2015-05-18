@@ -21,6 +21,7 @@ Contributions are welcome. Please read [CONTRIBUTING].
     - [Break-and-Continue-with-not-matching-label](./Basic/Break-and-Continue-with-not-matching-label)
     - [Break-and-Continue-without-loop](./Basic/Break-and-Continue-without-loop)
     - [Cannot-pipe-some-expressions](./Basic/Cannot-pipe-some-expressions)
+    - [Compound-equality-operators](./Basic/Compound-equality-operators)
     - [Count-and-Length-in-Strict-Mode](./Basic/Count-and-Length-in-Strict-Mode)
     - [Count-and-Length-of-mixed-objects](./Basic/Count-and-Length-of-mixed-objects)
     - [Dynamic-switch-parameter](./Basic/Dynamic-switch-parameter)
