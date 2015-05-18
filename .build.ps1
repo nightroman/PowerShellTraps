@@ -38,7 +38,7 @@ task Index {
 			if ($_ -eq '<!--Generated-->') {break}
 		}
 
-		Get-List '.' 0
+		Get-List . 0
 
 		''
 		'---'

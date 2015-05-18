@@ -11,4 +11,4 @@ Pull requests are welcome. Ideally, they should follow the common pattern:
 - One or more scripts demonstrating the issue.
 - *.test.ps1* is a good addition.
 
-Accepted pull requests may be revised, perhaps completely reworked.
+Accepted pull requests may be revised.
