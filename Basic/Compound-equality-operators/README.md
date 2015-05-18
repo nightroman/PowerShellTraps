@@ -26,12 +26,15 @@ Workaround
     $x = 1
     & { $x = $x + 1; $x}
 
-The script *Test-1.ps1* shows different results in v2 and v3.
+Scripts
 
-### In PowerShell 3.0 the result may be affected by other commands
+- *Test-1.1.ps1* shows different results in v2 and v3 for the operator `+=`.
+- *Test-1.2.ps1* shows same results in v2 and v3 for the operator `++`, in contrast to the release notes.
 
-The script *Test-2.ps1* in v3 shows how the result is affected by the seemingly
-unrelated presiding command `New-Variable`.
+### In PowerShell 3.0 results may be affected by other commands
+
+The script *Test-2.ps1* in v3 shows how the result of the operator `+=` is
+affected by the seemingly unrelated presiding `New-Variable`.
 
 ---
 
