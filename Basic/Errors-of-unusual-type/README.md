@@ -21,10 +21,11 @@ continues. Note that the default error action preference is *Continue*.
 
 Some "third type" errors
 
-- Missing command.
+- A command is not found.
 - Division by zero.
 - Calling .NET methods with wrong arguments.
 - PowerShell cannot convert data to some type.
+- A .NET type is not found.
 
 Scripts
 
@@ -37,7 +38,8 @@ Scripts
 - *test.3.2.method.arguments.ps1* - terminating error.
 - *test.4.1.cannot.convert.ps1* - non-terminating error.
 - *test.4.2.cannot.convert.ps1* - terminating error.
-- *.test.ps1* - tests the above scripts.
+- *test.5.1.missing.type.ps1* - non-terminating error.
+- *test.5.2.missing.type.ps1* - terminating error.
 
 ---
 

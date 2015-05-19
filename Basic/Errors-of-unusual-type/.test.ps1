@@ -64,3 +64,16 @@ task test.4.2.cannot.convert {
 		assert ($r -eq 'Caught ConvertToFinalInvalidCastException')
 	}
 }
+
+task test.5.1.missing.type {
+	($r = PowerShell -Version $Version -NoProfile .\test.5.1.missing.type.ps1 | Out-String)
+	assert ($LASTEXITCODE -eq 0)
+	assert ($r -like '*FullyQualifiedErrorId : TypeNotFound*Continued after error*')
+}
+
+task test.5.2.missing.type {
+	($r = PowerShell -Version $Version -NoProfile .\test.5.2.missing.type.ps1 | Out-String)
+	assert ($LASTEXITCODE -eq 0)
+	# Hmm, a new line in the end of FullyQualifiedErrorId
+	assert ($r.TrimEnd() -eq 'Caught TypeNotFound')
+}
