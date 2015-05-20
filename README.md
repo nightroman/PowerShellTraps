@@ -34,6 +34,7 @@ Contributions are welcome, see [CONTRIBUTING].
     - [Number-of-returned-objects](./Basic/Number-of-returned-objects)
     - [Requires](./Basic/Requires)
     - [Switch-is-a-looping-construct](./Basic/Switch-is-a-looping-construct)
+    - [Tempting-wrong-operators](./Basic/Tempting-wrong-operators)
     - [Too-simple-function-names](./Basic/Too-simple-function-names)
     - [Trap-creates-a-new-scope](./Basic/Trap-creates-a-new-scope)
     - [Trap-with-continue](./Basic/Trap-with-continue)
