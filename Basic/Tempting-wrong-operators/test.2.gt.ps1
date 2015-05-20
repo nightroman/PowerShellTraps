@@ -4,7 +4,7 @@
 # $x is 42
 $x = 42
 
-# incorrect comparison
+# incorrect comparison instead of $x -gt 0
 if ($x > 0) {
 	'This is not called'
 }
