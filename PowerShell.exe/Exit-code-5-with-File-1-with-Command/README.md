@@ -21,3 +21,7 @@ Scripts
 - *test.2.command.script.ps1* invokes *exit-5.ps1* with `Command` and gets the exit code 1.
 - *test.3.command.dot-source.ps1* - ditto but the script is dot-sourced, the exit code is still 1.
 - *test.4.command.workaround.ps1* - workaround for *test.2.command.script.ps1* and *test.3.command.dot-source.ps1*.
+
+---
+
+- Stack Overflow [answer](http://stackoverflow.com/a/30374795/323582)
