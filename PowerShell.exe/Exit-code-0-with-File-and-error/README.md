@@ -8,6 +8,8 @@ to be returned when the script throws an error.
 As far as `-Command` returns correct exit codes, this issue may look not
 serious until a script path or arguments contain special characters or just
 spaces. Quoting and escaping everything correctly for `-Command` is difficult.
+Also, `Command` may not return the actual exit code of a script, see
+[Exit-code-5-with-File-1-with-Command](../Exit-code-5-with-File-1-with-Command).
 
 Scripts
 
