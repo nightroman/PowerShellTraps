@@ -4,10 +4,10 @@ assuming they get null if missed and null is converted to 0 where a number is
 expected. The below example calculates the total size of the current directory:
 
 ```PowerShell
-$totalLength = 0
-Get-ChildItem -Force -Recurse | %{
-    $totalLength += $_.Length
-}
+    $totalLength = 0
+    Get-ChildItem -Force -Recurse | %{
+        $totalLength += $_.Length
+    }
 ```
 
 `Length` gets the file length for file items and gets 0 (converted null) for
@@ -23,10 +23,8 @@ This feature makes it more difficult to work with heterogeneous collections
 where some objects have their native `Count` or `Length` and some do not.
 It is not possible to assume that 0 and missing is logically the same.
 
-Scripts
-
-- *Test-DirectorySize.ps1* calculates a directory size using two methods.
-- *.test.ps1* tests different results in different versions.
+The script *Test-DirectorySize.ps1* calculates a directory size using two
+methods. Results are different in different versions.
 
 ---
 - Microsoft Connect [793560](https://connect.microsoft.com/PowerShell/feedback/details/793560)

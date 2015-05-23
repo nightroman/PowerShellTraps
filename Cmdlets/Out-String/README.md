@@ -1,5 +1,5 @@
 
-### Out-String fails in the strict mode and the default host
+### Out-String fails in the strict mode with the default host
 
 The script *Out-String-works.ps1* creates an instance of `[PowerShell]` in
 order to invoke some code in a separate runspace. The code throws a test error
@@ -12,10 +12,8 @@ with one more line which enables the strict mode
     Set-StrictMode -Version 2
 
 As a result, `Out-String` fails. It looks like some internal code is not well
-designed to work properly in the strict mode and the default host. The code
-uses `$host.UI.RawUI.BufferSize.Width` but this property does not exist.
-
-*.test.ps1* tests the above scripts.
+designed to work properly in the strict mode with some hosts. The code uses
+`$host.UI.RawUI.BufferSize.Width` but this property does not exist.
 
 ---
 

@@ -8,7 +8,6 @@ Scripts
 
 - *break.missing.ps1* contains `break missing`.
 - *continue.missing.ps1* contains `continue missing`.
-- *.test.ps1* tests the above scripts.
 
 ---
 

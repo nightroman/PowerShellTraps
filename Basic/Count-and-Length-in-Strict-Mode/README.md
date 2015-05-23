@@ -19,7 +19,6 @@ Scripts
 - *count.fails.ps1* shows how *Count* fails.
 - *length.works.ps1* shows how *Length* works.
 - *length.fails.ps1* shows how *Length* fails.
-- *.test.ps1* tests the above.
 
 ---
 

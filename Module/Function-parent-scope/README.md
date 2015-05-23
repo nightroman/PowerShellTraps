@@ -10,5 +10,3 @@ is created in the calling scope.
 
 - *Script1.ps1* defines the same function `New-Variable1`, as *Module1.psm1* does.
 - *Test-Script1.ps1* calls `New-Variable1` and gets the variable `Variable1` in the current scope.
-
-The script *.test.ps1* tests the above scripts.

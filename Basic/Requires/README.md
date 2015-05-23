@@ -16,4 +16,3 @@ Scripts
 - *requires-not-first.ps1*: Works differently in different versions.
 - *requires-with-garbage.ps1*: Works differently in different versions.
 - *requires-with-leading-space.ps1*: Works differently in different versions.
-- *.test.ps1* tests the above.

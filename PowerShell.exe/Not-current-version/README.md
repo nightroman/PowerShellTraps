@@ -10,7 +10,4 @@ by v2:
 
     PowerShell -Version 2 AnotherScript.ps1
 
-Scripts
-
-- *Not-current-version.ps1* shows how a newer PowerShell version is invoked.
-- *.test.ps1* tests the above.
+The script *Not-current-version.ps1* shows how a newer PowerShell version is invoked.

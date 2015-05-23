@@ -28,7 +28,6 @@ Scripts
 
 - *various.function.calls.ps1* shows various function calls with potential mistakes.
 - *various.function.calls.strict.ps1* - some mistakes can be caught in the strict mode.
-- *.test.ps1* tests the above.
 
 ---
 

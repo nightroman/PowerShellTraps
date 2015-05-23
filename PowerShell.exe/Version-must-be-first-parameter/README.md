@@ -9,10 +9,7 @@ This fails:
 
     PowerShell -NoProfile -Version 2
 
-Scripts
-
-- *Version-must-be-first-parameter.ps1* shows the problem.
-- *.test.ps1* tests the above.
+The script *Version-must-be-first-parameter.ps1* shows the problem.
 
 ---
 

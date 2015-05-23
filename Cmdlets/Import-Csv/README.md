@@ -9,10 +9,8 @@ Note that this is not be a problem if `Import-Csv` reads data exported by
 `Export-Csv`. `Export-Csv` uses double quotes for values. In this case
 `Import-Csv` preserves data as they are.
 
-Scripts
-
-- *Import-Csv.trims.leading.spaces.ps1* imports *Import-Csv.trims.leading.spaces.csv* and shows the data.
-- *.test.ps1* tests the data.
+The script *Import-Csv.trims.leading.spaces.ps1* imports a CSV file and shows
+some result data with leading spaced trimmed.
 
 ---
 

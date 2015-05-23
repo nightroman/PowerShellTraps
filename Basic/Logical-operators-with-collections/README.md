@@ -11,7 +11,6 @@ Scripts
 
 - *looks-like-object-is-null.ps1* shows how `-eq $null` may look like true for a not null object.
 - *object-is-eq-and-ne-to-1.ps1* shows how `-eq 1` and `-ne 1` may look like true for the same object.
-- *.test.ps1* tests the above scripts.
 
 ---
 

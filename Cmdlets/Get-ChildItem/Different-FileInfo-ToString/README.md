@@ -13,10 +13,7 @@ This command gets the same items but they are converted to strings as names:
 
     Get-ChildItem .
 
-Scripts
-
-- *different.FileInfo.ToString.ps1* show different conversion to strings of seemingly same items.
-- *.test.ps1* tests the above.
+The script *different.FileInfo.ToString.ps1* shows different conversion to strings of seemingly same items.
 
 ---
 

@@ -14,7 +14,6 @@ Scripts
 - *MethodWithStringParameter.ps1* adds a class with a method to be tested.
 - *Test-Problem.ps1* shows the problem.
 - *Test-Workaround.ps1* shows the workaround.
-- *.test.ps1* tests the above.
 
 ---
 

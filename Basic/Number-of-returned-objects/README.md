@@ -4,7 +4,9 @@ know the number of returned objects. How to get this number?
 
 For example, a command `Get-Something` is called like this:
 
+```PowerShell
     $results = Get-Something
+```
 
 Do `$results.Count` or `$results.Length` get the number of returned objects?
 They do sometimes. But the correct answer is no for various reasons depending
@@ -44,7 +46,9 @@ a null with an empty array, a single object with an array with this object, and
 multiple objects with an array of them. Thus, the result of this command is not
 ambiguous
 
+```PowerShell
     $results = @(Get-Something)
+```
 
 The `$results` is an array and its `Count` and `Length` get the number of
 returned objects.
@@ -57,4 +61,3 @@ Scripts
 - *test2.one.object.Count.strict.ps1* - ditto in the strict mode.
 - *test3.one.object.Length.ps1* - same as lucky 2 but uses `$results.Length` (unlucky).
 - *test4.one.object.Count.ps1* - same as lucky 2 but the object is different (unlucky).
-- *.test.ps1* tests the above.

@@ -16,7 +16,6 @@ Scripts
 
 - *MyScript.ps1* defines and invokes the internal function *MyCommand*.
 - *Test-MyScript.ps1* shows the potential issue with *MyCommand*.
-- *.test.ps1* tests the above.
 
 ---
 

@@ -1,5 +1,5 @@
 
-### Mind the current provider on using `Split-Path` with UNC paths
+### Split-Path with UNC paths: mind the current provider
 
 When the current PowerShell provider is not *FileSystem* `Split-Path` with UNC
 paths may produce unexpected results or even fail.

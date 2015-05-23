@@ -10,6 +10,11 @@ Workarounds
 - Or specify dynamic switches after positional parameters.
 - Or do not omit parameter names of positional parameters.
 
+Scripts
+
+- *dynamic.switch.fails.ps1* shows how a dynamic switch causes an error.
+- *dynamic.switch.works.ps1* is the above script corrected.
+
 ---
 
 - Stack Overflow [Dynamic switches before positional parameters may not work as expected](http://stackoverflow.com/q/25560038/323582)

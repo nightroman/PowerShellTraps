@@ -12,7 +12,6 @@ Scripts
 
 - *Expected.start.location.cmd* - PowerShell starts with its current location set to the current directory.
 - *Unexpected.start.location.cmd* - PowerShell starts with its current location set to an unexpected directory.
-- *.test.ps1* tests the above results.
 
 ---
 

@@ -4,7 +4,7 @@ If an `OrderedDictionary` is exported by `Export-Clixml` and imported by
 important (probably, as far as `OrderedDictionary` is used) then this is
 definitely a problem.
 
-*Test-OrderedDictionary.ps1* shows the problem.
+The script *Test-OrderedDictionary.ps1* shows the problem.
 
 Actual output:
 

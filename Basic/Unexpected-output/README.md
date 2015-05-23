@@ -8,13 +8,14 @@ are somehow used, e.g. assigned to a variable, or explicitly discarded.
 
 Unused output of some statements should be discarded, for example
 
+```PowerShell
     $null = ...
     [void](...)
     ... > $null
     ... | Out-Null
+```
 
 Scripts
 
 - *ArrayList.Add.1.ps1* shows a typical mistake, a called method actually gets something.
 - *ArrayList.Add.2.ps1* is the above example corrected.
-- *.test.ps1* tests the above.

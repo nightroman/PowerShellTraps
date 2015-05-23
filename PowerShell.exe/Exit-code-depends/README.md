@@ -13,4 +13,3 @@ Scripts
     - invokes the command directly
     - invokes it as the script
     - dot-sources the script
-- *.test.ps1* tests the results.

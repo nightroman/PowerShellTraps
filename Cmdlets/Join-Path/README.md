@@ -5,7 +5,7 @@ The script *Test-missing-drive.ps1* finds a missing drive and uses it in order
 to join paths by the .NET method `Path.Combine()` (works) and by PowerShell
 cmdlet `Join-Path` (fails).
 
-### Mind the current provider on Join-Path with UNC paths
+### Join-Path with UNC paths: mind the current provider
 
 When `Join-Path` is used with UNC paths then the results may depend on the
 current provider. If it is accidentally not *FileSystem* then it may be a

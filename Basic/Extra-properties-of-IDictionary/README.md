@@ -8,7 +8,9 @@ problem for classes that implement `IDictionary` and have extra properties.
 For example, the property `ConnectionString` of `DbConnectionStringBuilder`.
 Assigning it as
 
+```PowerShell
     $builder.ConnectionString = '...'
+```
 
 does not actually invokes the property setter but adds the key/value pair to
 the dictionary and bypasses the connection string parsing which is done by the
@@ -16,13 +18,14 @@ setter.
 
 A workaround:
 
+```PowerShell
     $builder.set_ConnectionString('...')
+```
 
 Scripts
 
 - *Test-1.incorrect.assignment.ps1* shows incorrect assignment of a property.
 - *Test-2.correct.assignment.ps1* shows correct assignment of a property.
-- *.test.ps1* tests the above.
 
 ---
 

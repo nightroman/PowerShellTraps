@@ -15,7 +15,6 @@ Scripts
 - *unrolled.on.adding.ps1* shows unrolling on adding items to an array using `+=`.
 - *unrolled.on.output.ps1* shows a collection unrolled on output from a function.
 - *unrolled.on.return.ps1* is the similar script which uses `return` explicitly.
-- *.test.ps1* tests the above.
 
 ---
 

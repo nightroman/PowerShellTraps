@@ -14,6 +14,4 @@ They remain hidden while the script works.
 The script *Write-Progress.may.hurt.performance.ps1* shows that
 `Write-Progress` takes seconds for just 1000 iterations.
 
----
-
 - Microsoft Connect [337323](https://connect.microsoft.com/PowerShell/feedback/details/337323)
