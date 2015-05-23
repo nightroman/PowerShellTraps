@@ -8,7 +8,7 @@ are somehow used, e.g. assigned to a variable, or explicitly discarded.
 
 Unused output of some statements should be discarded, for example
 
-```PowerShell
+```powershell
     $null = ...
     [void](...)
     ... > $null

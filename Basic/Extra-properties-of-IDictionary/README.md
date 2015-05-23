@@ -8,7 +8,7 @@ problem for classes that implement `IDictionary` and have extra properties.
 For example, the property `ConnectionString` of `DbConnectionStringBuilder`.
 Assigning it as
 
-```PowerShell
+```powershell
     $builder.ConnectionString = '...'
 ```
 
@@ -18,7 +18,7 @@ setter.
 
 A workaround:
 
-```PowerShell
+```powershell
     $builder.set_ConnectionString('...')
 ```
 

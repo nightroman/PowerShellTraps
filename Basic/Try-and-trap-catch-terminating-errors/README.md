@@ -5,7 +5,7 @@ Note that the default PowerShell error action preference is *Continue*.
 
 In order catch all errors use
 
-```PowerShell
+```powershell
     $ErrorActionPreference = 'Stop'
 ```
 

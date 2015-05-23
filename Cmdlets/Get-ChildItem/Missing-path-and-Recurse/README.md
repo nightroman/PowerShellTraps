@@ -10,7 +10,7 @@ possible.
 
 A workaround is to always test paths before getting items
 
-```PowerShell
+```powershell
     if (Test-Path SomePath) {
         Get-ChildItem SomePath -Recurse
     }

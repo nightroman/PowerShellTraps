@@ -11,7 +11,7 @@ The script *test.1.invocation.ps1* creates the script `.\test[\test.ps1` in the
 odd directory `test[`. Then this test script is invoked by the operator `&`
 using the relative and full paths:
 
-```PowerShell
+```powershell
     # this works and proves that "test[" should not be a problem
     & '.\test[\test.ps1'
 

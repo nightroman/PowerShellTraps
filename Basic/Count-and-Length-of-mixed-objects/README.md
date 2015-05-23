@@ -3,7 +3,7 @@ In PowerShell v2 it is possible to operate on properties `Count` and `Length`
 assuming they get null if missed and null is converted to 0 where a number is
 expected. The below example calculates the total size of the current directory:
 
-```PowerShell
+```powershell
     $totalLength = 0
     Get-ChildItem -Force -Recurse | %{
         $totalLength += $_.Length

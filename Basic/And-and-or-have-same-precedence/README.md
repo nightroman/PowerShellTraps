@@ -4,19 +4,19 @@ programming languages where logical *AND* has higher precedence.
 
 This C# expression is evaluated to true
 
-```CSharp
+```csharp
     true || true && false
 ```
 
 This similar PowerShell expression is evaluated to false
 
-```PowerShell
+```powershell
     $true -or $true -and $false
 ```
 
 To avoid this trap, especially on translating code from other languages to PowerShell, use parenthesis
 
-```PowerShell
+```powershell
     $true -or ($true -and $false)
 ```
 

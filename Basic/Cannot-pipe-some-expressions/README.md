@@ -4,26 +4,26 @@ but cannot be sent to a pipeline or redirected.
 
 For example, this works:
 
-```PowerShell
+```powershell
     $result = foreach($e in 1..5) {$e}
     $result | %{"Result is $_"}
 ```
 
 But this fails due to a syntax error:
 
-```PowerShell
+```powershell
     foreach($e in 1..5) {$e} | %{"Result is $_"}
 ```
 
 And this fails due to a missing command `>`:
 
-```PowerShell
+```powershell
     foreach($e in 1..5) {$e} > z.log
 ```
 
 Possible workarounds:
 
-```PowerShell
+```powershell
     # using $(...)
     $(foreach($e in 1..5) {$e}) | %{"Result is $_"}
 

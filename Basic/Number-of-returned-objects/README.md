@@ -4,7 +4,7 @@ know the number of returned objects. How to get this number?
 
 For example, a command `Get-Something` is called like this:
 
-```PowerShell
+```powershell
     $results = Get-Something
 ```
 
@@ -46,7 +46,7 @@ a null with an empty array, a single object with an array with this object, and
 multiple objects with an array of them. Thus, the result of this command is not
 ambiguous
 
-```PowerShell
+```powershell
     $results = @(Get-Something)
 ```
 
