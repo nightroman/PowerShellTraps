@@ -39,5 +39,4 @@ tricky in double quoted strings, backticks should be escaped themselves and
 proper number of backticks is not always obvious.
 
 Do not apply this workaround to relative paths, it looks like relative paths
-are processed literally. Extra backticks and brackets will produce different
-paths, either missing or wrong.
+are processed literally. Extra backticks will produce different paths.
