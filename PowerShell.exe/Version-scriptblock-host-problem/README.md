@@ -13,7 +13,7 @@ For example, this command works in any host
     PowerShell {...}
 ```
 
-This command works in *ConsoleHost* but fails in *ISE*, *DefaultHost*, and some others
+This command works in *ConsoleHost* but fails in *ISE*, *DefaultHost*, and some others including PowerShell jobs
 
 ```powershell
     PowerShell -Version 2 {...}
@@ -24,3 +24,4 @@ Scripts
 - *Test.1.works.in.any.host.ps1* - `PowerShell {...}` works in any host.
 - *Test.2.works.in.ConsoleHost.ps1* - with `Version` it works in *ConsoleHost* but fails in others.
 - *Test.3.fails.in.DefaultHost.ps1* shows that `PowerShell -Version 2 {...}` fails in *DefaultHost*.
+- *Test.4.fails.in.PowerShell.job.ps1* shows that `PowerShell -Version 2 {...}` fails in a PowerShell job.

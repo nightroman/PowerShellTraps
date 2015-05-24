@@ -13,3 +13,8 @@ task Test.3.fails.in.DefaultHost {
 	($r = .\Test.3.fails.in.DefaultHost.ps1)
 	assert ((-join $r).Contains('ObjectNotFound: (-Version:String) [], CommandNotFoundException'))
 }
+
+task Test.4.fails.in.PowerShell.job {
+	($r = try {.\Test.4.fails.in.PowerShell.job.ps1} catch {$_})
+	assert ($r.FullyQualifiedErrorId -eq 'NativeCommandError')
+}
