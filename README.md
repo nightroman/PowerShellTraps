@@ -74,6 +74,7 @@ Contributions are welcome, see [CONTRIBUTING].
     - [Exit-code-0-with-syntax-error](./PowerShell.exe/Exit-code-0-with-syntax-error)
     - [Exit-code-5-with-File-1-with-Command](./PowerShell.exe/Exit-code-5-with-File-1-with-Command)
     - [Exit-code-depends](./PowerShell.exe/Exit-code-depends)
+    - [Interactive-issues-in-v3](./PowerShell.exe/Interactive-issues-in-v3)
     - [Not-current-version](./PowerShell.exe/Not-current-version)
     - [Unexpected-start-location](./PowerShell.exe/Unexpected-start-location)
     - [Version-must-be-first-parameter](./PowerShell.exe/Version-must-be-first-parameter)
