@@ -77,5 +77,6 @@ Contributions are welcome, see [CONTRIBUTING].
     - [Not-current-version](./PowerShell.exe/Not-current-version)
     - [Unexpected-start-location](./PowerShell.exe/Unexpected-start-location)
     - [Version-must-be-first-parameter](./PowerShell.exe/Version-must-be-first-parameter)
+    - [Version-scriptblock-host-problem](./PowerShell.exe/Version-scriptblock-host-problem)
 
 ---
