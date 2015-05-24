@@ -35,3 +35,21 @@ The workaround is use of the switch `NoExit`.
 - *Test-2.3-debug-Suspend-workaround.ps1* - workaround `PowerShell -NoExit -Command`.
 - *Test-2.4-debug-Suspend-workaround.ps1* - workaround `PowerShell -NoExit -File`.
 - Microsoft Connect [812058](https://connect.microsoft.com/PowerShell/Feedback/Details/812058)
+
+### "exit" in Command is ignored if NoExit is specified
+
+This is not exactly an interactive issue but it is somehow related to problems
+of PowerShell 3.0 described here. The following perhaps unusual CMD command
+
+```batchfile
+    PowerShell.exe -NoExit . "'<path>\Script.ps1'"; exit
+```
+
+has useful applications described in details in this [blog post]. In PowerShell
+3.0 it is not working as designed because `exit` is ignored and PowerShell does
+not exit.
+
+- *Test-3-NoExit-exit.ps1* shows the problem in PowerShell 3.0
+- Microsoft Connect [745794](https://connect.microsoft.com/PowerShell/Feedback/Details/745794)
+
+[blog post]: http://nightroman.wordpress.com/2009/11/11/how-to-run-powershell-scripts-from-explorer/
