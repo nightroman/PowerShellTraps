@@ -19,4 +19,5 @@ Scripts
 
 ---
 
+- [Errors-of-unusual-type](../Errors-of-unusual-type)
 - Stack Overflow [Try/catch does not seem to have an effect](http://stackoverflow.com/q/1142211/323582)

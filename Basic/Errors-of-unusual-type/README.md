@@ -43,4 +43,5 @@ Scripts
 
 ---
 
+- [Try-and-trap-catch-terminating-errors](../Try-and-trap-catch-terminating-errors)
 - Stack Overflow [The obscure third type of error](http://stackoverflow.com/q/29883990/323582)

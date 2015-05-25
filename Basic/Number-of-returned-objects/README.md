@@ -34,7 +34,7 @@ Do `$results.Count` or `$results.Length` get the number of returned objects
 now? The answer is still sometimes.
 
 Firstly, the surrogate properties are errors in the strict mode, so that they
-cannot be used safely.
+cannot be used safely. See [Count-and-Length-in-Strict-Mode](../Count-and-Length-in-Strict-Mode).
 
 Secondly, if the only returned object has native `Count` or `Length` then the
 native value has nothing to do with 1, the number of returned objects.

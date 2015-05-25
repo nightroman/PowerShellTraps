@@ -34,7 +34,8 @@ Scripts
 ### In PowerShell 3.0 results may be affected by other commands
 
 The script *Test-2.ps1* in v3 shows how the result of the operator `+=` is
-affected by the seemingly unrelated presiding `New-Variable`.
+affected by the seemingly unrelated preceding `New-Variable`, the operator
+works as in v2.
 
 ---
 

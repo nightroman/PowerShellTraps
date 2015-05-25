@@ -13,6 +13,10 @@ See help *about_Properties*:
 The problem is that these properties *Count* and *Length* of a scalar fail in
 the strict mode.
 
+Obviously these properties should not be used in scripts designed to work in
+the strict mode. Public scripts should avoid these properties because this mode
+can be enabled by a caller.
+
 Scripts
 
 - *count.works.ps1* shows how *Count* works.
@@ -22,4 +26,5 @@ Scripts
 
 ---
 
+- [Number-of-returned-objects](../Number-of-returned-objects)
 - Microsoft Connect [770111](https://connect.microsoft.com/PowerShell/Feedback/Details/770111)

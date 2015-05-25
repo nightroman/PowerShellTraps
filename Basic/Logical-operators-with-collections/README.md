@@ -3,9 +3,18 @@ Logical operators applied to collections is a very useful feature when used
 properly. But how it actually works is not always obvious. It may be a trap.
 
 Logical operators do not return logical true or false for collections, as one
-may expect. Instead, they return all collection items that gets true with an
+may expect. Instead, they return all collection items that get true with an
 operator applied to them. In other words, operators work more like filters
 applied to collections.
+
+For example the comparison like this
+
+```powershell
+    $object -eq $value
+```
+
+is not a safe way to test that `$object` *is* a `$value` if an object may be a
+collection as well. See the test scripts.
 
 Scripts
 
