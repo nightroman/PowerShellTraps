@@ -28,6 +28,7 @@ Contributions are welcome, see [CONTRIBUTING].
     - [Enums-are-always-evaluated-to-true](./Basic/Enums-are-always-evaluated-to-true)
     - [Errors-of-unusual-type](./Basic/Errors-of-unusual-type)
     - [Extra-properties-of-IDictionary](./Basic/Extra-properties-of-IDictionary)
+    - [FormatEnumerationLimit](./Basic/FormatEnumerationLimit)
     - [Function-invoked-like-method](./Basic/Function-invoked-like-method)
     - [Invocation-with-odd-paths](./Basic/Invocation-with-odd-paths)
     - [Logical-operators-with-collections](./Basic/Logical-operators-with-collections)
