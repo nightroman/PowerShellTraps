@@ -45,6 +45,7 @@ Contributions are welcome, see [CONTRIBUTING].
     - [Unexpected-output](./Basic/Unexpected-output)
     - [Unrolled-collections](./Basic/Unrolled-collections)
     - [ValidateScript-attribute](./Basic/ValidateScript-attribute)
+    - [WildcardPattern](./Basic/WildcardPattern)
 - [Clixml](./Clixml)
     - [Hashtable-case-sensitivity](./Clixml/Hashtable-case-sensitivity)
     - [OrderedDictionary-becomes-Hashtable](./Clixml/OrderedDictionary-becomes-Hashtable)
