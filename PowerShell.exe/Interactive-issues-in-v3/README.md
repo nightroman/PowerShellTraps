@@ -1,12 +1,12 @@
 
 In PowerShell 3.0 several interactive features have issues.
-These features work as expected in PowerShell 2.0 and 4.0.
+These features work as expected in PowerShell 2.0 and most of them in 4.0.
 
 Note that *.test.ps1* covers only tests that do not require user interaction.
 Most of test scripts here are interactive and supposed to be invoked manually,
 in v3 in order to see issues, in v2 and v4 in order to see it all working fine.
 
-### $Host.EnterNestedPrompt() is ignored
+### $Host.EnterNestedPrompt() is ignored (v3)
 
 If a script with `$Host.EnterNestedPrompt()` is invoked with *PowerShell.exe*
 without the switch `NoExit` then the nested prompt is not entered, invocation
@@ -20,7 +20,7 @@ The workaround is use of the switch `NoExit`.
 - *Test-1.3-EnterNestedPrompt-workaround.ps1* - workaround `PowerShell -NoExit -Command`.
 - *Test-1.4-EnterNestedPrompt-workaround.ps1* - workaround `PowerShell -NoExit -File`.
 
-### Write-Debug prompt - "Suspend" is ignored
+### Write-Debug prompt - "Suspend" is ignored (v3)
 
 When the debug preference (`$DebugPreference`) is set to *Inquire* then
 `Write-Debug` shows a debug message and the prompt with several options.
@@ -36,7 +36,7 @@ The workaround is use of the switch `NoExit`.
 - *Test-2.4-debug-Suspend-workaround.ps1* - workaround `PowerShell -NoExit -File`.
 - Microsoft Connect [812058](https://connect.microsoft.com/PowerShell/Feedback/Details/812058)
 
-### "exit" in Command is ignored if NoExit is specified
+### "exit" in Command is ignored if NoExit is specified (v3, v4)
 
 This is not exactly an interactive issue but it is somehow related to problems
 of PowerShell 3.0 described here. The following perhaps unusual CMD command
@@ -46,8 +46,8 @@ of PowerShell 3.0 described here. The following perhaps unusual CMD command
 ```
 
 has useful applications described in details in this [blog post]. In PowerShell
-3.0 it is not working as designed because `exit` is ignored and PowerShell does
-not exit.
+3.0 and 4.0 it is not working as designed because `exit` is ignored and
+PowerShell is not exiting.
 
 - *Test-3-NoExit-exit.ps1* shows the problem in PowerShell 3.0
 - Microsoft Connect [745794](https://connect.microsoft.com/PowerShell/Feedback/Details/745794)
