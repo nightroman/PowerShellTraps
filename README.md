@@ -62,6 +62,7 @@ Contributions are welcome, see [CONTRIBUTING].
     - [Set-Content](./Cmdlets/Set-Content)
     - [Split-Path](./Cmdlets/Split-Path)
     - [Test-Path](./Cmdlets/Test-Path)
+    - [Wait-Process](./Cmdlets/Wait-Process)
     - [Where-Object](./Cmdlets/Where-Object)
     - [Write-Progress](./Cmdlets/Write-Progress)
 - [Module](./Module)
