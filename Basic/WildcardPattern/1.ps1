@@ -1,1 +1,0 @@
-[Management.Automation.WildcardPattern]::Escape('`t')
