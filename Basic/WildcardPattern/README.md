@@ -34,7 +34,7 @@ and the method `WildcardPattern.UnEscape()` gets the original string.
   get the original string.
 - *Test-2-Escape-UnEscape-regex.ps1* shows how `Regex.Escape()` works in the
   similar case (backslashes instead of backticks).
-- *Test-3-Escape-workaround.ps1* test the workaround.
+- *Test-3-Escape-workaround.ps1* tests the workaround.
 
 ---
 
