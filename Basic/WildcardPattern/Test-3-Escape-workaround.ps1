@@ -1,25 +1,25 @@
 
 $log = New-Object System.Collections.Specialized.OrderedDictionary
 
-# 2 backticks
-$string = '``text``'
+# original text with various combinations of special characters
+$string = '``_`[_`]_`?_`*_[_]_?_*_`'
 
 # original text
 $log.OriginalText = $string
 
-# escape the string with double backticks
-$escaped = [Management.Automation.WildcardPattern]::Escape($string)
+# escape the string using the workaround
+$escaped = $string -replace '([`*?[\]])', '`$1'
 
-# gets unexpected ``text``, expected would be ````text````
+# escaped text
 $log.EscapedText = $escaped
 
-# try to match the original string ($false, expected $true)
+# match the original string ($true, as expected)
 $log.MatchesOriginal = $string -like $escaped
 
 # unescape
 $unescaped = [Management.Automation.WildcardPattern]::UnEscape($escaped)
 
-# gets `text` which is not equal to the original
+# gets text which is equal to the original
 $log.UnEscapedText = $unescaped
 $log.EqualToOriginal = $unescaped -eq $string
 

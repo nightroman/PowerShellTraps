@@ -13,14 +13,15 @@ $escaped = [regex]::Escape($string)
 # gets \\\\text\\\\ (correct)
 $log.EscapedText = $escaped
 
+# match the original string ($true, as expected)
+$log.MatchesOriginal = $string -match $escaped
+
 # unescape
 $unescaped = [regex]::UnEscape($escaped)
 
 # gets \\text\\ which is equal to the original
 $log.UnEscapedText = $unescaped
-
-# match the original string ($true, as expected)
-$log.MatchesTheOriginal = $string -match $escaped
+$log.EqualToOriginal = $unescaped -eq $string
 
 # show log
 $log
