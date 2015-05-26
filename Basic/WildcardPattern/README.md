@@ -1,5 +1,5 @@
 
-### WildcardPattern.Escape() does not escape backticks
+### WildcardPattern.Escape() does not escape some backticks
 
 The escape character of `WildcardPattern` is backtick. It looks like if an
 input string contains backticks which are not followed by characters `[]?*`
@@ -29,8 +29,11 @@ and the method `WildcardPattern.UnEscape()` gets the original string.
 
 #### Scripts
 
-- *Test-1-Escape-UnEscape-wildcard.ps1* shows that `WildcardPattern.Escape()` produces a pattern not matching the original string.
-- *Test-2-Escape-UnEscape-regex.ps1* shows how `Regex.Escape()` works in the similar case (backslashes instead of backticks).
+- *Test-1-Escape-UnEscape-wildcard.ps1* shows that `WildcardPattern.Escape()`
+  produces a pattern not matching the original string and `UnEscape()` does not
+  get the original string.
+- *Test-2-Escape-UnEscape-regex.ps1* shows how `Regex.Escape()` works in the
+  similar case (backslashes instead of backticks).
 - *Test-3-Escape-workaround.ps1* test the workaround.
 
 ---

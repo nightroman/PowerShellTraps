@@ -1,25 +1,19 @@
 
 $log = New-Object System.Collections.Specialized.OrderedDictionary
 
-# 2 backticks
-$string = '``text``'
-
 # original text
+$string = '``text``'
 $log.OriginalText = $string
 
-# escape the string with double backticks
+# escape, gets unexpected ``text``, expected would be ````text````
 $escaped = [Management.Automation.WildcardPattern]::Escape($string)
-
-# gets unexpected ``text``, expected would be ````text````
 $log.EscapedText = $escaped
 
-# try to match the original string ($false, expected $true)
+# match the original text ($false, expected $true)
 $log.MatchesOriginal = $string -like $escaped
 
-# unescape
+# unescape, gets `text` which is not equal to the original
 $unescaped = [Management.Automation.WildcardPattern]::UnEscape($escaped)
-
-# gets `text` which is not equal to the original
 $log.UnEscapedText = $unescaped
 $log.EqualToOriginal = $unescaped -eq $string
 

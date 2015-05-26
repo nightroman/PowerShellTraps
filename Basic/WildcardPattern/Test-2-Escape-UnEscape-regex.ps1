@@ -1,25 +1,19 @@
 
 $log = New-Object System.Collections.Specialized.OrderedDictionary
 
-# 2 backslashes
-$string = '\\text\\'
-
 # original text
+$string = '\\text\\'
 $log.OriginalText = $string
 
-# escape the string with double backslashes
+# escape the text, gets expected \\\\text\\\\
 $escaped = [regex]::Escape($string)
-
-# gets \\\\text\\\\ (correct)
 $log.EscapedText = $escaped
 
-# match the original string ($true, as expected)
+# match the original text ($true, as expected)
 $log.MatchesOriginal = $string -match $escaped
 
-# unescape
+# unescape, gets \\text\\ which is equal to the original
 $unescaped = [regex]::UnEscape($escaped)
-
-# gets \\text\\ which is equal to the original
 $log.UnEscapedText = $unescaped
 $log.EqualToOriginal = $unescaped -eq $string
 
