@@ -14,8 +14,7 @@ This feature is not documented in known official sources.
 
 Note: yet another difference between PowerShell 2.0 and 3.0 was found. In the
 strict mode `$null.PSObject` fails in v2 and works in v3+. In the latter case
-it gets null for a true null and a `PSCustomObject` instance for a "no result"
-null.
+it gets null for a true null and a `PSCustomObject` instance for "no results".
 
 ---
 
