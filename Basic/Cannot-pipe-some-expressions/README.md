@@ -38,3 +38,6 @@ Scripts
 
 - *foreach-cannot-be-piped.ps1* shows that output of `foreach` cannot be sent to a pipeline.
 - *foreach-cannot-be-redirected.ps1* shows that output of `foreach` cannot be redirected.
+
+---
+- Microsoft Connect [680120](https://connect.microsoft.com/PowerShell/feedback/details/680120)

@@ -24,6 +24,7 @@ Contributions are welcome, see [CONTRIBUTING].
     - [Compound-equality-operators](./Basic/Compound-equality-operators)
     - [Count-and-Length-in-Strict-Mode](./Basic/Count-and-Length-in-Strict-Mode)
     - [Count-and-Length-of-mixed-objects](./Basic/Count-and-Length-of-mixed-objects)
+    - [Different-kinds-of-null](./Basic/Different-kinds-of-null)
     - [Dynamic-switch-parameter](./Basic/Dynamic-switch-parameter)
     - [Enums-are-always-evaluated-to-true](./Basic/Enums-are-always-evaluated-to-true)
     - [Errors-of-unusual-type](./Basic/Errors-of-unusual-type)
