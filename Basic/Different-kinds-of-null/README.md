@@ -1,7 +1,7 @@
 
 It is typical to assign command results to a variable. What does this variable
 contain if a command outputs nothing? It turns out that in PowerShell 3.0+ it
-is something that looks like null and behaves like null is most cases except
+is something that looks like null and behaves like null in most cases except
 some special. Such special cases are potential traps.
 
 The script *Test-1-different-results.ps1* shows that "no results" assigned to a

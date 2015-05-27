@@ -4,7 +4,7 @@ Set-StrictMode -Version 2
 ### Test with nothing null
 
 # the same $it1 from test 1, contains nothing
-$it1 = (1..5 | Where-Object {$_ -gt 6})
+$it1 = 1..5 | Where-Object {$_ -gt 6}
 
 # try because it fails in v2 in the strict mode
 try {
