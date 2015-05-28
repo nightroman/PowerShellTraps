@@ -77,3 +77,16 @@ task test.5.2.missing.type {
 	# Hmm, a new line in the end of FullyQualifiedErrorId
 	assert ($r.TrimEnd() -eq 'Caught TypeNotFound')
 }
+
+task test.6.1.missing.property.strict {
+	($r = PowerShell -Version $Version -NoProfile .\test.6.1.missing.property.strict.ps1 | Out-String)
+	assert ($LASTEXITCODE -eq 0)
+	assert ($r -like '*FullyQualifiedErrorId : PropertyNotFoundStrict*Continued after error*')
+}
+
+task test.6.2.missing.property.strict {
+	($r = PowerShell -Version $Version -NoProfile .\test.6.2.missing.property.strict.ps1 | Out-String)
+	assert ($LASTEXITCODE -eq 0)
+	# Hmm, a new line in the end of FullyQualifiedErrorId
+	assert ($r.TrimEnd() -eq 'Caught PropertyNotFoundStrict')
+}
