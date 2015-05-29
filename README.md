@@ -33,6 +33,7 @@ Contributions are welcome, see [CONTRIBUTING].
     - [Function-invoked-like-method](./Basic/Function-invoked-like-method)
     - [Invocation-with-odd-paths](./Basic/Invocation-with-odd-paths)
     - [Logical-operators-with-collections](./Basic/Logical-operators-with-collections)
+    - [Misleading-error-location](./Basic/Misleading-error-location)
     - [Null-converted-to-empty-string](./Basic/Null-converted-to-empty-string)
     - [Number-of-returned-objects](./Basic/Number-of-returned-objects)
     - [Requires](./Basic/Requires)
