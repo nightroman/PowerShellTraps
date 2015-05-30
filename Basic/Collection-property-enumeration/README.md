@@ -42,13 +42,18 @@ A proper workaround is unlikely possible, such mistakes are inevitable and in
 v3+ `$x.Data1` is a valid expression even if `$x` is a collection by mistake.
 
 But some sort of remedy exists. In some cases it looks safer to make checks
-like `$value -op $x.Data1` instead of more traditional `$x.Data1 -op $value`,
-where `-op` is some logical operator. See [logical operators with collections]
-for the details. Unlike the traditional, reversed checks get false if `$x` is
-unexpectedly a collection.
+like `$value -eq $x.Data1` instead of more traditional `$x.Data1 -eq $value`.
+See [logical operators with collections] for the details. Reversed checks get
+false if `$x` and `$x.Data1` are unexpected collections.
 
 The script *Test-1-3-safer-approach.ps1* shows that in v3+ the reversed check
 does not cause potentially unwanted processing of each item due to the mistake.
+
+But the script *Test-2-1-noise-data-normal.ps1* shows that even reversed checks
+may not reveal some unexpected noise data.
+
+The script *Test-2-2-noise-data-strict.ps1* shows that the strict mode may help
+in v3+, too, it reveals unexpected data which do not have expected properties.
 
 ---
 
