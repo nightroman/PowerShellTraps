@@ -11,4 +11,5 @@ Scripts
 
 - *MyModule.psm1* contains the internal function *MyCommand*.
 - *Test-MyModule.ps1* shows the potential issue due to the alias *MyCommand*.
-- *.test.ps1* covers the issue with two test scenarios which show different results.
+- *Test-MyModule-Command-works.ps1* calls *Test-MyModule.ps1* as `PowerShell -Command`, it works as expected.
+- *Test-MyModule-File-conflicts.ps1* calls *Test-MyModule.ps1* as `PowerShell -File`, it shows name conflicts.

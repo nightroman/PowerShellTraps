@@ -10,15 +10,13 @@
 #>
 
 # Synopsis: No conflict on PowerShell -Command ...
-task call-as-command {
-	($r = PowerShell -Version $PSVersionTable.PSVersion -NoProfile -Command .\Test-MyModule.ps1)
-	assert ($r[0] -eq 'module function MyCommand')
-	assert ($r[1] -eq 'module function MyCommand')
+task Test-MyModule-Command-works {
+	($r = .\Test-MyModule-Command-works.ps1)
+	assert ('module function MyCommand|module function MyCommand' -eq $r -join '|')
 }
 
 # Synopsis: Conflict on PowerShell -File ...
-task call-as-file {
-	($r = PowerShell -Version $PSVersionTable.PSVersion -NoProfile -File .\Test-MyModule.ps1)
-	assert ($r[0] -eq 'module function MyCommand')
-	assert ($r[1] -eq 'script function Test-ScriptFunction')
+task Test-MyModule-File-conflicts {
+	($r = .\Test-MyModule-File-conflicts.ps1)
+	assert ('module function MyCommand|script function Test-ScriptFunction' -eq $r -join '|')
 }

@@ -1,4 +1,10 @@
 
+<#
+	This script is supposed to be invoked by
+	- Test-MyModule-Command-works.ps1
+	- Test-MyModule-File-conflicts.ps1
+#>
+
 # import the test module
 Import-Module .\MyModule.psm1
 
