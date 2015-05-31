@@ -1,4 +1,7 @@
 
+This issue is similar to [Too-simple-function-names](../Basic/Too-simple-function-names).
+It shows that the same problem is possible in script modules.
+
 If a module function name X, internal or exposed, is accidentally the same as
 an existing in the session alias and other module functions call X then this
 alias may be invoked instead of the function X.
