@@ -12,6 +12,8 @@ It looks like a good idea to use the Verb-Noun convention even for internal
 function names. This minimizes chances of conflicts. Aliases are not normally
 called Verb-Noun.
 
+Note that script modules may have similar issues, see [Conflict-with-aliases](../../Module/Conflict-with-aliases).
+
 Scripts
 
 - *MyScript.ps1* defines and invokes the internal function *MyCommand*.
