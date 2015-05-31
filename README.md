@@ -82,6 +82,7 @@ Contributions are welcome, see [CONTRIBUTING].
     - [Exit-code-depends](./PowerShell.exe/Exit-code-depends)
     - [Interactive-issues-in-v3](./PowerShell.exe/Interactive-issues-in-v3)
     - [Not-current-version](./PowerShell.exe/Not-current-version)
+    - [Switch-parameter-with-value](./PowerShell.exe/Switch-parameter-with-value)
     - [Unexpected-start-location](./PowerShell.exe/Unexpected-start-location)
     - [Version-must-be-first-parameter](./PowerShell.exe/Version-must-be-first-parameter)
     - [Version-scriptblock-host-problem](./PowerShell.exe/Version-scriptblock-host-problem)
