@@ -1,9 +1,9 @@
 
-If a script has a switch parameter then it is rather tricky to invoke it by
-*PowerShell.exe* with explicitly specified switch value. Moreover, it is only
-possible with `Command`, not `File`.
+If a script has a switch parameter then it is tricky to invoke it with a
+specified switch value by `PowerShell.exe`. Also, it is only possible with
+`Command`, not `File`.
 
-The script *Script1.ps1* has the switch parameter `Option` and the switch value
+The script *Script1.ps1* has the switch parameter `Option`. The switch value
 (`$true` or `$false`) is defined by the variable `$useOption`. How to invoke
 the script with this value specified?
 
@@ -29,15 +29,15 @@ It fails. The arguments are converted to text and the actual command is:
     .\Script1.ps1 -Option:True
 ```
 
-It turns out `True` or `False` cannot be converted to a switch value. This may
-look strange because they are converted to `[bool]` fine:
+It turns out strings `True` or `False` cannot be converted to a switch value.
+This may look strange because they are converted to `[bool]` fine:
 
 ```powershell
     [bool]'True'
 ```
 
 But `[switch]` (`[System.Management.Automation.SwitchParameter`) is not
-designed to be converted from a string, even from `True` or `False`.
+designed to be created from a string, even from `True` or `False`.
 
 The script *Test-2-command-works.ps1* uses the syntax which works:
 
@@ -54,7 +54,7 @@ The above arguments are converted to valid commands:
 
 #### PowerShell -File
 
-There is no way to pass a switch value to a script invoked by `File`. It is
+There is no way to pass a switch value in a script invoked by `File`. It is
 expected that not all data can be passed in another process via parameters.
 But switch parameters are so basic that such a way ideally should exist.
 
