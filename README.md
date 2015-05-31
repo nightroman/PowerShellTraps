@@ -64,6 +64,7 @@ Contributions are welcome, see [CONTRIBUTING].
     - [Import-Csv](./Cmdlets/Import-Csv)
     - [Join-Path](./Cmdlets/Join-Path)
     - [Out-String](./Cmdlets/Out-String)
+    - [Remove-ItemProperty](./Cmdlets/Remove-ItemProperty)
     - [Set-Content](./Cmdlets/Set-Content)
     - [Split-Path](./Cmdlets/Split-Path)
     - [Test-Path](./Cmdlets/Test-Path)
