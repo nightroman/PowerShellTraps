@@ -1,6 +1,6 @@
 
 PowerShell may unroll collections, that is replace an original collection with
-an array of its items.
+an array of its items or just a single item.
 
 This fact is especially easy to forget for some complex objects like
 `[System.Data.DataTable]`. PowerShell may treat it as a collection of

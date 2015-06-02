@@ -18,8 +18,7 @@ It will do in most cases. But there are some drawbacks.
 
 `if/else` is a statement, not an expression, see [Statements-are-not-expressions].
 Although it can be assigned to a variable, it cannot be used directly as a part
-of another expression. In this case the subexpression `$(if (...) {...} else
-{...})` may be used. This may be not obvious.
+of another expression. In this case the subexpression `$(if ...)` may be used.
 
 ### Workaround 2: array/index expression
 
