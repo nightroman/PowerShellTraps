@@ -1,27 +1,11 @@
 
-task ThisWorks {
-	$result = foreach($e in 1..5) {$e}
-	$result | %{"Result is $_"}
-}
-
-task ThisFails {
+task foreach-cannot-be-piped {
 	($r = try {.\foreach-cannot-be-piped.ps1} catch {$_})
 	assert ($r.FullyQualifiedErrorId -eq 'EmptyPipeElement')
 }
 
-task AndThisFails {
+task foreach-cannot-be-redirected {
 	($r = try {.\foreach-cannot-be-redirected.ps1} catch {$_})
+	assert ('1|2|3|4|5' -eq $r[0..4] -join '|')
 	assert ($r[-1].FullyQualifiedErrorId -eq 'CommandNotFoundException')
-}
-
-task Workaround1 {
-	$(foreach($e in 1..5) {$e}) | %{"Result is $_"}
-}
-
-task Workaround2 {
-	@(foreach($e in 1..5) {$e}) | %{"Result is $_"}
-}
-
-task Workaround3 {
-	.{foreach($e in 1..5) {$e}} | %{"Result is $_"}
 }
