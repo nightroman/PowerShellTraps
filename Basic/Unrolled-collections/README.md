@@ -12,11 +12,13 @@ as it is, not unrolled.
 
 Scripts
 
-- *unrolled.on.adding.ps1* shows unrolling on adding items to an array using `+=`.
-- *unrolled.on.output.ps1* shows a collection unrolled on output from a function.
-- *unrolled.on.return.ps1* is the similar script which uses `return` explicitly.
+- *Test-1-unrolled-adding.ps1* shows unrolling on adding items to an array using `+=`.
+- *Test-2-unrolled-output.ps1* shows a collection unrolled on output from a function.
+- *Test-3-unrolled-return.ps1* is the similar script which uses `return` explicitly.
+- *Test-4-unrolled-if.ps1* shows how `if ($x) {$y}` unrolls data, see also [Missing-ternary-operator](../Missing-ternary-operator).
 
 ---
 
 - Stack Overflow [Append an Array to an Array of Arrays](http://stackoverflow.com/q/6157179/323582)
 - Stack Overflow [Strange behaviour in function returning DataSet/DataTable](http://stackoverflow.com/q/1918190/323582)
+- [PowerShellTraps/issues/5](https://github.com/nightroman/PowerShellTraps/issues/5)
