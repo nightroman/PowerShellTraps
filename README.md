@@ -56,6 +56,7 @@ Contributions are welcome, see [CONTRIBUTING].
     - [v2-no-LiteralPath](./Clixml/v2-no-LiteralPath)
 - [Cmdlets](./Cmdlets)
     - [ConvertTo-Json](./Cmdlets/ConvertTo-Json)
+    - [Copy-Item](./Cmdlets/Copy-Item)
     - [ForEach-Object](./Cmdlets/ForEach-Object)
     - [Get-ChildItem](./Cmdlets/Get-ChildItem)
         - [Different-FileInfo-ToString](./Cmdlets/Get-ChildItem/Different-FileInfo-ToString)
