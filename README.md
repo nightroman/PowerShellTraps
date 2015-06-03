@@ -1,14 +1,13 @@
 
-PowerShell is a great tool. But it is not perfect. This is not a problem if one
-knows the pitfalls and ways to avoid them. *PowerShellTraps* is a collection of
-some traps and oddities shown by demo scripts and covered by automated tests.
-One of the goals is to test future PowerShell versions and see what changes.
+PowerShell is a great tool which makes a lot of difficult things simple. But
+simple things may be difficult as well due to the unusual design and pitfalls.
+*PowerShellTraps* is a collection of some traps and oddities shown by demo
+scripts often accompanied with workarounds and covered by automated tests.
 
-For simplicity some demo scripts require that the current PowerShell location
-is set to their directory. But this is not needed for automated tests, they
-take care of proper current locations themselves. See also [TESTS].
+On invoking scripts ensure the current location is set to their directory.
+For simplicity some of them refer to other files using relative paths.
 
-Contributions are welcome, see [CONTRIBUTING].
+Contributions are welcome, see [CONTRIBUTING]. See also [TESTS].
 
 [CONTRIBUTING]: ./CONTRIBUTING.md
 [TESTS]: ./TESTS.md
