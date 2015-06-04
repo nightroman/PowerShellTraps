@@ -90,3 +90,16 @@ task test.6.2.missing.property.strict {
 	# Hmm, a new line in the end of FullyQualifiedErrorId
 	assert ($r.TrimEnd() -eq 'Caught PropertyNotFoundStrict')
 }
+
+task test.7.1.missing.variable.strict {
+	($r = PowerShell -Version $Version -NoProfile .\test.7.1.missing.variable.strict.ps1 | Out-String)
+	assert ($LASTEXITCODE -eq 0)
+	assert ($r -like '*FullyQualifiedErrorId : VariableIsUndefined*Continued after error*')
+}
+
+task test.7.2.missing.variable.strict {
+	($r = PowerShell -Version $Version -NoProfile .\test.7.2.missing.variable.strict.ps1 | Out-String)
+	assert ($LASTEXITCODE -eq 0)
+	# Hmm, a new line in the end of FullyQualifiedErrorId
+	assert ($r.TrimEnd() -eq 'Caught VariableIsUndefined')
+}
