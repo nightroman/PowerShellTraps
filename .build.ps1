@@ -21,7 +21,12 @@ task TestV2 {
 	if ($LASTEXITCODE) {Write-Warning 'V2 tests failed.'}
 }
 
-# Synopsis: Generate index in README.
+# Synopsis: Open a random folder in Visual Studio Code.
+task Peek {
+	code (Get-ChildItem . -Recurse -Directory | Get-Random).FullName
+}
+
+# Synopsis: Generate the index.
 task Index {
 	function Get-List($Path, $Indent) {
 		$tab = '    ' * $Indent

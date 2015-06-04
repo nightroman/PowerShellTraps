@@ -1,7 +1,7 @@
 
-The statements `break` and `continue` used without a loop is not an error. They
-either silently stop a calling script or work as `break` and `continue` for a
-existing loop in a parent scope function or script, not necessarily the same.
+The statements `break` and `continue` used without loops are not errors. They
+work for a loop in a parent scope, even if it is not in the same script. If a
+loop does not exist then the invocation silently stops.
 
 Note that *.test.ps1* has to call *Test-Break.ps1* and *Test-Continue.ps1*
 using `PowerShell.exe`. Otherwise loops of *Invoke-Build.ps1* (the tests

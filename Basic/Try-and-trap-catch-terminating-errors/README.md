@@ -3,7 +3,7 @@
 action preference is not *Stop* then non-terminating errors are not caught.
 Note that the default PowerShell error action preference is *Continue*.
 
-In order catch all errors use
+In order to catch all errors use
 
 ```powershell
     $ErrorActionPreference = 'Stop'
