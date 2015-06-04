@@ -1,13 +1,9 @@
 
-PowerShell is a great tool which makes a lot of difficult things simple. But
-simple things may be difficult as well due to the unusual design and pitfalls.
-*PowerShellTraps* is a collection of some traps and oddities shown by demo
-scripts often accompanied with workarounds and covered by automated tests.
-
-On invoking scripts ensure the current location is set to their directory.
-For simplicity some of them refer to other files using relative paths.
-
-Contributions are welcome, see [CONTRIBUTING]. See also [TESTS].
+*PowerShellTraps* is a collection of some PowerShell traps and oddities shown
+by demo scripts with workarounds and automated tests. On invoking scripts
+ensure the current location is set to their directory. For simplicity some of
+them refer to other files using relative paths. Contributions are welcome, see
+[CONTRIBUTING]. See also [TESTS].
 
 [CONTRIBUTING]: ./CONTRIBUTING.md
 [TESTS]: ./TESTS.md
