@@ -6,8 +6,7 @@ then the exit code is 1.
 
 As far as `File` returns the actual exit code, it looks like that using just
 `File` and avoiding `Command` solves the issue, the actual exit code will be
-obtained. With `File` there is another issue, see
-[Exit-code-0-with-File-and-error](../Exit-code-0-with-File-and-error).
+obtained. With `File` there is another issue, see [Exit-code-0-with-File-script-error](../Exit-code-0-with-File-script-error).
 
 Workaround
 

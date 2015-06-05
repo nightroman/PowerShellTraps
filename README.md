@@ -1,12 +1,12 @@
 
+[CONTRIBUTING]: ./CONTRIBUTING.md
+[TESTS]: ./TESTS.md
+
 *PowerShellTraps* is a collection of some PowerShell traps and oddities shown
 by demo scripts with workarounds and automated tests. On invoking scripts
 ensure the current location is set to their directory. For simplicity some of
 them refer to other files using relative paths. Contributions are welcome, see
 [CONTRIBUTING]. See also [TESTS].
-
-[CONTRIBUTING]: ./CONTRIBUTING.md
-[TESTS]: ./TESTS.md
 
 ---
 
@@ -74,8 +74,8 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [Function-parent-scope](./Module/Function-parent-scope)
     - [Script-block-scope](./Module/Script-block-scope)
 - [PowerShell.exe](./PowerShell.exe)
-    - [Exit-code-0-with-File-and-error](./PowerShell.exe/Exit-code-0-with-File-and-error)
-    - [Exit-code-0-with-syntax-error](./PowerShell.exe/Exit-code-0-with-syntax-error)
+    - [Exit-code-0-with-Command-syntax-error](./PowerShell.exe/Exit-code-0-with-Command-syntax-error)
+    - [Exit-code-0-with-File-script-error](./PowerShell.exe/Exit-code-0-with-File-script-error)
     - [Exit-code-5-with-File-1-with-Command](./PowerShell.exe/Exit-code-5-with-File-1-with-Command)
     - [Exit-code-depends](./PowerShell.exe/Exit-code-depends)
     - [Global-and-script-scope](./PowerShell.exe/Global-and-script-scope)

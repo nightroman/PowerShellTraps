@@ -1,2 +1,0 @@
-
-throw "Some error."
