@@ -4,29 +4,31 @@
 	Build script (https://github.com/nightroman/Invoke-Build)
 #>
 
-# Synopsis: Test v2 and v3+.
-task Test Link, TestV2, TestStrict
+# use the most strict mode
+Set-StrictMode -Version Latest
 
-# Synopsis: Test all in the strict mode.
+# Synopsis: Test v2 and v3+.
+task Test Test2, Test3
+
+# Synopsis: Invoke all tests
 # Allow test file failures and show summary.
-task TestStrict {
-	Set-StrictMode -Version Latest
+task Test3 {
 	Invoke-Build ** -Safe -Summary
 }
 
-# Synopsis: Test with PowerShell 2.0.
+# Synopsis: Invoke tests with PowerShell 2.0
 # Check for the exit code, warn about failures.
-task TestV2 {
-	PowerShell -Version 2 -NoProfile Invoke-Build TestStrict
+task Test2 {
+	PowerShell -Version 2 -NoProfile Invoke-Build Test3
 	if ($LASTEXITCODE) {Write-Warning 'V2 tests failed.'}
 }
 
-# Synopsis: Open a random folder in Visual Studio Code.
+# Synopsis: Open a random folder in Visual Studio Code
 task Peek {
 	code (Get-ChildItem . -Recurse -Directory | Get-Random).FullName
 }
 
-# Synopsis: Generate the index in "README.md".
+# Synopsis: Generate the index in README.md
 task Index {
 	function Get-List($Path, $Indent) {
 		$tab = '    ' * $Indent
@@ -50,39 +52,48 @@ task Index {
 	) | Set-Content README.md
 }
 
-# Synopsis: Tests markdown links.
+# Synopsis: Tests markdown links
 # Uses pandoc for markdown -> HTML.
 task Link {
-	$BadLinkPattern = 'https://github.com/nightroman/PowerShellTraps/(tree|blob)/'
-	$regexLink = [regex]'<a href="(.*?)">'
-	$regexFile = [regex]'<em>(\S+?\.\w+?)</em>'
+	# forbidden absolute links
+	$ForbiddenLink = 'https://github.com/nightroman/PowerShellTraps/(tree|blob)/'
+	# regex for links in HTML
+	$RegexLink = [regex]'<a href="(.*?)">'
+	# regex for files *name.ext* in HTML
+	$RegexFile = [regex]'<em>(\S+?\.\w+?)</em>'
 
+	# all relative markdown paths
 	$files = Get-ChildItem . -Filter *.md -Recurse -Name
+	"$($files.Count) markdown files"
 	foreach($file in $files) {
-		$html = pandoc --from=markdown_github "$BuildRoot\$file"
-		if ($LASTEXITCODE) {
-			Write-Warning "Pandoc failed : $file"
-			continue
-		}
-		$folder = Join-Path $BuildRoot (Split-Path $file)
-		# links
-		foreach($match in $regexLink.Matches($html)) {
-			$href = $match.Groups[1].Value
+		# convert to HTML
+		$html = pandoc --from=markdown_github $file
+		if ($LASTEXITCODE) {throw "Pandoc failed : $file"}
 
-			if ($href -match '^http') {
-				if ($href -match $BadLinkPattern) {
-					Write-Warning "Link : $file : $href"
+		# markdown folder full path
+		$folder = Join-Path $BuildRoot (Split-Path $file)
+
+		# test links
+		foreach($match in $RegexLink.Matches($html)) {
+			$link = $match.Groups[1].Value
+
+			# outer link
+			if ($link -match '^http') {
+				if ($link -match $ForbiddenLink) {
+					Write-Warning "Link : $file : $link"
 				}
 				continue
 			}
 
-			$ref = Join-Path $folder $href
-			if (!(Test-Path -LiteralPath $ref)) {
-				Write-Warning "Link : $file : $href -> $ref"
+			# inner link
+			$target = Join-Path $folder $link
+			if (!(Test-Path -LiteralPath $target)) {
+				Write-Warning "Link : $file : $link -> $target"
 			}
 		}
-		# files
-		foreach($match in $regexFile.Matches($html)) {
+
+		# test files
+		foreach($match in $RegexFile.Matches($html)) {
 			$name = $match.Groups[1].Value
 			if (!(Test-Path -LiteralPath "$folder\$name")) {
 				Write-Warning "File : $file : $name"
