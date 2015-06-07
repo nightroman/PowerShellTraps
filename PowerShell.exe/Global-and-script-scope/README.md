@@ -1,5 +1,5 @@
 
-There are three ways to invoke a script by *PowerShell.exe*. Assuming a script
+There are three ways to invoke a script by `PowerShell.exe`. Assuming a script
 is in the current directory, they are:
 
 ```powershell

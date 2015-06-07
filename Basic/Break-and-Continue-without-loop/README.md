@@ -4,7 +4,7 @@ work for a loop in a parent scope, even if it is not in the same script. If a
 loop does not exist then the invocation silently stops.
 
 Note that *.test.ps1* has to call *Test-Break.ps1* and *Test-Continue.ps1*
-using `PowerShell.exe`. Otherwise loops of *Invoke-Build.ps1* (the tests
+using `PowerShell.exe`. Otherwise loops of `Invoke-Build.ps1` (the tests
 runner) are affected.
 
 Scripts

@@ -8,7 +8,7 @@ in v3 in order to see issues, in v2 and v4 in order to see it all working fine.
 
 ### $Host.EnterNestedPrompt() is ignored (v3)
 
-If a script with `$Host.EnterNestedPrompt()` is invoked with *PowerShell.exe*
+If a script with `$Host.EnterNestedPrompt()` is invoked with `PowerShell.exe`
 without the switch `NoExit` then the nested prompt is not entered, invocation
 continues.
 

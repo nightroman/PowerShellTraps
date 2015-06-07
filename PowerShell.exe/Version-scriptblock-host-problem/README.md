@@ -1,5 +1,5 @@
 
-When *PowerShell.exe* is called from PowerShell then it is possible to specify
+When `PowerShell.exe` is called from PowerShell then it is possible to specify
 the parameter `Command` as a script block. But if the parameter `Version` is
 also specified then in some hosts this combination fails with a confusing
 error:

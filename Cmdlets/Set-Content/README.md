@@ -1,7 +1,7 @@
 
 ### Set-Content: unexpected output location
 
-What is the location of *data.txt* produced by this command?
+What is the location of `data.txt` produced by this command?
 
     Get-Data | Set-Content data.txt
 
@@ -10,7 +10,7 @@ changes the current location before the first output then the whole output is
 created at the changed location.
 
 Compare with `Out-File`. If the same `Get-Data` is used with `Out-File` then
-*data.txt*  is created at the current location:
+`data.txt`  is created at the current location:
 
     Get-Data | Out-File data.txt
 
