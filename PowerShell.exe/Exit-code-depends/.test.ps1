@@ -1,7 +1,8 @@
 
-task Test-Script.with.command {
-	($r = .\Test-Script.with.command.ps1)
-	assert ($r.code1 -eq 1)
-	assert ($r.code2 -eq 0)
-	assert ($r.code3 -eq 0)
+task Test-1-command-and-script {
+	($r = .\Test-1-command-and-script.ps1)
+	assert (1 -eq $r.code1)
+	assert (0 -eq $r.code2)
+	assert (0 -eq $r.code3)
+	assert (0 -eq $r.code4)
 }
