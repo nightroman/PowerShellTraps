@@ -27,6 +27,7 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [FormatEnumerationLimit](./Basic/FormatEnumerationLimit)
     - [Function-invoked-like-method](./Basic/Function-invoked-like-method)
     - [Invocation-with-odd-paths](./Basic/Invocation-with-odd-paths)
+    - [Local-ActionPreference](./Basic/Local-ActionPreference)
     - [Logical-operators-with-collections](./Basic/Logical-operators-with-collections)
     - [Misleading-error-location](./Basic/Misleading-error-location)
     - [Missing-ternary-operator](./Basic/Missing-ternary-operator)
