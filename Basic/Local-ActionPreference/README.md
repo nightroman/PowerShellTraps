@@ -34,9 +34,9 @@ default action preferences accordingly. Invalid values are treated as
 
 #### Scripts
 
-- *Test-1-1-assign-invalid-value.ps1* assign invalid values in the current scope and catches errors.
-- *Test-1-2-script-scope.ps1* invokes 1 in the script scope, all variables are assigned to 'Invalid'.
-- *Test-1-3-global-scope.ps1* invokes 1 in the global scope, all variable assignments fail.
+- *Test-1-1-assign-invalid-value.ps1* assigns invalid values in the current scope in try-catch blocks.
+- *Test-1-2-script-scope.ps1* invokes it in the script scope, all variables are assigned to 'Invalid'.
+- *Test-1-3-global-scope.ps1* invokes it in the global scope, all variable assignments fail.
 - *Test-2-1-invalid-error-effect.ps1* - invalid `$ErrorActionPreference` is treated as *Continue*.
 - *Test-2-2-invalid-warning-effect.ps1* - invalid `$WarningPreference` is treated as *Continue*.
 - *Test-2-3-invalid-debug-effect.ps1* - invalid `$DebugPreference` is treated as *SilentlyContinue*.
