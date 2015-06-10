@@ -15,8 +15,9 @@ Valid values:
     Continue
     Inquire
     Ignore
+    Suspend
 
-*Ignore* was added in PowerShell 3.0.
+*Ignore* was added in PowerShell 3.0. *Suspend* was added in PowerShell 4.0.
 
 ### The problem
 
