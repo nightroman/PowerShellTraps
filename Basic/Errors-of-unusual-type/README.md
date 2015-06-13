@@ -28,6 +28,7 @@ Examples of unusual errors:
 - A .NET type is not found.
 - A property is not found in the strict mode.
 - A variable is not found in the strict mode.
+- A command parameter is not found.
 
 Scripts
 
@@ -46,6 +47,8 @@ Scripts
 - *test.6.2.missing.property.strict.ps1* - terminating error.
 - *test.7.1.missing.variable.strict.ps1* - non-terminating error.
 - *test.7.2.missing.variable.strict.ps1* - terminating error.
+- *test.8.1.command.parameter.ps1* - non-terminating error.
+- *test.8.2.command.parameter.ps1* - terminating error.
 
 ---
 

@@ -74,7 +74,6 @@ task test.5.1.missing.type {
 task test.5.2.missing.type {
 	($r = PowerShell -Version $Version -NoProfile .\test.5.2.missing.type.ps1 | Out-String)
 	assert ($LASTEXITCODE -eq 0)
-	# Hmm, a new line in the end of FullyQualifiedErrorId
 	assert ($r.TrimEnd() -eq 'Caught TypeNotFound')
 }
 
@@ -87,7 +86,6 @@ task test.6.1.missing.property.strict {
 task test.6.2.missing.property.strict {
 	($r = PowerShell -Version $Version -NoProfile .\test.6.2.missing.property.strict.ps1 | Out-String)
 	assert ($LASTEXITCODE -eq 0)
-	# Hmm, a new line in the end of FullyQualifiedErrorId
 	assert ($r.TrimEnd() -eq 'Caught PropertyNotFoundStrict')
 }
 
@@ -100,6 +98,17 @@ task test.7.1.missing.variable.strict {
 task test.7.2.missing.variable.strict {
 	($r = PowerShell -Version $Version -NoProfile .\test.7.2.missing.variable.strict.ps1 | Out-String)
 	assert ($LASTEXITCODE -eq 0)
-	# Hmm, a new line in the end of FullyQualifiedErrorId
 	assert ($r.TrimEnd() -eq 'Caught VariableIsUndefined')
+}
+
+task test.8.1.command.parameter {
+	($r = PowerShell -Version $Version -NoProfile .\test.8.1.command.parameter.ps1 | Out-String)
+	assert ($LASTEXITCODE -eq 0)
+	assert ($r -like '*FullyQualifiedErrorId : NamedParameterNotFound*Continued after error*')
+}
+
+task test.8.2.command.parameter.ps1 {
+	($r = PowerShell -Version $Version -NoProfile .\test.8.2.command.parameter.ps1 | Out-String)
+	assert ($LASTEXITCODE -eq 0)
+	assert ($r.TrimEnd() -eq 'Caught NamedParameterNotFound,Microsoft.PowerShell.Commands.CopyItemCommand')
 }
