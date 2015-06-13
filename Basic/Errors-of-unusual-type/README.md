@@ -21,14 +21,14 @@ continues. Note that the default error action preference is *Continue*.
 
 Examples of unusual errors:
 
-- A command is not found.
-- Division by zero.
-- Calling .NET methods with wrong arguments.
-- PowerShell cannot convert data to some type.
-- A .NET type is not found.
-- A property is not found in the strict mode.
-- A variable is not found in the strict mode.
-- A command parameter is not found.
+1. A command is not found.
+1. Division by zero.
+1. Calling .NET methods with wrong arguments.
+1. PowerShell cannot convert data to some type.
+1. A .NET type is not found.
+1. A property is not found in the strict mode.
+1. A variable is not found in the strict mode.
+1. A command parameter is not found.
 
 Scripts
 
