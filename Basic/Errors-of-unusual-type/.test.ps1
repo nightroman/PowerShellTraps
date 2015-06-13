@@ -90,7 +90,17 @@ task test.8.1.command.parameter {
 	assert ($LASTEXITCODE -eq 0)
 	assert ($r -like '*FullyQualifiedErrorId : NamedParameterNotFound*Continued after error*')
 }
-task test.8.2.command.parameter.ps1 {
+task test.8.2.command.parameter {
 	($r = .\test.8.2.command.parameter.ps1)
 	assert $r.Equals('Caught NamedParameterNotFound,Microsoft.PowerShell.Commands.CopyItemCommand')
+}
+
+task test.9.1.VariableNotWritable {
+	($r = PowerShell -Version $Version -NoProfile .\test.9.1.VariableNotWritable.ps1 | Out-String)
+	assert ($LASTEXITCODE -eq 0)
+	assert ($r -like '*FullyQualifiedErrorId : VariableNotWritable*Continued after error*')
+}
+task test.9.2.VariableNotWritable {
+	($r = .\test.9.2.VariableNotWritable.ps1)
+	assert $r.Equals('Caught VariableNotWritable')
 }

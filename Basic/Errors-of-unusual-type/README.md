@@ -29,6 +29,7 @@ Examples of unusual errors:
 1. A property is not found in the strict mode.
 1. A variable is not found in the strict mode.
 1. A command parameter is not found.
+1. Assignment to not writable variables.
 
 Scripts
 
@@ -49,6 +50,8 @@ Scripts
 - *test.7.2.missing.variable.strict.ps1* - terminating error.
 - *test.8.1.command.parameter.ps1* - non-terminating error.
 - *test.8.2.command.parameter.ps1* - terminating error.
+- *test.9.1.VariableNotWritable.ps1* - non-terminating error.
+- *test.9.2.VariableNotWritable.ps1* - terminating error.
 
 ---
 
