@@ -53,6 +53,8 @@ them refer to other files using relative paths. Contributions are welcome, see
 - [Cmdlets](./Cmdlets)
     - [ConvertTo-Json](./Cmdlets/ConvertTo-Json)
     - [Copy-Item](./Cmdlets/Copy-Item)
+        - [Exclude-does-not-work](./Cmdlets/Copy-Item/Exclude-does-not-work)
+        - [Inconsistent-destination](./Cmdlets/Copy-Item/Inconsistent-destination)
     - [ForEach-Object](./Cmdlets/ForEach-Object)
     - [Get-ChildItem](./Cmdlets/Get-ChildItem)
         - [Different-FileInfo-ToString](./Cmdlets/Get-ChildItem/Different-FileInfo-ToString)
