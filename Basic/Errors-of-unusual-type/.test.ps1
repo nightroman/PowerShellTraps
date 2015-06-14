@@ -104,3 +104,13 @@ task test.9.2.VariableNotWritable {
 	($r = .\test.9.2.VariableNotWritable.ps1)
 	assert $r.Equals('Caught VariableNotWritable')
 }
+
+task test.10.1.provider.NotSupported {
+	($r = PowerShell -Version $Version -NoProfile .\test.10.1.provider.NotSupported.ps1 | Out-String)
+	assert ($LASTEXITCODE -eq 0)
+	assert ($r -like '*FullyQualifiedErrorId : NotSupported*Continued after error*')
+}
+task test.10.2.provider.NotSupported {
+	($r = .\test.10.2.provider.NotSupported.ps1)
+	assert $r.Equals('Caught NotSupported,Microsoft.PowerShell.Commands.GetChildItemCommand')
+}

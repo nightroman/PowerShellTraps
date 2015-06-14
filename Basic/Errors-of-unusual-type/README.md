@@ -30,6 +30,7 @@ Examples of unusual errors:
 1. A variable is not found in the strict mode.
 1. A command parameter is not found.
 1. Assignment to not writable variables.
+1. Not supported provider features.
 
 Scripts
 
@@ -52,6 +53,8 @@ Scripts
 - *test.8.2.command.parameter.ps1* - terminating error.
 - *test.9.1.VariableNotWritable.ps1* - non-terminating error.
 - *test.9.2.VariableNotWritable.ps1* - terminating error.
+- *test.10.1.provider.NotSupported.ps1* - non-terminating error.
+- *test.10.2.provider.NotSupported.ps1* - terminating error.
 
 ---
 
