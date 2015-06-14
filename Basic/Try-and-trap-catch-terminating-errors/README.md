@@ -1,7 +1,8 @@
 
-`try` and `trap` catch only terminating errors. Thus, if the current error
-action preference is not *Stop* then non-terminating errors are not caught.
-Note that the default PowerShell error action preference is *Continue*.
+`try` and `trap` catch only terminating and [semi-terminating](../Errors-of-unusual-type) errors.
+Thus, if the current error action preference is not *Stop* then non-terminating
+errors are not caught. Note that the default PowerShell error action preference
+is *Continue*.
 
 In order to catch all errors use
 
