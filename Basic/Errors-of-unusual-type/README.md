@@ -10,16 +10,12 @@ For example, if a command name is not recognized as the name of a cmdlet,
 function, script file, or operable program then PowerShell emits an error. Is
 this error terminating or not? It depends. By default it is not, surprisingly.
 
-If `$ErrorActionPreference` is set to *Stop* then a missing command is
-terminating. Otherwise it is not unless the code being invoked is inside a
-`try` block, in the current or a parent scope, or a `trap` statement exists.
-
 It looks like constant use of either error action preference *Stop* or `try` or
-`trap` blocks in scripts is a good idea. Otherwise simple typos in command
-names and other "third type" errors may cause issues because invocation
-continues. Note that the default error action preference is *Continue*.
+`trap` blocks in scripts is a good idea. Otherwise semi-terminating errors may
+cause problems because invocation continues. Note that the default error action
+preference is *Continue*.
 
-Examples of unusual errors:
+Examples of semi-terminating errors:
 
 1. A command is not found.
 1. Division by zero.
@@ -31,6 +27,14 @@ Examples of unusual errors:
 1. A command parameter is not found.
 1. Assignment to not writable variables.
 1. Not supported provider features.
+1. A .NET exception.
+
+Hypothesis
+
+The tests give the idea that any runtime exception is a semi-terminating error.
+True terminating errors are probably caused by `ThrowTerminatingError()` in
+cmdlets and `throw` in scripts. True non-terminating errors are caused by
+`WriteError` in cmdlets and `Write-Error` in scripts.
 
 Scripts
 
@@ -55,6 +59,8 @@ Scripts
 - *test.9.2.VariableNotWritable.ps1* - terminating error.
 - *test.10.1.provider.NotSupported.ps1* - non-terminating error.
 - *test.10.2.provider.NotSupported.ps1* - terminating error.
+- *test.11.1.exception.ps1* - non-terminating error.
+- *test.11.2.exception.ps1* - terminating error.
 
 ---
 
