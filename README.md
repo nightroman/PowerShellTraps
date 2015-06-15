@@ -43,6 +43,7 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [Trap-with-no-break-or-continue](./Basic/Trap-with-no-break-or-continue)
     - [Try-and-trap-catch-terminating-errors](./Basic/Try-and-trap-catch-terminating-errors)
     - [Unexpected-output](./Basic/Unexpected-output)
+    - [Unexpected-overloaded-method](./Basic/Unexpected-overloaded-method)
     - [Unrolled-collections](./Basic/Unrolled-collections)
     - [ValidateScript-attribute](./Basic/ValidateScript-attribute)
     - [WildcardPattern](./Basic/WildcardPattern)
