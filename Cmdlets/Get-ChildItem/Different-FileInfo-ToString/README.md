@@ -13,9 +13,15 @@ This command gets the same items but they are converted to strings as names:
 
     Get-ChildItem .
 
-The script *different.FileInfo.ToString.ps1* shows different conversion to strings of seemingly same items.
+Scripts
+
+- *Test-1-different-ToString.ps1* shows different conversion to strings of
+  seemingly same items.
+- *Test-2-Resolve-Path-fails.ps1* shows how `Resolve-Path` fails with items
+  returned from `Get-ChildItem`.
 
 ---
 
 - Stack Overflow [question](http://stackoverflow.com/q/2744047/323582)
 - Microsoft Connect [556004](https://connect.microsoft.com/PowerShell/Feedback/Details/556004)
+- Microsoft Connect [1441999](https://connect.microsoft.com/PowerShell/feedback/details/1441999)
