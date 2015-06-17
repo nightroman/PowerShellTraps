@@ -77,6 +77,7 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [Function-not-found](./Module/Function-not-found)
     - [Function-parent-scope](./Module/Function-parent-scope)
     - [Script-block-scope](./Module/Script-block-scope)
+    - [Strict-mode-is-not-propagated](./Module/Strict-mode-is-not-propagated)
 - [PowerShell.exe](./PowerShell.exe)
     - [Exit-code-0-with-Command-syntax-error](./PowerShell.exe/Exit-code-0-with-Command-syntax-error)
     - [Exit-code-0-with-File-script-error](./PowerShell.exe/Exit-code-0-with-File-script-error)
