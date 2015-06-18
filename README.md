@@ -71,6 +71,7 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [Test-Path](./Cmdlets/Test-Path)
     - [Wait-Process](./Cmdlets/Wait-Process)
     - [Where-Object](./Cmdlets/Where-Object)
+    - [Write-Debug](./Cmdlets/Write-Debug)
     - [Write-Progress](./Cmdlets/Write-Progress)
 - [Module](./Module)
     - [Conflict-with-aliases](./Module/Conflict-with-aliases)
