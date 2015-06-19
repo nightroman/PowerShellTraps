@@ -72,6 +72,7 @@ them refer to other files using relative paths. Contributions are welcome, see
         - [Directory-with-brackets](./Cmdlets/Set-Content/Directory-with-brackets)
         - [Unexpected-output-location](./Cmdlets/Set-Content/Unexpected-output-location)
     - [Split-Path](./Cmdlets/Split-Path)
+    - [Start-Process](./Cmdlets/Start-Process)
     - [Test-Path](./Cmdlets/Test-Path)
     - [Wait-Process](./Cmdlets/Wait-Process)
     - [Where-Object](./Cmdlets/Where-Object)
