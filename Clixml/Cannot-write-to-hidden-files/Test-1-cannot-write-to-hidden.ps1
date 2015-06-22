@@ -11,4 +11,4 @@ catch {
 	$_
 }
 
-Remove-Item z.xml -Force -ErrorAction 0
+Remove-Item z.xml -Force
