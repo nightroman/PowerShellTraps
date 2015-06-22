@@ -48,6 +48,7 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [ValidateScript-attribute](./Basic/ValidateScript-attribute)
     - [WildcardPattern](./Basic/WildcardPattern)
 - [Clixml](./Clixml)
+    - [Cannot-write-to-hidden-files](./Clixml/Cannot-write-to-hidden-files)
     - [Hashtable-case-sensitivity](./Clixml/Hashtable-case-sensitivity)
     - [OrderedDictionary-becomes-Hashtable](./Clixml/OrderedDictionary-becomes-Hashtable)
     - [v2-no-LiteralPath](./Clixml/v2-no-LiteralPath)
