@@ -25,7 +25,7 @@ of another expression. In this case the subexpression `$(if ...)` may be used.
 Yet another possible workaround is
 
 ```powershell
-    $result = @($data1, $data2)[!$condition]
+    $result = ($data1, $data2)[!$condition]
 ```
 
 It is not pretty perhaps but it preserves the original data type and it is an

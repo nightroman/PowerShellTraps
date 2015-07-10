@@ -11,6 +11,6 @@ $result.GetType().FullName
 $result
 
 # this workaround preserves the original type
-$result = @($data1, $data2)[!$condition]
+$result = ($data1, $data2)[!$condition]
 $result.GetType().FullName
 $result
