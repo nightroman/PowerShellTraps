@@ -10,5 +10,5 @@ names, sets the current location to them, and tests an existing item using
 
 See also
 
-- Similar [Test-Path](../Test-Path) issues
+- Similar [Test-Path](../../Test-Path) issues
 - Microsoft Connect [389828](https://connect.microsoft.com/PowerShell/Feedback/Details/389828)
