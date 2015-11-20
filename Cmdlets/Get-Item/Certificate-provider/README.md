@@ -13,7 +13,7 @@ Similarly, commands
 ```
 
 work if the current location is set to `C:\` or `HKCU:\` and get nothing if the
-location is `Cert:\` in v3+ and fails in v2. See the scripts
+location is `Cert:\` in v3+ and fail in v2. See the scripts
 *Test-2.GetItemWithDot.ps1* and *Test-3.GetItemWithSlash.ps1*.
 
 ---
