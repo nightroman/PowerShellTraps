@@ -13,6 +13,7 @@ them refer to other files using relative paths. Contributions are welcome, see
 <!--Generated-->
 - [Basic](./Basic)
     - [And-and-or-have-same-precedence](./Basic/And-and-or-have-same-precedence)
+    - [Automatic-variables](./Basic/Automatic-variables)
     - [Break-and-Continue-with-not-matching-label](./Basic/Break-and-Continue-with-not-matching-label)
     - [Break-and-Continue-without-loop](./Basic/Break-and-Continue-without-loop)
     - [Collection-property-enumeration](./Basic/Collection-property-enumeration)
