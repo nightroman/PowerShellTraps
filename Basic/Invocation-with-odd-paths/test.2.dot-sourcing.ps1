@@ -11,7 +11,7 @@ if (!(Test-Path -LiteralPath test[)) {
 
 ### Test 1
 
-# this works and proves that "test[" should not be a problem
+# this works in v2, v3, v4 and fails in v5
 . '.\test[\test.ps1'
 
 ### Test 2

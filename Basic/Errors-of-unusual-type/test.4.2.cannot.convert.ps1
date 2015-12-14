@@ -1,7 +1,7 @@
 
 $ErrorActionPreference = 'Continue'
 try {
-	[System.Collections.Generic.List[string]]@(1, 2)
+	[DateTime]'invalid'
 	'Continued'
 }
 catch {

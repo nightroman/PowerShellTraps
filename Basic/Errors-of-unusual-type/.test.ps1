@@ -1,5 +1,5 @@
 
-$Version = $PSVersionTable.PSVersion
+$Version = $PSVersionTable.PSVersion.Major
 
 task missing.command.1 {
 	($r = PowerShell -Version $Version -NoProfile .\missing.command.1.ps1 | Out-String)
@@ -38,20 +38,20 @@ task test.3.2.method.arguments {
 task test.4.1.cannot.convert {
 	($r = PowerShell -Version $Version -NoProfile .\test.4.1.cannot.convert.ps1 | Out-String)
 	assert ($LASTEXITCODE -eq 0)
-	if ($Version.Major -eq 2) {
+	if ($Version -eq 2) {
 		assert ($r -like '*FullyQualifiedErrorId : RuntimeException*Continued after error*')
 	}
 	else {
-		assert ($r -like '*FullyQualifiedErrorId : ConvertToFinalInvalidCastException*Continued after error*')
+		assert ($r -like '*FullyQualifiedErrorId : InvalidCastParseTargetInvocationWithFormatProvider*Continued after error*')
 	}
 }
 task test.4.2.cannot.convert {
 	($r = .\test.4.2.cannot.convert.ps1)
-	if ($Version.Major -eq 2) {
+	if ($Version -eq 2) {
 		assert $r.Equals('Caught RuntimeException')
 	}
 	else {
-		assert $r.Equals('Caught ConvertToFinalInvalidCastException')
+		assert $r.Equals('Caught InvalidCastParseTargetInvocationWithFormatProvider')
 	}
 }
 
@@ -118,7 +118,7 @@ task test.10.2.provider.NotSupported {
 task test.11.1.exception {
 	($r = PowerShell -Version $Version -NoProfile .\test.11.1.exception.ps1 | Out-String)
 	assert ($LASTEXITCODE -eq 0)
-	if ($Version.Major -eq 2) {
+	if ($Version -eq 2) {
 		assert ($r -like '*Oops*FullyQualifiedErrorId : DotNetMethodException*Continued after error*')
 	}
 	else {
@@ -127,7 +127,7 @@ task test.11.1.exception {
 }
 task test.11.2.exception {
 	($r = .\test.11.2.exception.ps1)
-	if ($Version.Major -eq 2) {
+	if ($Version -eq 2) {
 		assert $r.Equals('Caught DotNetMethodException')
 	}
 	else {

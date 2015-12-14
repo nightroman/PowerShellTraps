@@ -1,4 +1,4 @@
 
 $ErrorActionPreference = 'Continue'
-[System.Collections.Generic.List[string]]@(1, 2)
+[DateTime]'invalid'
 'Continued after error'
