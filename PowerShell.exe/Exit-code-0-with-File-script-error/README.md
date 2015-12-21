@@ -1,4 +1,6 @@
 
+**Fixed in PowerShell v5**
+
 If a script has a syntax error or throws an error then PowerShell exit code is
 
 - 0 (success) when a script is specified by the parameter `File`

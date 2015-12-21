@@ -1,11 +1,13 @@
 
+$Version = $PSVersionTable.PSVersion.Major
+
 task Test-1-directory-with-brackets {
 	($r = .\Test-1-directory-with-brackets.ps1)
 
 	# one item "testdir"
 	assert $r.NoRecurse.Name.Equals('testdir')
 
-	if ($PSVersionTable.PSVersion.Major -eq 2) {
+	if ($Version -eq 2 -or $Version -eq 5) {
 		# one item "testdir"
 		assert $r.NoRecurse.Name.Equals('testdir')
 	}
