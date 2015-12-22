@@ -63,6 +63,7 @@ them refer to other files using relative paths. Contributions are welcome, see
         - [Different-FileInfo-ToString](./Cmdlets/Get-ChildItem/Different-FileInfo-ToString)
         - [Directory-with-brackets](./Cmdlets/Get-ChildItem/Directory-with-brackets)
         - [Missing-path-and-Recurse](./Cmdlets/Get-ChildItem/Missing-path-and-Recurse)
+        - [v5-LiteralPath-Recurse-ignores-Include](./Cmdlets/Get-ChildItem/v5-LiteralPath-Recurse-ignores-Include)
     - [Get-Item](./Cmdlets/Get-Item)
         - [Certificate-provider](./Cmdlets/Get-Item/Certificate-provider)
         - [Directory-with-brackets](./Cmdlets/Get-Item/Directory-with-brackets)
