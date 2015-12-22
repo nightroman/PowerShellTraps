@@ -17,6 +17,8 @@ The same command with `-LiteralPath` instead of `-Path` (see *Test-2.LiteralPath
 
 in PowerShell v5 unexpectedly gets all items in `$PSHOME`.
 
+Also, when v5 is installed `PowerShell.exe -Version 2` shows the same issue.
+
 ****
 
 - [Windows Server UserVoice](http://windowsserver.uservoice.com/forums/301869-powershell/suggestions/11168994-v5-regression-get-childitem-literalpath-recurse)
