@@ -61,6 +61,7 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [ForEach-Object](./Cmdlets/ForEach-Object)
     - [Get-ChildItem](./Cmdlets/Get-ChildItem)
         - [Different-FileInfo-ToString](./Cmdlets/Get-ChildItem/Different-FileInfo-ToString)
+        - [Directory-with-backticks](./Cmdlets/Get-ChildItem/Directory-with-backticks)
         - [Directory-with-brackets](./Cmdlets/Get-ChildItem/Directory-with-brackets)
         - [Missing-path-and-Recurse](./Cmdlets/Get-ChildItem/Missing-path-and-Recurse)
         - [v5-LiteralPath-Recurse-ignores-Include](./Cmdlets/Get-ChildItem/v5-LiteralPath-Recurse-ignores-Include)
