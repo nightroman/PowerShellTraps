@@ -1,13 +1,15 @@
 
-### Automatic variables used as local or parameters
+### Automatic variables as parameters or local variables
+
+See
+
+````
+    help about_Automatic_Variables
+````
 
 Automatic variables are maintained by the core and normally should not be used
-as local variables or parameters. This is easy to forget, especially with some
+as parameters or local variables. This is easy to forget, especially with some
 simple variable names.
-
-See help about automatic variables
-
-    help about_Automatic_Variables
 
 ****
 #### `$Args` and `$Input` as parameters
@@ -28,8 +30,8 @@ function.
 *Test-2.Input.ps1* shows that `$Input` can be used as a parameter but it does not
 work as one may expect.
 
-- [Stack Overflow question](http://stackoverflow.com/q/30546750/323582)
-- [Stack Overflow question](http://stackoverflow.com/q/11009834/323582)
+- Stack Overflow [Function parameter always empty why?](http://stackoverflow.com/q/30546750/323582)
+- Stack Overflow [Args/params not being populated](http://stackoverflow.com/q/11009834/323582)
 
 ****
 #### `$$` and `$^` as local variables
@@ -58,7 +60,7 @@ not work as normal variables in PowerShell v3+.
 variable refers to the object that is being extended.
 
 *Test-5.This.ps1* shows an exotic case that may cause a crash or a strange
-error PowerShell v3. In PowerShell v2 works with expected errors. See the
+error PowerShell v3. In PowerShell v2 it works with expected errors. See
 testing commands in the comments.
 
-- [Microsoft Connect](https://connect.microsoft.com/PowerShell/feedback/details/1423742)
+- Microsoft Connect [1423742](https://connect.microsoft.com/PowerShell/feedback/details/1423742)
