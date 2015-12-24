@@ -6,5 +6,8 @@ if ($object -eq 0) {
 }
 
 if ($object) {
-	'But it is evaluated to true.'
+	'Evaluated to true in v2, v3, v4.'
+}
+else {
+	'Evaluated to false in v5.'
 }
