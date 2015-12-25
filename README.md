@@ -70,6 +70,8 @@ them refer to other files using relative paths. Contributions are welcome, see
         - [Directory-with-brackets](./Cmdlets/Get-Item/Directory-with-brackets)
     - [Get-Unique](./Cmdlets/Get-Unique)
     - [Import-Csv](./Cmdlets/Import-Csv)
+    - [Invoke-RestMethod](./Cmdlets/Invoke-RestMethod)
+        - [Unrolled-result](./Cmdlets/Invoke-RestMethod/Unrolled-result)
     - [Join-Path](./Cmdlets/Join-Path)
     - [Out-String](./Cmdlets/Out-String)
     - [Remove-Item](./Cmdlets/Remove-Item)
