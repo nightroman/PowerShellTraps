@@ -16,7 +16,7 @@ then all items are processed one by one.
 Scripts
 
 - [*Test-1.Issue.ps1*](Test-1.Issue.ps1) shows the issue
-- [*Test-2.Workaround.ps1*](Test-1.Issue.ps1) shows the workaround
+- [*Test-2.Workaround.ps1*](Test-2.Workaround.ps1) shows the workaround
 
 ****
 
