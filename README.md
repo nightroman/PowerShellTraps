@@ -71,7 +71,7 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [Get-Unique](./Cmdlets/Get-Unique)
     - [Import-Csv](./Cmdlets/Import-Csv)
     - [Invoke-RestMethod](./Cmdlets/Invoke-RestMethod)
-        - [Unrolled-result](./Cmdlets/Invoke-RestMethod/Unrolled-result)
+        - [Not-unrolled-result](./Cmdlets/Invoke-RestMethod/Not-unrolled-result)
     - [Join-Path](./Cmdlets/Join-Path)
     - [Out-String](./Cmdlets/Out-String)
     - [Remove-Item](./Cmdlets/Remove-Item)

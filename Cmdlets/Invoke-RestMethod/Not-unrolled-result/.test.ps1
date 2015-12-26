@@ -12,3 +12,10 @@ task Test-2.Workaround {
 	equals $r[0] PSCustomObject
 	equals $r[-1] PSCustomObject
 }
+
+task Test-3.Workaround {
+	($r = .\Test-3.Workaround.ps1)
+	assert ($r.Count -ge 2)
+	equals $r[0] PSCustomObject
+	equals $r[-1] PSCustomObject
+}
