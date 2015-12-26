@@ -1,12 +1,12 @@
 
 task looks-like-object-is-null {
 	($r = .\looks-like-object-is-null.ps1)
-	assert ($r -eq 'This is called.')
+	equals $r 'This is called.'
 }
 
 task object-is-eq-and-ne-to-1 {
 	($r = .\object-is-eq-and-ne-to-1.ps1)
-	assert ($r[0] -eq 'This is called.')
-	assert ($r[1] -eq 'This is also called.')
+	equals $r[0] 'This is called.'
+	equals $r[1] 'This is also called.'
 }
 

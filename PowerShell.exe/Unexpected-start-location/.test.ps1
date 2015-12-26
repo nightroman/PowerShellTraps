@@ -10,9 +10,10 @@ task Expected.start.location {
 task Unexpected.start.location {
 	($r = .\Unexpected.start.location.cmd $Version)
 	if ($Version -eq 2) {
-		assert ($r[-3].Trim() -eq 'C:\')
+		equals $r[-3].Trim() 'C:\'
 	}
 	else {
+		#! ignore case
 		assert ($r[-3].Trim() -eq $PSHOME)
 	}
 	Remove-Item -LiteralPath 'Test [2]'

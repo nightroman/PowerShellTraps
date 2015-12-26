@@ -11,10 +11,10 @@ task Test-1.GetItemWithDrive {
 
 	($r = $r -join '|')
 	if ($v2) {
-		assert $r.Equals('C:\|HKEY_CURRENT_USER|Argument,Microsoft.PowerShell.Commands.GetItemCommand')
+		equals $r 'C:\|HKEY_CURRENT_USER|Argument,Microsoft.PowerShell.Commands.GetItemCommand'
 	}
 	else {
-		assert $r.Equals('C:\|HKEY_CURRENT_USER|True')
+		equals $r 'C:\|HKEY_CURRENT_USER|True'
 	}
 }
 
@@ -28,10 +28,10 @@ task Test-2.GetItemWithDot {
 
 	($r = $r -join '|')
 	if ($v2) {
-		assert $r.Equals('C:\|HKEY_CURRENT_USER|Argument,Microsoft.PowerShell.Commands.GetItemCommand')
+		equals $r 'C:\|HKEY_CURRENT_USER|Argument,Microsoft.PowerShell.Commands.GetItemCommand'
 	}
 	else {
-		assert $r.Equals('C:\|HKEY_CURRENT_USER|True')
+		equals $r 'C:\|HKEY_CURRENT_USER|True'
 	}
 }
 
@@ -45,9 +45,9 @@ task Test-3.GetItemWithSlash {
 
 	($r = $r -join '|')
 	if ($v2) {
-		assert $r.Equals('C:\|HKEY_CURRENT_USER|Argument,Microsoft.PowerShell.Commands.GetItemCommand')
+		equals $r 'C:\|HKEY_CURRENT_USER|Argument,Microsoft.PowerShell.Commands.GetItemCommand'
 	}
 	else {
-		assert $r.Equals('C:\|HKEY_CURRENT_USER|True')
+		equals $r 'C:\|HKEY_CURRENT_USER|True'
 	}
 }

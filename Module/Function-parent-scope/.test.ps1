@@ -4,7 +4,7 @@ task Test-Module1 {
 	($r = try {.\Test-Module1.ps1} catch {$_})
 
 	# error caught on `Get-Variable Variable1`
-	assert ($r.FullyQualifiedErrorId -eq 'VariableNotFound,Microsoft.PowerShell.Commands.GetVariableCommand')
+	equals $r.FullyQualifiedErrorId 'VariableNotFound,Microsoft.PowerShell.Commands.GetVariableCommand'
 }
 
 task Test-Script1 {
@@ -12,5 +12,5 @@ task Test-Script1 {
 	($r = .\Test-Script1.ps1)
 
 	# variable from `Get-Variable Variable1`
-	assert ($r.Value -eq 'Value1')
+	equals $r.Value 'Value1'
 }

@@ -21,17 +21,17 @@ $v3 = $PSVersionTable.PSVersion.Major -ge 3
 # Synopsis: Correct failure due to a valid #requires
 task requires {
 	($e = try {.\requires.ps1} catch {$_})
-	assert ($e.FullyQualifiedErrorId -eq 'ScriptRequiresUnmatchedPSVersion')
+	equals $e.FullyQualifiedErrorId 'ScriptRequiresUnmatchedPSVersion'
 }
 
 # Synopsis: v2 ignores `42 #requires ...`, v3 does not
 task requires-not-first {
 	($r = try {.\requires-not-first.ps1} catch {$_})
 	if ($v3) {
-		assert ($r.FullyQualifiedErrorId -eq 'ScriptRequiresUnmatchedPSVersion')
+		equals $r.FullyQualifiedErrorId 'ScriptRequiresUnmatchedPSVersion'
 	}
 	else {
-		assert ($r -eq 42)
+		equals $r 42
 	}
 }
 
@@ -39,7 +39,7 @@ task requires-not-first {
 task requires-with-garbage {
 	($r = try {.\requires-with-garbage.ps1} catch {$_})
 	if ($v3) {
-		assert ($r.FullyQualifiedErrorId -eq 'ScriptRequiresUnmatchedPSVersion')
+		equals $r.FullyQualifiedErrorId 'ScriptRequiresUnmatchedPSVersion'
 	}
 	else {
 		assert (($r | Out-String) -like '*#requires -version *FullyQualifiedErrorId : CommandNotFoundException*')
@@ -50,9 +50,9 @@ task requires-with-garbage {
 task requires-with-leading-space {
 	($r = try {.\requires-with-leading-space.ps1} catch {$_})
 	if ($v3) {
-		assert ($r.FullyQualifiedErrorId -eq 'ScriptRequiresUnmatchedPSVersion')
+		equals $r.FullyQualifiedErrorId 'ScriptRequiresUnmatchedPSVersion'
 	}
 	else {
-		assert ($r -eq 42)
+		equals $r 42
 	}
 }

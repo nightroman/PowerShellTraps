@@ -1,7 +1,7 @@
 
 task Test-1-2-script-scope {
 	($r = .\Test-1-2-script-scope.ps1)
-	assert ('Invalid|Invalid|Invalid|Invalid|Invalid' -eq $r -join '|')
+	equals 'Invalid|Invalid|Invalid|Invalid|Invalid' ($r -join '|')
 }
 
 task Test-1-3-global-scope {
@@ -31,10 +31,10 @@ task Test-2-2-invalid-warning-effect {
 
 task Test-2-3-invalid-debug-effect {
 	($r = Invoke-Script Test-2-3-invalid-debug-effect.ps1)
-	assert ($r -ceq 'Done.')
+	equals $r 'Done.'
 }
 
 task Test-2-4-invalid-verbose-effect {
 	($r = Invoke-Script Test-2-4-invalid-verbose-effect.ps1)
-	assert ($r -ceq 'Done.')
+	equals $r 'Done.'
 }

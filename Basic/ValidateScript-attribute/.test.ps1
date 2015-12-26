@@ -16,13 +16,13 @@ task Test-2.2-good-message-but-incorrect {
 
 task Test-3-correct-and-good-but-not-simple {
 	($r = try {.\Test-3-correct-and-good-but-not-simple.ps1} catch {$_})
-	assert ($r[0] -eq 'Name is valid_name')
+	equals $r[0] 'Name is valid_name'
 	assert ($r -like '*Name should contain alphanumeric letters and "_".*')
 }
 
 task Test-4-invoked-for-each-item {
 	($r = .\Test-4-invoked-for-each-item.ps1)
-	assert ('Validated 1|Validated 2|Validated 3' -eq $r -join '|')
+	equals 'Validated 1|Validated 2|Validated 3' ($r -join '|')
 }
 
 task Test-5-value-cannot-be-null {

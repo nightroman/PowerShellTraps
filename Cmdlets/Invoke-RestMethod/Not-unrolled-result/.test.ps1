@@ -1,5 +1,5 @@
 
-if ($PSVersionTable.PSVersion.Major -eq 2) {task skip; return}
+if ($PSVersionTable.PSVersion.Major -eq 2) {return task skipV2}
 
 task Test-1.Issue {
 	($r = .\Test-1.Issue.ps1)

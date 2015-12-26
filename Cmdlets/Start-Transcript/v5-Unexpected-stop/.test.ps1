@@ -33,7 +33,7 @@ Windows \s PowerShell \s transcript \s end
 # our data are missing between them. NOTE: This issue is shown by this exact
 # test, it is not shown in a standard script scenario.
 elseif ($VersionInstalled -eq 5) {
-	assert $VersionRunning.Equals(2)
+	equals $VersionRunning 2
 	[regex]@'
 (?x)
 Transcript \s started, .*?//

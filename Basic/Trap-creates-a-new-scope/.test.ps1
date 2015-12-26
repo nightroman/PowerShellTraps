@@ -6,16 +6,16 @@ function Write-Warning([Parameter()]$Message) {
 
 task trap.new.scope.1.incorrect {
 	($r = .\trap.new.scope.1.incorrect.ps1)
-	assert ($r[0] -eq $true)
-	assert ($r[1] -eq $false)
+	equals $r[0] $true
+	equals $r[1] $false
 }
 
 task trap.new.scope.2.workaround {
 	($r = .\trap.new.scope.2.workaround.ps1)
-	assert ($r -eq $false)
+	equals $r $false
 }
 
 task trap.new.scope.3.workaround.ps1 {
 	($r = .\trap.new.scope.3.workaround.ps1)
-	assert ($r -eq $false)
+	equals $r $false
 }

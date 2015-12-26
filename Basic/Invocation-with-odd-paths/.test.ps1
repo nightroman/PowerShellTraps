@@ -12,7 +12,7 @@ task test.1.invocation {
 		assert ('NotSpecified: (:) [], WildcardPatternException' -eq $r.CategoryInfo)
 	}
 	else {
-		assert (42 -eq $r[0])
+		equals 42 $r[0]
 		assert ('NotSpecified: (:) [], WildcardPatternException' -eq $r[1].CategoryInfo)
 	}
 }
@@ -24,7 +24,7 @@ task test.2.dot-sourcing {
 		assert ('NotSpecified: (:) [], WildcardPatternException' -eq $r.CategoryInfo)
 	}
 	else {
-		assert (42 -eq $r[0])
+		equals 42 $r[0]
 		assert ('NotSpecified: (:) [], WildcardPatternException' -eq $r[1].CategoryInfo)
 	}
 }

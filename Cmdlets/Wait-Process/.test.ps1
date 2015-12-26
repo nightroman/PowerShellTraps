@@ -1,7 +1,7 @@
 
 task Test-1-fails {
 	($r = try {.\Test-1-fails.ps1} catch {$_})
-	assert ('NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.WaitProcessCommand' -eq $r.FullyQualifiedErrorId)
+	equals $r.FullyQualifiedErrorId 'NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.WaitProcessCommand'
 }
 
 task Test-2-works {

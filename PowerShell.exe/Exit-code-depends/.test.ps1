@@ -1,8 +1,8 @@
 
 task Test-1-command-and-script {
 	($r = .\Test-1-command-and-script.ps1)
-	assert (1 -eq $r.code1)
-	assert (0 -eq $r.code2)
-	assert (0 -eq $r.code3)
-	assert (0 -eq $r.code4)
+	equals 1 $r.code1
+	equals 0 $r.code2
+	equals 0 $r.code3
+	equals 0 $r.code4
 }

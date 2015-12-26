@@ -2,7 +2,7 @@
 task Test-1.Path {
 	$r = .\Test-1.Path.ps1
 	($r = @($r | Group-Object Extension -NoElement))
-	assert $r.Count.Equals(1)
+	equals $r.Count 1
 }
 
 task Test-2.Path {
@@ -16,6 +16,6 @@ task Test-2.Path {
 		assert ($r.Count -ge 2)
 	}
 	else {
-		assert $r.Count.Equals(1)
+		equals $r.Count 1
 	}
 }

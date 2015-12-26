@@ -1,12 +1,12 @@
 
 task Test.1.works.in.any.host {
 	($r = .\Test.1.works.in.any.host.ps1)
-	assert (42 -eq $r)
+	equals 42 $r
 }
 
 task Test.2.works.in.ConsoleHost -If ($Host.Name -eq 'ConsoleHost') {
 	($r = .\Test.2.works.in.ConsoleHost.ps1)
-	assert (42 -eq $r)
+	equals 42 $r
 }
 
 task Test.3.fails.in.DefaultHost {
@@ -16,5 +16,5 @@ task Test.3.fails.in.DefaultHost {
 
 task Test.4.fails.in.PowerShell.job {
 	($r = try {.\Test.4.fails.in.PowerShell.job.ps1} catch {$_})
-	assert ($r.FullyQualifiedErrorId -eq 'NativeCommandError')
+	equals $r.FullyQualifiedErrorId 'NativeCommandError'
 }

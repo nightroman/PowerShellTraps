@@ -1,8 +1,8 @@
 
 task AndOrPrecedence {
 	($r = .\Test-CSharp.ps1)
-	assert ($r -eq $true)
+	equals $r $true
 
 	($r = .\Test-PowerShell.ps1)
-	assert ($r -eq $false)
+	equals $r $false
 }

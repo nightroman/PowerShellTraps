@@ -1,13 +1,13 @@
 
 task case.sensitive {
 	($r = .\case.sensitive.ps1)
-	assert ($r[0] -ceq 'apple')
-	assert ($r[1] -ceq 'Apple')
+	equals $r[0] 'apple'
+	equals $r[1] 'Apple'
 }
 
 task requires.sorted.input {
 	($r = .\requires.sorted.input.ps1)
-	assert ($r[0] -ceq 'apple')
-	assert ($r[1] -ceq 'banana')
-	assert ($r[2] -ceq 'apple')
+	equals $r[0] 'apple'
+	equals $r[1] 'banana'
+	equals $r[2] 'apple'
 }

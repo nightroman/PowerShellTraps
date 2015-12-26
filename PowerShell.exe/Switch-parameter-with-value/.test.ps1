@@ -6,5 +6,5 @@ task Test-1-command-fails {
 
 task Test-2-command-works {
 	($r = .\Test-2-command-works.ps1)
-	assert ('Option is True|Option is False' -eq $r -join '|')
+	equals 'Option is True|Option is False' ($r -join '|')
 }

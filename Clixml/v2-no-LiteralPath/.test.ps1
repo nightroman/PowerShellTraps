@@ -14,10 +14,10 @@ if ($PSVersionTable.PSVersion.Major -ne 2) {return task v2}
 
 task v2.Export-Clixml-no-LiteralPath {
 	($r = try {.\v2.Export-Clixml-no-LiteralPath.ps1} catch {$_})
-	assert ($r.FullyQualifiedErrorId -eq 'NamedParameterNotFound,Microsoft.PowerShell.Commands.ExportClixmlCommand')
+	equals $r.FullyQualifiedErrorId 'NamedParameterNotFound,Microsoft.PowerShell.Commands.ExportClixmlCommand'
 }
 
 task v2.Import-Clixml-no-LiteralPath {
 	($r = try {.\v2.Import-Clixml-no-LiteralPath.ps1} catch {$_})
-	assert ($r.FullyQualifiedErrorId -eq 'NamedParameterNotFound,Microsoft.PowerShell.Commands.ImportClixmlCommand')
+	equals $r.FullyQualifiedErrorId 'NamedParameterNotFound,Microsoft.PowerShell.Commands.ImportClixmlCommand'
 }

@@ -1,7 +1,7 @@
 
 Demo scripts are accompanied with `*.test.ps1` files. They are collections of
-test tasks invoked by the standalone script [Invoke-Build.ps1]. v2.12.0 or
-above is recommended. Examples of using *Invoke-Build* for testing:
+test tasks invoked by the standalone script [Invoke-Build.ps1]. v2.14.0 or
+above is required. Examples of using *Invoke-Build* for testing:
 
 Invoke the task `SomeTest` in `Some.test.ps1`:
 

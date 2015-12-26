@@ -19,7 +19,8 @@ task Test3 {
 # Synopsis: Invoke tests with PowerShell 2.0
 # Check for the exit code, warn about failures.
 task Test2 {
-	PowerShell -Version 2 -NoProfile Invoke-Build Test3
+	#! do not use -Safe or we miss a warning
+	PowerShell -Version 2 -NoProfile Invoke-Build **
 	if ($LASTEXITCODE) {Write-Warning 'V2 tests failed.'}
 }
 

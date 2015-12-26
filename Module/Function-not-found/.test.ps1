@@ -6,6 +6,6 @@ task Test-Fails {
 
 task Test-Works {
 	($r = .\Test-Works.ps1)
-	assert ($r[0] -eq 'Get-Something')
-	assert ($r[1] -eq 'Set-Something')
+	equals $r[0] 'Get-Something'
+	equals $r[1] 'Set-Something'
 }
