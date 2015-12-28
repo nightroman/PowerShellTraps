@@ -34,6 +34,7 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [Missing-ternary-operator](./Basic/Missing-ternary-operator)
     - [Null-converted-to-empty-string](./Basic/Null-converted-to-empty-string)
     - [Number-of-returned-objects](./Basic/Number-of-returned-objects)
+    - [Operators-match-notmatch-and-matches](./Basic/Operators-match-notmatch-and-matches)
     - [Operators-with-equal-precedence](./Basic/Operators-with-equal-precedence)
     - [Requires](./Basic/Requires)
     - [Statements-are-not-expressions](./Basic/Statements-are-not-expressions)
