@@ -53,6 +53,7 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [Cannot-write-to-hidden-files](./Clixml/Cannot-write-to-hidden-files)
     - [Hashtable-case-sensitivity](./Clixml/Hashtable-case-sensitivity)
     - [OrderedDictionary-becomes-Hashtable](./Clixml/OrderedDictionary-becomes-Hashtable)
+    - [ScriptBlock-becomes-String](./Clixml/ScriptBlock-becomes-String)
     - [v2-no-LiteralPath](./Clixml/v2-no-LiteralPath)
 - [Cmdlets](./Cmdlets)
     - [ConvertTo-Json](./Cmdlets/ConvertTo-Json)
