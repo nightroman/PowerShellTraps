@@ -8,3 +8,8 @@ task Test-2.Explanation {
 	($r = .\Test-2.Explanation.ps1)
 	equals ($r -join '|') 'True|False|works like expected True|String'
 }
+
+task Test-3.OperatorPlus {
+	($r = .\Test-3.OperatorPlus.ps1)
+	equals ($r -join '|') 'True|Boolean'
+}
