@@ -27,4 +27,5 @@ Scripts
 
 ---
 
+- [Operators-with-equal-precedence](../Operators-with-equal-precedence)
 - Microsoft Connect [285170](https://connect.microsoft.com/PowerShell/Feedback/Details/285170)
