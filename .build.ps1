@@ -59,7 +59,7 @@ task Link {
 	# forbidden absolute links
 	$ForbiddenLink = 'https://github.com/nightroman/PowerShellTraps/(tree|blob)/'
 	# regex for links in HTML
-	$RegexLink = [regex]'<a href="(.*?)">'
+	$RegexLink = [regex]'<a\s+href\s*=\s*"([^"]*?)">'
 	# regex for files *name.ext* in HTML
 	$RegexFile = [regex]'<em>(\S+?\.\w+?)</em>'
 

@@ -1,4 +1,6 @@
 
+$ErrorActionPreference = 'Stop'
+
 # set location to this script directory
 $PSScriptRoot = Split-Path $MyInvocation.MyCommand.Definition
 Set-Location -LiteralPath $PSScriptRoot
@@ -10,7 +12,17 @@ if (!(Test-Path -LiteralPath test[)) {
 }
 
 # this works in v2, v3, v4 and fails in v5
-& '.\test[\test.ps1'
+try {
+	& '.\test[\test.ps1'
+}
+catch {
+	$_
+}
 
 # this fails due to the invalid wildcard
-& "$PSScriptRoot\test[\test.ps1"
+try {
+	& "$PSScriptRoot\test[\test.ps1"
+}
+catch {
+	$_
+}

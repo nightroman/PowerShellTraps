@@ -11,17 +11,22 @@ if (!(Test-Path -LiteralPath test[)) {
 	Set-Content -LiteralPath test[\test.ps1 -Value 42
 }
 
-# this works in v2, v3, v4 and fails in v5
+# This works in any PowerShell
+& "$PSScriptRoot\test``[\test.ps1"
+
+# This works in v5 and fails v2, v3, v4.
+# It is not clear though why it needs two backticks in v5.
 try {
-	. '.\test[\test.ps1'
+	& '.\test``[\test.ps1'
 }
 catch {
 	$_
 }
 
-# this fails due to the invalid wildcard
+# This works in v5 and fails v2, v3, v4.
+# Note that the expandable string requires 4 backticks in v5.
 try {
-	. "$PSScriptRoot\test[\test.ps1"
+	& ".\test````[\test.ps1"
 }
 catch {
 	$_
