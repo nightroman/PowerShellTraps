@@ -3,7 +3,7 @@ If a script has a switch parameter then it is tricky to invoke it with a
 specified switch value by `PowerShell.exe`. Also, it is only possible with
 `Command`, not `File`.
 
-The script *Script1.ps1* has the switch parameter `Option`. The switch value
+The script [Script1.ps1](Script1.ps1) has the switch parameter `Option`. The switch value
 (`$true` or `$false`) is defined by the variable `$useOption`. How to invoke
 the script with this value specified?
 
@@ -17,7 +17,7 @@ How to invoke the script as a new process?
 
 #### PowerShell -Command
 
-The script *Test-1-command-fails.ps1* tries to use the similar syntax:
+The script [Test-1-command-fails.ps1](Test-1-command-fails.ps1) tries to use the similar syntax:
 
 ```powershell
     PowerShell .\Script1.ps1 -Option:$useOption
@@ -39,7 +39,7 @@ This may look strange because they are converted to `[bool]` fine:
 But `[switch]` (`[System.Management.Automation.SwitchParameter`) is not
 designed to be created from a string, even from `True` or `False`.
 
-The script *Test-2-command-works.ps1* uses the syntax which works:
+The script [Test-2-command-works.ps1](Test-2-command-works.ps1) uses the syntax which works:
 
 ```powershell
     PowerShell .\Script1.ps1 -Option:`$$useOption

@@ -37,10 +37,10 @@ The following scripts are contrived but the mistake they describe was real. It
 was not easy to discover because an incorrect expression worked as correct for
 a while.
 
-- [*Test-1.Confusion.ps1*](Test-1.Confusion.ps1)
-- [*Test-2.Explanation.ps1*](Test-2.Explanation.ps1)
-- [*Test-3.OperatorPlus.ps1*](Test-3.OperatorPlus.ps1)
+- [Test-1.Confusion.ps1](Test-1.Confusion.ps1)
+- [Test-2.Explanation.ps1](Test-2.Explanation.ps1)
+- [Test-3.OperatorPlus.ps1](Test-3.OperatorPlus.ps1)
 
-----
+***
 
 - [And-and-or-have-same-precedence](../And-and-or-have-same-precedence)

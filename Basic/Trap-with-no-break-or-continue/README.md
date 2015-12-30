@@ -15,5 +15,5 @@ result depends on the current error action preference.
 
 Scripts
 
-- *error.action.continue.ps1* - bare `trap` resumes on error action *Continue*.
-- *error.action.stop.ps1* - bare `trap` stops on error action *Stop*.
+- [error.action.continue.ps1](error.action.continue.ps1) - bare `trap` resumes on error action *Continue*.
+- [error.action.stop.ps1](error.action.stop.ps1) - bare `trap` stops on error action *Stop*.

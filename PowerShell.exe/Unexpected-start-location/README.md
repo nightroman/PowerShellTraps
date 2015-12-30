@@ -10,8 +10,8 @@ the root (*C:\\*). In v3 it is set to `$PSHOME`.
 
 Scripts
 
-- *Expected.start.location.cmd* - PowerShell starts with its current location set to the current directory.
-- *Unexpected.start.location.cmd* - PowerShell starts with its current location set to an unexpected directory.
+- [Expected.start.location.cmd](Expected.start.location.cmd) - PowerShell starts with its current location set to the current directory.
+- [Unexpected.start.location.cmd](Unexpected.start.location.cmd) - PowerShell starts with its current location set to an unexpected directory.
 
 ---
 

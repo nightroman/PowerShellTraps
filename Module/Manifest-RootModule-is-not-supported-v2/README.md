@@ -19,7 +19,7 @@ manifest field `RootModule` should be replaced with old `ModuleToProcess`.
 
 Scripts
 
-- [*Test1.ps1*](Test1.ps1) imports [*Test1.psd1*](Test1.psd1) which uses the
+- [Test1.ps1](Test1.ps1) imports [Test1.psd1](Test1.psd1) which uses the
   new field `RootModule`. It fails in PowerShell v2 and works in v3+.
-- [*Test2.ps1*](Test2.ps1) imports [*Test2.psd1*](Test2.psd1) which uses the
+- [Test2.ps1](Test2.ps1) imports [Test2.psd1](Test2.psd1) which uses the
   old field `ModuleToProcess`. It works in PowerShell v2+.

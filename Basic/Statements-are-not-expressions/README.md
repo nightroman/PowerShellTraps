@@ -70,8 +70,8 @@ operators `.` (in the current scope) or `&` (in this script block scope):
 
 #### Scripts
 
-- *foreach-cannot-be-piped.ps1* shows that output of `foreach` cannot be sent to a pipeline.
-- *foreach-cannot-be-redirected.ps1* shows that output of `foreach` cannot be redirected.
+- [foreach-cannot-be-piped.ps1](foreach-cannot-be-piped.ps1) shows that output of `foreach` cannot be sent to a pipeline.
+- [foreach-cannot-be-redirected.ps1](foreach-cannot-be-redirected.ps1) shows that output of `foreach` cannot be redirected.
 
 ---
 

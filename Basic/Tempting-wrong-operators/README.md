@@ -5,8 +5,8 @@ Wrong operators are not always syntax errors, they may do something unexpected.
 
 Scripts
 
-- *test.1.eq.ps1* - the assignment operator `=` is used instead of `-eq`.
-- *test.2.gt.ps1* - the redirection operator `>` is used instead of `-gt`.
+- [test.1.eq.ps1](test.1.eq.ps1) - the assignment operator `=` is used instead of `-eq`.
+- [test.2.gt.ps1](test.2.gt.ps1) - the redirection operator `>` is used instead of `-gt`.
 
 ---
 

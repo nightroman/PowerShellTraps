@@ -23,7 +23,7 @@ module functions, see [Conflict-with-aliases](../../Module/Conflict-with-aliases
 
 Scripts
 
-- *MyScript.ps1* defines some items in the script scope and tries to get them as global.
-- *Test-1-Command-normal.ps1* invokes `PowerShell .\MyScript.ps1`, it gets nothing, i.e. the defined items are not global.
-- *Test-2-Command-global.ps1* invokes `PowerShell . .\MyScript.ps1`, it gets the global items defined by the script.
-- *Test-3-File-global.ps1* invokes `PowerShell -File MyScript.ps1`, it gets the global items defined by the script.
+- [MyScript.ps1](MyScript.ps1) defines some items in the script scope and tries to get them as global.
+- [Test-1-Command-normal.ps1](Test-1-Command-normal.ps1) invokes `PowerShell .\MyScript.ps1`, it gets nothing, i.e. the defined items are not global.
+- [Test-2-Command-global.ps1](Test-2-Command-global.ps1) invokes `PowerShell . .\MyScript.ps1`, it gets the global items defined by the script.
+- [Test-3-File-global.ps1](Test-3-File-global.ps1) invokes `PowerShell -File MyScript.ps1`, it gets the global items defined by the script.

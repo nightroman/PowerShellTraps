@@ -15,10 +15,8 @@ This command gets the same items but they are converted to strings as names:
 
 Scripts
 
-- *Test-1-different-ToString.ps1* shows different conversion to strings of
-  seemingly same items.
-- *Test-2-Resolve-Path-fails.ps1* shows how `Resolve-Path` fails with items
-  returned from `Get-ChildItem`.
+- [Test-1-different-ToString.ps1](Test-1-different-ToString.ps1) shows different conversion to strings of seemingly same items.
+- [Test-2-Resolve-Path-fails.ps1](Test-2-Resolve-Path-fails.ps1) shows how `Resolve-Path` fails with items returned from `Get-ChildItem`.
 
 ---
 

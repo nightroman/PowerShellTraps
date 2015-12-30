@@ -12,8 +12,8 @@ Workarounds
 
 Scripts
 
-- *dynamic.switch.fails.ps1* shows how a dynamic switch causes an error.
-- *dynamic.switch.works.ps1* is the above script corrected.
+- [dynamic.switch.fails.ps1](dynamic.switch.fails.ps1) shows how a dynamic switch causes an error.
+- [dynamic.switch.works.ps1](dynamic.switch.works.ps1) is the above script corrected.
 
 ---
 

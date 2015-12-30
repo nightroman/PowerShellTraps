@@ -15,7 +15,7 @@ The error message:
 function, script file, or operable program. Check the spelling of the name,
 or if a path was included, verify that the path is correct and try again.
 
-The script *Version-must-be-first-parameter.ps1* shows the problem.
+The script [Version-must-be-first-parameter.ps1](Version-must-be-first-parameter.ps1) shows the problem.
 
 ---
 

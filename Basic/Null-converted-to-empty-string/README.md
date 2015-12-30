@@ -11,9 +11,9 @@ workaround does not eliminate the problem.
 
 Scripts
 
-- *MethodWithStringParameter.ps1* adds a class with a method to be tested.
-- *Test-Problem.ps1* shows the problem.
-- *Test-Workaround.ps1* shows the workaround.
+- [MethodWithStringParameter.ps1](MethodWithStringParameter.ps1) adds a class with a method to be tested.
+- [Test-Problem.ps1](Test-Problem.ps1) shows the problem.
+- [Test-Workaround.ps1](Test-Workaround.ps1) shows the workaround.
 
 ---
 

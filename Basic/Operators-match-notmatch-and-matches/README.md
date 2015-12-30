@@ -26,9 +26,9 @@ some previous results, if any.
 
 Scripts
 
-- [*Test-1.match.ps1*](Test-1.match.ps1) shows the issue with `-match`
-- [*Test-2.notmatch.ps1*](Test-2.notmatch.ps1) shows the issue with `-notmatch`
-- [*Test-3.regex.ps1*](Test-3.regex.ps1) shows how `[regex]` works in this scenario
+- [Test-1.match.ps1](Test-1.match.ps1) shows the issue with `-match`
+- [Test-2.notmatch.ps1](Test-2.notmatch.ps1) shows the issue with `-notmatch`
+- [Test-3.regex.ps1](Test-3.regex.ps1) shows how `[regex]` works in this scenario
 
 ***
 

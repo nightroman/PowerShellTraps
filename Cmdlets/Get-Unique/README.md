@@ -2,8 +2,7 @@
 `Get-Unique` is an odd cmdlet.
 
 Firstly, unlike almost all tools in PowerShell, `Get-Unique` is case sensitive.
-Not even by default, it is just case sensitive, there is not an option to
-change this.
+Not by default, it is just case sensitive, there is not an option to change this.
 
 Secondly, `Get-Unique` requires its input to be pre-sorted. If this is not the
 case then one has to use `Sort-Object`. But `Sort-Object` has the option
@@ -17,8 +16,8 @@ should be removed then the cmdlet does this exactly. But the name is confusing.
 
 Scripts
 
-- *case.sensitive.ps1* shows that `Get-Unique` is case sensitive.
-- *requires.sorted.input.ps1* shows that `Get-Unique` does not work for not sorted list.
+- [case.sensitive.ps1](case.sensitive.ps1) shows that `Get-Unique` is case sensitive.
+- [requires.sorted.input.ps1](requires.sorted.input.ps1) shows that `Get-Unique` does not work for not sorted list.
 
 ---
 

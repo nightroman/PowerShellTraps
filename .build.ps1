@@ -54,29 +54,32 @@ task Index {
 }
 
 # Synopsis: Tests markdown links
-# Uses pandoc for markdown -> HTML.
+# Uses pandoc for markdown.
 task Link {
 	# forbidden absolute links
 	$ForbiddenLink = 'https://github.com/nightroman/PowerShellTraps/(tree|blob)/'
-	# regex for links in HTML
-	$RegexLink = [regex]'<a\s+href\s*=\s*"([^"]*?)">'
-	# regex for files *name.ext* in HTML
-	$RegexFile = [regex]'<em>(\S+?\.\w+?)</em>'
 
 	# all relative markdown paths
 	$files = Get-ChildItem . -Filter *.md -Recurse -Name
 	"$($files.Count) markdown files"
+	$ns = @{x = 'http://www.w3.org/1999/xhtml'}
 	foreach($file in $files) {
-		# convert to HTML
-		$html = pandoc --from=markdown_github $file
+		# convert to XML
+		$xml = [xml](pandoc.exe --standalone --from=markdown_github --to=html $file)
 		if ($LASTEXITCODE) {throw "Pandoc failed : $file"}
 
 		# markdown folder full path
 		$folder = Join-Path $BuildRoot (Split-Path $file)
 
 		# test links
-		foreach($match in $RegexLink.Matches($html)) {
-			$link = $match.Groups[1].Value
+		foreach($node in Select-Xml //x:a $xml -Namespace $ns | Select-Object -ExpandProperty Node) {
+			$link = $node.href
+
+			# complex link
+			if ($node.ChildNodes.Count -ne 1 -or $node.FirstChild.NodeType -ne 'Text') {
+				Write-Warning "Complex link : $file : $($node.OuterXml)"
+				continue
+			}
 
 			# outer link
 			if ($link -match '^http') {
@@ -86,18 +89,20 @@ task Link {
 				continue
 			}
 
-			# inner link
+			# missing link
 			$target = Join-Path $folder $link
 			if (!(Test-Path -LiteralPath $target)) {
-				Write-Warning "Link : $file : $link -> $target"
+				Write-Warning "Missing link : $file : $link -> $target"
+				continue
 			}
-		}
 
-		# test files
-		foreach($match in $RegexFile.Matches($html)) {
-			$name = $match.Groups[1].Value
-			if (!(Test-Path -LiteralPath "$folder\$name")) {
-				Write-Warning "File : $file : $name"
+			# mismatch link
+			$ext = [System.IO.Path]::GetExtension($link)
+			if ($ext -and $ext -ne '.md') {
+				$text = $node.'#text'
+				if (!$link.EndsWith($text)) {
+					Write-Warning "Link and text mismatch: $file : $link ~ $text"
+				}
 			}
 		}
 	}

@@ -29,8 +29,8 @@ even if processes are not found.
 
 #### Scripts
 
-- *Test-1-fails.ps1* shows that `Wait-Process` fails with *NotRunningProcess*.
-- *Test-2-works.ps1* shows the fake wildcard workaround.
+- [Test-1-fails.ps1](Test-1-fails.ps1) shows that `Wait-Process` fails with *NotRunningProcess*.
+- [Test-2-works.ps1](Test-2-works.ps1) shows the fake wildcard workaround.
 
 ---
 

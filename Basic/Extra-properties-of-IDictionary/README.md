@@ -24,8 +24,8 @@ A workaround:
 
 Scripts
 
-- *Test-1.incorrect.assignment.ps1* shows incorrect assignment of a property.
-- *Test-2.correct.assignment.ps1* shows correct assignment of a property.
+- [Test-1.incorrect.assignment.ps1](Test-1.incorrect.assignment.ps1) shows incorrect assignment of a property.
+- [Test-2.correct.assignment.ps1](Test-2.correct.assignment.ps1) shows correct assignment of a property.
 
 ---
 

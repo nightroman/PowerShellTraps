@@ -15,11 +15,11 @@ extra statement `exit $LastExitCode` can be used.
 
 Scripts
 
-- *exit-5.ps1* contains just `exit 5`.
-- *test.1.file.ps1* invokes *exit-5.ps1* with `File` and gets the exit code 5.
-- *test.2.command.script.ps1* invokes *exit-5.ps1* with `Command` and gets the exit code 1.
-- *test.3.command.dot-source.ps1* - ditto but the script is dot-sourced, the exit code is still 1.
-- *test.4.command.workaround.ps1* - workaround for *test.2.command.script.ps1* and *test.3.command.dot-source.ps1*.
+- [exit-5.ps1](exit-5.ps1) contains just `exit 5`.
+- [test.1.file.ps1](test.1.file.ps1) invokes [exit-5.ps1](exit-5.ps1) with `File` and gets the exit code 5.
+- [test.2.command.script.ps1](test.2.command.script.ps1) invokes [exit-5.ps1](exit-5.ps1) with `Command` and gets the exit code 1.
+- [test.3.command.dot-source.ps1](test.3.command.dot-source.ps1) - ditto but the script is dot-sourced, the exit code is still 1.
+- [test.4.command.workaround.ps1](test.4.command.workaround.ps1) - workaround for [test.2.command.script.ps1](test.2.command.script.ps1) and [test.3.command.dot-source.ps1](test.3.command.dot-source.ps1).
 
 ---
 

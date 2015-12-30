@@ -55,9 +55,9 @@ returned objects.
 
 Scripts
 
-- *test1.no.results.ps1* uses `$results.Count` on no results.
-- *test1.no.results.strict.ps1* - ditto in the strict mode.
-- *test2.one.object.Count.ps1* uses `$results.Count` on a single object (lucky in v3).
-- *test2.one.object.Count.strict.ps1* - ditto in the strict mode.
-- *test3.one.object.Length.ps1* - same as lucky 2 but uses `$results.Length` (unlucky).
-- *test4.one.object.Count.ps1* - same as lucky 2 but the object is different (unlucky).
+- [test1.no.results.ps1](test1.no.results.ps1) uses `$results.Count` on no results.
+- [test1.no.results.strict.ps1](test1.no.results.strict.ps1) - ditto in the strict mode.
+- [test2.one.object.Count.ps1](test2.one.object.Count.ps1) uses `$results.Count` on a single object (lucky in v3).
+- [test2.one.object.Count.strict.ps1](test2.one.object.Count.strict.ps1) - ditto in the strict mode.
+- [test3.one.object.Length.ps1](test3.one.object.Length.ps1) - same as lucky 2 but uses `$results.Length` (unlucky).
+- [test4.one.object.Count.ps1](test4.one.object.Count.ps1) - same as lucky 2 but the object is different (unlucky).

@@ -1,7 +1,7 @@
 
 ### v5: Get-ChildItem -LiteralPath -Recurse ignores -Include
 
-This command (see *Test-1.Path.ps1*)
+This command (see [Test-1.Path.ps1](Test-1.Path.ps1))
 
 ```powershell
     Get-ChildItem -Path $PSHOME -Include *.exe -Recurse
@@ -9,7 +9,7 @@ This command (see *Test-1.Path.ps1*)
 
 gets expected `powershell.exe` and `powershell_ise.exe`.
 
-The same command with `-LiteralPath` instead of `-Path` (see *Test-2.LiteralPath.ps1*)
+The same command with `-LiteralPath` instead of `-Path` (see [Test-2.LiteralPath.ps1](Test-2.LiteralPath.ps1))
 
 ```powershell
     Get-ChildItem -LiteralPath $PSHOME -Include *.exe -Recurse

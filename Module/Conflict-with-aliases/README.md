@@ -16,8 +16,8 @@ differences between the test 1 (no conflicts) and 2 and 3 (conflicts).
 
 Scripts
 
-- *MyModule.psm1* contains the internal function *MyCommand*.
-- *MyScript.ps1* shows the potential issue due to the alias *MyCommand*.
-- *Test-1-Command-no-conflicts.ps1* invokes `PowerShell -Command .\MyScript.ps1`, it works without conflicts.
-- *Test-2-Command-conflicts.ps1* invokes `PowerShell -Command . .\MyScript.ps1`, it shows name conflicts.
-- *Test-3-File-conflicts.ps1* invokes `PowerShell -File MyScript.ps1`, it shows name conflicts.
+- [MyModule.psm1](MyModule.psm1) contains the internal function *MyCommand*.
+- [MyScript.ps1](MyScript.ps1) shows the potential issue due to the alias *MyCommand*.
+- [Test-1-Command-no-conflicts.ps1](Test-1-Command-no-conflicts.ps1) invokes `PowerShell -Command .\MyScript.ps1`, it works without conflicts.
+- [Test-2-Command-conflicts.ps1](Test-2-Command-conflicts.ps1) invokes `PowerShell -Command . .\MyScript.ps1`, it shows name conflicts.
+- [Test-3-File-conflicts.ps1](Test-3-File-conflicts.ps1) invokes `PowerShell -File MyScript.ps1`, it shows name conflicts.

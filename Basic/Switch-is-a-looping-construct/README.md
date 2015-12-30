@@ -9,7 +9,7 @@ in other loops.
 When `break` and `continue` are used inside of `switch` they work for this
 `switch`. This is especially easy to forget for `continue` because in other
 programming languages `continue` is not related to `switch`. The script
-*continue-works-for-switch.ps1* shows a typical mistake.
+[continue-works-for-switch.ps1](continue-works-for-switch.ps1) shows a typical mistake.
 
 ---
 
@@ -17,7 +17,7 @@ When `switch` is used in a script block with `ForEach-Object` or `. {process{
 ... }}` there is another issue. The `switch` loop introduces its own automatic
 variable `$_` for the current object. This variable hides the automatic
 variable `$_` of the current pipeline object. The script
-*switch-hides-current-item.ps1* shows a typical mistake.
+[switch-hides-current-item.ps1](switch-hides-current-item.ps1) shows a typical mistake.
 
 ---
 
@@ -26,6 +26,6 @@ tempting because exactly `break` is used with `switch` in other languages. It
 even works fine when `switch` is used on a single value. But when `switch` is
 used on a collection, i.e. as a loop, then `continue` should be used for
 skipping next cases. `break` stops the whole loop. The script
-*use-continue-not-break.ps1* shows some examples.
+[use-continue-not-break.ps1](use-continue-not-break.ps1) shows some examples.
 
-- Stack Overflow [How to use break in `switch -regex -file`?](http://stackoverflow.com/q/29663589/323582)
+- Stack Overflow [How to use break in switch -regex -file?](http://stackoverflow.com/q/29663589/323582)

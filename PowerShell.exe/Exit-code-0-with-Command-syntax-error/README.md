@@ -3,7 +3,7 @@ If a command passed in `PowerShell -Command` has a syntax error then PowerShell
 exit code is 0 (success). This seems to be fixed in v5, the exit code is 1
 (error).
 
-The script *Test-SyntaxError.ps1* invokes a command with a syntax error and
+The script [Test-SyntaxError.ps1](Test-SyntaxError.ps1) invokes a command with a syntax error and
 shows the exit code 0.
 
 Ideally, use only tested commands. If it is not possible to invoke a command

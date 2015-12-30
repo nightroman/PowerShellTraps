@@ -19,10 +19,10 @@ can be enabled by a caller.
 
 Scripts
 
-- *count.works.ps1* shows how *Count* works.
-- *count.fails.ps1* shows how *Count* fails.
-- *length.works.ps1* shows how *Length* works.
-- *length.fails.ps1* shows how *Length* fails.
+- [count.works.ps1](count.works.ps1) shows how *Count* works.
+- [count.fails.ps1](count.fails.ps1) shows how *Count* fails.
+- [length.works.ps1](length.works.ps1) shows how *Length* works.
+- [length.fails.ps1](length.fails.ps1) shows how *Length* fails.
 
 ---
 

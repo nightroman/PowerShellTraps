@@ -33,9 +33,9 @@ expression, so that it can be used as a part of another expression directly.
 
 #### Scripts
 
-- *Test-1-ternary-workaround.ps1* shows how 1 converts `Object[]` to `Int32`, 2 preserves the data.
-- *Test-2-ternary-workaround.ps1* shows how 1 converts `ArrayList` to `Object[]`, 2 preserves the data.
-- *Test-3-part-of-expression.ps1* shows how 1 and 2 are used in another expression, 1 with `$()`, 2 as it is.
+- [Test-1-ternary-workaround.ps1](Test-1-ternary-workaround.ps1) shows how 1 converts `Object[]` to `Int32`, 2 preserves the data.
+- [Test-2-ternary-workaround.ps1](Test-2-ternary-workaround.ps1) shows how 1 converts `ArrayList` to `Object[]`, 2 preserves the data.
+- [Test-3-part-of-expression.ps1](Test-3-part-of-expression.ps1) shows how 1 and 2 are used in another expression, 1 with `$()`, 2 as it is.
 
 ---
 

@@ -12,11 +12,11 @@ In order to catch all errors use
 
 Scripts
 
-- *test.1.1.try.ps1* - `try` does not catch an error.
-- *test.1.2.try.ps1* - `try` catches an error.
-- *test.2.1.trap.ps1* - `trap` does not catch an error.
-- *test.2.2.trap.ps1* - `trap` catches an error, then `continue`.
-- *test.2.3.trap.ps1* - `trap` catches an error, then `break`.
+- [test.1.1.try.ps1](test.1.1.try.ps1) - `try` does not catch an error.
+- [test.1.2.try.ps1](test.1.2.try.ps1) - `try` catches an error.
+- [test.2.1.trap.ps1](test.2.1.trap.ps1) - `trap` does not catch an error.
+- [test.2.2.trap.ps1](test.2.2.trap.ps1) - `trap` catches an error, then `continue`.
+- [test.2.3.trap.ps1](test.2.3.trap.ps1) - `trap` catches an error, then `break`.
 
 ---
 

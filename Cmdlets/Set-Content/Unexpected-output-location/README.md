@@ -14,7 +14,7 @@ Compare with `Out-File`. If the same `Get-Data` is used with `Out-File` then
 
     Get-Data | Out-File data.txt
 
-The script *unexpected.output.location.ps1* shows the problem.
+The script [unexpected.output.location.ps1](unexpected.output.location.ps1) shows the problem.
 
 **Ensure the original location on the first output**
 

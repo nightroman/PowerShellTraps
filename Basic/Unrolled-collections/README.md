@@ -12,10 +12,10 @@ as it is, not unrolled.
 
 Scripts
 
-- *Test-1-unrolled-adding.ps1* shows unrolling on adding items to an array using `+=`.
-- *Test-2-unrolled-output.ps1* shows a collection unrolled on output from a function.
-- *Test-3-unrolled-return.ps1* is the similar script which uses `return` explicitly.
-- *Test-4-unrolled-if.ps1* shows how `if ($x) {$y}` unrolls data, see also [Missing-ternary-operator](../Missing-ternary-operator).
+- [Test-1-unrolled-adding.ps1](Test-1-unrolled-adding.ps1) shows unrolling on adding items to an array using `+=`.
+- [Test-2-unrolled-output.ps1](Test-2-unrolled-output.ps1) shows a collection unrolled on output from a function.
+- [Test-3-unrolled-return.ps1](Test-3-unrolled-return.ps1) is the similar script which uses `return` explicitly.
+- [Test-4-unrolled-if.ps1](Test-4-unrolled-if.ps1) shows how `if ($x) {$y}` unrolls data, see also [Missing-ternary-operator](../Missing-ternary-operator).
 
 ---
 

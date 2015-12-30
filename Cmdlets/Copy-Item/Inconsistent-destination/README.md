@@ -20,8 +20,8 @@ The following workaround is suggested at Connect:
 
 #### Scripts
 
-- *Test-1-inconsistent-destination.ps1* shows different destinations on the first and second copies.
-- *Test-2-workaround.ps1* shows the workaround with consistent destination.
+- [Test-1-inconsistent-destination.ps1](Test-1-inconsistent-destination.ps1) shows different destinations on the first and second copies.
+- [Test-2-workaround.ps1](Test-2-workaround.ps1) shows the workaround with consistent destination.
 
 ---
 

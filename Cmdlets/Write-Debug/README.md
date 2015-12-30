@@ -17,9 +17,9 @@ Unlike `Write-Debug`, the method `$PSCmdlet.WriteDebug()` works as expected,
 
 The scripts are interactive and not covered by automated tests:
 
-- *Test-1-Yes-to-All-ignored.ps1* shows the issue in a pipeline.
-- *Test-2-Yes-to-All-ignored.ps1* shows the issue in a loop.
-- *Test-3-Workaround.ps1* uses `$PSCmdlet.WriteDebug()`.
+- [Test-1-Yes-to-All-ignored.ps1](Test-1-Yes-to-All-ignored.ps1) shows the issue in a pipeline.
+- [Test-2-Yes-to-All-ignored.ps1](Test-2-Yes-to-All-ignored.ps1) shows the issue in a loop.
+- [Test-3-Workaround.ps1](Test-3-Workaround.ps1) uses `$PSCmdlet.WriteDebug()`.
 
 ---
 

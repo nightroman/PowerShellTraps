@@ -6,5 +6,5 @@ resumes where the `trap` is, not where an error is.
 
 Scripts
 
-- *test1.trap.same.scope.ps1* - `trap` in the same scope resumes in the same scope.
-- *test2.trap.parent.scope.ps1* - `trap` in the parent scope resumes in the parent scope.
+- [test1.trap.same.scope.ps1](test1.trap.same.scope.ps1) - `trap` in the same scope resumes in the same scope.
+- [test2.trap.parent.scope.ps1](test2.trap.parent.scope.ps1) - `trap` in the parent scope resumes in the parent scope.

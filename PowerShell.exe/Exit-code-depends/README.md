@@ -14,8 +14,8 @@ the command line.
 
 Scripts
 
-- *Script1.ps1* contains the command with an error.
-- *Test-1-command-and-script.ps1* invokes tests:
+- [Script1.ps1](Script1.ps1) contains the command with an error.
+- [Test-1-command-and-script.ps1](Test-1-command-and-script.ps1) invokes tests:
     - `'Hello'; Write-Error Oops`, exit code is 1
     - invokes it as a script, exit code is 0
     - dot-sources the script, exit code is 0

@@ -5,9 +5,9 @@ same scope.
 
 Scripts
 
-- *trap.new.scope.1.incorrect.ps1* - The difference between statements with `trap` and `catch`.
-- *trap.new.scope.2.workaround.ps1* - Workaround with `Set-Variable -Scope 1`.
-- *trap.new.scope.3.workaround.ps1* - Workaround with a hashtable.
+- [trap.new.scope.1.incorrect.ps1](trap.new.scope.1.incorrect.ps1) - The difference between statements with `trap` and `catch`.
+- [trap.new.scope.2.workaround.ps1](trap.new.scope.2.workaround.ps1) - Workaround with `Set-Variable -Scope 1`.
+- [trap.new.scope.3.workaround.ps1](trap.new.scope.3.workaround.ps1) - Workaround with a hashtable.
 
 ---
 

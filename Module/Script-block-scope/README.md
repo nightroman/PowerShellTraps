@@ -8,11 +8,11 @@ depends on other factors.
 
 Scripts
 
-- *Script1.ps1* defines the function *Invoke-ScriptBlockParameter* which is used in the module and script.
-- *Module1.psm1* dot-sources *Script1.ps1* and exports *Invoke-ScriptBlockParameter* for testing.
-- *Test-Module1.ps1* imports *Module1.psm1* and calls *Invoke-ScriptBlockParameter*, the results are strange.
-- *Test-Script1.ps1* dot-sources *Script1.ps1* and calls *Invoke-ScriptBlockParameter*, the result is expected.
-- *.test.ps1* tests *Test-Script1.ps1* and two ways of invoking *Test-Module1.ps1* with two different results.
+- [Script1.ps1](Script1.ps1) defines the function *Invoke-ScriptBlockParameter* which is used in the module and script.
+- [Module1.psm1](Module1.psm1) dot-sources [Script1.ps1](Script1.ps1) and exports *Invoke-ScriptBlockParameter* for testing.
+- [Test-Module1.ps1](Test-Module1.ps1) imports [Module1.psm1](Module1.psm1) and calls *Invoke-ScriptBlockParameter*, the results are strange.
+- [Test-Script1.ps1](Test-Script1.ps1) dot-sources [Script1.ps1](Script1.ps1) and calls *Invoke-ScriptBlockParameter*, the result is expected.
+- [.test.ps1](.test.ps1) tests [Test-Script1.ps1](Test-Script1.ps1) and two ways of invoking [Test-Module1.ps1](Test-Module1.ps1) with two different results.
 
 #### Workaround
 
@@ -25,9 +25,9 @@ In this case `$ScriptBlock` operates in the current scope.
 
 Scripts
 
-- *Workaround/Module2.psm1* exports a function which invokes a script block using the workaround.
-- *Workaround/Test-Module2.ps1* imports the module and passes a script block in the function.
-- *Workaround/.test.ps1* tests the workaround.
+- [Workaround/Module2.psm1](Workaround/Module2.psm1) exports a function which invokes a script block using the workaround.
+- [Workaround/Test-Module2.ps1](Workaround/Test-Module2.ps1) imports the module and passes a script block in the function.
+- [Workaround/.test.ps1](Workaround/.test.ps1) tests the workaround.
 
 ---
 

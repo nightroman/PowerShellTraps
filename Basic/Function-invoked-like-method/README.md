@@ -26,8 +26,8 @@ without errors. But parameter may be not correct, i.e. not as designed.
 
 Scripts
 
-- *various.function.calls.ps1* shows various function calls with potential mistakes.
-- *various.function.calls.strict.ps1* - some mistakes can be caught in the strict mode.
+- [various.function.calls.ps1](various.function.calls.ps1) shows various function calls with potential mistakes.
+- [various.function.calls.strict.ps1](various.function.calls.strict.ps1) - some mistakes can be caught in the strict mode.
 
 ---
 

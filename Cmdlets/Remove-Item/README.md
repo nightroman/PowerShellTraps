@@ -4,7 +4,7 @@
 If `Remove-Item -LiteralPath` is invoked in a directory with brackets then it
 fails. `Remove-Item -Path` works fine.
 
-The script *Test-1-directory-with-brackets.ps1* shows the issue.
+The script [Test-1-directory-with-brackets.ps1](Test-1-directory-with-brackets.ps1) shows the issue.
 
 ---
 

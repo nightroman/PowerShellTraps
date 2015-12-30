@@ -4,11 +4,11 @@ contain if a command outputs nothing? It turns out that in PowerShell 3.0+ it
 is something that looks like null and behaves like null in most cases except
 some special. Such special cases are potential traps.
 
-The script *Test-1-different-results.ps1* shows that "no results" assigned to a
+The script [Test-1-different-results.ps1](Test-1-different-results.ps1) shows that "no results" assigned to a
 variable looks like null but may cause different results, comparing with a true
 null variable.
 
-The script *Test-2-not-exactly-null.ps1* shows how "no results" null can be
+The script [Test-2-not-exactly-null.ps1](Test-2-not-exactly-null.ps1) shows how "no results" null can be
 distinguished from a true null. This is just a fact, not a suggested method.
 This feature is not documented in known official sources.
 

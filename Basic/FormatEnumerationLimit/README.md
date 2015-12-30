@@ -41,8 +41,8 @@ changed temporarily and then restored. To do this properly is rather tedious:
 
 Scripts
 
-- *Test-1-local-value-ignored.ps1* shows that setting `$FormatEnumerationLimit` locally has no effect.
-- *Test-2-global-value-works.ps1* show that changing the global value works.
+- [Test-1-local-value-ignored.ps1](Test-1-local-value-ignored.ps1) shows that setting `$FormatEnumerationLimit` locally has no effect.
+- [Test-2-global-value-works.ps1](Test-2-global-value-works.ps1) show that changing the global value works.
 
 ---
 

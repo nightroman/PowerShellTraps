@@ -15,12 +15,12 @@ see [Exit-code-5-with-File-1-with-Command](../Exit-code-5-with-File-1-with-Comma
 
 Scripts
 
-- *Error-Syntax.ps1* has a syntax error.
-- *Error-Throw.ps1* just throws an error.
-- *Test-Command-syntax.ps1* invokes `PowerShell -Command .\Error-Syntax.ps1` and shows the exit code 1.
-- *Test-Command-throw.ps1* invokes `PowerShell -Command .\Error-Throw.ps1` and shows the exit code 1.
-- *Test-File-syntax.ps1* invokes `PowerShell -File Error-Syntax.ps1` and shows the exit code 0.
-- *Test-File-throw.ps1* invokes `PowerShell -File Error-Throw.ps1` and shows the exit code 0.
+- [Error-Syntax.ps1](Error-Syntax.ps1) has a syntax error.
+- [Error-Throw.ps1](Error-Throw.ps1) just throws an error.
+- [Test-Command-syntax.ps1](Test-Command-syntax.ps1) invokes `PowerShell -Command .\Error-Syntax.ps1` and shows the exit code 1.
+- [Test-Command-throw.ps1](Test-Command-throw.ps1) invokes `PowerShell -Command .\Error-Throw.ps1` and shows the exit code 1.
+- [Test-File-syntax.ps1](Test-File-syntax.ps1) invokes `PowerShell -File Error-Syntax.ps1` and shows the exit code 0.
+- [Test-File-throw.ps1](Test-File-throw.ps1) invokes `PowerShell -File Error-Throw.ps1` and shows the exit code 0.
 
 ---
 

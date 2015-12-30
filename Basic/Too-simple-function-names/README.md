@@ -16,8 +16,8 @@ Note that script modules may have similar issues, see [Conflict-with-aliases](..
 
 Scripts
 
-- *MyScript.ps1* defines and invokes the internal function *MyCommand*.
-- *Test-MyScript.ps1* shows the potential issue with *MyCommand*.
+- [MyScript.ps1](MyScript.ps1) defines and invokes the internal function *MyCommand*.
+- [Test-MyScript.ps1](Test-MyScript.ps1) shows the potential issue with *MyCommand*.
 
 ---
 

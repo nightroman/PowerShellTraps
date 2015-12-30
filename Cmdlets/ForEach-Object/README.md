@@ -7,10 +7,10 @@ faster and does not obfuscate information of potential errors.
 
 Scripts
 
-- *Oops.ps1* simulates a problematic script, it just throws an error.
-- *test1.ForEach-Object.bad.error.info.ps1* uses `ForEach-Object` and shows bad error information.
-- *test2.ScriptBlock.good.error.info.ps1* uses `.{process{...}}` and shows clear error information.
-- *test3.measure.performance.ps1* shows that `.{process{...}}` is much faster than `ForEach-Object`.
+- [Oops.ps1](Oops.ps1) simulates a problematic script, it just throws an error.
+- [test1.ForEach-Object.bad.error.info.ps1](test1.ForEach-Object.bad.error.info.ps1) uses `ForEach-Object` and shows bad error information.
+- [test2.ScriptBlock.good.error.info.ps1](test2.ScriptBlock.good.error.info.ps1) uses `.{process{...}}` and shows clear error information.
+- [test3.measure.performance.ps1](test3.measure.performance.ps1) shows that `.{process{...}}` is much faster than `ForEach-Object`.
 
 See also
 

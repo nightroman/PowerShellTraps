@@ -29,12 +29,12 @@ and the method `WildcardPattern.UnEscape()` gets the original string.
 
 #### Scripts
 
-- *Test-1-Escape-UnEscape-wildcard.ps1* shows that `WildcardPattern.Escape()`
+- [Test-1-Escape-UnEscape-wildcard.ps1](Test-1-Escape-UnEscape-wildcard.ps1) shows that `WildcardPattern.Escape()`
   produces a pattern not matching the original string and `UnEscape()` does not
   get the original string.
-- *Test-2-Escape-UnEscape-regex.ps1* shows how `Regex.Escape()` works in the
+- [Test-2-Escape-UnEscape-regex.ps1](Test-2-Escape-UnEscape-regex.ps1) shows how `Regex.Escape()` works in the
   similar case (backslashes instead of backticks).
-- *Test-3-Escape-workaround.ps1* tests the workaround.
+- [Test-3-Escape-workaround.ps1](Test-3-Escape-workaround.ps1) tests the workaround.
 
 ---
 

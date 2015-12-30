@@ -21,7 +21,7 @@ This command works in *ConsoleHost* but fails in *ISE*, *DefaultHost*, and some 
 
 Scripts
 
-- *Test.1.works.in.any.host.ps1* - `PowerShell {...}` works in any host.
-- *Test.2.works.in.ConsoleHost.ps1* - with `Version` it works in *ConsoleHost* but fails in others.
-- *Test.3.fails.in.DefaultHost.ps1* shows that `PowerShell -Version 2 {...}` fails in *DefaultHost*.
-- *Test.4.fails.in.PowerShell.job.ps1* shows that `PowerShell -Version 2 {...}` fails in a PowerShell job.
+- [Test.1.works.in.any.host.ps1](Test.1.works.in.any.host.ps1) - `PowerShell {...}` works in any host.
+- [Test.2.works.in.ConsoleHost.ps1](Test.2.works.in.ConsoleHost.ps1) - with `Version` it works in *ConsoleHost* but fails in others.
+- [Test.3.fails.in.DefaultHost.ps1](Test.3.fails.in.DefaultHost.ps1) shows that `PowerShell -Version 2 {...}` fails in *DefaultHost*.
+- [Test.4.fails.in.PowerShell.job.ps1](Test.4.fails.in.PowerShell.job.ps1) shows that `PowerShell -Version 2 {...}` fails in a PowerShell job.

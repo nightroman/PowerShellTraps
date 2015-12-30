@@ -28,12 +28,12 @@ Workaround
 
 Scripts
 
-- *Test-1.1.ps1* shows different results in v2 and v3 for the operator `+=`.
-- *Test-1.2.ps1* shows same results in v2 and v3 for the operator `++`, in contrast to the release notes.
+- [Test-1.1.ps1](Test-1.1.ps1) shows different results in v2 and v3 for the operator `+=`.
+- [Test-1.2.ps1](Test-1.2.ps1) shows same results in v2 and v3 for the operator `++`, in contrast to the release notes.
 
 ### In PowerShell 3.0 results may be affected by other commands
 
-The script *Test-2.ps1* in v3 shows how the result of the operator `+=` is
+The script [Test-2.ps1](Test-2.ps1) in v3 shows how the result of the operator `+=` is
 affected by the seemingly unrelated preceding `New-Variable`, the operator
 works as in v2.
 

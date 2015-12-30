@@ -23,7 +23,7 @@ This feature makes it more difficult to work with heterogeneous collections
 where some objects have their native `Count` or `Length` and some do not.
 It is not possible to assume that 0 and missing is logically the same.
 
-The script *Test-DirectorySize.ps1* calculates a directory size using two
+The script [Test-DirectorySize.ps1](Test-DirectorySize.ps1) calculates a directory size using two
 methods. Results are different in different versions.
 
 ---

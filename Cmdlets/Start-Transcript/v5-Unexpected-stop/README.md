@@ -7,7 +7,7 @@ As a result, expected data are missing in the transcription file.
 Also, stopping transcription by `Stop-Transcript` causes an error
 because transcription is already stopped.
 
-The script *Test-1.ps1* shows missing data and the error.
+The script [Test-1.ps1](Test-1.ps1) shows missing data and the error.
 
 ****
 
