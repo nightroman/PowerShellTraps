@@ -12,7 +12,7 @@ odd directory `test[`. Then this test script is invoked by the operator `&`
 using the relative and full paths:
 
 ```powershell
-    # this works and proves that "test[" should not be a problem
+    # this works in v2, v3, v4 and fails in v5
     & '.\test[\test.ps1'
 
     # this fails due to the invalid wildcard
