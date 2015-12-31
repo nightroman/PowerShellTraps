@@ -1,10 +1,6 @@
 
 $Version = $PSVersionTable.PSVersion.Major
 
-function Exit-Build {
-	Remove-Item -LiteralPath test[ -Force -Recurse -ErrorAction 0
-}
-
 task test.1.invocation {
 	($r = .\test.1.invocation.ps1)
 
@@ -36,14 +32,16 @@ task test.2.dot-sourcing {
 task test.3.escaped {
 	($r = .\test.3.escaped.ps1)
 
-	equals $r.Count 3
+	equals $r.Count 4
 	equals $r[0] 42
 	if ($Version -eq 5) {
 		equals $r[1] 42
 		equals $r[2] 42
+		equals $r[3] 42
 	}
 	else {
 		equals $r[1].FullyQualifiedErrorId CommandNotFoundException
 		equals $r[2].FullyQualifiedErrorId CommandNotFoundException
+		equals $r[3].FullyQualifiedErrorId CommandNotFoundException
 	}
 }
