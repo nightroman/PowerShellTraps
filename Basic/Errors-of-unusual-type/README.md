@@ -66,3 +66,4 @@ Scripts
 
 - [Try-and-trap-catch-terminating-errors](../Try-and-trap-catch-terminating-errors)
 - Stack Overflow [The obscure third type of error](http://stackoverflow.com/q/29883990/323582)
+- Stack Overflow [How do I make non_existent_cmd a terminating error?](http://stackoverflow.com/q/34597303/323582)

@@ -1,15 +1,14 @@
 
-$VersionInstalled = PowerShell.exe -NoProfile '$PSVersionTable.PSVersion.Major'
-$VersionRunning = $PSVersionTable.PSVersion.Major
+$Version = $PSVersionTable.PSVersion.Major
 
-task Test-1 -If ($VersionInstalled -eq 5) {
-	($r = PowerShell.exe -Version $VersionRunning -NoProfile .\Test-1.ps1)
+task Test-1 {
+	($r = PowerShell.exe -Version $Version -NoProfile .\Test-1.ps1)
 	$r = $r -join '//'
 	assert ($r -match $LogPattern)
 }
 
-### v5 running
-$LogPattern = if ($VersionRunning -eq 5) {
+### v5
+$LogPattern = if ($Version -eq 5) {
 	[regex]@'
 (?x)
 Transcript \s started, .*?//
@@ -28,14 +27,13 @@ some \s work//
 Windows \s PowerShell \s transcript \s end
 '@
 }
-### v2 running in v5
-# ?? Yet another issue in v5: the log file contains the header and footer but
-# our data are missing between them. NOTE: This issue is shown by this exact
-# test, it is not shown in a standard script scenario.
-elseif ($VersionInstalled -eq 5) {
-	equals $VersionRunning 2
+### v2, v3, v4
+# Yet another issue: the log contains the header and footer but data are
+# missing between them. NOTE: This issue is specific to the test, normal
+# scripts are fine.
+else {
 	[regex]@'
-(?x)
+(?ix)
 Transcript \s started, .*?//
 LOG-BEGIN//
 some \s work//
@@ -44,6 +42,6 @@ Transcript \s stopped, .*?//
 \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*//
   ## our data are missing
 \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*//
-Windows \s PowerShell \s Transcript \s End
+Windows \s PowerShell \s transcript \s end
 '@
 }

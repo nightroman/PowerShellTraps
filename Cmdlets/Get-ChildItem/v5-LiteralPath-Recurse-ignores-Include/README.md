@@ -1,5 +1,5 @@
 
-### v5: Get-ChildItem -LiteralPath -Recurse ignores -Include
+### v5 and v2: Get-ChildItem -LiteralPath -Recurse ignores -Include
 
 This command (see [Test-1.Path.ps1](Test-1.Path.ps1))
 
@@ -17,7 +17,7 @@ The same command with `-LiteralPath` instead of `-Path` (see [Test-2.LiteralPath
 
 in PowerShell v5 unexpectedly gets all items in `$PSHOME`.
 
-Also, when v5 is installed `PowerShell.exe -Version 2` shows the same issue.
+It looks like `PowerShell.exe -Version 2` shows the same issue.
 
 ****
 
