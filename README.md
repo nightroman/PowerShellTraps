@@ -51,6 +51,7 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [Unexpected-overloaded-method](./Basic/Unexpected-overloaded-method)
     - [Unrolled-collections](./Basic/Unrolled-collections)
     - [ValidateScript-attribute](./Basic/ValidateScript-attribute)
+    - [When-Process-block-is-called](./Basic/When-Process-block-is-called)
     - [WildcardPattern](./Basic/WildcardPattern)
 - [Clixml](./Clixml)
     - [Cannot-write-to-hidden-files](./Clixml/Cannot-write-to-hidden-files)
