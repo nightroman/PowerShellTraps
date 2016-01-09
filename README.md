@@ -80,6 +80,8 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [Out-String](./Cmdlets/Out-String)
     - [Remove-Item](./Cmdlets/Remove-Item)
     - [Remove-ItemProperty](./Cmdlets/Remove-ItemProperty)
+    - [Select-Xml](./Cmdlets/Select-Xml)
+        - [Content-as-stream](./Cmdlets/Select-Xml/Content-as-stream)
     - [Set-Content](./Cmdlets/Set-Content)
         - [Directory-with-brackets](./Cmdlets/Set-Content/Directory-with-brackets)
         - [Unexpected-output-location](./Cmdlets/Set-Content/Unexpected-output-location)
