@@ -9,8 +9,8 @@ Set-Content z.xml @'
 </root>
 '@
 
-# try to read lines and pipe to Select-Xml, it fails
-# it works in v2 but only <elem*> lines are processed
+# get lines and pipe to Select-Xml, it processes only lines <elem*/>
+# and writes non-terminating errors for others (v2 ignores them)
 Get-Content z.xml | Select-Xml //* -ErrorVariable err
 $err
 
