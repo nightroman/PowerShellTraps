@@ -37,6 +37,7 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [Operators-with-equal-precedence](./Basic/Operators-with-equal-precedence)
     - [Properties-of-IDictionary](./Basic/Properties-of-IDictionary)
     - [Properties-of-XmlNode](./Basic/Properties-of-XmlNode)
+    - [Provider-specific-Filter](./Basic/Provider-specific-Filter)
     - [Requires](./Basic/Requires)
     - [Statements-are-not-expressions](./Basic/Statements-are-not-expressions)
     - [Switch-is-a-looping-construct](./Basic/Switch-is-a-looping-construct)
