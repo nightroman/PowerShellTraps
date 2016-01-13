@@ -28,3 +28,7 @@ The following scripts illustrate the last two facts.
 
 - [Test-1.Simple.function.ps1](Test-1.Simple.function.ps1)
 - [Test-2.Advanced.function.ps1](Test-2.Advanced.function.ps1)
+
+The script [Test-3.Pipe.nothing.ps1](Test-3.Pipe.nothing.ps1) shows what
+happens if nothing is piped to a command, either directly or via a result
+variable. Depending on a PowerShell versions these scenarios may be different.
