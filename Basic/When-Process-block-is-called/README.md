@@ -31,4 +31,4 @@ The following scripts illustrate the last two facts.
 
 The script [Test-3.Pipe.nothing.ps1](Test-3.Pipe.nothing.ps1) shows what
 happens if nothing is piped to a command, either directly or via a result
-variable. Depending on a PowerShell versions these scenarios may be different.
+variable. Depending on PowerShell versions these scenarios may be different.
