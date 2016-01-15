@@ -50,6 +50,7 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [Unexpected-output](./Basic/Unexpected-output)
     - [Unexpected-overloaded-method](./Basic/Unexpected-overloaded-method)
     - [Unrolled-collections](./Basic/Unrolled-collections)
+    - [v5-Method-New](./Basic/v5-Method-New)
     - [ValidateScript-attribute](./Basic/ValidateScript-attribute)
     - [When-Process-block-is-called](./Basic/When-Process-block-is-called)
     - [WildcardPattern](./Basic/WildcardPattern)
