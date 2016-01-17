@@ -81,6 +81,8 @@ them refer to other files using relative paths. Contributions are welcome, see
         - [Not-unrolled-result](./Cmdlets/Invoke-RestMethod/Not-unrolled-result)
     - [Join-Path](./Cmdlets/Join-Path)
     - [Out-String](./Cmdlets/Out-String)
+    - [Read-Host](./Cmdlets/Read-Host)
+        - [v5-Output-before-Read-Host](./Cmdlets/Read-Host/v5-Output-before-Read-Host)
     - [Remove-Item](./Cmdlets/Remove-Item)
     - [Remove-ItemProperty](./Cmdlets/Remove-ItemProperty)
     - [Select-Xml](./Cmdlets/Select-Xml)
