@@ -1,5 +1,5 @@
 
-## Invoke-RestMethod returns an array not unrolled
+### Invoke-RestMethod returns an array not unrolled
 
 The following command at the moment of writing is supposed to return 8 objects
 describing GitHub repositories
@@ -21,4 +21,5 @@ Scripts
 
 ***
 
+- [ConvertFrom-Json/Not-unrolled-result](../../ConvertFrom-Json/Not-unrolled-result)
 - [UserVoice](http://windowsserver.uservoice.com/forums/301869-powershell/suggestions/11201622-invoke-restmethod-returns-an-unrolled-array)
