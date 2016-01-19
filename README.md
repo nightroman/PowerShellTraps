@@ -78,6 +78,8 @@ them refer to other files using relative paths. Contributions are welcome, see
         - [Certificate-provider](./Cmdlets/Get-Item/Certificate-provider)
         - [Directory-with-brackets](./Cmdlets/Get-Item/Directory-with-brackets)
     - [Get-Unique](./Cmdlets/Get-Unique)
+    - [Get-WmiObject](./Cmdlets/Get-WmiObject)
+        - [Strict-mode-Latest](./Cmdlets/Get-WmiObject/Strict-mode-Latest)
     - [Import-Csv](./Cmdlets/Import-Csv)
     - [Invoke-RestMethod](./Cmdlets/Invoke-RestMethod)
         - [Not-unrolled-result](./Cmdlets/Invoke-RestMethod/Not-unrolled-result)
