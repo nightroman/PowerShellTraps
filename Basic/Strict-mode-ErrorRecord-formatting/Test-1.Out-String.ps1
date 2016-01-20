@@ -1,5 +1,6 @@
 
-$ps = [PowerShell]::Create().AddScript({
+[PowerShell]::Create().AddScript({
+	Set-StrictMode -Version 2
 	try {
 		throw 'Oops!'
 	}
@@ -9,5 +10,4 @@ $ps = [PowerShell]::Create().AddScript({
 		'}'
 		$Error[0]
 	}
-})
-$ps.Invoke()
+}).Invoke()

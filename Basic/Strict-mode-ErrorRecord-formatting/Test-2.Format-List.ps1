@@ -1,14 +1,13 @@
 
-$ps = [PowerShell]::Create().AddScript({
+[PowerShell]::Create().AddScript({
 	Set-StrictMode -Version 2
 	try {
 		throw 'Oops!'
 	}
 	catch {
 		'Error {'
-		$_ | Out-String
+		$_ | Format-List
 		'}'
 		$Error[0]
 	}
-})
-$ps.Invoke()
+}).Invoke()
