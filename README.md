@@ -64,6 +64,7 @@ them refer to other files using relative paths. Contributions are welcome, see
 - [Cmdlets](./Cmdlets)
     - [ConvertFrom-Json](./Cmdlets/ConvertFrom-Json)
         - [Not-unrolled-result](./Cmdlets/ConvertFrom-Json/Not-unrolled-result)
+        - [Piping-content](./Cmdlets/ConvertFrom-Json/Piping-content)
     - [ConvertTo-Json](./Cmdlets/ConvertTo-Json)
     - [Copy-Item](./Cmdlets/Copy-Item)
         - [Exclude-and-Recurse](./Cmdlets/Copy-Item/Exclude-and-Recurse)
