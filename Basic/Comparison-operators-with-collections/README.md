@@ -1,5 +1,5 @@
 
-### Comparison operators work scalars and collections differently
+### Comparison operators work differently with scalars and collections
 
 See
 
