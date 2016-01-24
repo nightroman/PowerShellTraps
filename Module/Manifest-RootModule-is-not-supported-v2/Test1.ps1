@@ -5,5 +5,5 @@
 #>
 
 $PSScriptRoot = Split-Path $MyInvocation.MyCommand.Definition
-Import-Module $PSScriptRoot\Test1.psd1
-Get-Test1
+Import-Module $PSScriptRoot\Test1.psd1 -Force
+Get-Something

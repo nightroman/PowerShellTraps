@@ -16,8 +16,8 @@ these similar expressions:
 
 But this new feature has some cost. It became more difficult to troubleshoot
 cases when `$x` is supposed to be a scalar by design but it is unexpectedly a
-collection during invocation, for example due to [unexpected extra output] or
-other mistakes.
+collection during invocation, for example due to [Unexpected-output] or other
+mistakes.
 
 Unlike in PowerShell 2.0, in such cases `$x.Data1` is not null in the normal
 mode and it is not always an error in the strict mode. Thus, the unexpected
@@ -43,8 +43,8 @@ v3+ `$x.Data1` is a valid expression even if `$x` is a collection by mistake.
 
 But some sort of remedy exists. In some cases it looks safer to make checks
 like `$value -eq $x.Data1` instead of more traditional `$x.Data1 -eq $value`.
-See [logical operators with collections] for the details. Reversed checks get
-false if `$x` and `$x.Data1` are unexpected collections.
+See [Comparison-operators-with-collections] for the details. Reversed checks
+get false if `$x` and `$x.Data1` are unexpected collections.
 
 The script [Test-1-3-safer-approach.ps1](Test-1-3-safer-approach.ps1) shows that in v3+ the reversed check
 does not cause potentially unwanted processing of each item due to the mistake.
@@ -59,5 +59,5 @@ in v3+, too, it reveals unexpected data which do not have expected properties.
 
 - [PowerShellTraps/issues/4](https://github.com/nightroman/PowerShellTraps/issues/4)
 
-[unexpected extra output]: ../Unexpected-output
-[logical operators with collections]: ../Logical-operators-with-collections
+[Unexpected-output]: ../Unexpected-output
+[Comparison-operators-with-collections]: ../Comparison-operators-with-collections

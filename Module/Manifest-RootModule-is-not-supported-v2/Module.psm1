@@ -1,0 +1,4 @@
+
+function Get-Something {
+	'Something'
+}
