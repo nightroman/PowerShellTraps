@@ -2,7 +2,7 @@
 #requires -version 3
 Set-Location -LiteralPath $PSScriptRoot
 
-# it will fail on conversion
+# conversion fails
 Set-Content z.json @'
 {"a": 1}
 {

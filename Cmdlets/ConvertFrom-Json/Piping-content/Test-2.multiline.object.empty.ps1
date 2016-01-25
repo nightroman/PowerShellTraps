@@ -2,7 +2,9 @@
 #requires -version 3
 Set-Location -LiteralPath $PSScriptRoot
 
-# two objects will be returned, $null and an object
+# v5: two objects are returned, the first is null
+# v4: conversion fails
+# v3: not tested
 Set-Content z.json @'
 
 {
@@ -12,9 +14,12 @@ Set-Content z.json @'
 
 '@
 
-$r = Get-Content z.json | ConvertFrom-Json
-$r.Count
-$null -eq $r[0]
-$r
-
-Remove-Item z.json
+try {
+	$r = Get-Content z.json | ConvertFrom-Json
+	$r.Count
+	$null -eq $r[0]
+	$r
+}
+finally {
+	Remove-Item z.json
+}

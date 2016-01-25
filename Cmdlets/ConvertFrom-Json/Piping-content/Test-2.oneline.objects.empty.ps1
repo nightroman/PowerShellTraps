@@ -2,7 +2,7 @@
 #requires -version 3
 Set-Location -LiteralPath $PSScriptRoot
 
-# four objects will be returned, empty lines as nulls
+# four objects are returned, empty lines as nulls
 Set-Content z.json @'
 {"a": 1}
 
