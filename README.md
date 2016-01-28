@@ -79,6 +79,8 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [Get-Item](./Cmdlets/Get-Item)
         - [Certificate-provider](./Cmdlets/Get-Item/Certificate-provider)
         - [Directory-with-brackets](./Cmdlets/Get-Item/Directory-with-brackets)
+    - [Get-ItemPropertyValue](./Cmdlets/Get-ItemPropertyValue)
+        - [ErrorAction-ignored](./Cmdlets/Get-ItemPropertyValue/ErrorAction-ignored)
     - [Get-Unique](./Cmdlets/Get-Unique)
     - [Get-WmiObject](./Cmdlets/Get-WmiObject)
         - [Strict-mode-Latest](./Cmdlets/Get-WmiObject/Strict-mode-Latest)
