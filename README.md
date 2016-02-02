@@ -76,6 +76,8 @@ them refer to other files using relative paths. Contributions are welcome, see
         - [Directory-with-brackets](./Cmdlets/Get-ChildItem/Directory-with-brackets)
         - [Missing-path-and-Recurse](./Cmdlets/Get-ChildItem/Missing-path-and-Recurse)
         - [v5-LiteralPath-Recurse-ignores-Include](./Cmdlets/Get-ChildItem/v5-LiteralPath-Recurse-ignores-Include)
+    - [Get-Event](./Cmdlets/Get-Event)
+        - [v2-4-Erratic-failure](./Cmdlets/Get-Event/v2-4-Erratic-failure)
     - [Get-Item](./Cmdlets/Get-Item)
         - [Certificate-provider](./Cmdlets/Get-Item/Certificate-provider)
         - [Directory-with-brackets](./Cmdlets/Get-Item/Directory-with-brackets)
