@@ -18,7 +18,7 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [Break-and-Continue-without-loop](./Basic/Break-and-Continue-without-loop)
     - [Collection-property-enumeration](./Basic/Collection-property-enumeration)
     - [Comparison-operators-with-collections](./Basic/Comparison-operators-with-collections)
-    - [Compound-equality-operators](./Basic/Compound-equality-operators)
+    - [Compound-assignment-operators](./Basic/Compound-assignment-operators)
     - [Count-and-Length-in-Strict-Mode](./Basic/Count-and-Length-in-Strict-Mode)
     - [Count-and-Length-of-mixed-objects](./Basic/Count-and-Length-of-mixed-objects)
     - [Different-kinds-of-null](./Basic/Different-kinds-of-null)
