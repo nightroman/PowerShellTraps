@@ -1,5 +1,5 @@
 
-### Differences between PowerShell 2.0 and 3.0
+### Differences between PowerShell v2 and v3
 
 From *WMF 3 Release Notes.docx* at [WMF 3.0](https://www.microsoft.com/en-gb/download/details.aspx?id=34595):
 
@@ -31,11 +31,11 @@ Scripts
 - [Test-1.1.ps1](Test-1.1.ps1) shows different results in v2 and v3 for the operator `+=`.
 - [Test-1.2.ps1](Test-1.2.ps1) shows same results in v2 and v3 for the operator `++`, in contrast to the release notes.
 
-### In PowerShell 3.0 results may be affected by other commands
+### In PowerShell v3+ results may be affected by other commands
 
-The script [Test-2.ps1](Test-2.ps1) in v3 shows how the result of the operator `+=` is
-affected by the seemingly unrelated preceding `New-Variable`, the operator
-works as in v2.
+The script [Test-2.ps1](Test-2.ps1) in v3+ shows how the result of the operator
+`+=` is affected by the seemingly unrelated preceding `New-Variable` added to
+the script [Test-1.1.ps1](Test-1.1.ps1).
 
 ---
 
