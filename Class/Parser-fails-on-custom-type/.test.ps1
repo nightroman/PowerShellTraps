@@ -16,8 +16,3 @@ task Test-2.2.workaround {
 	($r = .\Test-2.2.workaround.ps1)
 	equals $r _160205_162916
 }
-
-task Test-2.3.workaround {
-	($r = .\Test-2.3.workaround.ps1)
-	equals $r _160205_162916
-}

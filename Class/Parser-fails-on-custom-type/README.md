@@ -13,12 +13,7 @@ definition is moved to another script and this script is dot-sourced after
 ### Workaround 2
 
 See the script [Test-2.2.workaround.ps1](Test-2.2.workaround.ps1). The class
-calls `Add-Type` itself and avoids type literals referencing not yet added
-custom types in its members.
-
-The script [Test-2.3.workaround.ps1](Test-2.3.workaround.ps1) demonstrates the
-same idea. It is simpler but it uses a script variable which is not always
-suitable. And the custom type is always added even if the class is not used.
+avoids explicit custom type literals and converts type names to `[Type]`.
 
 ***
 

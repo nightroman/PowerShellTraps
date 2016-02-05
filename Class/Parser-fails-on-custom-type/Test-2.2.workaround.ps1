@@ -1,13 +1,8 @@
 
 #requires -version 5
 
-# Class adds a type itself and avoids explicit type literals
-class A {
-	hidden $Type
-
-	A() {
-		# Add the custom type
-		Add-Type @'
+# Add the custom type
+Add-Type @'
 using System;
 public class _160205_162916 {
 	public static string Test() {
@@ -15,13 +10,11 @@ public class _160205_162916 {
 	}
 }
 '@
-		# and save its type as the property
-		$this.Type = [Type]'_160205_162916'
-	}
 
+# Use ([Type]'_160205_162916') instead of [_160205_162916]
+class A {
 	[string] Test() {
-		# use the type saved as the property
-		return $this.Type::Test()
+		return ([Type]'_160205_162916')::Test()
 	}
 }
 
