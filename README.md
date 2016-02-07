@@ -56,6 +56,7 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [When-Process-block-is-called](./Basic/When-Process-block-is-called)
     - [WildcardPattern](./Basic/WildcardPattern)
 - [Class](./Class)
+    - [Cannot-derive-from-dot-sourced](./Class/Cannot-derive-from-dot-sourced)
     - [Identical-scriptblocks-issue](./Class/Identical-scriptblocks-issue)
     - [Parser-fails-on-custom-type](./Class/Parser-fails-on-custom-type)
 - [Clixml](./Clixml)
