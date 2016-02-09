@@ -91,6 +91,8 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [Get-WmiObject](./Cmdlets/Get-WmiObject)
         - [Strict-mode-Latest](./Cmdlets/Get-WmiObject/Strict-mode-Latest)
     - [Import-Csv](./Cmdlets/Import-Csv)
+    - [Import-Module](./Cmdlets/Import-Module)
+        - [Non-terminating-error](./Cmdlets/Import-Module/Non-terminating-error)
     - [Invoke-RestMethod](./Cmdlets/Invoke-RestMethod)
         - [Not-unrolled-result](./Cmdlets/Invoke-RestMethod/Not-unrolled-result)
     - [Join-Path](./Cmdlets/Join-Path)
