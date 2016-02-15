@@ -30,8 +30,9 @@ function.
 [Test-2.Input.ps1](Test-2.Input.ps1) shows that `$Input` can be used as a parameter but it does not
 work as one may expect.
 
-- Stack Overflow [Function parameter always empty why?](http://stackoverflow.com/q/30546750/323582)
 - Stack Overflow [Args/params not being populated](http://stackoverflow.com/q/11009834/323582)
+- Stack Overflow [Function parameter always empty why?](http://stackoverflow.com/q/30546750/323582)
+- Stack Overflow [Why Pester does not mock a cmdlet with two parameters?](http://stackoverflow.com/q/35405723/323582)
 
 ****
 #### `$$` and `$^` as local variables
