@@ -6,8 +6,6 @@ task Test-DirectorySize {
 		equals $r.size1 $r.size2
 	}
 	else {
-		$n = (Get-ChildItem .. -Directory).Count
-		assert $n
-		equals $r.size1 ($r.size2 + $n)
+		assert ($r.size1 -gt $r.size2)
 	}
 }
