@@ -121,6 +121,7 @@ them refer to other files using relative paths. Contributions are welcome, see
 - [Module](./Module)
     - [Conflict-with-aliases](./Module/Conflict-with-aliases)
     - [Function-not-found](./Module/Function-not-found)
+    - [Function-not-found-2](./Module/Function-not-found-2)
     - [Function-parent-scope](./Module/Function-parent-scope)
     - [Script-block-scope](./Module/Script-block-scope)
     - [Strict-mode-is-not-propagated](./Module/Strict-mode-is-not-propagated)
