@@ -1,6 +1,6 @@
 
 If a script module calls a function defined in a script that imports this
-module then this function may or may not be not found depending on call
+module then this function may or may not be found depending on call
 scenarios and PowerShell versions.
 
 [Test-Module.ps1](Test-Module.ps1) imports [MyModule.psm1](MyModule.psm1) and
