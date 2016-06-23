@@ -21,3 +21,4 @@ dot-sourcing of the function `Test-MyFunction`. It calls `MyFunction` fine.
 ***
 
 - [Helps/issues/9](https://github.com/nightroman/Helps/issues/9)
+- [Not-found-variable](../Not-found-variable)
