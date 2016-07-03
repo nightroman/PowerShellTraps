@@ -95,6 +95,8 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [Import-Csv](./Cmdlets/Import-Csv)
     - [Import-Module](./Cmdlets/Import-Module)
         - [Non-terminating-error](./Cmdlets/Import-Module/Non-terminating-error)
+    - [Invoke-Expression](./Cmdlets/Invoke-Expression)
+        - [ErrorAction](./Cmdlets/Invoke-Expression/ErrorAction)
     - [Invoke-RestMethod](./Cmdlets/Invoke-RestMethod)
         - [Not-unrolled-result](./Cmdlets/Invoke-RestMethod/Not-unrolled-result)
     - [Join-Path](./Cmdlets/Join-Path)
