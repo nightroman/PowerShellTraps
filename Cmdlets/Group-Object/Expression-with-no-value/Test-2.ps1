@@ -1,5 +1,5 @@
 
-# Make an object with an empty NoteProperty X by an expression with no value
+# Make an object with a NoteProperty X by an expression getting $null
 $x = 1 | Select-Object -Property @{Name = 'X'; Expression = {$null}}
 
 # Works
