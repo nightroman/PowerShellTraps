@@ -19,3 +19,4 @@ it gets null for a true null and a `PSCustomObject` instance for "no results".
 ---
 
 - [PowerShellTraps/issues/2](https://github.com/nightroman/PowerShellTraps/issues/2)
+- [Group-Object/Expression-with-no-value](../../Cmdlets/Group-Object/Expression-with-no-value)

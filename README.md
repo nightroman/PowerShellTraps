@@ -94,6 +94,7 @@ them refer to other files using relative paths. Contributions are welcome, see
         - [Strict-mode-Latest](./Cmdlets/Get-WmiObject/Strict-mode-Latest)
     - [Group-Object](./Cmdlets/Group-Object)
         - [AsHashTable](./Cmdlets/Group-Object/AsHashTable)
+        - [Expression-with-no-value](./Cmdlets/Group-Object/Expression-with-no-value)
     - [Import-Csv](./Cmdlets/Import-Csv)
     - [Import-Module](./Cmdlets/Import-Module)
         - [Non-terminating-error](./Cmdlets/Import-Module/Non-terminating-error)
