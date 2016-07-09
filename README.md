@@ -74,6 +74,8 @@ them refer to other files using relative paths. Contributions are welcome, see
         - [Not-unrolled-result](./Cmdlets/ConvertFrom-Json/Not-unrolled-result)
         - [Piping-content](./Cmdlets/ConvertFrom-Json/Piping-content)
     - [ConvertTo-Json](./Cmdlets/ConvertTo-Json)
+        - [Array-as-PSObject](./Cmdlets/ConvertTo-Json/Array-as-PSObject)
+        - [v3-Without-Compress](./Cmdlets/ConvertTo-Json/v3-Without-Compress)
     - [Copy-Item](./Cmdlets/Copy-Item)
         - [Exclude-and-Recurse](./Cmdlets/Copy-Item/Exclude-and-Recurse)
         - [Inconsistent-destination](./Cmdlets/Copy-Item/Inconsistent-destination)
