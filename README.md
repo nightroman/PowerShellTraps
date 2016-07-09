@@ -68,6 +68,8 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [ScriptBlock-becomes-String](./Clixml/ScriptBlock-becomes-String)
     - [v2-no-LiteralPath](./Clixml/v2-no-LiteralPath)
 - [Cmdlets](./Cmdlets)
+    - [ConvertFrom-Csv](./Cmdlets/ConvertFrom-Csv)
+        - [Partial-comment-support](./Cmdlets/ConvertFrom-Csv/Partial-comment-support)
     - [ConvertFrom-Json](./Cmdlets/ConvertFrom-Json)
         - [Not-unrolled-result](./Cmdlets/ConvertFrom-Json/Not-unrolled-result)
         - [Piping-content](./Cmdlets/ConvertFrom-Json/Piping-content)
