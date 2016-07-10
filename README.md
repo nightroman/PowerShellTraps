@@ -55,6 +55,7 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [Unrolled-collections](./Basic/Unrolled-collections)
     - [v5-Method-New](./Basic/v5-Method-New)
     - [ValidateScript-attribute](./Basic/ValidateScript-attribute)
+    - [ValueFromRemainingArguments](./Basic/ValueFromRemainingArguments)
     - [When-Process-block-is-called](./Basic/When-Process-block-is-called)
     - [WildcardPattern](./Basic/WildcardPattern)
 - [Class](./Class)
