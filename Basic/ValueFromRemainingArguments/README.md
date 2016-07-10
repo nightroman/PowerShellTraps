@@ -1,6 +1,6 @@
 
 The parameter attribute `ValueFromRemainingArguments` is a handy feature in
-special cases. All unknown parameters and arguments go the this parameter
+special cases. All unknown parameters and arguments go to this parameter
 value. A command processes it as required by its design.
 
 But such a parameter introduces unfortunate side effects. For example, if a
