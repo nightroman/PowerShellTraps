@@ -32,9 +32,7 @@ Examples of semi-terminating errors:
 Hypothesis
 
 The tests give the idea that any runtime exception is a semi-terminating error.
-True terminating errors are probably caused by `ThrowTerminatingError()` in
-cmdlets and `throw` in scripts. True non-terminating errors are caused by
-`WriteError` in cmdlets and `Write-Error` in scripts.
+True terminating errors are caused by `throw` in scripts.
 
 Scripts
 
