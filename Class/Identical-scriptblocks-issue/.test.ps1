@@ -1,11 +1,19 @@
 
-if ($PSVersionTable.PSVersion.Major -lt 5) {return task test5}
+$Version = $PSVersionTable.PSVersion
+${5.0} = [version]'5.0'
+if ($Version -lt ${5.0}) {return task test5}
 
 task Test-1.fails {
 	($r = try {.\Test-1.fails.ps1} catch {$_})
-	equals $r.Count 2
-	assert ($r[0].GetType().FullName -cmatch '^<\w{8}>\.A$')
-	equals $r[1].FullyQualifiedErrorId TypeNotFound
+	if ($Version -eq ${5.0}) {
+		equals $r.Count 2
+		assert ($r[0].GetType().FullName -cmatch '^<\w{8}>\.A$')
+		equals $r[1].FullyQualifiedErrorId TypeNotFound
+	}
+	else {
+		# weird error "Parameter name: type" with no source
+		equals $r.FullyQualifiedErrorId 'System.ArgumentNullException,Test-1.fails.ps1'
+	}
 }
 
 task Test-2.works {

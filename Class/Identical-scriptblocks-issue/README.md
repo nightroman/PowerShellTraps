@@ -1,7 +1,9 @@
 
 If two script blocks with exactly the same code define a class and return its
-instance then on invoking them one after another the second call fails with an
-error "Unable to find type X".
+instance then on invoking them one after another the second call fails:
+
+- v5.1: Error "Parameter name: type" with no source information
+- v5.0: Error "Unable to find type X"
 
 The script [Test-1.fails.ps1](Test-1.fails.ps1) shows the issue for two
 identical script blocks.
