@@ -14,7 +14,8 @@ $null = mkdir $Source
 # copy with -Exclude *.log -Recurse
 Copy-Item -Path $Source -Destination $Target -Exclude *.log -Recurse
 
-# as a result, test.log is copied, too
+# v5.1 valid: only test.txt is copied
+# v5.0 invalid: test.log is copied, too
 Get-ChildItem $Target -Recurse -Name
 
 # remove test files

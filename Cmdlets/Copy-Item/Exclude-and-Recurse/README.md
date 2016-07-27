@@ -1,6 +1,8 @@
 
 ### Copy-Item: Exclude is ignored with Recurse
 
+**Fixed in v5.1**
+
 When `Copy-Item` is used with `Exclude` and `Recurse` then `Exclude` is ignored
 and items supposed to be skipped are copied, too.
 
