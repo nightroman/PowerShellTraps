@@ -7,9 +7,6 @@
 # use the most strict mode
 Set-StrictMode -Version Latest
 
-# Synopsis: Test v2 and v3+.
-task Test Test2, Test3
-
 # Synopsis: Invoke all tests
 # Allow test file failures and show summary.
 task Test3 {
@@ -107,3 +104,6 @@ task Link {
 		}
 	}
 }
+
+# Synopsis: Test v2 and v3+.
+task . Test2, Test3

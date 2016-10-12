@@ -111,6 +111,8 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [Read-Host](./Cmdlets/Read-Host)
         - [v5-Output-before-Read-Host](./Cmdlets/Read-Host/v5-Output-before-Read-Host)
     - [Remove-Item](./Cmdlets/Remove-Item)
+        - [Directory-with-brackets](./Cmdlets/Remove-Item/Directory-with-brackets)
+        - [Exclude-may-be-ignored](./Cmdlets/Remove-Item/Exclude-may-be-ignored)
     - [Remove-ItemProperty](./Cmdlets/Remove-ItemProperty)
     - [Rename-Item](./Cmdlets/Rename-Item)
         - [v2-no-LiteralPath](./Cmdlets/Rename-Item/v2-no-LiteralPath)
