@@ -18,7 +18,7 @@ task Test3 {
 task Test2 {
 	#! do not use -Safe or we miss a warning
 	PowerShell -Version 2 -NoProfile Invoke-Build **
-	if ($LASTEXITCODE) {Write-Warning 'V2 tests failed.'}
+	if ($global:LASTEXITCODE) {Write-Warning 'V2 tests failed.'}
 }
 
 # Synopsis: Open a random folder in Visual Studio Code
@@ -63,7 +63,7 @@ task Link {
 	foreach($file in $files) {
 		# convert to XML
 		$xml = [xml](pandoc.exe --standalone --from=markdown_github --to=html $file)
-		if ($LASTEXITCODE) {throw "Pandoc failed : $file"}
+		if ($global:LASTEXITCODE) {throw "Pandoc failed : $file"}
 
 		# markdown folder full path
 		$folder = Join-Path $BuildRoot (Split-Path $file)

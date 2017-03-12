@@ -2,8 +2,7 @@
 $Version = $PSVersionTable.PSVersion.Major
 
 task missing.command.1 {
-	($r = PowerShell -Version $Version -NoProfile .\missing.command.1.ps1 | Out-String)
-	equals $LASTEXITCODE 0
+	($r = exec {PowerShell -Version $Version -NoProfile .\missing.command.1.ps1} | Out-String)
 	assert ($r -like '*FullyQualifiedErrorId : CommandNotFoundException*Continued after missing-command*')
 }
 task missing.command.2 {
@@ -16,8 +15,7 @@ task missing.command.3 {
 }
 
 task test.2.1.division.by.zero {
-	($r = PowerShell -Version $Version -NoProfile .\test.2.1.division.by.zero.ps1 | Out-String)
-	equals $LASTEXITCODE 0
+	($r = exec {PowerShell -Version $Version -NoProfile .\test.2.1.division.by.zero.ps1} | Out-String)
 	assert ($r -like '*FullyQualifiedErrorId : RuntimeException*Continued after error*')
 }
 task test.2.2.division.by.zero {
@@ -26,8 +24,7 @@ task test.2.2.division.by.zero {
 }
 
 task test.3.1.method.arguments {
-	($r = PowerShell -Version $Version -NoProfile .\test.3.1.method.arguments.ps1 | Out-String)
-	equals $LASTEXITCODE 0
+	($r = exec {PowerShell -Version $Version -NoProfile .\test.3.1.method.arguments.ps1} | Out-String)
 	assert ($r -like '*FullyQualifiedErrorId : MethodCountCouldNotFindBest*Continued after error*')
 }
 task test.3.2.method.arguments {
@@ -36,8 +33,7 @@ task test.3.2.method.arguments {
 }
 
 task test.4.1.cannot.convert {
-	($r = PowerShell -Version $Version -NoProfile .\test.4.1.cannot.convert.ps1 | Out-String)
-	equals $LASTEXITCODE 0
+	($r = exec {PowerShell -Version $Version -NoProfile .\test.4.1.cannot.convert.ps1} | Out-String)
 	if ($Version -eq 2) {
 		assert ($r -like '*FullyQualifiedErrorId : RuntimeException*Continued after error*')
 	}
@@ -56,8 +52,7 @@ task test.4.2.cannot.convert {
 }
 
 task test.5.1.missing.type {
-	($r = PowerShell -Version $Version -NoProfile .\test.5.1.missing.type.ps1 | Out-String)
-	equals $LASTEXITCODE 0
+	($r = exec {PowerShell -Version $Version -NoProfile .\test.5.1.missing.type.ps1} | Out-String)
 	assert ($r -like '*FullyQualifiedErrorId : TypeNotFound*Continued after error*')
 }
 task test.5.2.missing.type {
@@ -66,8 +61,7 @@ task test.5.2.missing.type {
 }
 
 task test.6.1.missing.property.strict {
-	($r = PowerShell -Version $Version -NoProfile .\test.6.1.missing.property.strict.ps1 | Out-String)
-	equals $LASTEXITCODE 0
+	($r = exec {PowerShell -Version $Version -NoProfile .\test.6.1.missing.property.strict.ps1} | Out-String)
 	assert ($r -like '*FullyQualifiedErrorId : PropertyNotFoundStrict*Continued after error*')
 }
 task test.6.2.missing.property.strict {
@@ -76,8 +70,7 @@ task test.6.2.missing.property.strict {
 }
 
 task test.7.1.missing.variable.strict {
-	($r = PowerShell -Version $Version -NoProfile .\test.7.1.missing.variable.strict.ps1 | Out-String)
-	equals $LASTEXITCODE 0
+	($r = exec {PowerShell -Version $Version -NoProfile .\test.7.1.missing.variable.strict.ps1} | Out-String)
 	assert ($r -like '*FullyQualifiedErrorId : VariableIsUndefined*Continued after error*')
 }
 task test.7.2.missing.variable.strict {
@@ -86,8 +79,7 @@ task test.7.2.missing.variable.strict {
 }
 
 task test.8.1.command.parameter {
-	($r = PowerShell -Version $Version -NoProfile .\test.8.1.command.parameter.ps1 | Out-String)
-	equals $LASTEXITCODE 0
+	($r = exec {PowerShell -Version $Version -NoProfile .\test.8.1.command.parameter.ps1} | Out-String)
 	assert ($r -like '*FullyQualifiedErrorId : NamedParameterNotFound*Continued after error*')
 }
 task test.8.2.command.parameter {
@@ -96,8 +88,7 @@ task test.8.2.command.parameter {
 }
 
 task test.9.1.VariableNotWritable {
-	($r = PowerShell -Version $Version -NoProfile .\test.9.1.VariableNotWritable.ps1 | Out-String)
-	equals $LASTEXITCODE 0
+	($r = exec {PowerShell -Version $Version -NoProfile .\test.9.1.VariableNotWritable.ps1} | Out-String)
 	assert ($r -like '*FullyQualifiedErrorId : VariableNotWritable*Continued after error*')
 }
 task test.9.2.VariableNotWritable {
@@ -106,8 +97,7 @@ task test.9.2.VariableNotWritable {
 }
 
 task test.10.1.provider.NotSupported {
-	($r = PowerShell -Version $Version -NoProfile .\test.10.1.provider.NotSupported.ps1 | Out-String)
-	equals $LASTEXITCODE 0
+	($r = exec {PowerShell -Version $Version -NoProfile .\test.10.1.provider.NotSupported.ps1} | Out-String)
 	assert ($r -like '*FullyQualifiedErrorId : NotSupported*Continued after error*')
 }
 task test.10.2.provider.NotSupported {
@@ -116,8 +106,7 @@ task test.10.2.provider.NotSupported {
 }
 
 task test.11.1.exception {
-	($r = PowerShell -Version $Version -NoProfile .\test.11.1.exception.ps1 | Out-String)
-	equals $LASTEXITCODE 0
+	($r = exec {PowerShell -Version $Version -NoProfile .\test.11.1.exception.ps1} | Out-String)
 	if ($Version -eq 2) {
 		assert ($r -like '*Oops*FullyQualifiedErrorId : DotNetMethodException*Continued after error*')
 	}
