@@ -25,6 +25,8 @@ if for some reason (mistake) a parent scope sets its own variable,
 `$LastExitCode = <something>`, then this `<something>` will be returned
 by `$LastExitCode` instead of the actual last exit code.
 
+The script [Test-1.problem.ps1](.\Test-1.problem.ps1) shows the issue.
+
 ***
 
 - [StackOverflow](http://stackoverflow.com/q/10943554/323582)
