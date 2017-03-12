@@ -30,6 +30,7 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [FormatEnumerationLimit](./Basic/FormatEnumerationLimit)
     - [Function-invoked-like-method](./Basic/Function-invoked-like-method)
     - [Invocation-with-odd-paths](./Basic/Invocation-with-odd-paths)
+    - [LastExitCode](./Basic/LastExitCode)
     - [Local-ActionPreference](./Basic/Local-ActionPreference)
     - [Misleading-error-location](./Basic/Misleading-error-location)
     - [Missing-ternary-operator](./Basic/Missing-ternary-operator)
