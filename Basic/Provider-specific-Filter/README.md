@@ -32,3 +32,5 @@ See the script [Test-2.1.FileSystem.ps1](Test-2.1.FileSystem.ps1).
 #### `*.ext` where `ext` is three characters matches `*.ext*`
 
 See the script [Test-2.2.FileSystem.ps1](Test-2.2.FileSystem.ps1).
+
+NOTE: Windows 10 seems to work differently, in a more expected way.

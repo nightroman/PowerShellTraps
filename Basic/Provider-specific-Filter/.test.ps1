@@ -11,5 +11,12 @@ task Test-2.1.FileSystem {
 
 task Test-2.2.FileSystem {
 	($r = .\Test-2.2.FileSystem.ps1)
-	equals ($r -join '|') 'tmp.tmp|tmp.tmp2|False'
+
+	# fixed in Windows 10?
+	if ([Environment]::OSVersion.Version.Major -ge 10) {
+		equals ($r -join '|') 'tmp.tmp|True'
+	}
+	else {
+		equals ($r -join '|') 'tmp.tmp|tmp.tmp2|False'
+	}
 }
