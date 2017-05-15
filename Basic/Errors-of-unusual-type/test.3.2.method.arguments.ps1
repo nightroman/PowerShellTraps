@@ -1,7 +1,7 @@
 
 $ErrorActionPreference = 'Continue'
 try {
-	'a'.Split([object[]])
+	'a'.ToString([object[]])
 	'Continued'
 }
 catch {

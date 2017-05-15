@@ -1,4 +1,4 @@
 
 $ErrorActionPreference = 'Continue'
-'a'.Split([object[]])
+'a'.ToString([object[]])
 'Continued after error'

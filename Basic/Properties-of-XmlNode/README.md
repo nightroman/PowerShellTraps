@@ -31,6 +31,8 @@ Scripts
 ***
 ### Adapted properties accept only string values
 
+**Fixed in v6**
+
 In many cases PowerShell converts values to required target types. PowerShell
 refuses to convert not string values to strings on setting adapted properties
 of `XmlNode`. This may be unexpected, some code may work for a while with

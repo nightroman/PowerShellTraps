@@ -1,13 +1,13 @@
 
-$Version = $PSVersionTable.PSVersion
+. ../../Tools.ps1
 
 task Test-Break {
-	($r = PowerShell -Version $Version -NoProfile .\Test-Break.ps1)
+	($r = Invoke-PowerShell .\Test-Break.ps1)
 	equals $r 'begin'
 }
 
 task Test-Continue {
-	($r = PowerShell -Version $Version -NoProfile .\Test-Continue.ps1)
+	($r = Invoke-PowerShell .\Test-Continue.ps1)
 	equals $r 'begin'
 }
 

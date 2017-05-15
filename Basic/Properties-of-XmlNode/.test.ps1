@@ -18,11 +18,14 @@ task Test-3.ChildNode {
 
 task Test-4.Cannot.set.number {
 	($r = try {.\Test-4.Cannot.set.number.ps1} catch {$_})
-	if ($Version -eq 2) {
-		equals $r.FullyQualifiedErrorId PropertyAssignmentException
+	if ($Version -ge 6) {
+		equals $r '42'
+	}
+	elseif ($Version -ge 3) {
+		equals $r.FullyQualifiedErrorId XmlNodeSetShouldBeAString
 	}
 	else {
-		equals $r.FullyQualifiedErrorId XmlNodeSetShouldBeAString
+		equals $r.FullyQualifiedErrorId PropertyAssignmentException
 	}
 }
 

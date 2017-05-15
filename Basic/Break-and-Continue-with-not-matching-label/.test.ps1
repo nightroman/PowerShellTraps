@@ -1,12 +1,12 @@
 
-$Version = $PSVersionTable.PSVersion
+. ../../Tools.ps1
 
 task break.missing {
-	($r = exec {PowerShell -Version $Version -NoProfile .\break.missing.ps1})
+	($r = exec {Invoke-PowerShell .\break.missing.ps1})
 	equals ($r -join '|') '1 1|1 2'
 }
 
 task continue.missing {
-	($r = exec {PowerShell -Version $Version -NoProfile .\continue.missing.ps1})
+	($r = exec {Invoke-PowerShell .\continue.missing.ps1})
 	equals ($r -join '|') '1 1|1 2'
 }

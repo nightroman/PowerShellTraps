@@ -1,4 +1,6 @@
 
+$Version = $PSVersionTable.PSVersion.Major
+
 task Test-1.Environment {
 	($r = try {.\Test-1.Environment.ps1} catch {$_})
 	equals $r.FullyQualifiedErrorId 'NotSupported,Microsoft.PowerShell.Commands.GetChildItemCommand'
@@ -12,8 +14,8 @@ task Test-2.1.FileSystem {
 task Test-2.2.FileSystem {
 	($r = .\Test-2.2.FileSystem.ps1)
 
-	# fixed in Windows 10?
-	if ([Environment]::OSVersion.Version.Major -ge 10) {
+	# fixed? in Windows 10? | v6?
+	if ([Environment]::OSVersion.Version.Major -ge 10 -or $Version -ge 6) {
 		equals ($r -join '|') 'tmp.tmp|True'
 	}
 	else {

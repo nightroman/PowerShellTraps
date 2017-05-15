@@ -4,4 +4,6 @@ $elem = ([xml]'<r a="1"/>').DocumentElement
 
 # PowerShell does not convert a number to string as in many similar cases, it fails:
 # Cannot set "a" because only strings can be used as values to set XmlNode properties
+# v6: works
 $elem.a = 42
+$elem.a

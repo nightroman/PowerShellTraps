@@ -1,4 +1,6 @@
 
+. ../../Tools.ps1
+
 task Test-1-2-script-scope {
 	($r = .\Test-1-2-script-scope.ps1)
 	equals 'Invalid|Invalid|Invalid|Invalid|Invalid' ($r -join '|')
@@ -16,7 +18,7 @@ task Test-1-3-global-scope {
 }
 
 function Invoke-Script($Path) {
-	(PowerShell -Version $PSVersionTable.PSVersion -NoProfile -File $Path | Out-String).TrimEnd()
+	(Invoke-PowerShell -File $Path | Out-String).TrimEnd()
 }
 
 task Test-2-1-invalid-error-effect {

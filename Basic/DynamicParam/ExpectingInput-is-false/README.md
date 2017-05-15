@@ -1,6 +1,8 @@
 
 ### $MyInvocation.ExpectingInput is $false in DynamicParam
 
+**Fixed in v6**
+
 In a PowerShell function `$MyInvocation.ExpectingInput` is supposed to get true
 if the function is invoked with a pipeline input. This is not the case for the
 `DynamicParam` block, it gets false.

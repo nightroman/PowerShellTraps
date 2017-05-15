@@ -4,6 +4,7 @@ function Test-ExpectingInput([Parameter(ValueFromPipeline=1)]$Dummy) {
 	dynamicparam {
 		$r = @()
 		# False, unexpected
+		# v6: True, expected
 		$r += $MyInvocation.ExpectingInput
 	}
 	begin {
