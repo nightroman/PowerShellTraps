@@ -1,6 +1,6 @@
 
 $Version = $PSVersionTable.PSVersion
-${5.1} = [version]'5.1'
+${5.1} = [version]'5.1.0'
 
 task Test-Copy-Item-Exclude {
 	($r = .\Test-Copy-Item-Exclude.ps1)

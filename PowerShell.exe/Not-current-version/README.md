@@ -1,13 +1,62 @@
 
-If a script invokes `PowerShell.exe` with another script and does not specify
-the version then a newer PowerShell may be be invoked. This is potentially
-unwanted, e.g. if a script to be invoked works differently with a newer
-version, the fact yet unknown on development and deployment.
+If a script invokes `PowerShell.exe` and does not specify its version in some
+cases or its path if some others then an unexpected PowerShell version may be
+invoked.
 
-In some cases it may be safer to specify the required version explicitly, for
-example for a script designed for v2 to ensure another script is also invoked
-by v2:
+**Example 1: v2 mode with v3+ is installed**
 
-    PowerShell -Version 2 AnotherScript.ps1
+Given:
+
+- (1) The installed Windows PowerShell version is v3+.
+- (2) *Script1.ps1* is invoked in v2 mode:
+
+```powershell
+    PowerShell -Version 2 .\Script1.ps1
+```
+
+- (3) This script should invoke *Script2.ps1*, also in v2 mode.
+- (4) *Script2.ps1* should be invoked in a new session.
+
+Then this command
+
+```powershell
+    PowerShell .\Script2.ps1
+```
+
+is not correct.
+It invokes *Script2.ps1* in v3+ mode, the current installed PowerShell version.
+
+The correct way for the above scenario is
+
+```powershell
+    PowerShell -Version 2 .\Script2.ps1
+```
 
 The script [Not-current-version.ps1](Not-current-version.ps1) shows how a newer PowerShell version is invoked.
+
+**Example 2: v6 Core on Windows**
+
+Given:
+
+- (1) Windows PowerShell is installed.
+- (2) *Script1.ps1* is invoked by v6 Core edition.
+- (3) This script should invoke *Script2.ps1*, also by v6 Core.
+- (4) *Script2.ps1* should be invoked in a new session.
+
+Then this command
+
+```powershell
+    PowerShell .\Script2.ps1
+```
+
+is not correct.
+It invokes *Script2.ps1* by the installed Windows PowerShell.
+
+The correct way for the above scenario is
+
+```powershell
+    $exe = (Get-Process -Id $PID).Path
+    & $exe .\Script2.ps1
+```
+
+The script [Not-same-exe.ps1](Not-same-exe.ps1) shows how a different PowerShell executable is invoked.

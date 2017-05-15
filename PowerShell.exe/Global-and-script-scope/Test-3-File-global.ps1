@@ -1,2 +1,3 @@
 
-PowerShell -Version $PSVersionTable.PSVersion -NoProfile -File MyScript.ps1
+. ../../Tools.ps1
+Invoke-PowerShell -File MyScript.ps1

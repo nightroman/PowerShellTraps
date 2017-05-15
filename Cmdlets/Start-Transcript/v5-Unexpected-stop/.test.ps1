@@ -1,14 +1,15 @@
 
+. ../../../Tools.ps1
 $Version = $PSVersionTable.PSVersion.Major
 
 task Test-1 {
-	($r = PowerShell.exe -Version $Version -NoProfile .\Test-1.ps1)
+	($r = Invoke-PowerShell .\Test-1.ps1)
 	$r = $r -join '//'
 	assert ($r -match $LogPattern)
 }
 
 ### v5
-$LogPattern = if ($Version -eq 5) {
+$LogPattern = if ($Version -ge 5) {
 	[regex]@'
 (?x)
 Transcript \s started, .*?//

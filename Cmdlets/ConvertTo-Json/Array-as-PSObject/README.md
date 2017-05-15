@@ -1,6 +1,8 @@
 
 ### Array as PSObject
 
+**Fixed in v6**
+
 If an array is assigned to a variable declared as `[PSObject]` and this
 variable is piped to `ConvertTo-Json` then the result JSON does not
 represent the original array. It is some sort of wrapper around it.

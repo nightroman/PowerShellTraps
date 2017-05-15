@@ -11,7 +11,7 @@ task Test-2.Path {
 	$r = .\Test-2.LiteralPath.ps1
 	($r = @($r | Group-Object Extension -NoElement))
 
-	if ($Version -eq 5 -or $Version -eq 2) {
+	if ($Version -ge 5 -or $Version -eq 2) {
 		# unexpected
 		assert ($r.Count -ge 2)
 	}

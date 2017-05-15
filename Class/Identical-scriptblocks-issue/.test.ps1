@@ -1,7 +1,7 @@
 
 $Version = $PSVersionTable.PSVersion
-${5.0} = [version]'5.0'
-${5.1} = [version]'5.1'
+${5.0} = [version]'5.0.0'
+${5.1} = [version]'5.1.0'
 if ($Version -lt ${5.0}) {return task test5}
 
 task Test-1.fails {

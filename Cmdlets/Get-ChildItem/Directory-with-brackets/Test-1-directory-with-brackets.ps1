@@ -12,8 +12,8 @@ $log = New-Object System.Collections.Specialized.OrderedDictionary
 # gets "testdir", as expected
 $log.NoRecurse = Get-ChildItem -LiteralPath y[12]
 
-# v3+ gets nothing
-# v2 gets "testdir", as expected
+# v5+, v2: gets "testdir", as expected
+# v3, v4: gets nothing
 $log.Recurse = Get-ChildItem -LiteralPath y[12] -Recurse
 
 # results

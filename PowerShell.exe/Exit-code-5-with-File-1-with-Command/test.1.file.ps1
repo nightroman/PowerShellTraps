@@ -1,3 +1,4 @@
 
-PowerShell.exe -Version $PSVersionTable.PSVersion -NoProfile -File .\exit-5.ps1
+. ../../Tools.ps1
+Invoke-PowerShell -File .\exit-5.ps1
 $global:LASTEXITCODE

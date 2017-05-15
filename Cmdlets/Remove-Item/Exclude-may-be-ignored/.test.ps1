@@ -1,7 +1,7 @@
 
 $Version = $PSVersionTable.PSVersion
-${5.0} = [version]'5.0'
-${3.0} = [version]'3.0'
+${5.0} = [version]'5.0.0'
+${3.0} = [version]'3.0.0'
 
 task Test-1.exclude.file {
 	if ($Version -ge ${5.0}) {

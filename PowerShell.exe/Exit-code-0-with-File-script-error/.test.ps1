@@ -14,7 +14,7 @@ task Test-Command-throw {
 # fixed in v5
 task Test-File-syntax {
 	($r = .\Test-File-syntax.ps1 | Out-String)
-	if ($Version -eq 5) {
+	if ($Version -ge 5) {
 		assert ($r.TrimEnd() -clike '*MissingEndCurlyBrace*Exit code: 1')
 	}
 	else {
@@ -25,7 +25,7 @@ task Test-File-syntax {
 # fixed in v5
 task Test-File-throw {
 	($r = .\Test-File-throw.ps1 | Out-String)
-	if ($Version -eq 5) {
+	if ($Version -ge 5) {
 		assert ($r.TrimEnd() -clike '*Some error.*Exit code: 1')
 	}
 	else {

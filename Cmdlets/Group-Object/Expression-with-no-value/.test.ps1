@@ -6,16 +6,14 @@ task Test-1 {
 	equals $r.Count 2
 	equals $r[0].Name X
 
-	switch($Version) {
-		2 {
-			equals $r[1].GetType().Name GroupInfo
-		}
-		5 {
-			equals $r[1].FullyQualifiedErrorId 'System.NullReferenceException,Microsoft.PowerShell.Commands.GroupObjectCommand'
-		}
-		default {
-			Write-Warning 'Not tested PS version'
-		}
+	if ($Version -ge 5) {
+		equals $r[1].FullyQualifiedErrorId 'System.NullReferenceException,Microsoft.PowerShell.Commands.GroupObjectCommand'
+	}
+	elseif ($Version -eq 2) {
+		equals $r[1].GetType().Name GroupInfo
+	}
+	else {
+		Write-Warning 'Not tested PS version'
 	}
 }
 
