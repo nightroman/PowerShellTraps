@@ -47,6 +47,8 @@ them refer to other files using relative paths. Contributions are welcome, see
     - [Switch-is-a-looping-construct](./Basic/Switch-is-a-looping-construct)
     - [Tempting-wrong-operators](./Basic/Tempting-wrong-operators)
     - [ThrowTerminatingError](./Basic/ThrowTerminatingError)
+        - [Catch-is-not-called](./Basic/ThrowTerminatingError/Catch-is-not-called)
+        - [Not-true-terminating](./Basic/ThrowTerminatingError/Not-true-terminating)
     - [Too-simple-function-names](./Basic/Too-simple-function-names)
     - [Trap-creates-a-new-scope](./Basic/Trap-creates-a-new-scope)
     - [Trap-with-continue](./Basic/Trap-with-continue)

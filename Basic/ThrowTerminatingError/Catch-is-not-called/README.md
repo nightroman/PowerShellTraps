@@ -2,9 +2,9 @@
 ### ThrowTerminatingError does not trigger the immediate catch
 
 `$PSCmdlet.ThrowTerminatingError()` may have some advantages over `throw`. But
-it has an issue: if it is called from a `try` block then its `catch` is not
-called, at least in v5. The `catch` block is called in v2. The `finally`
-block is still called.
+it has an issue: if it is called from a `try` block directly, i.e. not from
+another command in it, then the `catch` is not called, at least in v5. The
+`finally` block is still called. Note that the `catch` is called in v2.
 
 `Write-Error -ErrorAction Stop` may be used as a workaround.
 
