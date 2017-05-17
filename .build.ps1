@@ -13,12 +13,20 @@ task Test3 {
 	Invoke-Build ** -Safe -Summary
 }
 
-# Synopsis: Invoke tests with PowerShell 2.0
+# Synopsis: Test with PowerShell v2.
 # Check for the exit code, warn about failures.
 task Test2 {
 	#! do not use -Safe or we miss a warning
 	PowerShell -Version 2 -NoProfile Invoke-Build **
 	if ($global:LASTEXITCODE) {Write-Warning 'V2 tests failed.'}
+}
+
+# Synopsis: Test with PowerShell v6.
+# Check for the exit code, warn about failures.
+task Test6 -If $env:powershell6 {
+	#! do not use -Safe or we miss a warning
+	& $env:powershell6 -NoProfile Invoke-Build **
+	if ($global:LASTEXITCODE) {Write-Warning 'V6 tests failed.'}
 }
 
 # Synopsis: Open a random folder in Visual Studio Code
@@ -105,5 +113,5 @@ task Link {
 	}
 }
 
-# Synopsis: Test v2 and v3+.
-task . Test2, Test3
+# Synopsis: Test v2, v6, v3+.
+task . Test2, Test6, Test3
