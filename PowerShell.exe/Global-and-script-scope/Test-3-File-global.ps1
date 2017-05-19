@@ -1,3 +1,2 @@
 
-. ../../Tools.ps1
-Invoke-PowerShell -File MyScript.ps1
+Invoke-PowerShell -NoProfile -File MyScript.ps1

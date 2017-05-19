@@ -1,8 +1,6 @@
 
-. ../../Tools.ps1
-
-Invoke-PowerShell '.\exit-5.ps1; exit $LastExitCode'
+Invoke-PowerShell -NoProfile '.\exit-5.ps1; exit $LastExitCode'
 $LASTEXITCODE
 
-Invoke-PowerShell '. .\exit-5.ps1; ; exit $LastExitCode'
+Invoke-PowerShell -NoProfile '. .\exit-5.ps1; ; exit $LastExitCode'
 $LASTEXITCODE

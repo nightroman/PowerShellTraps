@@ -1,12 +1,11 @@
 
-[CONTRIBUTING]: ./CONTRIBUTING.md
 [TESTS]: ./TESTS.md
+[Invoke-PowerShell.ps1]: https://www.powershellgallery.com/packages/Invoke-PowerShell
 
 *PowerShellTraps* is a collection of some PowerShell traps and oddities shown
-by demo scripts with workarounds and automated tests. On invoking scripts
-ensure the current location is set to their directory. For simplicity some of
-them refer to other files using relative paths. Contributions are welcome, see
-[CONTRIBUTING]. See also [TESTS].
+by demo scripts, workarounds, and automated tests. On invoking scripts change
+to their directory. See also [TESTS]. Some scripts require
+[Invoke-PowerShell.ps1].
 
 ---
 

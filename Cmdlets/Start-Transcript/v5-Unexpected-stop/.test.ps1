@@ -1,9 +1,8 @@
 
-. ../../../Tools.ps1
 $Version = $PSVersionTable.PSVersion.Major
 
 task Test-1 {
-	($r = Invoke-PowerShell .\Test-1.ps1)
+	($r = Invoke-PowerShell -NoProfile .\Test-1.ps1)
 	$r = $r -join '//'
 	assert ($r -match $LogPattern)
 }

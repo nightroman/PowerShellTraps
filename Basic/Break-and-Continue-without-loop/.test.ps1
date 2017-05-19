@@ -1,13 +1,11 @@
 
-. ../../Tools.ps1
-
 task Test-Break {
-	($r = Invoke-PowerShell .\Test-Break.ps1)
+	($r = Invoke-PowerShell -NoProfile .\Test-Break.ps1)
 	equals $r 'begin'
 }
 
 task Test-Continue {
-	($r = Invoke-PowerShell .\Test-Continue.ps1)
+	($r = Invoke-PowerShell -NoProfile .\Test-Continue.ps1)
 	equals $r 'begin'
 }
 
