@@ -1,4 +1,13 @@
 
+# skip all tests if the type is missing
+try {
+	$null = [System.Linq.Expressions.Expression]
+}
+catch {
+	Write-Warning 'Missing [System.Linq.Expressions.Expression]'
+	return task skipLinq
+}
+
 $Version = $PSVersionTable.PSVersion.Major
 
 task Test-1 {
