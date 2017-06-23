@@ -2,13 +2,31 @@
 $Version = $PSVersionTable.PSVersion.Major
 
 task Test-1 {
-	($r = Invoke-PowerShell -NoProfile .\Test-1.ps1)
+	($r = Invoke-PowerShell -NoProfile -Command .\Test-1.ps1)
 	$r = $r -join '//'
 	assert ($r -match $LogPattern)
 }
 
 ### v5
-$LogPattern = if ($Version -ge 5) {
+$LogPattern = if ($Version -ge 6) {
+	[regex]@'
+(?x)
+Transcript \s started, .*?//
+LOG-BEGIN//
+some \s work//
+LOG-END//
+Transcript \s stopped, \s output \s file .*?//
+.*?
+Transcript \s started, .*?//
+LOG-BEGIN//
+some \s work//
+  ## LOG-END
+LOG-END//
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*//
+Windows \s PowerShell \s transcript \s end
+'@
+}
+elseif ($Version -ge 5) {
 	[regex]@'
 (?x)
 Transcript \s started, .*?//

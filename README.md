@@ -150,6 +150,7 @@ to their directory. See also [TESTS]. Some scripts require
     - [Exit-code-depends](./PowerShell.exe/Exit-code-depends)
     - [Global-and-script-scope](./PowerShell.exe/Global-and-script-scope)
     - [Not-current-version](./PowerShell.exe/Not-current-version)
+    - [Positional-Command-File](./PowerShell.exe/Positional-Command-File)
     - [Switch-parameter-with-value](./PowerShell.exe/Switch-parameter-with-value)
     - [Unexpected-start-location](./PowerShell.exe/Unexpected-start-location)
     - [v3-Interactive-issues](./PowerShell.exe/v3-Interactive-issues)

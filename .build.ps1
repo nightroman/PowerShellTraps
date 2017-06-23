@@ -25,7 +25,7 @@ task Test2 {
 # Check for the exit code, warn about failures.
 task Test6 -If $env:powershell6 {
 	#! do not use -Safe or we miss a warning
-	& $env:powershell6 -NoProfile Invoke-Build **
+	& $env:powershell6 -NoProfile -Command Invoke-Build **
 	if ($global:LASTEXITCODE) {Write-Warning 'V6 tests failed.'}
 }
 

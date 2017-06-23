@@ -7,8 +7,8 @@ if (!$IsV6Core) {
 }
 
 # This invokes the current desktop version
-PowerShell -NoProfile '$PSVersionTable.PSVersion.ToString()'
+powershell.exe -NoProfile -Command '$PSVersionTable.PSVersion.ToString()'
 
 # Ensure the same exe
 $exe = (Get-Process -Id $PID).Path
-& $exe -NoProfile '$PSVersionTable.PSVersion.ToString()'
+& $exe -NoProfile -Command '$PSVersionTable.PSVersion.ToString()'

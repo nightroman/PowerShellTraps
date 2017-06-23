@@ -1,3 +1,3 @@
 
-Invoke-PowerShell -NoProfile . .\exit-5.ps1
+Invoke-PowerShell -NoProfile -Command . .\exit-5.ps1
 $global:LASTEXITCODE
