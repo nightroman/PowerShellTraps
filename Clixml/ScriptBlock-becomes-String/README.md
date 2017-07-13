@@ -10,3 +10,4 @@ The script [Test-1.ps1](Test-1.ps1) shows the issue.
 
 - Microsoft Connect [1202386](https://connect.microsoft.com/PowerShell/feedback/details/1202386)
 - Stack Overflow [CliXml Serialization/Deserialization lose type](http://stackoverflow.com/q/29211568/608772)
+- [PowerShell/issues/4218](https://github.com/PowerShell/PowerShell/issues/4218)
