@@ -54,6 +54,8 @@ The above arguments are converted to valid commands:
 
 #### PowerShell -File
 
+**Fixed in v6.0.0-beta.5**
+
 There is no way to pass a switch value in a script invoked by `File`. It is
 expected that not all data can be passed in another process via parameters.
 But switch parameters are so basic that such a way ideally should exist.
@@ -76,3 +78,4 @@ for such a simple task.
 
 - Stack Overflow [question](http://stackoverflow.com/q/30523948/323582)
 - Microsoft Connect [742084](https://connect.microsoft.com/PowerShell/feedback/details/742084)
+- [Allow passing $true/$false as a parameter to scripts using powershell.exe -File](https://github.com/PowerShell/PowerShell/pull/4178)

@@ -1,4 +1,9 @@
 
+### PowerShell v6-beta.5 Core
+
+- [PowerShell.exe/Switch-parameter-with-value](PowerShell.exe/Switch-parameter-with-value)
+-- Allow passing $true/$false as a parameter to scripts using powershell.exe -File
+
 ### PowerShell v6-beta.3 Core
 
 - [PowerShell.exe/Positional-Command-File](PowerShell.exe/Positional-Command-File)
