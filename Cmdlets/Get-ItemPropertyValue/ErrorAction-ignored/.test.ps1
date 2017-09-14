@@ -9,7 +9,7 @@ task Test-1.missing.item {
 }
 
 task Test-2.existing.item {
-	($r = exec {PowerShell.exe -NoProfile .\Test-2.existing.item.ps1} | Out-String)
+	($r = exec {Invoke-PowerShell -NoProfile -Command .\Test-2.existing.item.ps1} | Out-String)
 	assert ($r -clike '*FullyQualifiedErrorId*FullyQualifiedErrorId*invoked #1*FullyQualifiedErrorId*invoked #2*')
 }
 

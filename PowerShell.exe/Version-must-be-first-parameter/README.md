@@ -20,8 +20,15 @@ The script [Version-must-be-first-parameter.ps1](Version-must-be-first-parameter
 ***
 **v6-beta.7 notes**
 
-Changed result: instead of failing it gets unexpected result. Is this intended?
+Instead of failing PowerShell gets unexpected result. Is this intended?
+
+See `#4834`. It turns out `-Version` is supposed to get just version in v6, not
+to call the specified version. Ideally, it should fail if anything else is
+provided in the command. But it does not.
+
+Thus, we have another kind of trap. Let's watch it, it's still a beta.
 
 ***
 
 - Microsoft Connect [712934](https://connect.microsoft.com/PowerShell/Feedback/Details/712934)
+- [PowerShell/issues/4834](https://github.com/PowerShell/PowerShell/issues/4834)

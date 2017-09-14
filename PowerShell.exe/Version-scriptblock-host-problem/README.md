@@ -29,4 +29,6 @@ Scripts
 ***
 **v6-beta.7 notes**
 
-Changed result: it gets unexpected result for `-Version 2`. Is this intended?
+`-Version` is not supposed to be used for invoking commands.
+
+- [PowerShell/issues/4834](https://github.com/PowerShell/PowerShell/issues/4834)
