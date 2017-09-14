@@ -4,9 +4,9 @@
 - [PowerShell.exe/Not-current-version](PowerShell.exe/Not-current-version)
 -- Fixed the v6 specific issue (Example 2, Not-same-exe.ps1)
 - [PowerShell.exe/Version-must-be-first-parameter](PowerShell.exe/Version-must-be-first-parameter)
--- Changed result: instead of failing it gets unexpected result. Is this intended?
+-- `-Version` has different meaning in v6 (revealed in this update).
 - [PowerShell.exe/Version-scriptblock-host-problem](PowerShell.exe/Version-scriptblock-host-problem)
--- Changed result: it gets unexpected result for `-Version 2`. Is this intended?
+-- `-Version` has different meaning in v6 (revealed in this update).
 
 ### PowerShell v6-beta.5 Core
 
