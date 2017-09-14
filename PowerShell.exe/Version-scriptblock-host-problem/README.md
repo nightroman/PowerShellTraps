@@ -25,3 +25,8 @@ Scripts
 - [Test.2.works.in.ConsoleHost.ps1](Test.2.works.in.ConsoleHost.ps1) - with `Version` it works in *ConsoleHost* but fails in others.
 - [Test.3.fails.in.DefaultHost.ps1](Test.3.fails.in.DefaultHost.ps1) shows that `PowerShell -Version 2 {...}` fails in *DefaultHost*.
 - [Test.4.fails.in.PowerShell.job.ps1](Test.4.fails.in.PowerShell.job.ps1) shows that `PowerShell -Version 2 {...}` fails in a PowerShell job.
+
+***
+**v6-beta.7 notes**
+
+Changed result: it gets unexpected result for `-Version 2`. Is this intended?

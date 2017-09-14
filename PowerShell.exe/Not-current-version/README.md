@@ -34,7 +34,7 @@ The correct way for the above scenario is
 
 The script [Not-current-version.ps1](Not-current-version.ps1) shows how a newer PowerShell version is invoked.
 
-**Example 2: v6 Core on Windows**
+**Example 2: v6 Core on Windows (fixed in v6-beta-7, we keep it for a while)**
 
 Given:
 

@@ -6,7 +6,8 @@ if (!$IsV6Core) {
 	return
 }
 
-# This invokes the current desktop version
+# v6-beta.6 This invokes the current desktop version
+# v6-beta.7 Fixed, the Core is called
 powershell.exe -NoProfile -Command '$PSVersionTable.PSVersion.ToString()'
 
 # Ensure the same exe

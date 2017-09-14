@@ -7,7 +7,7 @@ task Test-1 {
 	assert ($r -match $LogPattern)
 }
 
-### v5
+### v6
 $LogPattern = if ($Version -ge 6) {
 	[regex]@'
 (?x)
@@ -23,9 +23,10 @@ some \s work//
   ## LOG-END
 LOG-END//
 \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*//
-Windows \s PowerShell \s transcript \s end
+PowerShell \s transcript \s end
 '@
 }
+### v5
 elseif ($Version -ge 5) {
 	[regex]@'
 (?x)

@@ -1,5 +1,5 @@
 
-The PowerShell parameter `Version` must be the first.
+### The PowerShell parameter `Version` must be the first.
 
 This works:
 
@@ -17,6 +17,11 @@ or if a path was included, verify that the path is correct and try again.
 
 The script [Version-must-be-first-parameter.ps1](Version-must-be-first-parameter.ps1) shows the problem.
 
----
+***
+**v6-beta.7 notes**
+
+Changed result: instead of failing it gets unexpected result. Is this intended?
+
+***
 
 - Microsoft Connect [712934](https://connect.microsoft.com/PowerShell/Feedback/Details/712934)
