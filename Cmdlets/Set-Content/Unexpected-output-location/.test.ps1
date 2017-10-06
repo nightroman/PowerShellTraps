@@ -1,6 +1,6 @@
 
 function Remove-Temp {
-	Remove-Item [z], z.* -Force -Recurse
+	Get-Item [z], z.* | Remove-Item -Force -Recurse
 }
 
 task unexpected.output.location {

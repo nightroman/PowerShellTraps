@@ -1,6 +1,6 @@
 
 # make a test directory
-Remove-Item [z] -Force -Recurse
+if (Test-Path z) {Remove-Item z -Force -Recurse}
 $null = mkdir z
 
 # and two files in it
