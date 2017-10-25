@@ -154,7 +154,7 @@ to their directory. See also [TESTS]. Some scripts require
     - [Switch-parameter-with-value](./PowerShell.exe/Switch-parameter-with-value)
     - [Unexpected-start-location](./PowerShell.exe/Unexpected-start-location)
     - [v3-Interactive-issues](./PowerShell.exe/v3-Interactive-issues)
-    - [Version-must-be-first-parameter](./PowerShell.exe/Version-must-be-first-parameter)
+    - [Version-parameter](./PowerShell.exe/Version-parameter)
     - [Version-scriptblock-host-problem](./PowerShell.exe/Version-scriptblock-host-problem)
 
 ---

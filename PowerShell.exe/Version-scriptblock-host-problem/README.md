@@ -27,7 +27,7 @@ Scripts
 - [Test.4.fails.in.PowerShell.job.ps1](Test.4.fails.in.PowerShell.job.ps1) shows that `PowerShell -Version 2 {...}` fails in a PowerShell job.
 
 ***
-**v6-beta.7 notes**
+**v6-beta.7+ notes**
 
 `-Version` is not supposed to be used for invoking commands.
 

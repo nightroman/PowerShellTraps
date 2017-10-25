@@ -8,6 +8,7 @@ if (!$IsV6Core) {
 
 # v6-beta.6 This invokes the current desktop version
 # v6-beta.7 Fixed, the Core is called
+# v6-beta.9 The problem changed due to renamed pwsh.exe
 powershell.exe -NoProfile -Command '$PSVersionTable.PSVersion.ToString()'
 
 # Ensure the same exe

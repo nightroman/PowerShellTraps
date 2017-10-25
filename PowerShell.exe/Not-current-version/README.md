@@ -34,7 +34,7 @@ The correct way for the above scenario is
 
 The script [Not-current-version.ps1](Not-current-version.ps1) shows how a newer PowerShell version is invoked.
 
-**Example 2: v6 Core on Windows (fixed in v6-beta-7, we keep it for a while)**
+**Example 2: v6 Core on Windows**
 
 Given:
 
@@ -46,17 +46,18 @@ Given:
 Then this command
 
 ```powershell
-    PowerShell .\Script2.ps1
+    powershell .\Script2.ps1
 ```
 
 is not correct.
-It invokes *Script2.ps1* by the installed PowerShell v5.
+It invokes *Script2.ps1* by the installed PowerShell v5
+because in v6-beta.9 Core `powershell.exe` was renamed to `pwsh.exe`.
+.
 
 The correct way for the above scenario is
 
 ```powershell
-    $exe = (Get-Process -Id $PID).Path
-    & $exe .\Script2.ps1
+    pwsh .\Script2.ps1
 ```
 
 The script [Not-same-exe.ps1](Not-same-exe.ps1) shows how a different PowerShell executable is invoked.

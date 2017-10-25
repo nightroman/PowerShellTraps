@@ -1,9 +1,16 @@
 
+### PowerShell v6-beta.9 Core
+
+- [PowerShell.exe/Not-current-version](PowerShell.exe/Not-current-version)
+-- The trap is back due to the renamed powershell.exe to pwsh.exe
+- [PowerShell.exe/Version-parameter](PowerShell.exe/Version-parameter)
+-- Anything after `-Version` is silently ignored.
+
 ### PowerShell v6-beta.7 Core
 
 - [PowerShell.exe/Not-current-version](PowerShell.exe/Not-current-version)
 -- Fixed the v6 specific issue (Example 2, Not-same-exe.ps1)
-- [PowerShell.exe/Version-must-be-first-parameter](PowerShell.exe/Version-must-be-first-parameter)
+- [PowerShell.exe/Version-parameter](PowerShell.exe/Version-parameter)
 -- `-Version` has different meaning in v6 (revealed in this update).
 - [PowerShell.exe/Version-scriptblock-host-problem](PowerShell.exe/Version-scriptblock-host-problem)
 -- `-Version` has different meaning in v6 (revealed in this update).
