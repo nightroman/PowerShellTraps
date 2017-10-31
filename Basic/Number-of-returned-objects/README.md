@@ -39,6 +39,15 @@ cannot be used safely. See [Count-and-Length-in-Strict-Mode](../Count-and-Length
 Secondly, if the only returned object has native `Count` or `Length` then the
 native value has nothing to do with 1, the number of returned objects.
 
+Third, the `PSCustomObject` or `PSObject` object types are an exception to this 
+rule. A collection of these objects will have a correct count, but a single 
+object will return `$null` for `.count`.
+
+```powershell
+    $object = [pscustomobject]@{Name='Test'}
+    $object.count
+```
+
 **The reliable way**
 
 The operator `@()` provides the reliable way to deal with the problem. It wraps
