@@ -40,6 +40,7 @@ to their directory. See also [TESTS]. Some scripts require
     - [Properties-of-IDictionary](./Basic/Properties-of-IDictionary)
     - [Properties-of-XmlNode](./Basic/Properties-of-XmlNode)
     - [Provider-specific-Filter](./Basic/Provider-specific-Filter)
+    - [PSCustomObject](./Basic/PSCustomObject)
     - [Requires](./Basic/Requires)
     - [Statements-are-not-expressions](./Basic/Statements-are-not-expressions)
     - [Strict-mode-ErrorRecord-formatting](./Basic/Strict-mode-ErrorRecord-formatting)

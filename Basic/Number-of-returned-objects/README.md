@@ -5,7 +5,7 @@ know the number of returned objects. How to get this number?
 For example, a command `Get-Something` is called like this:
 
 ```powershell
-    $results = Get-Something
+$results = Get-Something
 ```
 
 Do `$results.Count` or `$results.Length` get the number of returned objects?
@@ -39,14 +39,17 @@ cannot be used safely. See [Count-and-Length-in-Strict-Mode](../Count-and-Length
 Secondly, if the only returned object has native `Count` or `Length` then the
 native value has nothing to do with 1, the number of returned objects.
 
-Third, the `PSCustomObject` or `PSObject` object types are an exception to this 
-rule. A collection of these objects will have a correct count, but a single 
-object will return `$null` for `.count`.
+Thirdly, the `PSCustomObject` is an exception to this rule. A collection of
+these objects will have a correct count, but a single object will return
+`$null` for `Count`.
 
 ```powershell
-    $object = [pscustomobject]@{Name='Test'}
-    $object.count
+$object = [PSCustomObject]@{Name='Joe'; Age=42}
+$object.Count
 ```
+
+Interestingly, in v2 the above code is valid, too, but the result `$object`
+type is `Hashtable` and `$object.Count` gets 2.
 
 **The reliable way**
 
@@ -56,7 +59,7 @@ multiple objects with an array of them. Thus, the result of this command is not
 ambiguous
 
 ```powershell
-    $results = @(Get-Something)
+$results = @(Get-Something)
 ```
 
 The `$results` is an array and its `Count` and `Length` get the number of

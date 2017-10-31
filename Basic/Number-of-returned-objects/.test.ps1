@@ -40,3 +40,18 @@ task test4.one.object.Count {
 	($r = .\test4.one.object.Count.ps1)
 	equals 3 $r
 }
+
+task test5.PSCustomObject {
+	($r = ./test5.PSCustomObject.ps1)
+	equals $r.Count 3
+	if ($v2) {
+		equals $r[0] 2
+		equals $r[1] $false
+		equals $r[2] Hashtable
+	}
+	else {
+		equals $r[0] $null
+		equals $r[1] $true
+		equals $r[2] PSCustomObject
+	}
+}
