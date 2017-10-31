@@ -73,3 +73,4 @@ Scripts
 - [test2.one.object.Count.strict.ps1](test2.one.object.Count.strict.ps1) - ditto in the strict mode.
 - [test3.one.object.Length.ps1](test3.one.object.Length.ps1) - same as lucky 2 but uses `$results.Length` (unlucky).
 - [test4.one.object.Count.ps1](test4.one.object.Count.ps1) - same as lucky 2 but the object is different (unlucky).
+- [test5.PSCustomObject.ps1](test5.PSCustomObject.ps1) - shows that `PSCustomObject`'s `Count` is null.
