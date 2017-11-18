@@ -1,4 +1,9 @@
 
+### PowerShell v6-RC Core
+
+- [Strict-mode-ErrorRecord-formatting](Basic\Strict-mode-ErrorRecord-formatting)
+-- Fixed
+
 ### PowerShell v6-beta.9 Core
 
 - [PowerShell.exe/Not-current-version](PowerShell.exe/Not-current-version)

@@ -1,4 +1,5 @@
 
+# v6-rc: fixed
 [PowerShell]::Create().AddScript({
 	Set-StrictMode -Version 2
 	try {

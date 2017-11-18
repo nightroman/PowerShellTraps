@@ -70,7 +70,7 @@ task Link {
 	$ns = @{x = 'http://www.w3.org/1999/xhtml'}
 	foreach($file in $files) {
 		# convert to XML
-		$xml = [xml](pandoc.exe --standalone --from=markdown_github --to=html $file)
+		$xml = [xml](pandoc.exe --standalone --quiet --no-highlight --from=gfm --to=html $file)
 		if ($global:LASTEXITCODE) {throw "Pandoc failed : $file"}
 
 		# markdown folder full path

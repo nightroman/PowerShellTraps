@@ -6,8 +6,11 @@ task Test-1.Out-String.ps1 {
 	if ($Version -eq 2) {
 		assert ($r -cmatch '(?s)^Error {\s+throw :\s+}.*BufferSize.*FullyQualifiedErrorId : PropertyNotFoundStrict')
 	}
-	else {
+	elseif ($Version -le 5) {
 		assert ($r -cmatch '(?s)^Error {\s+}.*BufferSize.*FullyQualifiedErrorId : PropertyNotFoundStrict')
+	}
+	else {
+		assert ($r -like 'Error {*Oops!*FullyQualifiedErrorId : Oops!*Oops!*FullyQualifiedErrorId : Oops!*')
 	}
 }
 
@@ -16,8 +19,11 @@ task Test-2.Format-List {
 	if ($Version -eq 2) {
 		assert ($r -cmatch '(?s)^Error {\s+throw :\s+}.*BufferSize.*FullyQualifiedErrorId : PropertyNotFoundStrict')
 	}
-	else {
+	elseif ($Version -le 5) {
 		assert ($r -cmatch '(?s)^Error {\s+}.*BufferSize.*FullyQualifiedErrorId : PropertyNotFoundStrict')
+	}
+	else {
+		assert ($r -like 'Error {*Oops!*FullyQualifiedErrorId : Oops!*Oops!*FullyQualifiedErrorId : Oops!*')
 	}
 }
 
