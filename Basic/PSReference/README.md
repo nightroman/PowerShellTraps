@@ -1,10 +1,8 @@
 
-[PSReference]: https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.psreference
+### `[ref]` may be unwrapped unexpectedly
 
-### PSReference may be unwrapped unexpectedly
-
-`[ref]` (see [PSReference]) is designed functions returning something via
-`[ref]` parameters in addition to the output or instead of the output.
+`[ref]` may be used for functions returning something via `[ref]` parameters in
+addition to the output or instead of the output.
 
 See
 
@@ -20,3 +18,7 @@ Scripts
 
 - [Test-1.lost.ref.object.ps1](Test-1.lost.ref.object.ps1) shows the issue for the `[object]` parameter.
 - [Test-2.lost.ref.array.ps1](Test-2.lost.ref.array.ps1) shows the issue for the `[object[]]` parameter.
+
+***
+
+- [PowerShell/issues/5535](https://github.com/PowerShell/PowerShell/issues/5535)
