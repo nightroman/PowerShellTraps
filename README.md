@@ -21,6 +21,7 @@ to their directory. See also [TESTS]. Some scripts require
     - [Count-and-Length-in-Strict-Mode](./Basic/Count-and-Length-in-Strict-Mode)
     - [Count-and-Length-of-mixed-objects](./Basic/Count-and-Length-of-mixed-objects)
     - [Different-kinds-of-null](./Basic/Different-kinds-of-null)
+    - [Double-quoted-string](./Basic/Double-quoted-string)
     - [DynamicParam](./Basic/DynamicParam)
         - [Dynamic-switch-parameter](./Basic/DynamicParam/Dynamic-switch-parameter)
         - [ExpectingInput-is-false](./Basic/DynamicParam/ExpectingInput-is-false)
