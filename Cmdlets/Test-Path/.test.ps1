@@ -17,3 +17,8 @@ task Current.directory.with.odd.name {
 	Set-Location $BuildRoot
 	Remove-Item -LiteralPath '`[1]', '[1]' -Force -Recurse
 }
+
+task Input.space {
+	($r = ./Input.space.ps1)
+	equals $r $true
+}
