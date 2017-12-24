@@ -20,6 +20,7 @@ to their directory. See also [TESTS]. Some scripts require
     - [Compound-assignment-operators](./Basic/Compound-assignment-operators)
     - [Count-and-Length](./Basic/Count-and-Length)
         - [Mixed-objects](./Basic/Count-and-Length/Mixed-objects)
+        - [PSCustomObject](./Basic/Count-and-Length/PSCustomObject)
         - [Strict-Mode](./Basic/Count-and-Length/Strict-Mode)
     - [Different-kinds-of-null](./Basic/Different-kinds-of-null)
     - [Double-quoted-string](./Basic/Double-quoted-string)
