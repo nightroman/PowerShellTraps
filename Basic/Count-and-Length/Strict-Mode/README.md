@@ -26,5 +26,5 @@ Scripts
 
 ---
 
-- [Number-of-returned-objects](../Number-of-returned-objects)
+- [Number-of-returned-objects](../../Number-of-returned-objects)
 - Microsoft Connect [770111](https://connect.microsoft.com/PowerShell/Feedback/Details/770111)
