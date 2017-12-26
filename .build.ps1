@@ -87,8 +87,8 @@ task Link {
 			}
 
 			# outer link
-			if ($link -match '^http') {
-				if ($link -match $ForbiddenLink) {
+			if ($link -cmatch '^http') {
+				if ($link -cmatch $ForbiddenLink) {
 					Write-Warning "Link : $file : $link"
 				}
 				continue
