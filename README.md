@@ -46,6 +46,7 @@ to their directory. See also [TESTS]. Some scripts require
     - [PSCustomObject](./Basic/PSCustomObject)
     - [PSReference](./Basic/PSReference)
     - [Requires](./Basic/Requires)
+    - [RunspacePool](./Basic/RunspacePool)
     - [Statements-are-not-expressions](./Basic/Statements-are-not-expressions)
     - [Strict-mode-ErrorRecord-formatting](./Basic/Strict-mode-ErrorRecord-formatting)
     - [Switch-is-a-looping-construct](./Basic/Switch-is-a-looping-construct)
