@@ -1,15 +1,19 @@
 
 $Version = $PSVersionTable.PSVersion.Major
 
-task Test1.ToString {
-	($r = ./Test1.ToString.ps1)
+task Test-1.ToString {
+	($r = ./Test-1.ToString.ps1)
 	equals $r.Count 2
+	equals $r[0] PSCustomObject
+	equals $r[1] $true
+}
+
+task Test-2.notation.ps1 {
+	($r = ./Test-2.notation.ps1)
 	if ($Version -eq 2) {
-		equals $r[0] System.Collections.Hashtable
-		equals $r[1] $false
+		equals $r Hashtable
 	}
 	else {
-		equals $r[0] ''
-		equals $r[1] $true
+		equals $r PSCustomObject
 	}
 }
