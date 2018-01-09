@@ -27,4 +27,5 @@ Scripts
 ---
 
 - [Number-of-returned-objects](../../Number-of-returned-objects)
-- Microsoft Connect [770111](https://connect.microsoft.com/PowerShell/Feedback/Details/770111)
+- [Set-StrictMode should not complain about COUNT & LENGTH properties on elements #2798](https://github.com/PowerShell/PowerShell/issues/2798)
+- Microsoft Connect 770111

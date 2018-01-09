@@ -8,17 +8,10 @@ As a result of this feature, one may get some unexpected items back, see
 see [test4.takes.ages.gets.nothing.ps1](test4.takes.ages.gets.nothing.ps1), unexpected returned items are also
 possible.
 
-A workaround is to always test paths before getting items
+Workarounds
 
-```powershell
-    if (Test-Path SomePath) {
-        Get-ChildItem SomePath -Recurse
-    }
-```
-
-The workaround is not bulletproof though. If another process removes `SomePath`
-after the check is done and before `Get-ChildItem` is called then results may
-be unexpected.
+- Use the parameter `LiteralPath`.
+- Test paths before using with the parameter `Path`.
 
 Scripts
 
@@ -29,4 +22,5 @@ Scripts
 
 ---
 
-- Microsoft Connect [766100](https://connect.microsoft.com/PowerShell/feedback/details/766100)
+- [PowerShell/issues/5699](https://github.com/PowerShell/PowerShell/issues/5699)
+- Microsoft Connect 766100

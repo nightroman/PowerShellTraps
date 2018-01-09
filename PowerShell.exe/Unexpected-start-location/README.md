@@ -15,4 +15,5 @@ Scripts
 
 ---
 
-- Microsoft Connect [514735](https://connect.microsoft.com/PowerShell/Feedback/Details/514735)
+- [PowerShell/issues/5752](https://github.com/PowerShell/PowerShell/issues/5752)
+- Microsoft Connect 514735
