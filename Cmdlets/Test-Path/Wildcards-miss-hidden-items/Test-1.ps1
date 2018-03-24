@@ -12,3 +12,7 @@ $r = Test-Path z\hidden
 # False, unexpected
 $r = Test-Path *\hidden
 "Test-Path *\hidden = $r"
+
+# False, unexpected
+$r = Test-Path z\*
+"Test-Path z\* = $r"

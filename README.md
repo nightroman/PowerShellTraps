@@ -137,7 +137,7 @@ to their directory. See also [TESTS]. Some scripts require
         - [v5-Unexpected-stop](./Cmdlets/Start-Transcript/v5-Unexpected-stop)
     - [Test-Path](./Cmdlets/Test-Path)
         - [Incorrect-in-odd-location](./Cmdlets/Test-Path/Incorrect-in-odd-location)
-        - [Misses-hidden-in-subdirectory](./Cmdlets/Test-Path/Misses-hidden-in-subdirectory)
+        - [Wildcards-miss-hidden-items](./Cmdlets/Test-Path/Wildcards-miss-hidden-items)
     - [Wait-Process](./Cmdlets/Wait-Process)
     - [Where-Object](./Cmdlets/Where-Object)
     - [Write-Debug](./Cmdlets/Write-Debug)

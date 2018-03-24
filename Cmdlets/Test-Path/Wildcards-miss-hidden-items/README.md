@@ -15,6 +15,10 @@ PS> Test-Path -Path *\Y
 False
 ```
 
+In other words, if a wildcard `Path` of `Test-Path` is resolved to just hidden
+items then `Test-Path` gets false. Unlike `*-Item` cmdlets, `Test-Path` does
+not have a switch `Force` in order to change this and find hidden items.
+
 The script [Test-1.ps1](Test-1.ps1) shows the issue.
 
 ---
