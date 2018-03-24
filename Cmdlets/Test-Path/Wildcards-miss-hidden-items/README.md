@@ -1,25 +1,15 @@
 
-## Test-Path -Path with wildcards may miss hidden items
+## Test-Path -Path with wildcards misses hidden items
 
-For a hidden item `Y` in a directory `X`, `Test-Path` gets true:
+`Test-Path` treats hidden files and folders not like `*-Items` cmdlets do:
 
-```
-PS> Test-Path -Path X\Y
-True
-```
+- With literal paths, it finds items regardless of their hidden attribute.
+- With wildcards, it gets false if only hidden items match.
 
-But if `X` in the argument is replaced with a wildcard `*` then `Test-Path` gets false:
+Unlike `*-Item` cmdlets, `Test-Path` does not have the switch `Force` in order
+to control treatment of hidden items.
 
-```
-PS> Test-Path -Path *\Y
-False
-```
-
-In other words, if a wildcard `Path` of `Test-Path` is resolved to just hidden
-items then `Test-Path` gets false. Unlike `*-Item` cmdlets, `Test-Path` does
-not have a switch `Force` in order to change this and find hidden items.
-
-The script [Test-1.ps1](Test-1.ps1) shows the issue.
+See the example script [Test-1.ps1](Test-1.ps1).
 
 ---
 
