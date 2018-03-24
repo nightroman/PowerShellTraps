@@ -7,7 +7,7 @@
 - With wildcards, it gets false if only hidden items match.
 
 Unlike `*-Item` cmdlets, `Test-Path` does not have the switch `Force` in order
-to control treatment of hidden items.
+to control the treatment of hidden items.
 
 See the example script [Test-1.ps1](Test-1.ps1).
 
