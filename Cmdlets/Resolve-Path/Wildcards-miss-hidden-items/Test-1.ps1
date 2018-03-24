@@ -3,13 +3,13 @@
 $item = New-Item temp.txt -ItemType File -Force
 $item.Attributes = $item.Attributes -bor [System.IO.FileAttributes]::Hidden
 
-# True, expected
-$r = Test-Path temp.txt
-"Test-Path temp.txt = $r"
+# Resolved path, expected
+$r = Resolve-Path temp.txt
+"Resolve-Path temp.txt = $r"
 
-# False, may be unexpected
-$r = Test-Path temp.*
-"Test-Path temp.* = $r"
+# Nothing, may be unexpected
+$r = Resolve-Path temp.*
+"Resolve-Path temp.* = $r"
 
 # clean
 Remove-Item temp.txt -Force

@@ -126,6 +126,8 @@ to their directory. See also [TESTS]. Some scripts require
     - [Remove-ItemProperty](./Cmdlets/Remove-ItemProperty)
     - [Rename-Item](./Cmdlets/Rename-Item)
         - [v2-no-LiteralPath](./Cmdlets/Rename-Item/v2-no-LiteralPath)
+    - [Resolve-Path](./Cmdlets/Resolve-Path)
+        - [Wildcards-miss-hidden-items](./Cmdlets/Resolve-Path/Wildcards-miss-hidden-items)
     - [Select-Xml](./Cmdlets/Select-Xml)
         - [Content-as-stream](./Cmdlets/Select-Xml/Content-as-stream)
     - [Set-Content](./Cmdlets/Set-Content)
