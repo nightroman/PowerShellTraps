@@ -1,6 +1,8 @@
 
 ### PSCustomObject does not have surrogate Count and Length
 
+**Fixed in v6.1.0**
+
 See help *about_Properties*:
 
     Beginning in Windows PowerShell 3.0, Windows PowerShell tries

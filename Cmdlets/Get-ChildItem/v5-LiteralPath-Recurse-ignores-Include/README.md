@@ -1,5 +1,7 @@
 
-### v5 and v2: Get-ChildItem -LiteralPath -Recurse ignores -Include
+### Get-ChildItem -LiteralPath -Recurse ignores -Include
+
+(Affected versions: v2, v5 - v6.0.2, **Fixed in v6.1.0**)
 
 This command (see [Test-1.Path.ps1](Test-1.Path.ps1))
 

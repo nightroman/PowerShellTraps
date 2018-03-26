@@ -39,9 +39,9 @@ cannot be used safely. See [Count-and-Length/Strict-Mode](../Count-and-Length/St
 Secondly, if the only returned object has native `Count` or `Length` then the
 native value has nothing to do with 1, the number of returned objects.
 
-Thirdly, the `PSCustomObject` is an exception to this rule. A collection of
-these objects will have a correct count, but a single object will return
-`$null` for `Count`.
+Thirdly (**Fixed in v6.1.0**), the `PSCustomObject` is an exception to this
+rule. A collection of these objects will have a correct count, but a single
+object will return `$null` for `Count`.
 
 ```powershell
 $object = [PSCustomObject]@{Name='Joe'; Age=42}

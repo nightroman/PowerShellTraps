@@ -1,5 +1,6 @@
 
 $v2 = $PSVersionTable.PSVersion.Major -eq 2
+$v610 = $PSVersionTable.PSVersion -gt ([version]'6.0.9999')
 
 task test1.no.results {
 	($r = .\test1.no.results.ps1)
@@ -44,7 +45,12 @@ task test4.one.object.Count {
 task test5.PSCustomObject {
 	($r = ./test5.PSCustomObject.ps1)
 	equals $r.Count 3
-	if ($v2) {
+	if ($v610) {
+		equals $r[0] 1
+		equals $r[1] $false
+		equals $r[2] PSCustomObject
+	}
+	elseif ($v2) {
 		equals $r[0] 2
 		equals $r[1] $false
 		equals $r[2] Hashtable
