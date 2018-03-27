@@ -1,17 +1,20 @@
 
-Test 1 shows that PowerShell sets its start location to the current directory.
-As far as it works fine in most cases, a user may expect it to work always.
-Test 2 shows that PowerShell fails to do this if a directory name contains
-some special characters.
+(**Fixed in v6.1.0**)
+
+PowerShell normally sets its initial current location to the current directory
+of the caller. As far as it works fine in most cases, a user may expect it to
+work always. Tests show that PowerShell fails to do this if a directory name
+contains some special characters.
 
 As a result, some code may be invoked with the wrong assumption about the
 current location. In PowerShell v2 the unexpected start location is set to
-the root (*C:\\*). In v3 it is set to `$PSHOME`.
+the root (`C:\`). In v3-v6.0.2 it is set to `$PSHOME`.
 
-Scripts
+Scripts show unexpected/expected locations depending on versions:
 
-- [Expected.start.location.cmd](Expected.start.location.cmd) - PowerShell starts with its current location set to the current directory.
-- [Unexpected.start.location.cmd](Unexpected.start.location.cmd) - PowerShell starts with its current location set to an unexpected directory.
+- [v2.unexpected.start.location.cmd](v2.unexpected.start.location.cmd)
+- [v3.unexpected.start.location.cmd](v3.unexpected.start.location.cmd)
+- [v6.1.0.expected.start.location.cmd](v6.1.0.expected.start.location.cmd)
 
 ---
 
