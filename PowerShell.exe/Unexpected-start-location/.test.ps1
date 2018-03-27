@@ -18,15 +18,15 @@ task unexpected.start.location -If ($v2 -or $v3_5) {
 }
 
 task expected.start.location -If ($v610 -and $env:powershell6) {
-	# set $env:path
-	$dir = Split-Path $env:powershell6
-	if (!$env:path.StartsWith($dir)) {
-		$env:path = $dir + ';' + $env:path
-	}
+	# temporarily set $env:path
+	$path0 = $env:path
+	$env:path = (Split-Path $env:powershell6) + ';' + $env:path
 
 	# test
 	($r = ./v6.1.0.expected.start.location.cmd)
 	assert ($r[-3].Trim() -match '\\Test \[2\]$')
 
+	# end
+	$env:path = $path0
 	Remove-Item -LiteralPath 'Test [2]'
 }
