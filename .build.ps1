@@ -94,6 +94,12 @@ task Link {
 				continue
 			}
 
+			# link with "\"
+			if ($link.Contains('\')) {
+				Write-Warning "Link with '\': $file : $link"
+				continue
+			}
+
 			# missing link
 			$target = Join-Path $folder $link
 			if (!(Test-Path -LiteralPath $target)) {

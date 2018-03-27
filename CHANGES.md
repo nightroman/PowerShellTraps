@@ -7,7 +7,7 @@
 -- Fixed for `PSCustomObject`, same as above
 - [Get-ChildItem/Directory-with-backticks](Cmdlets/Get-ChildItem/Directory-with-backticks)
 -- `Get-ChildItem` does not fail in the empty directory but still fails in not empty
-- [v5-LiteralPath-Recurse-ignores-Include](Cmdlets/Get-ChildItem/v5-LiteralPath-Recurse-ignores-Include)
+- [Get-ChildItem/v5-LiteralPath-Recurse-ignores-Include](Cmdlets/Get-ChildItem/v5-LiteralPath-Recurse-ignores-Include)
 -- Fixed the v5 regression
 - [PowerShell.exe/Unexpected-start-location](PowerShell.exe/Unexpected-start-location)
 -- Fixed
