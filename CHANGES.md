@@ -1,20 +1,20 @@
 
 ### v6.1.0-preview.1
 
-- [Count-and-Length\PSCustomObject](Basic\Count-and-Length\PSCustomObject)
+- [Count-and-Length/PSCustomObject](Basic/Count-and-Length/PSCustomObject)
 -- Fixed
-- [Number-of-returned-objects](Basic\Number-of-returned-objects)
+- [Number-of-returned-objects](Basic/Number-of-returned-objects)
 -- Fixed for `PSCustomObject`, same as above
-- [Get-ChildItem\Directory-with-backticks](Cmdlets\Get-ChildItem\Directory-with-backticks)
+- [Get-ChildItem/Directory-with-backticks](Cmdlets/Get-ChildItem/Directory-with-backticks)
 -- `Get-ChildItem` does not fail in the empty directory but still fails in not empty
-- [v5-LiteralPath-Recurse-ignores-Include](Cmdlets\Get-ChildItem\v5-LiteralPath-Recurse-ignores-Include)
+- [v5-LiteralPath-Recurse-ignores-Include](Cmdlets/Get-ChildItem/v5-LiteralPath-Recurse-ignores-Include)
 -- Fixed the v5 regression
-- [PowerShell.exe\Unexpected-start-location](PowerShell.exe\Unexpected-start-location)
+- [PowerShell.exe/Unexpected-start-location](PowerShell.exe/Unexpected-start-location)
 -- Fixed
 
 ### v6-RC
 
-- [Strict-mode-ErrorRecord-formatting](Basic\Strict-mode-ErrorRecord-formatting)
+- [Strict-mode-ErrorRecord-formatting](Basic/Strict-mode-ErrorRecord-formatting)
 -- Fixed
 
 ### v6-beta.9
