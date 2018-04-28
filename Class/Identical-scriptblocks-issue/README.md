@@ -2,6 +2,7 @@
 If two script blocks with exactly the same code define a class and return its
 instance then on invoking them one after another the second call fails:
 
+- v6.1-preview.2: Error "Object reference not set to an instance of an object."
 - v5.1: Error "Parameter name: type" with no source information
 - v5.0: Error "Unable to find type X"
 

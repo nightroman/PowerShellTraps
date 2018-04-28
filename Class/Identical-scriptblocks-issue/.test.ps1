@@ -2,11 +2,15 @@
 $Version = $PSVersionTable.PSVersion
 ${5.0} = [version]'5.0.0'
 ${5.1} = [version]'5.1.0'
+${6.1} = [version]'6.0.9999' # 6.1-preview.2
 if ($Version -lt ${5.0}) {return task test5}
 
 task Test-1.fails {
 	($r = try {.\Test-1.fails.ps1} catch {$_})
-	if ($Version -ge ${5.1}) {
+	if ($Version -ge ${6.1}) {
+		equals $r.FullyQualifiedErrorId 'System.NullReferenceException,Test-1.fails.ps1'
+	}
+	elseif ($Version -ge ${5.1}) {
 		# weird error "Parameter name: type" with no source
 		equals $r.FullyQualifiedErrorId 'System.ArgumentNullException,Test-1.fails.ps1'
 	}
