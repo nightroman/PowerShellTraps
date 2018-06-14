@@ -1,4 +1,9 @@
 
+### v6.1.0-preview.3
+
+- [Get-ChildItem/Different-FileInfo-ToString](Cmdlets/Get-ChildItem/Different-FileInfo-ToString)
+-- Fixed
+
 ### v6.1.0-preview.1
 
 - [Count-and-Length/PSCustomObject](Basic/Count-and-Length/PSCustomObject)

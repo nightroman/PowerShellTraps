@@ -1,6 +1,8 @@
 
 ### Get-ChildItem gets items converted to strings differently
 
+**Fixed in v6.1.0-preview.3**
+
 `Get-ChildItem` returns `FileSystemInfo` objects. Objects representing the same
 item may be converted to strings differently. In some cases they are converted
 as full paths, in other cases as just names.
