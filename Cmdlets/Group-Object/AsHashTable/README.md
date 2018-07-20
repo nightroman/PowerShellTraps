@@ -10,7 +10,7 @@ Other expressions, i.e. not strings, may produce expected results.
 Scripts
 
 - [Test-1.property.string.ps1](Test-1.property.string.ps1) - expected results with a property name
-- [Test-2.expression.string.ps1](Test-2.expression.string.ps1) - unexpected results with the seemingly same string expression
+- [Test-2.expression.string.ps1](Test-2.expression.string.ps1) - unexpected results with the seemingly same string expression, **fixed in v6.1.0-preview.4**
 - [Test-3.expression.number.ps1](Test-3.expression.number.ps1) - expected results with a numeric expression
 
 ***

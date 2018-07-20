@@ -1,6 +1,6 @@
 
-$ErrorActionPreference = 'Stop'
 $v610 = $PSVersionTable.PSVersion -ge ([version]'6.0.9999')
+$ErrorActionPreference = 'Stop'
 
 # make directory with backticks, cd to it
 $root = Split-Path $MyInvocation.MyCommand.Path
@@ -11,9 +11,11 @@ Set-Location -LiteralPath '``test``'
 # try Get-ChildItem * in the directory with backticks
 try {
 	# v2-v6.0.2 - fails "Cannot find path '...\`test`'
+	# v6.1.0-preview.3 - works here but see next
+	# v6.1.0-preview.4 - fails again
 	Get-ChildItem *
 
-	# v6.1.0 - does not fail in the empty directory, but see next
+	# v6.1.0-preview.3 - does not fail in the empty directory, but see next
 	'v6.1.0 worked'
 }
 catch {

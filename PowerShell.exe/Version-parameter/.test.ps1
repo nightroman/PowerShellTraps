@@ -11,5 +11,5 @@ task Version-must-be-first-parameter -If ($Version -le 5) {
 task v6-ignores-stuff-after-Version -If ($Version -ge 6) {
 	($r = .\v6-ignores-stuff-after-Version.ps1 | Out-String)
 	equals $global:LASTEXITCODE 0
-	assert ($r -like 'powershell v*')
+	assert ($r -cmatch 'PowerShell \d+\.')
 }

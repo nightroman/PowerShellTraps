@@ -1,4 +1,12 @@
 
+### v6.1.0-preview.4
+
+- [Get-ChildItem/Directory-with-backticks](Cmdlets/Get-ChildItem/Directory-with-backticks)
+-- Regression, it worked better in v6.1.0-preview.3
+
+- [Group-Object/AsHashTable](Cmdlets/Group-Object/AsHashTable)
+-- Fixed *Test-2.expression.string.ps1*
+
 ### v6.1.0-preview.3
 
 - [Get-ChildItem/Different-FileInfo-ToString](Cmdlets/Get-ChildItem/Different-FileInfo-ToString)
