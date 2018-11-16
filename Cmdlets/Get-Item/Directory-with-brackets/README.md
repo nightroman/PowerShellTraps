@@ -1,6 +1,8 @@
 
 ### Get-Item works incorrectly in some locations
 
+**Fixed in v6.2.0-preview.2**
+
 `Get-Item` and `Get-Item -LiteralPath` may work incorrectly with relative
 paths if the current location path is "odd".
 

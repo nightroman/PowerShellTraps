@@ -8,7 +8,14 @@ task Test-1.Environment {
 
 task Test-2.1.FileSystem {
 	($r = .\Test-2.1.FileSystem.ps1)
-	assert ($r -contains 'tmp')
+
+	# changed in v6.2.0-preview.2
+	if ($Version -ge 6) {
+		assert ($r -notcontains 'tmp')
+	}
+	else {
+		assert ($r -contains 'tmp')
+	}
 }
 
 # TODO skip v6-beta.1, try later

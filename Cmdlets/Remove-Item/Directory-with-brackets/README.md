@@ -1,6 +1,8 @@
 
 ### Remove-Item -LiteralPath fails in a directory with brackets
 
+**Fixed in v6.2.0-preview.2**
+
 If `Remove-Item -LiteralPath` is invoked in a directory with brackets then it
 fails. `Remove-Item -Path` works fine.
 

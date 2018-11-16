@@ -29,6 +29,8 @@ wildcard-like syntax. But its wildcards may work in unexpected ways.
 
 See the script [Test-2.1.FileSystem.ps1](Test-2.1.FileSystem.ps1).
 
+NOTE: In v6.2.0-preview.2 it matches names with a dot, as expected.
+
 #### `*.ext` where `ext` is three characters matches `*.ext*`
 
 See the script [Test-2.2.FileSystem.ps1](Test-2.2.FileSystem.ps1).

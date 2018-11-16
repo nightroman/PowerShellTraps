@@ -1,4 +1,6 @@
 
+$Version = $PSVersionTable.PSVersion.Major
+
 # to catch Remove-Item errors
 $ErrorActionPreference = 'Stop'
 
@@ -15,13 +17,16 @@ $log = New-Object System.Collections.Specialized.OrderedDictionary
 42 > test.txt
 $log.FileCreated = [System.IO.File]::Exists("$PSScriptRoot\[c]\test.txt")
 
-# try to remove by Remove-Item -LiteralPath, it fails
+# try to remove by Remove-Item -LiteralPath:
+# works in v6.2.0-preview.2, fails in older
 $log.ErrorRemoveLiteral = try { Remove-Item -LiteralPath test.txt } catch {$_}
 $log.FileExistsAfterRemoveLiteral = [System.IO.File]::Exists("$PSScriptRoot\[c]\test.txt")
 
-# remove by Remove-Item -Path, it works
-Remove-Item -Path test.txt
-$log.FileExistsAfterRemovePath= [System.IO.File]::Exists("$PSScriptRoot\[c]\test.txt")
+if ($Version -le 5) {
+	# remove by Remove-Item -Path, it works
+	Remove-Item -Path test.txt
+	$log.FileExistsAfterRemovePath= [System.IO.File]::Exists("$PSScriptRoot\[c]\test.txt")
+}
 
 # results
 $log

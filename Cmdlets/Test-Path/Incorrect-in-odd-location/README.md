@@ -1,6 +1,8 @@
 
 ## Test-Path works incorrectly in some locations
 
+**Fixed in v6.2.0-preview.2**
+
 `Test-Path` and `Test-Path -LiteralPath` may work incorrectly with relative
 paths if the current location path is "odd".
 
