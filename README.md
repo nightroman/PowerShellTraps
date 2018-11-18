@@ -49,6 +49,7 @@ to their directory. See also [TESTS]. Some scripts require
     - [RunspacePool](./Basic/RunspacePool)
     - [Statements-are-not-expressions](./Basic/Statements-are-not-expressions)
     - [Strict-mode-ErrorRecord-formatting](./Basic/Strict-mode-ErrorRecord-formatting)
+    - [String-equality-operators](./Basic/String-equality-operators)
     - [Switch-is-a-looping-construct](./Basic/Switch-is-a-looping-construct)
     - [Tempting-wrong-operators](./Basic/Tempting-wrong-operators)
     - [ThrowTerminatingError](./Basic/ThrowTerminatingError)
