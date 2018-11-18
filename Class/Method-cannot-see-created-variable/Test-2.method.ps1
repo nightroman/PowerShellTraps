@@ -15,7 +15,6 @@ class Connector {
 		# create connection
 		Connect-Something1
 
-		# return connection
 		# it fails "Variable is not assigned in the method."
 		return $Connection
 	}

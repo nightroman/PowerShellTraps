@@ -22,6 +22,6 @@ class Connector {
 	}
 }
 
-# Try to use the scenario with the class and method.
+# It returns "this-is-connection"
 $connect = [Connector]::new()
 $connect.Connect()
