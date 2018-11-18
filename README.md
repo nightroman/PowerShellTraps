@@ -70,6 +70,7 @@ to their directory. See also [TESTS]. Some scripts require
 - [Class](./Class)
     - [Cannot-derive-from-dot-sourced](./Class/Cannot-derive-from-dot-sourced)
     - [Identical-scriptblocks-issue](./Class/Identical-scriptblocks-issue)
+    - [Method-cannot-see-created-variable](./Class/Method-cannot-see-created-variable)
     - [Parser-fails-on-custom-type](./Class/Parser-fails-on-custom-type)
 - [Clixml](./Clixml)
     - [Cannot-write-to-hidden-files](./Clixml/Cannot-write-to-hidden-files)
