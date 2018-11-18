@@ -1,6 +1,6 @@
 
-# This function creates a "connection" and gets it to the caller not by
-# returning but by creating a variable in the parent (caller) scope.
+# This function creates a "connection" and gives it to the caller not by
+# returning but by creating its variable in the parent (caller) scope.
 # So the result of the function is the variable `$Connection`.
 # (Why this unusual way is used is a different story).
 function Connect-Something1 {
@@ -8,9 +8,9 @@ function Connect-Something1 {
 	Set-Variable -Name Connection -Value $Connection -Scope 1
 }
 
-# We are using an extra script block to work around the problem, see test 2.
+# Use an extra script block to work around the problem of test 2.
 class Connector {
-	[object] Connect () {
+	[object] Connect() {
 		# create connection using an extra script block
 		$Connection = &{
 			Connect-Something1

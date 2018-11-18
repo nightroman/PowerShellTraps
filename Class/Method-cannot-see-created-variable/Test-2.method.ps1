@@ -1,6 +1,6 @@
 
-# This function creates a "connection" and gets it to the caller not by
-# returning but by creating a variable in the parent (caller) scope.
+# This function creates a "connection" and gives it to the caller not by
+# returning but by creating its variable in the parent (caller) scope.
 # So the result of the function is the variable `$Connection`.
 # (Why this unusual way is used is a different story).
 function Connect-Something1 {
@@ -11,7 +11,7 @@ function Connect-Something1 {
 # This class has the method with the same code as Connect-Something2, see test 1.
 # It is not going to work due to "Variable is not assigned in the method."
 class Connector {
-	[object] Connect () {
+	[object] Connect() {
 		# create connection
 		Connect-Something1
 

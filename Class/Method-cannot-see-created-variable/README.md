@@ -1,7 +1,9 @@
 
+# Methods do not see implicitly created variables
+
 PowerShell variables are not always created by explicit assignments of values.
 PowerShell provides other ways like cmdlets `New-Variable`, `Set-Variable`,
-*Variable* provider cmdlets, PowerShell API.
+the *Variable* provider cmdlets, PowerShell API methods.
 
 Such implicitly created variables may be not seen as created in PowerShell class methods.
 
