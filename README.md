@@ -36,6 +36,7 @@ to their directory. See also [TESTS]. Some scripts require
     - [Local-ActionPreference](./Basic/Local-ActionPreference)
     - [Misleading-error-location](./Basic/Misleading-error-location)
     - [Missing-ternary-operator](./Basic/Missing-ternary-operator)
+    - [Negative-number-literal-argument](./Basic/Negative-number-literal-argument)
     - [Null-converted-to-empty-string](./Basic/Null-converted-to-empty-string)
     - [Number-of-returned-objects](./Basic/Number-of-returned-objects)
     - [Operators-match-notmatch-and-matches](./Basic/Operators-match-notmatch-and-matches)
