@@ -1,4 +1,6 @@
 
+# Test-Path
+
 ## Test-Path works incorrectly in some locations
 
 **Fixed in v6.2.0-preview.2**
@@ -16,6 +18,8 @@ See also
 - Microsoft Connect [389828](https://connect.microsoft.com/PowerShell/Feedback/Details/389828)
 
 ## Test-Path gets true for a space
+
+**Fixed in v6.2.0-preview.3**
 
 This code
 

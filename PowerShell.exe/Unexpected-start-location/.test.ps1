@@ -24,7 +24,9 @@ task expected.start.location -If ($v610 -and $env:powershell6) {
 
 	# test
 	($r = ./v6.1.0.expected.start.location.cmd)
-	assert ($r[-3].Trim() -match '\\Test \[2\]$')
+
+	# v6.2.0-preview.3 -- [-2], was [-3]
+	assert ($r[-2].Trim() -match '\\Test \[2\]$')
 
 	# end
 	$env:path = $path0

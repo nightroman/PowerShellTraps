@@ -39,5 +39,10 @@ task Current.directory.with.odd.name {
 
 task Input.space {
 	($r = ./Input.space.ps1)
-	equals $r $true
+	if ($Version -ge 6) {
+		equals $r $false
+	}
+	else {
+		equals $r $true
+	}
 }

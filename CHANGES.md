@@ -1,4 +1,9 @@
 
+### v6.2.0-preview.3
+
+- [Test-Path/Incorrect-in-odd-location](Cmdlets/Test-Path/Incorrect-in-odd-location)
+-- Fixed
+
 ### v6.2.0-preview.2
 
 - [Basic/Provider-specific-Filter](Basic/Provider-specific-Filter)
