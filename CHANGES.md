@@ -1,4 +1,9 @@
 
+### v6.2.0-preview.4
+
+- [Basic/FormatEnumerationLimit](Basic/FormatEnumerationLimit)
+-- Different representation of truncated outputs.
+
 ### v6.2.0-preview.3
 
 - [Test-Path/Incorrect-in-odd-location](Cmdlets/Test-Path/Incorrect-in-odd-location)
