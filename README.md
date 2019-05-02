@@ -66,6 +66,7 @@ to their directory. See also [TESTS]. Some scripts require
     - [Unrolled-collections](./Basic/Unrolled-collections)
     - [v5-Method-New](./Basic/v5-Method-New)
     - [ValidateScript-attribute](./Basic/ValidateScript-attribute)
+    - [ValueFromPipeline](./Basic/ValueFromPipeline)
     - [ValueFromRemainingArguments](./Basic/ValueFromRemainingArguments)
     - [When-Process-block-is-called](./Basic/When-Process-block-is-called)
     - [WildcardPattern](./Basic/WildcardPattern)
