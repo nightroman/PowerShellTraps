@@ -4,7 +4,7 @@ if ($Version -eq 2) {return task skip2}
 
 task Test-1.multiline.object {
 	$r = try {.\Test-1.multiline.object.ps1} catch {$_}
-	if ($Version -eq 6) {
+	if ($Version -ge 6) {
 		equals $r.a 1L
 		equals $r.b 2L
 	}
@@ -20,7 +20,7 @@ task Test-1.multiline.object {
 task Test-1.oneline.objects {
 	$r = .\Test-1.oneline.objects.ps1
 	equals $r.Count 2
-	if ($Version -eq 6) {
+	if ($Version -ge 6) {
 		equals $r[0].a 1L
 		equals $r[1].a 2L
 	}
@@ -32,7 +32,7 @@ task Test-1.oneline.objects {
 
 task Test-2.multiline.object.empty {
 	$r = try {.\Test-2.multiline.object.empty.ps1} catch {$_}
-	if ($Version -eq 6) {
+	if ($Version -ge 6) {
 		equals $r.Count 4
 		equals $r[0] 2
 		equals $r[1] $true

@@ -1,4 +1,13 @@
 
+### v7.0.0-preview.1
+
+- [Basic/Invocation-with-odd-paths](Basic/Invocation-with-odd-paths)
+-- Some fixes or changes
+- [Basic/Provider-specific-Filter](Basic/Provider-specific-Filter)
+-- Changed as it was before v6
+- [Group-Object/Expression-with-no-value](Cmdlets/Group-Object/Expression-with-no-value)
+-- Fixed
+
 ### v6.2.0-preview.4
 
 - [Basic/FormatEnumerationLimit](Basic/FormatEnumerationLimit)

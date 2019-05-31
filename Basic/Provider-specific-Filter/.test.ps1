@@ -9,8 +9,12 @@ task Test-1.Environment {
 task Test-2.1.FileSystem {
 	($r = .\Test-2.1.FileSystem.ps1)
 
+	# changed in v7.0.0-preview.1
+	if ($Version -ge 7) {
+		assert ($r -contains 'tmp')
+	}
 	# changed in v6.2.0-preview.2
-	if ($Version -ge 6) {
+	elseif ($Version -ge 6) {
 		assert ($r -notcontains 'tmp')
 	}
 	else {
@@ -18,10 +22,10 @@ task Test-2.1.FileSystem {
 	}
 }
 
-# TODO skip v6-beta.1, try later
+# TODO skip v6+, try later
 # win10, v6: OK (but OSVersion check gets 6!)
 # win81, v6: still KO
-task -If ($Version -ne 6) Test-2.2.FileSystem {
+task -If ($Version -lt 6) Test-2.2.FileSystem {
 	($r = .\Test-2.2.FileSystem.ps1)
 
 	# fixed in Windows 10?

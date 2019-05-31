@@ -6,7 +6,10 @@ task Test-1 {
 	equals $r.Count 2
 	equals $r[0].Name X
 
-	if ($Version -ge 5) {
+	if ($Version -ge 7) {
+		equals $r[1].Count 1
+	}
+	elseif ($Version -ge 5) {
 		equals $r[1].FullyQualifiedErrorId 'System.NullReferenceException,Microsoft.PowerShell.Commands.GroupObjectCommand'
 	}
 	elseif ($Version -eq 2) {
