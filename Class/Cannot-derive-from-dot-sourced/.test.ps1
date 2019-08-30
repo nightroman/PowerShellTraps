@@ -10,3 +10,10 @@ task Test-2.cannot.derive {
 	($r = try {.\Test-2.cannot.derive.ps1} catch {$_})
 	equals $r.FullyQualifiedErrorId TypeNotFound
 }
+
+task Test-3.workaround {
+	($r = .\Test-3.workaround.ps1)
+	equals 2 $r.Count
+	equals A $r[0]
+	equals B $r[1]
+}

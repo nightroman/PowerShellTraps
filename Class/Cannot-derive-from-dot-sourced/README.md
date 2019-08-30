@@ -11,3 +11,7 @@ class. See the script [Test-2.cannot.derive.ps1](Test-2.cannot.derive.ps1).
 See also [Parser-fails-on-custom-type](../Parser-fails-on-custom-type). The
 issue is similar. A possible workaround is to move the definition of derived
 classes to a script and dot-source it after dot-sourcing base classes.
+
+Another workaround is suggested in [PowerShellTraps/issues/10](https://github.com/nightroman/PowerShellTraps/issues/10).
+Define or get the derived class source as a string and use `Invoke-Expression`.
+See [Test-3.workaround.ps1](Test-3.workaround.ps1).
