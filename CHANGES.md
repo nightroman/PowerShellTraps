@@ -1,3 +1,7 @@
+### v7.0.0-preview.4
+
+- [Basic/Missing-ternary-operator](Basic/Missing-ternary-operator)
+-- PowerShell introduces the ternary operator
 
 ### v7.0.0-preview.1
 
