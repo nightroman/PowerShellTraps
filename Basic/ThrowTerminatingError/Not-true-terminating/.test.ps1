@@ -1,6 +1,7 @@
+$ErrorView = 'NormalView' #! v7
 
 task Test-1.2.ThrowTerminatingError {
-	($r = Invoke-PowerShell -NoProfile -Command .\Test-1.2.ThrowTerminatingError.ps1)
+	($r = Invoke-PowerShell -NoProfile -Command '$ErrorView = ''NormalView''; .\Test-1.2.ThrowTerminatingError.ps1')
 	assert (($r | Out-String) -clike '*invalid-input*\Test-1.2.ThrowTerminatingError.ps1:5 *Invoked!!!*')
 }
 

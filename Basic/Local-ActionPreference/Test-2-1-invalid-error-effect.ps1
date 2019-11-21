@@ -1,3 +1,4 @@
+$ErrorView = 'NormalView' #! v7
 
 function Test-Preference {
     # set an invalid value

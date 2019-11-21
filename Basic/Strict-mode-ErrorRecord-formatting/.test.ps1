@@ -1,5 +1,6 @@
 
 $Version = $PSVersionTable.PSVersion.Major
+$ErrorView = 'NormalView' #! v7
 
 task Test-1.Out-String.ps1 {
 	($r = .\Test-1.Out-String.ps1 | Out-String)

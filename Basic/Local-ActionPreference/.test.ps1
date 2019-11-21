@@ -1,4 +1,11 @@
 
+function Test-Command($Command) {
+	$toRun = '$ErrorView = "NormalView"; {0}' -f $Command
+	$bytes = [System.Text.Encoding]::Unicode.GetBytes($toRun)
+	$encoded = [Convert]::ToBase64String($bytes)
+	Invoke-PowerShell -NoProfile -EncodedCommand $encoded
+}
+
 task Test-1-2-script-scope {
 	($r = .\Test-1-2-script-scope.ps1)
 	equals 'Invalid|Invalid|Invalid|Invalid|Invalid' ($r -join '|')

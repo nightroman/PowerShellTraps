@@ -1,3 +1,4 @@
+$ErrorView = 'NormalView' #! v7
 
 task test1.ForEach-Object.bad.error.info {
 	($r = try {.\test1.ForEach-Object.bad.error.info.ps1} catch {$_ | Out-String})

@@ -1,5 +1,6 @@
 
 $Version = $PSVersionTable.PSVersion.Major
+$ErrorView = 'NormalView' #! v7
 
 task Test-1.ThrowTerminatingError {
 	($r = try {./Test-1.ThrowTerminatingError.ps1} catch {$_})

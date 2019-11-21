@@ -1,3 +1,8 @@
+### v7.0.0-preview.5
+
+- [PowerShell.exe/Exit-code-0-with-Command-syntax-error](PowerShell.exe/Exit-code-0-with-Command-syntax-error)
+-- exit code is 1 as usual but there is no error message printed
+
 ### v7.0.0-preview.4
 
 - [Basic/Missing-ternary-operator](Basic/Missing-ternary-operator)

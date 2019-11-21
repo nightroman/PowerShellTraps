@@ -71,6 +71,8 @@ to their directory. See also [TESTS]. Some scripts require
     - [When-Process-block-is-called](./Basic/When-Process-block-is-called)
     - [WildcardPattern](./Basic/WildcardPattern)
 - [Class](./Class)
+    - [Attribute-with-later-defined-type-parameter](./Class/Attribute-with-later-defined-type-parameter)
+    - [Cannot-derive-from-defined-later](./Class/Cannot-derive-from-defined-later)
     - [Cannot-derive-from-dot-sourced](./Class/Cannot-derive-from-dot-sourced)
     - [Identical-scriptblocks-issue](./Class/Identical-scriptblocks-issue)
     - [Method-cannot-see-created-variable](./Class/Method-cannot-see-created-variable)
