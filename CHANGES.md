@@ -1,3 +1,8 @@
+### v7.0.0-preview.6
+
+- [Cmdlets/ConvertFrom-Json/Not-unrolled-result](Cmdlets/ConvertFrom-Json/Not-unrolled-result)
+-- The result is unrolled, "more expected"
+
 ### v7.0.0-preview.5
 
 - [PowerShell.exe/Exit-code-0-with-Command-syntax-error](PowerShell.exe/Exit-code-0-with-Command-syntax-error)
