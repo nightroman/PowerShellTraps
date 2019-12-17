@@ -1,7 +1,7 @@
+## ErrorRecord formatting may fail in the strict mode in the default host
 
-### ErrorRecord formatting may fail in the strict mode in the default host
-
-**Fixed in v6-RC**
+- **Fixed in v6-RC**
+- **Started to fail again in v7.0.0-rc1**
 
 Some internal code of `ErrorRecord` formatting is not well designed for the
 strict mode with some hosts. The code uses `$host.UI.RawUI.BufferSize.Width`
@@ -19,7 +19,9 @@ trigger formatting are `Out-File`, `Format-Custom`, `Format-Table`, `Format-Wide
 
 The scripts work fine if this line is removed
 
-    Set-StrictMode -Version 2
+```powershell
+Set-StrictMode -Version 2
+```
 
 If the strict mode is required and a script is designed to work in any host
 then standard formatting of errors should be avoided.
@@ -29,5 +31,6 @@ how to manually format an error in a way similar to `Out-String`.
 
 ---
 
+- [PowerShell/issues/11371](https://github.com/PowerShell/PowerShell/issues/11371)
 - Discussion of [PowerShellPracticeAndStyle/issues/51](https://github.com/PoshCode/PowerShellPracticeAndStyle/issues/51)
-- Microsoft Connect [708182](https://connect.microsoft.com/PowerShell/Feedback/Details/708182)
+- Microsoft Connect 708182

@@ -1,3 +1,8 @@
+### v7.0.0-rc.1
+
+- [Basic/Strict-mode-ErrorRecord-formatting](Basic/Strict-mode-ErrorRecord-formatting)
+-- started to fail again, was fixed in v6 - v7.0.0-preview.6
+
 ### v7.0.0-preview.6
 
 - [Cmdlets/ConvertFrom-Json/Not-unrolled-result](Cmdlets/ConvertFrom-Json/Not-unrolled-result)
