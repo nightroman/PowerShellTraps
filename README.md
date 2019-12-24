@@ -12,6 +12,7 @@ to their directory. See also [TESTS]. Some scripts require
 <!--Generated-->
 - [Basic](./Basic)
     - [And-and-or-have-same-precedence](./Basic/And-and-or-have-same-precedence)
+    - [App-with-error-output](./Basic/App-with-error-output)
     - [Automatic-variables](./Basic/Automatic-variables)
     - [Break-and-Continue-with-not-matching-label](./Basic/Break-and-Continue-with-not-matching-label)
     - [Break-and-Continue-without-loop](./Basic/Break-and-Continue-without-loop)
