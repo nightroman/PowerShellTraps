@@ -158,6 +158,7 @@ to their directory. See also [TESTS]. Some scripts require
     - [Not-found-function-2](./Module/Not-found-function-2)
     - [Not-found-variable](./Module/Not-found-variable)
     - [Script-block-scope](./Module/Script-block-scope)
+    - [Set-variable-in-caller-scope](./Module/Set-variable-in-caller-scope)
     - [Strict-mode-is-not-propagated](./Module/Strict-mode-is-not-propagated)
     - [v2-Manifest-RootModule-is-not-supported](./Module/v2-Manifest-RootModule-is-not-supported)
 - [PowerShell.exe](./PowerShell.exe)
