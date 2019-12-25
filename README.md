@@ -54,6 +54,7 @@ to their directory. See also [TESTS]. Some scripts require
     - [String-equality-operators](./Basic/String-equality-operators)
     - [Switch-is-a-looping-construct](./Basic/Switch-is-a-looping-construct)
     - [Tempting-wrong-operators](./Basic/Tempting-wrong-operators)
+    - [Throw-may-not-terminate](./Basic/Throw-may-not-terminate)
     - [ThrowTerminatingError](./Basic/ThrowTerminatingError)
         - [Catch-is-not-called](./Basic/ThrowTerminatingError/Catch-is-not-called)
         - [Not-true-terminating](./Basic/ThrowTerminatingError/Not-true-terminating)
