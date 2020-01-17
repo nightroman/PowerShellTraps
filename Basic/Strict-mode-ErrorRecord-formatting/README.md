@@ -1,7 +1,6 @@
 ## ErrorRecord formatting may fail in the strict mode in the default host
 
 - **Fixed in v6-RC**
-- **Started to fail again in v7.0.0-rc1**
 
 Some internal code of `ErrorRecord` formatting is not well designed for the
 strict mode with some hosts. The code uses `$host.UI.RawUI.BufferSize.Width`

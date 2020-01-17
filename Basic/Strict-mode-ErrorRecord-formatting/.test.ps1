@@ -10,12 +10,8 @@ task Test-1.Out-String {
 	elseif ($Version -le 5) {
 		assert ($r -cmatch '(?s)^Error {\s+}.*BufferSize.*FullyQualifiedErrorId : PropertyNotFoundStrict')
 	}
-	elseif ($Version -le 6) {
-		assert ($r -like 'Error {*Oops!*FullyQualifiedErrorId : Oops!*Oops!*FullyQualifiedErrorId : Oops!*')
-	}
 	else {
-		# started to fail in v7.0.0-rc.1
-		assert ($r -like 'Error {*The property ''ErrorCategory_Message'' cannot be found on this object.*FullyQualifiedErrorId : PropertyNotFoundStrict*')
+		assert ($r -like 'Error {*Oops!*FullyQualifiedErrorId : Oops!*Oops!*FullyQualifiedErrorId : Oops!*')
 	}
 }
 
@@ -27,12 +23,8 @@ task Test-2.Format-List {
 	elseif ($Version -le 5) {
 		assert ($r -cmatch '(?s)^Error {\s+}.*BufferSize.*FullyQualifiedErrorId : PropertyNotFoundStrict')
 	}
-	elseif ($Version -le 6) {
-		assert ($r -like 'Error {*Oops!*FullyQualifiedErrorId : Oops!*Oops!*FullyQualifiedErrorId : Oops!*')
-	}
 	else {
-		# started to fail in v7.0.0-rc.1
-		assert ($r -like 'Error {*The property ''ErrorCategory_Message'' cannot be found on this object.*FullyQualifiedErrorId : PropertyNotFoundStrict*')
+		assert ($r -like 'Error {*Oops!*FullyQualifiedErrorId : Oops!*Oops!*FullyQualifiedErrorId : Oops!*')
 	}
 }
 

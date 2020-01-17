@@ -1,3 +1,8 @@
+### v7.0.0-rc.2
+
+- [Basic/Strict-mode-ErrorRecord-formatting](Basic/Strict-mode-ErrorRecord-formatting)
+-- fixed regression v7.0.0-rc.1
+
 ### v7.0.0-rc.1
 
 - [Basic/Strict-mode-ErrorRecord-formatting](Basic/Strict-mode-ErrorRecord-formatting)

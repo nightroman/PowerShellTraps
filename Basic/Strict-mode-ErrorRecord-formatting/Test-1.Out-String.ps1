@@ -1,5 +1,4 @@
 # v6-rc: fixed
-# v7.0.0-rc.1: fails "The property 'ErrorCategory_Message' cannot be found on this object."
 
 [PowerShell]::Create().AddScript({
 	$ErrorView = 'NormalView' #! v7
