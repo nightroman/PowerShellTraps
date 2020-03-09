@@ -1,3 +1,4 @@
+## Errors of unusual type
 
 According to the documentation, there are two types of PowerShell errors,
 terminating and non-terminating.
@@ -15,7 +16,7 @@ It looks like constant use of either error action preference *Stop* or `try` or
 cause problems because invocation continues. Note that the default error action
 preference is *Continue*.
 
-Examples of semi-terminating errors:
+**Examples of semi-terminating errors:**
 
 1. A command is not found.
 1. Division by zero.
@@ -29,12 +30,14 @@ Examples of semi-terminating errors:
 1. Not supported provider features.
 1. A .NET exception.
 
-Hypothesis
+**Hypothesis**
 
 The tests give the idea that any runtime exception is a semi-terminating error.
-True terminating errors are caused by `throw` in scripts.
 
-Scripts
+In scripts, somewhat reliable terminating errors are caused by `throw`.
+But even `throw` may not terminate in some *practically rare cases*, see [Throw-may-not-terminate](../Throw-may-not-terminate).
+
+**Scripts**
 
 - [missing.command.1.ps1](missing.command.1.ps1) - shows a not terminating error.
 - [missing.command.2.ps1](missing.command.2.ps1) - shows a terminating error with `try` in the same scope.
