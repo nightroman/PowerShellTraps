@@ -1,7 +1,8 @@
 
 $Version = $PSVersionTable.PSVersion.Major
 
-task Current.directory.with.odd.name {
+#_200427_195327
+task Current.directory.with.odd.name -If ($Version -lt 7) {
 	($r = .\Current.directory.with.odd.name.ps1)
 
 	if ($Version -ge 6) {

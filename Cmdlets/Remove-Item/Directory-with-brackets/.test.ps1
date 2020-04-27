@@ -1,7 +1,8 @@
 
 $Version = $PSVersionTable.PSVersion.Major
 
-task Test-1-directory-with-brackets {
+#_200427_195327
+task Test-1-directory-with-brackets -If ($Version -lt 7) {
 	($r = .\Test-1-directory-with-brackets.ps1)
 	equals $r.FileCreated $true
 

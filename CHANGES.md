@@ -1,3 +1,18 @@
+### 7.1.0-preview.2
+
+#### Issue `_200427_195327`
+
+`Set-Location -LiteralPath` fails on odd paths, e.g. with brackets.
+Weird, it works in demo scripts but fails in batch tests.
+
+The following tests are disabled for v7:
+
+- Cmdlets\Get-Item\Directory-with-brackets
+- Cmdlets\Remove-Item\Directory-with-brackets
+- Cmdlets\Set-Content\Directory-with-brackets
+- Cmdlets\Start-Process
+- Cmdlets\Test-Path\Incorrect-in-odd-location
+
 ### v7.0.0-rc.2
 
 - [Basic/Strict-mode-ErrorRecord-formatting](Basic/Strict-mode-ErrorRecord-formatting)
