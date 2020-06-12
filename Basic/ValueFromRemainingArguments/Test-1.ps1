@@ -12,9 +12,4 @@ Get-Command bar -CommandType Function
 # In this case by chance yet another command `bar` is found, so the incorrect
 # command does not even write an error. But it gets the wrong result.
 
-# PS v7.1.0-preview.2: It fails with CommandArgsOnlyForSingleCmdlet.
-# The behaviour is different but the reason is the same, PS treats
-# the misspelled parameter name and its argument as ArgumentList.
-# Instead of "invalid parameter" we get some not clear error.
-
 Get-Command bar -ComandType Function
