@@ -1,3 +1,8 @@
+### 7.1.0-preview.6
+
+- [Basic/App-with-error-output](Basic/App-with-error-output)
+-- fixed standard errors causing PowerShell errors
+
 ### 7.1.0-preview.2
 
 #### Issue `_200427_195327`

@@ -8,5 +8,6 @@ $ErrorActionPreference = 'Stop'
 Set-Location c:\
 git rev-parse --is-inside-work-tree 2>$null
 
-# This line is not invoked.
-throw
+# This line is invoked in v7.1-preview6
+# and not invoked in older versions
+'done'

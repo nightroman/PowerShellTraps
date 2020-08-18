@@ -1,5 +1,7 @@
 ## Invoking native apps with error output
 
+**Fixed in 7.1.0-preview.6**
+
 Invoking a native app with error output causes a terminating error if the
 current error action preference is "Stop".
 
