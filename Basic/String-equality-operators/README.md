@@ -1,4 +1,3 @@
-
 # String equality operators
 
 String equality operators (`-eq`, `-ceq`) do not compare strings "literally"
@@ -12,3 +11,4 @@ Scripts:
 
 - [Test-1.ps1](Test-1.ps1) - shows that the binary zero is ignored by string operators.
 - [Test-2.ps1](Test-2.ps1) - shows how two certain characters may be equal to one.
+    - changed in 7.1.0-rc.2

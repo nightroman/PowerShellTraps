@@ -1,4 +1,3 @@
-
 <#
 .Synopsis
 	Build script (https://github.com/nightroman/Invoke-Build)
@@ -9,13 +8,13 @@ Set-StrictMode -Version Latest
 
 # Synopsis: Invoke all tests
 # Allow test file failures and show summary.
-task Test3 {
+task test3 {
 	Invoke-Build ** -Safe -Summary
 }
 
 # Synopsis: Test with PowerShell v2.
 # Check for the exit code, warn about failures.
-task Test2 {
+task test2 {
 	#! do not use -Safe or we miss a warning
 	PowerShell -Version 2 -NoProfile Invoke-Build **
 	if ($global:LASTEXITCODE) {Write-Warning 'V2 tests failed.'}
@@ -23,19 +22,19 @@ task Test2 {
 
 # Synopsis: Test with PowerShell v6.
 # Check for the exit code, warn about failures.
-task Test6 -If $env:powershell6 {
+task test6 -If $env:powershell6 {
 	#! do not use -Safe or we miss a warning
 	& $env:powershell6 -NoProfile -Command Invoke-Build **
 	if ($global:LASTEXITCODE) {Write-Warning 'V6 tests failed.'}
 }
 
 # Synopsis: Open a random folder in Visual Studio Code
-task Peek {
+task peek {
 	code (Get-ChildItem . -Recurse -Directory | Get-Random).FullName
 }
 
 # Synopsis: Generate the index in README.md
-task Index {
+task index {
 	function Get-List($Path, $Indent) {
 		$tab = '    ' * $Indent
 		foreach($_ in Get-ChildItem -Path $Path -Name -Directory) {
@@ -60,7 +59,7 @@ task Index {
 
 # Synopsis: Tests markdown links
 # Uses pandoc for markdown.
-task Link {
+task link {
 	# forbidden absolute links
 	$ForbiddenLink = 'https://github.com/nightroman/PowerShellTraps/(tree|blob)/'
 
@@ -120,4 +119,4 @@ task Link {
 }
 
 # Synopsis: Test v2, v6, v3+.
-task . Test2, Test6, Test3
+task . test2, test6, test3
