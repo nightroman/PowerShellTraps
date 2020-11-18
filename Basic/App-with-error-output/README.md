@@ -16,4 +16,4 @@ The script [Test-2.workaround.ps1](Test-2.workaround.ps1) shows the workaround.
 
 **NB**
 
-Fixed in 7.1.0-preview.6, regressed in 7.1.0-rc.1
+Fixed in 7.1.0-preview.6, regressed in 7.1.0-rc.1, fixed in 7.2.0-preview.1

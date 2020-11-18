@@ -27,4 +27,4 @@ See [Test-LoopRunspacePool.workaround.ps1](Test-LoopRunspacePool.workaround.ps1)
 
 ***
 
-- [https://github.com/PowerShell/PowerShell/issues/5746](https://github.com/PowerShell/PowerShell/issues/5746)
+- [PowerShell/issues/5746](https://github.com/PowerShell/PowerShell/issues/5746)

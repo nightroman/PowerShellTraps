@@ -1,4 +1,9 @@
-﻿### 7.1.0-rc.2
+﻿### 7.2.0-preview.1
+
+- [Basic/App-with-error-output](Basic/App-with-error-output)
+-- fixed (again)
+
+### 7.1.0-rc.2
 
 - [Basic/String-equality-operators](Basic/String-equality-operators)
 -- `'ae' -ceq 'æ'` gets true.
