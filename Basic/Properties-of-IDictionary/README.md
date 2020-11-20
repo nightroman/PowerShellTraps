@@ -1,5 +1,4 @@
-
-### It is tricky to operate on properties of classes implementing IDictionary
+# Tricky properties of types implementing IDictionary
 
 PowerShell dot-notation for dictionaries allows retrieval and assignment of
 key/value pairs as if keys were properties. It is handy but it introduces a
@@ -29,5 +28,6 @@ Scripts
 
 ---
 
+- [Dictionary-Count-Keys-Values](../Dictionary-Count-Keys-Values)
 - Stack Overflow [question](http://stackoverflow.com/q/6237708/323582)
-- Microsoft Connect [674159](https://connect.microsoft.com/PowerShell/Feedback/Details/674159)
+- Microsoft Connect 674159

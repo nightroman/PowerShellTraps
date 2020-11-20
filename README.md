@@ -23,6 +23,7 @@ to their directory. See also [TESTS]. Some scripts require
         - [Mixed-objects](./Basic/Count-and-Length/Mixed-objects)
         - [PSCustomObject](./Basic/Count-and-Length/PSCustomObject)
         - [Strict-Mode](./Basic/Count-and-Length/Strict-Mode)
+    - [Dictionary-Count-Keys-Values](./Basic/Dictionary-Count-Keys-Values)
     - [Different-kinds-of-null](./Basic/Different-kinds-of-null)
     - [Double-quoted-string](./Basic/Double-quoted-string)
     - [DynamicParam](./Basic/DynamicParam)
