@@ -145,8 +145,6 @@ to their directory. See also [TESTS]. Some scripts require
         - [Unexpected-output-location](./Cmdlets/Set-Content/Unexpected-output-location)
     - [Split-Path](./Cmdlets/Split-Path)
     - [Start-Process](./Cmdlets/Start-Process)
-    - [Start-Transcript](./Cmdlets/Start-Transcript)
-        - [v5-Unexpected-stop](./Cmdlets/Start-Transcript/v5-Unexpected-stop)
     - [Test-Path](./Cmdlets/Test-Path)
         - [Incorrect-in-odd-location](./Cmdlets/Test-Path/Incorrect-in-odd-location)
         - [Wildcards-miss-hidden-items](./Cmdlets/Test-Path/Wildcards-miss-hidden-items)

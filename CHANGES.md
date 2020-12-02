@@ -143,8 +143,6 @@ The following tests are disabled for v7:
 
 - [PowerShell.exe/Positional-Command-File](PowerShell.exe/Positional-Command-File)
 -- Breaking change: Change positional parameter from `-Command` to `-File`
-- [Cmdlets/Start-Transcript/v5-Unexpected-stop](Cmdlets/Start-Transcript/v5-Unexpected-stop)
--- Fixed
 
 ### v6-beta.1
 
