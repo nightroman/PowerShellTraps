@@ -1,4 +1,9 @@
-﻿### 7.2.0-preview.1
+﻿### 7.2.0-preview.3
+
+- [Basic/App-with-error-output](Basic/App-with-error-output)
+-- the old behaviour comes back
+
+### 7.2.0-preview.1
 
 - [Basic/App-with-error-output](Basic/App-with-error-output)
 -- fixed (again)

@@ -5,7 +5,8 @@ task Test-1.issue {
 	($r = try {.\Test-1.issue.ps1} catch {$_})
 
 	if ($Version -ge 7) {
-		equals $r done
+		#equals $r done # expected
+		assert ($r -like 'fatal: not a git repository*')
 	}
 	else {
 		assert ($r -like 'fatal: not a git repository*')
