@@ -1,4 +1,4 @@
-name: WindowsPowerShell
+name: windows-powershell
 
 on:
   push:
@@ -20,6 +20,7 @@ jobs:
       - name: Install-Module
         run: |
           Install-Module -Force InvokeBuild
+          Install-Script -Force Invoke-PowerShell
 
       - name: test3
         run: |

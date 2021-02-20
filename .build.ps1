@@ -16,7 +16,12 @@ task test3 {
 # Check for the exit code, warn about failures.
 task test2 {
 	#! do not use -Safe or we miss a warning
-	PowerShell -Version 2 -NoProfile Invoke-Build **
+	if (Get-Command Invoke-Build.ps1 -Type ExternalScript -ErrorAction Ignore) {
+		powershell -Version 2 -NoProfile Invoke-Build **
+	}
+	else {
+		powershell -Version 2 -NoProfile 'Import-Module Invoke-Build; Invoke-Build **'
+	}
 	if ($global:LASTEXITCODE) {Write-Warning 'V2 tests failed.'}
 }
 
