@@ -1,0 +1,30 @@
+name: WindowsPowerShell
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+defaults:
+  run:
+    shell: powershell
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install-Module
+        run: |
+          Install-Module -Force InvokeBuild
+
+      - name: test3
+        run: |
+          Import-Module InvokeBuild; Invoke-Build test3
+
+      - name: test2
+        run: |
+          Import-Module InvokeBuild; Invoke-Build test2
