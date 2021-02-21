@@ -36,8 +36,13 @@ Set-Alias Invoke-PowerShell "$BuildRoot/packages/Invoke-PowerShell.ps1"
 
 # Synopsis: Invoke tests safe, show summary.
 task test {
+	# undo ugly pwsh ConciseView
 	$global:ErrorView = 'NormalView'
+	# show what the pwsh version is
+	$PSVersionTable.PSVersion | Out-String
+	# do tests
 	Invoke-Build ** -Safe -Summary -Result r
+	# result for GHA step
 	"Test $Major - tests: $($r.Tasks.Count), errors: $($r.Errors.Count), warnings: $($r.Warnings.Count)" | Add-Content z.test.log
 }
 
