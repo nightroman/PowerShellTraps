@@ -9,30 +9,29 @@ task Test-1.Environment {
 task Test-2.1.FileSystem {
 	($r = .\Test-2.1.FileSystem.ps1)
 
-	# changed in v7.0.0-preview.1
+	# changed in v7.0.0-preview.1 (gets "unexpected" tmp, as older versions)
 	if ($Version -ge 7) {
 		assert ($r -contains 'tmp')
 	}
-	# changed in v6.2.0-preview.2
+	# changed in v6.2.0-preview.2 (no "unexpected" tmp)
 	elseif ($Version -ge 6) {
 		assert ($r -notcontains 'tmp')
 	}
+	# older versions gets "unexpected" tmp
 	else {
 		assert ($r -contains 'tmp')
 	}
 }
 
-# TODO skip v6+, try later
-# win10, v6: OK (but OSVersion check gets 6!)
-# win81, v6: still KO
+# TODO skip v6+, try later, unstable results
 task -If ($Version -lt 6) Test-2.2.FileSystem {
 	($r = .\Test-2.2.FileSystem.ps1)
 
-	# fixed in Windows 10?
+	<#
+	on some Windows 10 machines used to work "expected":
 	if ([Environment]::OSVersion.Version.Major -ge 10) {
 		equals ($r -join '|') 'tmp.tmp|True'
 	}
-	else {
-		equals ($r -join '|') 'tmp.tmp|tmp.tmp2|False'
-	}
+	#>
+	equals ($r -join '|') 'tmp.tmp|tmp.tmp2|False'
 }
