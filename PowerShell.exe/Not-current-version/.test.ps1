@@ -1,3 +1,4 @@
+if ($env:GITHUB_ACTION) {return task GITHUB_ACTION}
 
 # The current version details
 $PSVersion = $PSVersionTable.PSVersion
@@ -8,7 +9,7 @@ task Not-current-version -If $IsV3Win {
 	($r = powershell.exe -Version 2 -Command .\Not-current-version.ps1)
 	equals $r.Count 2
 	equals $r[0] "$PSVersion"
-	equals ($r[1].Trim()) '2.0' #! GH action run gets ' 2.0'
+	equals $r[1] '2.0'
 }
 
 task Not-same-exe -If $IsV6Core {

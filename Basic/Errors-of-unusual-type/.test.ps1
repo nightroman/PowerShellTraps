@@ -1,3 +1,4 @@
+if ($env:GITHUB_ACTION) {return task GITHUB_ACTION}
 $Version = $PSVersionTable.PSVersion.Major
 
 # Invokes PowerShell with some extra steps.
@@ -5,9 +6,7 @@ function Invoke-Test($Command) {
 	$text = '$ErrorView = "NormalView"; {0}' -f $Command
 	$bytes = [System.Text.Encoding]::Unicode.GetBytes($text)
 	$encoded = [System.Convert]::ToBase64String($bytes)
-	Invoke-PowerShell -NoProfile -EncodedCommand $encoded > z.txt
-	Get-Content z.txt
-	remove z.txt
+	Invoke-PowerShell -NoProfile -EncodedCommand $encoded
 }
 
 task missing.command.1 {

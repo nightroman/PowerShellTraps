@@ -1,3 +1,4 @@
+if ($env:GITHUB_ACTION) {return task GITHUB_ACTION}
 if ($PSVersionTable.PSVersion.Major -le 4) {return task skip4}
 $ErrorView = 'NormalView' #! v7
 
