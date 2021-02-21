@@ -1,3 +1,4 @@
+if ($env:GITHUB_ACTION) {return task GITHUB_ACTION}
 $ErrorView = 'NormalView' #! v7
 
 task Test-1.2.ThrowTerminatingError {

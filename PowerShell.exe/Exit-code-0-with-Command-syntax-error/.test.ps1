@@ -1,3 +1,4 @@
+if ($env:GITHUB_ACTION) {return task GITHUB_ACTION}
 $Version = $PSVersionTable.PSVersion.Major
 
 task Test-SyntaxError {

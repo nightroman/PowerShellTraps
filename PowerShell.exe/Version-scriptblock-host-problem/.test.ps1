@@ -1,4 +1,4 @@
-
+if ($env:GITHUB_ACTION) {return task GITHUB_ACTION}
 $Version = $PSVersionTable.PSVersion.Major
 if ($Version -ge 6) {return task skip6}
 

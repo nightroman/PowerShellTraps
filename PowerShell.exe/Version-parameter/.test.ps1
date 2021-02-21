@@ -1,4 +1,4 @@
-
+if ($env:GITHUB_ACTION) {return task GITHUB_ACTION}
 $Version = $PSVersionTable.PSVersion.Major
 
 task Version-must-be-first-parameter -If ($Version -le 5) {
