@@ -16,7 +16,7 @@ task Test-1-3-global-scope {
 }
 
 function Invoke-Script($Path) {
-	(Invoke-PowerShell -NoProfile -File $Path | Out-String).TrimEnd()
+	(Invoke-PowerShell -NoProfile -OutputFormat Text -File $Path | Out-String).TrimEnd()
 }
 
 task Test-2-1-invalid-error-effect {

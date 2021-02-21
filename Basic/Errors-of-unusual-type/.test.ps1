@@ -5,7 +5,7 @@ function Invoke-Test($Command) {
 	$text = '$ErrorView = "NormalView"; {0}' -f $Command
 	$bytes = [System.Text.Encoding]::Unicode.GetBytes($text)
 	$encoded = [System.Convert]::ToBase64String($bytes)
-	Invoke-PowerShell -NoProfile -EncodedCommand $encoded
+	Invoke-PowerShell -NoProfile -OutputFormat Text -EncodedCommand $encoded
 }
 
 task missing.command.1 {
