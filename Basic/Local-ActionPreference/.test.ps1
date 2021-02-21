@@ -16,7 +16,9 @@ task Test-1-3-global-scope {
 }
 
 function Invoke-Script($Path) {
-	(Invoke-PowerShell -NoProfile -OutputFormat Text -File $Path | Out-String).TrimEnd()
+	Invoke-PowerShell -NoProfile -File $Path > z.txt
+	(Get-Content z.txt | Out-String).TrimEnd()
+	remove z.txt
 }
 
 task Test-2-1-invalid-error-effect {
