@@ -36,7 +36,7 @@ Set-Alias Invoke-PowerShell "$BuildRoot/packages/Invoke-PowerShell.ps1"
 
 # Synopsis: Invoke tests safe, show summary.
 task test {
-	$ErrorView = 'NormalView'
+	$global:ErrorView = 'NormalView'
 	Invoke-Build ** -Safe -Summary -Result r
 	"Test $Major - tests: $($r.Tasks.Count), errors: $($r.Errors.Count), warnings: $($r.Warnings.Count)" | Add-Content z.test.log
 }
