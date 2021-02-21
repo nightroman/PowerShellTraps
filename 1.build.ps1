@@ -44,7 +44,7 @@ task test3 {
 # Check for the exit code, warn about failures.
 task test2 {
 	#! do not use -Safe or we miss a warning
-	powershell -Version 2 -NoProfile $BuildFile **
+	powershell -Version 2 -NoProfile $BuildFile test3
 	if ($global:LASTEXITCODE) {Write-Warning 'V2 tests failed.'}
 }
 
