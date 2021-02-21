@@ -36,7 +36,13 @@ Set-Alias Invoke-PowerShell "$BuildRoot/packages/Invoke-PowerShell.ps1"
 
 # Synopsis: Invoke tests safe, show summary.
 task test {
+	# undo ugly pwsh ConciseView
+	$global:ErrorView = 'NormalView'
+	# show what the pwsh version is
+	$PSVersionTable.PSVersion | Out-String
+	# do tests
 	Invoke-Build ** -Safe -Summary -Result r
+	# result for GHA step
 	"Test $Major - tests: $($r.Tasks.Count), errors: $($r.Errors.Count), warnings: $($r.Warnings.Count)" | Add-Content z.test.log
 }
 
@@ -46,8 +52,9 @@ task test2 {
 }
 
 # Synopsis: Test with PowerShell Core.
-task test6 -If $env:powershell6 {
-	& $env:powershell6 -NoProfile -Command $BuildFile test
+task test7 {
+	$pwsh = if ($env:powershell6) {$env:powershell6} else {'pwsh'}
+	& $pwsh -NoProfile -Command $BuildFile test
 }
 
 # Synopsis: Open a random folder in Visual Studio Code
