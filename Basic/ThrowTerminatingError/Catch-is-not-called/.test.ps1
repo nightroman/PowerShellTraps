@@ -13,6 +13,9 @@ task Test-1.ThrowTerminatingError {
 }
 
 task Test-2.Write-Error {
-	($r = try {./Test-2.Write-Error.ps1} catch {$_})
-	assert (($r | Out-String) -like 'was-caught*in-finally*some-error*FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,*')
+	($r1, $r2, $err = try {./Test-2.Write-Error.ps1} catch {$_})
+	equals $r1 was-caught
+	equals $r2 in-finally
+	equals "$err" some-error
+	equals $err.FullyQualifiedErrorId 'Microsoft.PowerShell.Commands.WriteErrorException,Test-2.Write-Error.ps1'
 }
