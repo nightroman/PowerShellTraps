@@ -46,8 +46,9 @@ task test2 {
 }
 
 # Synopsis: Test with PowerShell Core.
-task test6 -If $env:powershell6 {
-	& $env:powershell6 -NoProfile -Command $BuildFile test
+task test6 {
+	$pwsh = if ($env:powershell6) {$env:powershell6} else {'pwsh'}
+	& $pwsh -NoProfile -Command $BuildFile test
 }
 
 # Synopsis: Open a random folder in Visual Studio Code

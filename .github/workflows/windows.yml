@@ -1,4 +1,4 @@
-name: windows-powershell
+name: windows
 
 on:
   push:
@@ -20,6 +20,10 @@ jobs:
       - name: test5
         run: |
           ./1.build.ps1 test
+
+      - name: test6
+        run: |
+          ./1.build.ps1 test6
 
       - name: test2
         run: |
