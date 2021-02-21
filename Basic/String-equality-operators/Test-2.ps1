@@ -1,8 +1,8 @@
 ﻿
-# https://windowsserver.uservoice.com/forums/301869-powershell/suggestions/13275057-bug-or-doing-comparison
-
-# True
-# False (v7.1.0-rc.2)
+# True  v2 - v5.1
+# False v7.1.0-rc.2
+# True  v7.1.1
+# False v7.2.0-preview.3
 'ae' -ceq 'æ'
 
 # False
