@@ -21,9 +21,9 @@ jobs:
         run: |
           ./1.build.ps1 test
 
-      - name: test6
+      - name: test7
         run: |
-          ./1.build.ps1 test6
+          ./1.build.ps1 test7
 
       - name: test2
         run: |
