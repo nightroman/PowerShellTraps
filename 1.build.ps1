@@ -1,7 +1,35 @@
 <#
 .Synopsis
-	Build script (https://github.com/nightroman/Invoke-Build)
+	Build script, https://github.com/nightroman/Invoke-Build
 #>
+
+param(
+	[string[]]$Tasks
+)
+
+# bootstrap
+if ($MyInvocation.ScriptName -notlike '*Invoke-Build.ps1') {
+	$InvokeBuildVersion = '5.7.0'
+	$ErrorActionPreference = 'Stop'
+	$PSScriptRoot = Split-Path $MyInvocation.MyCommand.Definition
+	$ib = "$PSScriptRoot/packages/InvokeBuild/$InvokeBuildVersion/Invoke-Build.ps1"
+
+	if (!(Test-Path -LiteralPath $ib)) {
+		Write-Host 'Save-Module InvokeBuild'
+		Save-Module InvokeBuild -Path "$PSScriptRoot/packages" -RequiredVersion $InvokeBuildVersion -Force
+	}
+
+	if (!(Test-Path -LiteralPath "$PSScriptRoot/packages/Invoke-PowerShell.ps1")) {
+		Write-Host 'Save-Script Invoke-PowerShell'
+		Save-Script Invoke-PowerShell -Path "$PSScriptRoot/packages" -Force
+	}
+
+	& $ib -Task $Tasks -File $MyInvocation.MyCommand.Path @PSBoundParameters
+	return
+}
+
+# saved script alias
+Set-Alias Invoke-PowerShell "$BuildRoot/packages/Invoke-PowerShell.ps1"
 
 # use the most strict mode
 Set-StrictMode -Version Latest
@@ -16,12 +44,7 @@ task test3 {
 # Check for the exit code, warn about failures.
 task test2 {
 	#! do not use -Safe or we miss a warning
-	if (Get-Command Invoke-Build.ps1 -Type ExternalScript -ErrorAction Ignore) {
-		powershell -Version 2 -NoProfile Invoke-Build **
-	}
-	else {
-		powershell -Version 2 -NoProfile 'Import-Module Invoke-Build; Invoke-Build **'
-	}
+	powershell -Version 2 -NoProfile $BuildFile **
 	if ($global:LASTEXITCODE) {Write-Warning 'V2 tests failed.'}
 }
 
