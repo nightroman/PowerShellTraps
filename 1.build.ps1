@@ -7,6 +7,9 @@ param(
 	[string[]]$Tasks
 )
 
+Set-StrictMode -Version Latest
+$Major = $PSVersionTable.PSVersion.Major
+
 # bootstrap
 if ($MyInvocation.ScriptName -notlike '*Invoke-Build.ps1') {
 	$InvokeBuildVersion = '5.7.0'
@@ -31,29 +34,20 @@ if ($MyInvocation.ScriptName -notlike '*Invoke-Build.ps1') {
 # saved script alias
 Set-Alias Invoke-PowerShell "$BuildRoot/packages/Invoke-PowerShell.ps1"
 
-# use the most strict mode
-Set-StrictMode -Version Latest
-
-# Synopsis: Invoke all tests
-# Allow test file failures and show summary.
-task test3 {
-	Invoke-Build ** -Safe -Summary
+# Synopsis: Invoke tests safe, show summary.
+task test {
+	Invoke-Build ** -Safe -Summary -Result r
+	"Test $Major - tests: $($r.Tasks.Count), errors: $($r.Errors.Count), warnings: $($r.Warnings.Count)" | Add-Content z.test.log
 }
 
 # Synopsis: Test with PowerShell v2.
-# Check for the exit code, warn about failures.
 task test2 {
-	#! do not use -Safe or we miss a warning
-	powershell -Version 2 -NoProfile $BuildFile test3
-	if ($global:LASTEXITCODE) {Write-Warning 'V2 tests failed.'}
+	powershell -Version 2 -NoProfile $BuildFile test
 }
 
-# Synopsis: Test with PowerShell v6.
-# Check for the exit code, warn about failures.
+# Synopsis: Test with PowerShell Core.
 task test6 -If $env:powershell6 {
-	#! do not use -Safe or we miss a warning
-	& $env:powershell6 -NoProfile -Command Invoke-Build **
-	if ($global:LASTEXITCODE) {Write-Warning 'V6 tests failed.'}
+	& $env:powershell6 -NoProfile -Command $BuildFile test
 }
 
 # Synopsis: Open a random folder in Visual Studio Code
@@ -146,5 +140,5 @@ task link {
 	}
 }
 
-# Synopsis: Test v2, v6, v3+.
-task . test2, test6, test3
+# Synopsis: Test.
+task . test

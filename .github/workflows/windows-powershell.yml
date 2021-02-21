@@ -11,16 +11,20 @@ defaults:
     shell: powershell
 
 jobs:
-  build:
+  test:
     runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v2
 
-      - name: test3
+      - name: test5
         run: |
-          ./1.build.ps1 test3
+          ./1.build.ps1 test
 
       - name: test2
         run: |
           ./1.build.ps1 test2
+
+      - name: result
+        run: |
+          Get-Content z.test.log
