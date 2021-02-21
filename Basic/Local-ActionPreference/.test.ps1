@@ -1,3 +1,4 @@
+if ($env:GITHUB_ACTION) {return task GITHUB_ACTION}
 
 task Test-1-2-script-scope {
 	($r = .\Test-1-2-script-scope.ps1)
@@ -16,9 +17,7 @@ task Test-1-3-global-scope {
 }
 
 function Invoke-Script($Path) {
-	Invoke-PowerShell -NoProfile -File $Path > z.txt
-	(Get-Content z.txt | Out-String).TrimEnd()
-	remove z.txt
+	(Invoke-PowerShell -NoProfile -File $Path | Out-String).TrimEnd()
 }
 
 task Test-2-1-invalid-error-effect {
