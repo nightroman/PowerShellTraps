@@ -12,7 +12,7 @@ $Major = $PSVersionTable.PSVersion.Major
 
 # bootstrap
 if ($MyInvocation.ScriptName -notlike '*Invoke-Build.ps1') {
-	$InvokeBuildVersion = '5.7.0'
+	$InvokeBuildVersion = '5.7.1'
 	$ErrorActionPreference = 'Stop'
 	$PSScriptRoot = Split-Path $MyInvocation.MyCommand.Definition
 	$ib = "$PSScriptRoot/packages/InvokeBuild/$InvokeBuildVersion/Invoke-Build.ps1"
@@ -32,29 +32,23 @@ if ($MyInvocation.ScriptName -notlike '*Invoke-Build.ps1') {
 }
 
 # saved script alias
-Set-Alias Invoke-PowerShell "$BuildRoot/packages/Invoke-PowerShell.ps1"
+if (Test-Path "$BuildRoot/packages/Invoke-PowerShell.ps1") {
+	Set-Alias Invoke-PowerShell "$BuildRoot/packages/Invoke-PowerShell.ps1"
+}
 
-# Synopsis: Invoke tests safe, show summary.
+# custom task header
+Set-BuildHeader {
+	Write-Build 11 "Task $($args[0]) *".PadRight(79, '*')
+}
+
+# Synopsis: Invoke tests.
 task test {
-	# undo ugly pwsh ConciseView
+	# show PowerShell version
+	"PowerShell version: $($PSVersionTable.PSVersion)"
+	# undo pwsh ConciseView
 	$global:ErrorView = 'NormalView'
-	# show what the pwsh version is
-	$PSVersionTable.PSVersion | Out-String
 	# do tests
-	Invoke-Build ** -Safe -Summary -Result r
-	# result for GHA step
-	"Test $Major - tests: $($r.Tasks.Count), errors: $($r.Errors.Count), warnings: $($r.Warnings.Count)" | Add-Content z.test.log
-}
-
-# Synopsis: Test with PowerShell v2.
-task test2 {
-	powershell -Version 2 -NoProfile $BuildFile test
-}
-
-# Synopsis: Test with PowerShell Core.
-task test7 {
-	$pwsh = if ($env:powershell6) {$env:powershell6} else {'pwsh'}
-	& $pwsh -NoProfile -Command $BuildFile test
+	Invoke-Build **
 }
 
 # Synopsis: Open a random folder in Visual Studio Code

@@ -1,6 +1,8 @@
 if ($env:GITHUB_ACTION) {return task GITHUB_ACTION}
 
-# The current version details
+$NET_20 = Test-Path 'HKLM:\Software\Microsoft\NET Framework Setup\NDP\v2.0.50727'
+if (!$NET_20) {return task NET_20}
+
 $PSVersion = $PSVersionTable.PSVersion
 $IsV6Core = $PSVersion.Major -ge 6 -and $PSVersionTable.PSEdition -eq 'Core'
 $IsV3Win = $PSVersion.Major -ge 3 -and !$IsV6Core
