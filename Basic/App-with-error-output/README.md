@@ -1,4 +1,4 @@
-## Invoking native apps with error output
+# Invoking native apps with error output
 
 Invoking a native app with error output causes a terminating error if the
 current error action preference is "Stop".
@@ -20,3 +20,4 @@ The script [Test-2.workaround.ps1](Test-2.workaround.ps1) shows the workaround.
 - Regressed in 7.1.0-rc.1
 - Fixed in 7.2.0-preview.1
 - Regressed in 7.2.0-preview.3
+- Fixed in 7.0.2-preview.4
