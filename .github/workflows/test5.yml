@@ -1,0 +1,13 @@
+name: test5
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test5:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: test
+        shell: powershell
+        run: ./1.build.ps1 test

@@ -12,7 +12,7 @@ $Major = $PSVersionTable.PSVersion.Major
 
 # bootstrap
 if ($MyInvocation.ScriptName -notlike '*Invoke-Build.ps1') {
-	$InvokeBuildVersion = '5.7.1'
+	$InvokeBuildVersion = '5.9.0'
 	$ErrorActionPreference = 'Stop'
 	$PSScriptRoot = Split-Path $MyInvocation.MyCommand.Definition
 	$ib = "$PSScriptRoot/packages/InvokeBuild/$InvokeBuildVersion/Invoke-Build.ps1"

@@ -1,0 +1,13 @@
+name: test7
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test7:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: test
+        shell: pwsh
+        run: ./1.build.ps1 test
