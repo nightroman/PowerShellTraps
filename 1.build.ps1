@@ -61,7 +61,9 @@ task index {
 	function Get-List($Path, $Indent) {
 		$tab = '    ' * $Indent
 		foreach($_ in Get-ChildItem -Path $Path -Name -Directory) {
-			if ($_ -eq 'Workaround') {continue}
+			if ($_ -in @('.github', 'Workaround')) {
+				continue
+			}
 			'{0}- [{1}]({2})' -f $tab, $_, "$Path/$_"
 			Get-List "$Path/$_" ($Indent + 1)
 		}

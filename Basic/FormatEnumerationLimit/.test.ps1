@@ -5,11 +5,13 @@
 $Version = $PSVersionTable.PSVersion.Major
 
 task Test-1-local-value-ignored {
-	($r = .\Test-1-local-value-ignored.ps1)
 	if ($Version -ge 6) {
+		$PSStyle.OutputRendering = 'PlainText'
+		($r = .\Test-1-local-value-ignored.ps1)
 		equals 'Data1 : {1, 2, 3, 4…}' $r.Trim()
 	}
 	else {
+		($r = .\Test-1-local-value-ignored.ps1)
 		equals 'Data1 : {1, 2, 3, 4...}' $r.Trim()
 	}
 }
