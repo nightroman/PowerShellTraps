@@ -27,7 +27,7 @@ task Test-2-1-invalid-error-effect {
 
 task Test-2-2-invalid-warning-effect {
 	($r = Invoke-Script Test-2-2-invalid-warning-effect.ps1)
-	assert ($r -clike 'WARNING: Message*Done.')
+	assert ($r -clike '*WARNING: Message*Done.*')
 }
 
 task Test-2-3-invalid-debug-effect {
