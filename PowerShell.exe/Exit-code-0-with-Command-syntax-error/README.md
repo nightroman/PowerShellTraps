@@ -1,3 +1,4 @@
+# Exit code 0 with Command syntax error
 
 If a command passed in `PowerShell -Command` has a syntax error then PowerShell
 exit code is 0 (success).

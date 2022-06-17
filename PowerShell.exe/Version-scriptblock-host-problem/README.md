@@ -1,3 +1,4 @@
+# `Version` and scriptblock host problem
 
 When `PowerShell.exe` is called from PowerShell then it is possible to specify
 the parameter `Command` as a script block. But if the parameter `Version` is

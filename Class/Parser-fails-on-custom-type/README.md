@@ -1,3 +1,4 @@
+# Parser fails on custom type
 
 If a script adds a custom type by `Add-Type` and then defines a class which
 uses this type directly then the parser fails to process such a script.

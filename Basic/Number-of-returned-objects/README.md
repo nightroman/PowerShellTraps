@@ -1,3 +1,4 @@
+# Number of returned objects
 
 Some commands are supposed to return several objects and a caller may want to
 know the number of returned objects. How to get this number?

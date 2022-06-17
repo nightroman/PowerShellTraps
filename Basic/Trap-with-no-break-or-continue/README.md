@@ -1,3 +1,4 @@
+# `trap` with no `break` or `continue`
 
 What does `trap` without `break` or `continue` do?
 

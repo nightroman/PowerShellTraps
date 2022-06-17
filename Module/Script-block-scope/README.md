@@ -1,3 +1,4 @@
+# Script block scope
 
 If a script block is passed in a *script* function and invoked there by the dot
 operator then it operates in the current scope.
@@ -32,4 +33,4 @@ Scripts
 ---
 
 - Stack Overflow [Strange behaviour with PowerShell scriptblock variable scope and modules](http://stackoverflow.com/q/2193410/323582)
-- Microsoft Connect [560504](https://connect.microsoft.com/PowerShell/Feedback/Details/560504)
+- Microsoft Connect 560504

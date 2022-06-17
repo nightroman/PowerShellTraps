@@ -1,3 +1,4 @@
+# Not current version
 
 If a script invokes `PowerShell.exe` and does not specify its version in some
 cases or its path if some others then an unexpected PowerShell version may be

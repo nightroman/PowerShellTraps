@@ -1,3 +1,4 @@
+# `trap` creates a new scope
 
 Statements in a `trap` block are invoked in a new scope. This fact may be not
 obvious. For example, statements is a similar `catch` block are invoked in the
@@ -11,4 +12,4 @@ Scripts
 
 ---
 
-- Microsoft Connect [224294](https://connect.microsoft.com/PowerShell/Feedback/Details/224294)
+- Microsoft Connect 224294

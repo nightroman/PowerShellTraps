@@ -1,3 +1,4 @@
+# Unexpected output
 
 PowerShell outputs everything which is evaluated to something, even without
 `Write-Output`, `return`, and etc. This may result in unexpected output.

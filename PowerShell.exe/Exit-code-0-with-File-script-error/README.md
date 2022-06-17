@@ -1,3 +1,4 @@
+# Exit code 0 with File script error
 
 **Fixed in PowerShell v5**
 
@@ -24,4 +25,4 @@ Scripts
 
 ---
 
-- Microsoft Connect [750653](https://connect.microsoft.com/PowerShell/feedback/details/750653)
+- Microsoft Connect 750653

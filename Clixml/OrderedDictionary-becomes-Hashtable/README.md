@@ -1,3 +1,4 @@
+# `OrderedDictionary` becomes `Hashtable`
 
 If an `OrderedDictionary` is exported by `Export-Clixml` and imported by
 `Import-Clixml` then it becomes a `Hashtable`. If the order of items is
@@ -18,4 +19,4 @@ Expected output:
 
 ---
 
-- Microsoft Connect [771721](https://connect.microsoft.com/PowerShell/Feedback/Details/771721)
+- Microsoft Connect 771721

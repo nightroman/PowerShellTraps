@@ -1,3 +1,4 @@
+# Operators `-and` and `-or` have the same precedence
 
 Logical operators `-and` and `-or` have the same precedence, unlike in other
 programming languages where logical `AND` has higher precedence.
@@ -28,4 +29,4 @@ Scripts
 ---
 
 - [Operators-with-equal-precedence](../Operators-with-equal-precedence)
-- Microsoft Connect [285170](https://connect.microsoft.com/PowerShell/Feedback/Details/285170)
+- Microsoft Connect 285170

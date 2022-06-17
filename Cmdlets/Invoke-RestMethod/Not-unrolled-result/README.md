@@ -1,5 +1,4 @@
-
-### Invoke-RestMethod returns an array not unrolled
+# `Invoke-RestMethod` returns an array not unrolled
 
 The following command at the moment of writing is supposed to return 8 objects
 describing GitHub repositories

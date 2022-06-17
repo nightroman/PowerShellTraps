@@ -1,3 +1,4 @@
+# Mixed objects
 
 In PowerShell v2 it is possible to operate on properties `Count` and `Length`
 assuming they get null if missed and null is converted to 0 where a number is
@@ -27,4 +28,4 @@ The script [Test-DirectorySize.ps1](Test-DirectorySize.ps1) calculates a directo
 methods. Results are different in different versions.
 
 ---
-- Microsoft Connect [793560](https://connect.microsoft.com/PowerShell/feedback/details/793560)
+- Microsoft Connect 793560

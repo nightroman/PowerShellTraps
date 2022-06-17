@@ -1,3 +1,4 @@
+# `Write-Debug`
 
 When `Write-Debug` is used in a command (function or script) with cmdlet
 binding and the command is invoked with the switch `Debug`, `Write-Debug`
@@ -23,4 +24,4 @@ The scripts are interactive and not covered by automated tests:
 
 ---
 
-- Microsoft Connect [1441324](https://connect.microsoft.com/PowerShell/feedback/details/1441324)
+- Microsoft Connect 1441324

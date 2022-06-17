@@ -1,3 +1,4 @@
+# Compound assignment operators
 
 ### Differences between PowerShell v2 and v3
 
@@ -40,4 +41,4 @@ the script [Test-1.1.ps1](Test-1.1.ps1).
 ---
 
 - Stack Overflow [question](http://stackoverflow.com/q/30290555/323582)
-- Microsoft Connect [1341920](https://connect.microsoft.com/PowerShell/feedback/details/1341920)
+- Microsoft Connect 1341920

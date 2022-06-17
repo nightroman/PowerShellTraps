@@ -1,3 +1,4 @@
+# `switch` is a looping construct
 
 In PowerShell `switch` is not just a way to avoid multiple `if` statements, it
 is also a looping construct. In many cases this is a useful feature. But it

@@ -1,5 +1,4 @@
-
-### Array as PSObject
+# `ConvertTo-Json` Array as PSObject
 
 **Fixed in v6**
 

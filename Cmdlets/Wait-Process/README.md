@@ -1,5 +1,4 @@
-
-### Wait-Process fails if a process name is not found
+# `Wait-Process` fails if a process name is not found
 
 When `Wait-Process` is used with a process name (not a process ID or instance)
 then it is supposed to wait for *all* processes with the specified name. Thus,
@@ -34,4 +33,4 @@ even if processes are not found.
 
 ---
 
-- Microsoft Connect [449181](https://connect.microsoft.com/PowerShell/feedback/details/449181)
+- Microsoft Connect 449181

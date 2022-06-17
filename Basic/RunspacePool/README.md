@@ -1,5 +1,4 @@
-
-## Runspace pool memory leaks with Close() instead of Dispose()
+# Runspace pool memory leaks with `Close()`
 
 Runspace pools may cause memory leaks, at least in tested PowerShell v5, v6.
 PowerShell v2 does not have this issue.

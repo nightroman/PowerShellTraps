@@ -1,3 +1,4 @@
+# No `LiteralPath` in v2
 
 The parameter `LiteralPath` of `Export-Clixml` and `Import-Clixml` is missing
 in PowerShell v2. The current help does not mention this fact, hence the trap.

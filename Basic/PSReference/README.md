@@ -1,5 +1,4 @@
-
-### `[ref]` may be unwrapped unexpectedly
+# `[ref]` may be unwrapped unexpectedly
 
 `[ref]` may be used for functions returning something via `[ref]` parameters in
 addition to the output or instead of the output.

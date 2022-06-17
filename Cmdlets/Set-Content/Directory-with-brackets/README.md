@@ -1,5 +1,4 @@
-
-### Set-Content fails in a directory with brackets
+# `Set-Content` fails in a directory with brackets
 
 If `Set-Content -Path` is invoked in a directory with brackets then it fails.
 
@@ -10,4 +9,4 @@ The script [Test-1-directory-with-brackets.ps1](Test-1-directory-with-brackets.p
 
 ---
 
-- Microsoft Connect [436533](https://connect.microsoft.com/PowerShell/feedback/details/436533)
+- Microsoft Connect 436533

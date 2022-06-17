@@ -1,3 +1,4 @@
+# `ConvertFrom-Json` long integers in v6
 
 `ConvertFrom-Json` returns integers as `[long]` or `[int]` depending on the
 current PowerShell version:

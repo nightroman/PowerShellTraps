@@ -1,5 +1,4 @@
-
-### The PowerShell parameter `Version` must be the first.
+# Parameter `Version` must be the first.
 
 This works:
 
@@ -32,5 +31,5 @@ The script [v6-ignores-stuff-after-Version.ps1](v6-ignores-stuff-after-Version.p
 
 ***
 
-- Microsoft Connect [712934](https://connect.microsoft.com/PowerShell/Feedback/Details/712934)
 - [PowerShell/issues/4834](https://github.com/PowerShell/PowerShell/issues/4834)
+- Microsoft Connect 712934

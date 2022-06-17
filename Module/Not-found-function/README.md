@@ -1,3 +1,4 @@
+# Not found function
 
 If a script module calls a function defined in a script that imports this
 module then this function may or may not be found depending on call

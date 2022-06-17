@@ -1,5 +1,4 @@
-
-### ThrowTerminatingError does not trigger the immediate catch
+# `ThrowTerminatingError` does not trigger the immediate catch
 
 `$PSCmdlet.ThrowTerminatingError()` may have some advantages over `throw`. But
 it has an issue: if it is called from a `try` block directly, i.e. not from

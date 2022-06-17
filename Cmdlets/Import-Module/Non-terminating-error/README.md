@@ -1,3 +1,4 @@
+# `Import-Module` non-terminating error
 
 `Import-Module` writes a non-terminating error if a specified module does not
 exist. As a result, if the error action is not `Stop` then a script continues
@@ -13,4 +14,4 @@ preference variable `$ErrorActionPreference`.
 
 ***
 
-- Microsoft Connect [506808](https://connect.microsoft.com/PowerShell/feedback/details/506808)
+- Microsoft Connect 506808

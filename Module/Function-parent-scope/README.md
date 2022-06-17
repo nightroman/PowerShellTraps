@@ -1,3 +1,4 @@
+# Function parent scope
 
 If a module function creates a variable in the parent scope then the variable
 is created in the module scope, not necessarily the calling scope.

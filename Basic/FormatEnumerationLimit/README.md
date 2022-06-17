@@ -1,5 +1,4 @@
-﻿
-# FormatEnumerationLimit
+﻿# FormatEnumerationLimit
 
 ## Local FormatEnumerationLimit is ignored
 

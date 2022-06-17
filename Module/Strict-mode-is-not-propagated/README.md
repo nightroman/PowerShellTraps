@@ -1,3 +1,4 @@
+# Strict mode is not propagated
 
 When the strict mode is set then it is propagated to the current and child
 scopes in scripts but not in modules.

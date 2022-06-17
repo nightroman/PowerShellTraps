@@ -1,3 +1,4 @@
+# Exit code 5 with File, 1 with Command
 
 If `PowerShell.exe` invokes a script which exists with `exit 5` then the exit
 code depends on how the script is invoked. If it is invoked with the parameter

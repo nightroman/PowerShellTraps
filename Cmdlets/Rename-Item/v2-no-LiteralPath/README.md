@@ -1,3 +1,4 @@
+# `Rename-Item` has no `LiteralPath` in v2
 
 The parameter `LiteralPath` of `Rename-Item` is missing in PowerShell v2.
 The current help does not mention this fact, hence the trap.

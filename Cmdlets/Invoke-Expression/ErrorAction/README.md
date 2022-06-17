@@ -1,5 +1,4 @@
-
-### -ErrorAction is ignored in favour of $ErrorActionPreference
+# `Invoke-Expression` `ErrorAction` is ignored in favour of `$ErrorActionPreference`
 
 The parameter `ErrorAction` of `Invoke-Expression` does not affect processing
 of errors in invoked expressions. These errors are processed according to the

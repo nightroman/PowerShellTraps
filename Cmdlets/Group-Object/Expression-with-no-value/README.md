@@ -1,5 +1,4 @@
-
-### Group-Object and properties made by expressions with no values
+# `Group-Object` and properties made by expressions with no values
 
 `Group-Object` may fail with `NullReferenceException` if input objects have a
 `NoteProperty` made by an expression with no value. It works fine in v2, so the

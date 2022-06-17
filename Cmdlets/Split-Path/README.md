@@ -1,5 +1,4 @@
-
-### Split-Path with UNC paths: mind the current provider
+# `Split-Path` with UNC paths: mind the current provider
 
 When the current PowerShell provider is not *FileSystem* `Split-Path` with UNC
 paths may produce unexpected results or even fail.
@@ -12,5 +11,5 @@ paths may produce unexpected results or even fail.
 
 ---
 
-- Microsoft Connect [1335123](https://connect.microsoft.com/PowerShell/feedback/details/1335123)
 - [Join-Path](../Join-Path)
+- Microsoft Connect 1335123

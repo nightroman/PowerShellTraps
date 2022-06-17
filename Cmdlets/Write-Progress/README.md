@@ -1,3 +1,4 @@
+# `Write-Progress`
 
 ### Write-Progress may hide information
 
@@ -5,7 +6,7 @@
 with `Write-Progress`. The progress hides the details of the warning message.
 They remain hidden while the script works.
 
-- Microsoft Connect [869651](https://connect.microsoft.com/PowerShell/Feedback/Details/869651)
+- Microsoft Connect 869651
 
 ### Write-Progress may hurt performance
 
@@ -14,4 +15,4 @@ They remain hidden while the script works.
 The script [Write-Progress.may.hurt.performance.ps1](Write-Progress.may.hurt.performance.ps1) shows that
 `Write-Progress` takes seconds for just 1000 iterations.
 
-- Microsoft Connect [337323](https://connect.microsoft.com/PowerShell/feedback/details/337323)
+- Microsoft Connect 337323

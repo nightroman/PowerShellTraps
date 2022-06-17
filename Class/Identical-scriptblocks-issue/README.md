@@ -1,3 +1,4 @@
+# Identical script blocks issue
 
 If two script blocks with exactly the same code define a class and return its
 instance then on invoking them one after another the second call fails:

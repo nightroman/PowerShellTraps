@@ -1,5 +1,4 @@
-
-`Get-Unique` is an odd cmdlet.
+# `Get-Unique` oddities
 
 Firstly, unlike almost all tools in PowerShell, `Get-Unique` is case sensitive.
 Not by default, it is just case sensitive, there is not an option to change this.
@@ -21,5 +20,5 @@ Scripts
 
 ---
 
-- Microsoft Connect [77601](https://connect.microsoft.com/PowerShell/Feedback/Details/77601)
-- Microsoft Connect [872943](https://connect.microsoft.com/PowerShell/Feedback/Details/872943)
+- Microsoft Connect 77601
+- Microsoft Connect 872943

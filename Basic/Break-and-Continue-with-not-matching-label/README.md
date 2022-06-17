@@ -1,3 +1,4 @@
+# Break and Continue with not matching label
 
 A missing (misspelled) label used with `continue` or `break` is not an error.
 In such cases PowerShell silently breaks the whole script being invoked. That
@@ -11,4 +12,4 @@ Scripts
 
 ---
 
-- Microsoft Connect [377964](https://connect.microsoft.com/PowerShell/Feedback/Details/377964)
+- Microsoft Connect 377964

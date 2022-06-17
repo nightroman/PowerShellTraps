@@ -1,5 +1,4 @@
-
-### WildcardPattern.Escape() does not escape some backticks
+# `WildcardPattern.Escape()` does not escape some backticks
 
 The escape character of `WildcardPattern` is backtick. It looks like if an
 input string contains backticks which are not followed by characters `[]?*`
@@ -38,4 +37,4 @@ and the method `WildcardPattern.UnEscape()` gets the original string.
 
 ---
 
-- Microsoft Connect [336327](https://connect.microsoft.com/PowerShell/feedback/details/336327)
+- Microsoft Connect 336327

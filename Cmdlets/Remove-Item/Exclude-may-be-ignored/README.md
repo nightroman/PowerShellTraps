@@ -1,5 +1,4 @@
-
-### Remove-Item may ignore items specified by Exclude
+# `Remove-Item` may ignore items specified by `Exclude`
 
 [Test-1.exclude.file.ps1](Test-1.exclude.file.ps1) shows that the parameter `Exclude` works for the file, at least in v5.1.
 In v2 `Exclude` ignores the specified value and removes the file.

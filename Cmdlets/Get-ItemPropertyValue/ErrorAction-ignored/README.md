@@ -1,3 +1,4 @@
+# `Get-ItemPropertyValue` ignores `ErrorAction`
 
 As expected, `Get-ItemPropertyValue` respects `ErrorAction` if a specified item
 does not exists.

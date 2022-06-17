@@ -1,5 +1,4 @@
-
-### ConvertTo-Json without Compress may change data
+# `ConvertTo-Json` without `Compress` may change data
 
 This issue is specific for PowerShell 3.0. It is fixed in 4.0.
 
@@ -10,4 +9,4 @@ The script [ConvertTo-Json.changes.data.ps1](ConvertTo-Json.changes.data.ps1) sh
 
 ---
 
-- Microsoft Connect [1221685](https://connect.microsoft.com/PowerShell/Feedback/Details/1221685)
+- Microsoft Connect 1221685

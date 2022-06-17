@@ -1,3 +1,4 @@
+# `ConvertFrom-Json` pipeline input
 
 `ConvertFrom-Json` accepts pipeline input but its help does not explain all the
 details. The straightforward scenario is

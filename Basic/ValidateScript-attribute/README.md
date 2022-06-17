@@ -1,5 +1,4 @@
-
-### ValidateScript and cryptic error messages
+# `ValidateScript` and cryptic error messages
 
 The rules for a validation script are
 
@@ -32,14 +31,14 @@ invoked for each item in it. In many cases this is a handy feature, it just has
 to be kept in mind.
 
 - The script [Test-4-invoked-for-each-item.ps1](Test-4-invoked-for-each-item.ps1) shows multiple invocations of a script.
-- Microsoft Connect [812137](https://connect.microsoft.com/PowerShell/feedback/details/812137)
+- Microsoft Connect 812137
 
 ### ValidateScript does not allow null
 
 If null is a valid input value then `ValidateScript` cannot be used.
 
 - The script [Test-5-value-cannot-be-null.ps1](Test-5-value-cannot-be-null.ps1) shows the issue.
-- Microsoft Connect [812136](https://connect.microsoft.com/PowerShell/feedback/details/812136)
+- Microsoft Connect 812136
 
 ---
 

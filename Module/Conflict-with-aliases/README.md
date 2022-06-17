@@ -1,3 +1,4 @@
+# Conflict with aliases
 
 This issue is similar to [Too-simple-function-names](../../Basic/Too-simple-function-names).
 It shows that the same problem is possible in script modules.

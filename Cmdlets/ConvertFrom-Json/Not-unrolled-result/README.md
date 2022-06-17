@@ -1,4 +1,4 @@
-## ConvertFrom-Json returns an array not unrolled
+# `ConvertFrom-Json` returns an array not unrolled
 
 **Fixed in v7.0.0-preview.6**
 

@@ -1,5 +1,4 @@
-
-### Remove-Item -LiteralPath fails in a directory with brackets
+# `Remove-Item -LiteralPath` fails in a directory with brackets
 
 **Fixed in v6.2.0-preview.2**
 
@@ -10,4 +9,4 @@ The script [Test-1-directory-with-brackets.ps1](Test-1-directory-with-brackets.p
 
 ---
 
-- Microsoft Connect [1447261](https://connect.microsoft.com/PowerShell/feedback/details/1447261)
+- Microsoft Connect 1447261

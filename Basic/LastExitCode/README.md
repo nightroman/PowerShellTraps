@@ -1,5 +1,6 @@
+# LastExitCode
 
-### Consider to use $global:LastExitCode instead of $LastExitCode
+### Consider using $global:LastExitCode instead of $LastExitCode
 
 Help *about_Automatic_Variables*:
 

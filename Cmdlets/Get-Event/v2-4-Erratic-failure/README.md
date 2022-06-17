@@ -1,3 +1,4 @@
+# `Get-Event` erratic failures in v2-4
 
 In PowerShell v2, v3, v4 on many incoming events `Get-Event` may fail with an
 internal exception. In PowerShell v5 this issue seems to be fixed.

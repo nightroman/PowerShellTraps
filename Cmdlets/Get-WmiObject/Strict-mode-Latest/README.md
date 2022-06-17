@@ -1,8 +1,7 @@
-
-### Retrieving amended WMI data may fail in the strict mode Latest
+# `Get-WmiObject` - amended WMI data may fail in the strict mode `Latest`
 
 The issue is observed in PowerShell v5 and v4, not v2.
-PowerShell v3 is not tested (feedback please).
+PowerShell v3 is not tested.
 
 Scripts
 

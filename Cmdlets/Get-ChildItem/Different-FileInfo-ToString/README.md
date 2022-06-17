@@ -1,5 +1,4 @@
-
-### Get-ChildItem gets items converted to strings differently
+# `Get-ChildItem` gets items converted to strings differently
 
 **Fixed in v6.1.0-preview.3**
 
@@ -23,5 +22,5 @@ Scripts
 ---
 
 - Stack Overflow [question](http://stackoverflow.com/q/2744047/323582)
-- Microsoft Connect [556004](https://connect.microsoft.com/PowerShell/Feedback/Details/556004)
-- Microsoft Connect [1441999](https://connect.microsoft.com/PowerShell/feedback/details/1441999)
+- Microsoft Connect 556004
+- Microsoft Connect 1441999

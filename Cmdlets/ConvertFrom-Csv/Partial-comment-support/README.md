@@ -1,5 +1,4 @@
-
-### ConvertFrom-Csv has undocumented partial comment support
+# `ConvertFrom-Csv` has undocumented partial comment support
 
 When multiple strings are fed into `ConvertFrom-Csv`, it will ignore lines
 prefixed with a `#` character. When fed a single string, it retains those

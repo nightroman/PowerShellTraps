@@ -1,3 +1,4 @@
+# Function invoked like method
 
 Semantic of invoking PowerShell functions and object methods is different.
 

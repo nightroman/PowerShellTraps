@@ -1,3 +1,4 @@
+# Null converted to empty string
 
 When null is passed to a .NET method as a string parameter then null is
 converted to an empty string.
@@ -17,4 +18,4 @@ Scripts
 
 ---
 
-- Microsoft Connect [307821](https://connect.microsoft.com/PowerShell/feedback/details/307821)
+- Microsoft Connect 307821

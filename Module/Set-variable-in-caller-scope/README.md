@@ -1,4 +1,4 @@
-## How to set a variable in the caller scope
+# How to set a variable in the caller scope
 
 Sometimes a function should set a variable in the caller scope.
 The way to do this depends on how this function is defined and imported.

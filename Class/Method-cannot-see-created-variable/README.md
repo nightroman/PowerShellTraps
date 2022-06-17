@@ -1,4 +1,3 @@
-
 # Methods do not see implicitly created variables
 
 PowerShell variables are not always created by explicit assignments of values.

@@ -1,5 +1,4 @@
-
-### Remove-ItemProperty -Confirm fails on 'No' (Registry)
+# `Remove-ItemProperty -Confirm` fails on 'No' (Registry)
 
 When `Remove-ItemProperty -Confirm` is called in order to remove an *existing*
 property from a registry item and a user answers 'No' then the command fails
@@ -14,4 +13,4 @@ prompt answer 'No', i.e. type 'n' and Enter. As a result, the command fails.
 
 ---
 
-- Microsoft Connect [507505](https://connect.microsoft.com/PowerShell/feedback/details/507505)
+- Microsoft Connect 507505

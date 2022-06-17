@@ -1,3 +1,4 @@
+# Local action preference variables
 
 Action preference variables and their default values:
 
@@ -45,5 +46,5 @@ default action preferences accordingly. Invalid values are treated as
 
 ---
 
-- Microsoft Connect [692892](https://connect.microsoft.com/PowerShell/feedback/details/692892)
 - [SplitPipeline/issues/12](https://github.com/nightroman/SplitPipeline/issues/12)
+- Microsoft Connect 692892

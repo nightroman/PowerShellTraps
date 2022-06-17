@@ -1,5 +1,4 @@
-
-### Copy-Item: inconsistent destination directory
+# `Copy-Item` inconsistent destination directory
 
 If a directory 1 is copied by `Copy-Item` then the result depends on existence
 of the destination directory 2.
@@ -25,4 +24,4 @@ The following workaround is suggested at Connect:
 
 ---
 
-- Microsoft Connect [809855](https://connect.microsoft.com/PowerShell/feedback/details/809855)
+- Microsoft Connect 809855

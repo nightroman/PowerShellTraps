@@ -1,3 +1,4 @@
+# Break and Continue without loop
 
 The statements `break` and `continue` used without loops are not errors. They
 work for a loop in a parent scope, even if it is not in the same script. If a
@@ -19,5 +20,5 @@ Scripts
 ---
 
 - [PowerShell/issues/5811](https://github.com/PowerShell/PowerShell/issues/5811)
-- Microsoft Connect [1357730](https://connect.microsoft.com/PowerShell/Feedback/Details/1357730)
-- Microsoft Connect [1321210](https://connect.microsoft.com/PowerShell/feedback/details/1321210)
+- Microsoft Connect 1357730
+- Microsoft Connect 1321210

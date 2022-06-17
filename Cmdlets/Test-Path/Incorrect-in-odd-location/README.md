@@ -1,5 +1,4 @@
-
-# Test-Path
+# `Test-Path` oddities
 
 ## Test-Path works incorrectly in some locations
 
@@ -15,7 +14,7 @@ names, sets the current location to them, and tests an existing item using
 See also
 
 - Similar [Get-Item](../../Get-Item/Directory-with-brackets) issues
-- Microsoft Connect [389828](https://connect.microsoft.com/PowerShell/Feedback/Details/389828)
+- Microsoft Connect 389828
 
 ## Test-Path gets true for a space
 

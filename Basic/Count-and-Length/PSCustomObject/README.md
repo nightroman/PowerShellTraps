@@ -1,5 +1,4 @@
-
-### PSCustomObject does not have surrogate Count and Length
+# `PSCustomObject` does not have surrogate `Count` and `Length`
 
 **Fixed in v6.1.0**
 

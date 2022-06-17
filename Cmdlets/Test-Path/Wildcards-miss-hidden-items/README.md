@@ -1,5 +1,4 @@
-
-## Test-Path -Path with wildcards misses hidden items
+# `Test-Path -Path` with wildcards misses hidden items
 
 `Test-Path` treats hidden files and folders not like `*-Items` cmdlets do:
 

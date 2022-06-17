@@ -1,5 +1,4 @@
-
-### Select-Xml -Content does not support input as stream
+# `Select-Xml -Content` does not support input as stream
 
 `Select-Xml` supports several kinds of input: file paths, XML nodes, strings.
 Strings are specified by the parameter `Content`:

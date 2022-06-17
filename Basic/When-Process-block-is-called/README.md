@@ -1,3 +1,4 @@
+# When `process` block is called
 
 PowerShell functions and script blocks consist of blocks. If none of them is
 explicitly specified then the `end` block is assumed for functions and script

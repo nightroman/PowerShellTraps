@@ -1,8 +1,9 @@
+# Directive `#requires`
 
-`#requires` works more or less as documented and expected in PowerShell 2.0. In
-PowerShell 3.0 it does not.
+`#requires` works more or less as documented and expected in PowerShell 2.0.
+In PowerShell 3.0 it does not.
 
-See help *about_Requires*:
+See `help about_Requires`:
 
 > The #Requires statement must be the first item on a line in a script.
 

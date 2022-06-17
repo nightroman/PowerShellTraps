@@ -1,5 +1,4 @@
-
-### Get-Item fails to get Cert:
+# `Get-Item` fails to get `Cert:`
 
 `Get-Item` works with `Function:`, `Variable:`, `Env:`, `HKCU:`, `C:`, etc. But
 it gets nothing with `Cert:` in v3+ and fails in v2. See the script
@@ -18,4 +17,4 @@ location is `Cert:\` in v3+ and fail in v2. See the scripts
 
 ---
 
-- Microsoft Connect [67872](https://connect.microsoft.com/PowerShell/feedback/details/67872)
+- Microsoft Connect 67872

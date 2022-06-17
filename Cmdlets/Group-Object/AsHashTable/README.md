@@ -1,5 +1,4 @@
-
-### Group-Object -AsHashTable and custom expressions
+# `Group-Object -AsHashTable` and custom expressions
 
 When `Group-Object` is used with the switch `AsHashTable` and `Property`
 specified as a string expression then the result hashtable indexer

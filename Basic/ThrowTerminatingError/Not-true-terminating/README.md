@@ -1,5 +1,4 @@
-
-### ThrowTerminatingError produces not true terminating errors
+# `ThrowTerminatingError` produces not true terminating errors
 
 Unlike `throw` or `Write-Error -ErrorAction Stop`, `$PSCmdlet.ThrowTerminatingError`
 produces not true terminating errors. They terminate the current command but

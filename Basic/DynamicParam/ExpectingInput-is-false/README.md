@@ -1,5 +1,4 @@
-
-### $MyInvocation.ExpectingInput is $false in DynamicParam
+# `$MyInvocation.ExpectingInput` is false in `DynamicParam`
 
 **Fixed in v6**
 

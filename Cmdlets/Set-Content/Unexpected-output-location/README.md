@@ -1,5 +1,4 @@
-
-### Set-Content: unexpected output location
+# `Set-Content` unexpected output location
 
 What is the location of `data.txt` produced by this command?
 
@@ -26,4 +25,4 @@ where it is not expected.
 
 ---
 
-- Microsoft Connect [686310](https://connect.microsoft.com/PowerShell/Feedback/Details/686310)
+- Microsoft Connect 686310

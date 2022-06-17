@@ -1,3 +1,4 @@
+# PSCustomObject
 
 The type `PSCustomObject` is used to create custom objects. In many cases custom
 objects behave as normal .NET objects, i.e. they have properties and methods.

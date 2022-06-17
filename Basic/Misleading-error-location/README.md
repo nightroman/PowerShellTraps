@@ -1,3 +1,4 @@
+# Misleading error location
 
 When a script causes an error then the error position message normally points
 to the line which causes the error.

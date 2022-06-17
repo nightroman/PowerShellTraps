@@ -1,6 +1,4 @@
 
-# https://connect.microsoft.com/PowerShell/Feedback/Details/1221685
-
 # the current major version
 $Version = $PSVersionTable.PSVersion.Major
 

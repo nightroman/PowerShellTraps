@@ -1,5 +1,4 @@
-
-### Operators `-match`, `-notmatch` do not reset `$matches`
+# Operators `-match`, `-notmatch` do not reset `$matches`
 
     help about_comparison_operators
 
@@ -32,4 +31,4 @@ Scripts
 
 ***
 
-- Microsoft Connect [1601710](https://connect.microsoft.com/PowerShell/feedback/details/1601710)
+- Microsoft Connect 1601710

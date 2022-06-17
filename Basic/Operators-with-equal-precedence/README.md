@@ -1,5 +1,4 @@
-
-### Counter-intuitive equal precedence of some operators
+# Counter-intuitive equal precedence of some operators
 
 Equal precedence of some operators may be counter-intuitive.
 

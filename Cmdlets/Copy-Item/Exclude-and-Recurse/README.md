@@ -1,5 +1,4 @@
-
-### Copy-Item: Exclude is ignored with Recurse
+# `Copy-Item` - `Exclude` is ignored with `Recurse`
 
 **Fixed in v5.1**
 
@@ -11,6 +10,6 @@ copy `test.txt` and skip `test.log`. But both files are copied, as a result.
 
 ---
 
-- Microsoft Connect [1234983](https://connect.microsoft.com/PowerShell/Feedback/Details/1234983)
-- Microsoft Connect [698513](https://connect.microsoft.com/PowerShell/feedback/details/698513)
 - Stack Overflow [question and workarounds](http://stackoverflow.com/q/731752/323582)
+- Microsoft Connect 698513
+- Microsoft Connect 1234983

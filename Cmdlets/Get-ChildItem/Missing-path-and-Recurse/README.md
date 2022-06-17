@@ -1,3 +1,4 @@
+# `Get-ChildItem -Recurse` and missing `-Path` unexpected search
 
 When `Get-ChildItem -Recurse` is invoked in v3+ with a path that does not
 exist, it searches for all files and directories with the specified name

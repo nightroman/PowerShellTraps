@@ -1,3 +1,4 @@
+# Cannot derive from dot sourced
 
 PowerShell classes can be defined by commands like scripts, functions, script
 blocks and imported to the current scope using dot-sourcing.

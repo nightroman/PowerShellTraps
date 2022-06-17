@@ -1,3 +1,4 @@
+# Collection property enumeration
 
 PowerShell 3.0 introduced collection property enumeration as one of language
 enhancements. That is, if `$x` is a collection then `$x.Data1` gets values of

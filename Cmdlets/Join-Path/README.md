@@ -1,5 +1,4 @@
-
-### Join-Path fails if the path drive does not exist
+# `Join-Path` fails if the path drive does not exist
 
 The script [Test-missing-drive.ps1](Test-missing-drive.ps1) finds a missing drive and uses it in order
 to join paths by the .NET method `Path.Combine()` (works) and by PowerShell
@@ -13,5 +12,5 @@ mistake. The script [Test-mind-the-provider.ps1](Test-mind-the-provider.ps1) sho
 
 ---
 
-- Microsoft Connect [779068](https://connect.microsoft.com/PowerShell/feedback/details/779068)
 - [Split-Path](../Split-Path)
+- Microsoft Connect 779068

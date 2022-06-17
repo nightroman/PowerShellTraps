@@ -1,3 +1,4 @@
+# `trap` with `continue`
 
 `continue` in a `trap` block tells PowerShell to resume after the statement
 that caused the error. But this is the statement in the scope where the `trap`

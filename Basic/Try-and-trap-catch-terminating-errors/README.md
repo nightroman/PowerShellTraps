@@ -1,3 +1,4 @@
+# `try` and `trap` catch terminating errors
 
 `try` and `trap` catch only terminating and [semi-terminating](../Errors-of-unusual-type) errors.
 Thus, if the current error action preference is not *Stop* then non-terminating

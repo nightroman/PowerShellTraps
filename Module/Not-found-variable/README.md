@@ -1,3 +1,4 @@
+# Not found variable
 
 If a script module accesses a variable defined in a script that imports this
 module then this variable may or may not be found depending on call scenarios

@@ -1,5 +1,4 @@
-
-### Get-ChildItem -LiteralPath -Recurse gets nothing for a directory with brackets
+# `Get-ChildItem -LiteralPath -Recurse` gets nothing for a directory with brackets
 
 If `Get-ChildItem -LiteralPath -Recurse` is invoked with a directory with
 brackets then it gets nothing in PowerShell v3 and v4. It works properly
@@ -9,4 +8,4 @@ The script [Test-1-directory-with-brackets.ps1](Test-1-directory-with-brackets.p
 
 ---
 
-- Microsoft Connect [1447261](https://connect.microsoft.com/PowerShell/feedback/details/1447261)
+- Microsoft Connect 1447261

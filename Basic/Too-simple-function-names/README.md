@@ -1,3 +1,4 @@
+# Too simple function names
 
 Too simple function names in a script is a time bomb. A script may work fine
 until it is called in a session with an alias with accidentally the same name

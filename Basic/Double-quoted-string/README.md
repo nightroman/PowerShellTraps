@@ -1,5 +1,4 @@
-
-## Double quoted strings and sub-expressions with double quotes
+# Double quoted strings and sub-expressions with double quotes
 
 The help topic
 

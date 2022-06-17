@@ -1,3 +1,4 @@
+# Statements are not expressions
 
 [Missing-ternary-operator]: ../Missing-ternary-operator
 
@@ -75,5 +76,5 @@ operators `.` (in the current scope) or `&` (in this script block scope):
 
 ---
 
-- Microsoft Connect [680120](https://connect.microsoft.com/PowerShell/feedback/details/680120)
 - [PowerShellTraps/issues/6](https://github.com/nightroman/PowerShellTraps/issues/6)
+- Microsoft Connect 680120

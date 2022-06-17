@@ -1,18 +1,17 @@
-
-### Automatic variables as parameters or local variables
+# Automatic variables as parameters or local variables
 
 See
 
 ````
-    help about_Automatic_Variables
+help about_Automatic_Variables
 ````
 
 Automatic variables are maintained by the core and normally should not be used
 as parameters or local variables. This is easy to forget, especially with some
 simple variable names.
 
-****
-#### `$Args` and `$Input` as parameters
+***
+### `$Args` and `$Input` as parameters
 
 **$Args**
 
@@ -34,8 +33,8 @@ work as one may expect.
 - Stack Overflow [Function parameter always empty why?](http://stackoverflow.com/q/30546750/323582)
 - Stack Overflow [Why Pester does not mock a cmdlet with two parameters?](http://stackoverflow.com/q/35405723/323582)
 
-****
-#### `$$` and `$^` as local variables
+***
+### `$$` and `$^` as local variables
 
 **$$**
 
@@ -52,8 +51,8 @@ used without problems but there are cases with issues.
 [Test-3.Dollar.ps1](Test-3.Dollar.ps1) and [Test-4.Caret.ps1](Test-4.Caret.ps1) show a case when `$$` and `$^` do
 not work as normal variables in PowerShell v3+.
 
-****
-#### `$This` as a local variable
+***
+### `$This` as a local variable
 
 **$This**
 
@@ -64,4 +63,4 @@ variable refers to the object that is being extended.
 error PowerShell v3. In PowerShell v2 it works with expected errors. See
 testing commands in the comments.
 
-- Microsoft Connect [1423742](https://connect.microsoft.com/PowerShell/feedback/details/1423742)
+- Microsoft Connect 1423742

@@ -1,3 +1,4 @@
+# v3 interactive issues
 
 In PowerShell 3.0 several interactive features have issues.
 These features work as expected in PowerShell 2.0 and most of them in 4.0.
@@ -34,15 +35,15 @@ The workaround is use of the switch `NoExit`.
 - [Test-2.2-debug-Suspend-ignored.ps1](Test-2.2-debug-Suspend-ignored.ps1) shows the problem with `PowerShell -File`.
 - [Test-2.3-debug-Suspend-workaround.ps1](Test-2.3-debug-Suspend-workaround.ps1) - workaround `PowerShell -NoExit -Command`.
 - [Test-2.4-debug-Suspend-workaround.ps1](Test-2.4-debug-Suspend-workaround.ps1) - workaround `PowerShell -NoExit -File`.
-- Microsoft Connect [812058](https://connect.microsoft.com/PowerShell/Feedback/Details/812058)
+- Microsoft Connect 812058
 
 ### "exit" in Command is ignored if NoExit is specified (v3, v4)
 
 This is not exactly an interactive issue but it is somehow related to problems
 of PowerShell 3.0 described here. The following perhaps unusual CMD command
 
-```batchfile
-    PowerShell.exe -NoExit . "'<path>\Script.ps1'"; exit
+```
+PowerShell.exe -NoExit . "'<path>\Script.ps1'"; exit
 ```
 
 has useful applications described in details in this [blog post]. In PowerShell
@@ -50,6 +51,6 @@ has useful applications described in details in this [blog post]. In PowerShell
 PowerShell is not exiting.
 
 - [Test-3-NoExit-exit.ps1](Test-3-NoExit-exit.ps1) shows the problem in PowerShell 3.0
-- Microsoft Connect [745794](https://connect.microsoft.com/PowerShell/Feedback/Details/745794)
+- Microsoft Connect 745794
 
 [blog post]: http://nightroman.wordpress.com/2009/11/11/how-to-run-powershell-scripts-from-explorer/

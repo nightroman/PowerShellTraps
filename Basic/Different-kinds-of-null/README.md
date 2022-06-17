@@ -1,3 +1,4 @@
+# Different kinds of null
 
 It is typical to assign command results to a variable. What does this variable
 contain if a command outputs nothing? It turns out that in PowerShell 3.0+ it

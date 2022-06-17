@@ -1,5 +1,4 @@
-
-### Count and Length of a scalar fail in the strict mode
+# `Count` and `Length` of a scalar fail in the strict mode
 
 See help *about_Properties*:
 

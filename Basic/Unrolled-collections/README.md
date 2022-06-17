@@ -1,3 +1,4 @@
+# Unrolled collections
 
 PowerShell may unroll collections, that is replace an original collection with
 an array of its items or just a single item.

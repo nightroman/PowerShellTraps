@@ -1,3 +1,4 @@
+# Enums evaluated to true
 
 In PowerShell v2, v3, v4 `[System.Enum]` values are always evaluated to true in
 logical expressions, even though their numerical value is 0, and 0 is evaluated
