@@ -1,4 +1,9 @@
-﻿### 7.2.0-preview.4
+﻿### 7.3.0
+
+- [Clixml/OrderedDictionary-becomes-Hashtable](Clixml/OrderedDictionary-becomes-Hashtable)
+-- fixed
+
+### 7.2.0-preview.4
 
 - [Basic/App-with-error-output](Basic/App-with-error-output)
 -- fixed (again)

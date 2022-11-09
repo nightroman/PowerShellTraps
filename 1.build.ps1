@@ -12,7 +12,7 @@ $Major = $PSVersionTable.PSVersion.Major
 
 # bootstrap
 if ($MyInvocation.ScriptName -notlike '*Invoke-Build.ps1') {
-	$InvokeBuildVersion = '5.9.6'
+	$InvokeBuildVersion = '5.10.1'
 	$ErrorActionPreference = 'Stop'
 	$PSScriptRoot = Split-Path $MyInvocation.MyCommand.Definition
 	$ib = "$PSScriptRoot/packages/InvokeBuild/$InvokeBuildVersion/Invoke-Build.ps1"
@@ -45,8 +45,6 @@ Set-BuildHeader {
 task test {
 	# show PowerShell version
 	"PowerShell version: $($PSVersionTable.PSVersion)"
-	# undo pwsh ConciseView
-	$global:ErrorView = 'NormalView'
 	# do tests
 	Invoke-Build **
 }

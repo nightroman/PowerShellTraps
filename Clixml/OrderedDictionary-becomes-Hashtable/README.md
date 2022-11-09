@@ -1,5 +1,7 @@
 # `OrderedDictionary` becomes `Hashtable`
 
+**Fixed in 7.3.0**
+
 If an `OrderedDictionary` is exported by `Export-Clixml` and imported by
 `Import-Clixml` then it becomes a `Hashtable`. If the order of items is
 important (probably, as far as `OrderedDictionary` is used) then this is

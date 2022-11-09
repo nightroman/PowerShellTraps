@@ -27,6 +27,7 @@ $t1 | Export-Clixml $temp
 $t2 = Import-Clixml $temp
 
 # it is Hashtable, not OrderedDictionary
+# PS 7.3.0 - OrderedDictionary
 $t2.GetType().Name
 
 # remove temp clixml
