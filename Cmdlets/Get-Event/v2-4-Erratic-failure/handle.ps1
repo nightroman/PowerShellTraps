@@ -1,8 +1,7 @@
-
 <#
 	The original file change watcher and handler using Get-Event.
 	The final script uses some inline C# code instead:
-	https://github.com/nightroman/PowerShelf/blob/master/Watch-Directory.ps1
+	https://github.com/nightroman/PowerShelf/blob/main/Watch-Directory.ps1
 #>
 
 [CmdletBinding()]
