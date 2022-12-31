@@ -15,4 +15,4 @@ Scripts
 
 - [ConvertFrom-Json: Unwrap Collections by default #10861](https://github.com/PowerShell/PowerShell/pull/10861)
 - [Invoke-RestMethod/Not-unrolled-result](../../Invoke-RestMethod/Not-unrolled-result)
-- [ConvertFrom-JSON return array values do not seem to be unrolled on the pipeline](http://windowsserver.uservoice.com/forums/301869-powershell/suggestions/11472384)
+- windowsserver.uservoice.com/forums/301869-powershell/suggestions/11472384

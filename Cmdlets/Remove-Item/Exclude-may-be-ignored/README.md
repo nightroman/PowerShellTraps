@@ -7,4 +7,4 @@ In v2 `Exclude` ignores the specified value and removes the file.
 
 ***
 
-- [UserVoice](https://windowsserver.uservoice.com/forums/301869-powershell/suggestions/16591075-remove-item-recurse-exclude-does-not-work-at-le)
+- windowsserver.uservoice.com/forums/301869-powershell/suggestions/16591075-remove-item-recurse-exclude-does-not-work-at-le

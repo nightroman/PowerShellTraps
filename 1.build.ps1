@@ -69,11 +69,21 @@ task index {
 	Update-ReadmeIndex.ps1 PowerShell.exe @param
 }
 
-# Synopsis: Tests markdown links
-# Uses pandoc for markdown.
-task link {
+task linkMarkdown {
 	Test-MarkdownLink.ps1
 }
+
+task linkWeb {
+	Test-WebLink.ps1 -SkipUrl {
+		param($Url)
+		$Url -in @(
+			'https://api.github.com/users/nightroman/repos'
+		)
+	}
+}
+
+# Synopsis: Test links.
+task link linkMarkdown, linkWeb
 
 # Synopsis: Test.
 task . test

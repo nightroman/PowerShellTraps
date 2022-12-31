@@ -21,4 +21,4 @@ Scripts
 
 ***
 
-- UserVoice [Get-ItemPropertyValue does not respect -ErrorAction SilentlyContinue](http://windowsserver.uservoice.com/forums/301869-powershell/suggestions/11587617-bug-get-itempropertyvalue-does-not-respect-error)
+- windowsserver.uservoice.com/forums/301869-powershell/suggestions/11587617-bug-get-itempropertyvalue-does-not-respect-error

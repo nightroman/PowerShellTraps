@@ -12,5 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: test
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: pwsh
         run: ./1.build.ps1 test

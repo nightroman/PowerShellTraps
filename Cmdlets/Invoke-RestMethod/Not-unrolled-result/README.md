@@ -21,4 +21,4 @@ Scripts
 ***
 
 - [ConvertFrom-Json/Not-unrolled-result](../../ConvertFrom-Json/Not-unrolled-result)
-- [UserVoice](http://windowsserver.uservoice.com/forums/301869-powershell/suggestions/11201622-invoke-restmethod-returns-an-unrolled-array)
+- windowsserver.uservoice.com/forums/301869-powershell/suggestions/11201622-invoke-restmethod-returns-an-unrolled-array

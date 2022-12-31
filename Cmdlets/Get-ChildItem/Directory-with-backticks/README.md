@@ -6,4 +6,4 @@ The script [Test-1.ps1](Test-1.ps1) shows the issue.
 
 ---
 
-- [Windows Server UserVoice](http://windowsserver.uservoice.com/forums/301869-powershell/suggestions/11184798)
+- windowsserver.uservoice.com/forums/301869-powershell/suggestions/11184798

@@ -10,4 +10,4 @@ The script [Test-1.ps1](Test-1.ps1) shows the issue.
 
 ***
 
-- [UserVoice](https://windowsserver.uservoice.com/forums/301869-powershell/suggestions/15121617-convertfrom-csv-has-undocumented-partial-comment-s)
+- windowsserver.uservoice.com/forums/301869-powershell/suggestions/15121617-convertfrom-csv-has-undocumented-partial-comment-s

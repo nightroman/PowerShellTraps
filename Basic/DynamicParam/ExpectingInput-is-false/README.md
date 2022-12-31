@@ -10,4 +10,4 @@ The script [Test-1.ps1](Test-1.ps1) shows the fact.
 
 ***
 
-- UserVoice [$MyInvocation.ExpectingInput doesn't work in DynamicParam blocks](https://windowsserver.uservoice.com/forums/301869-powershell/suggestions/13737072--myinvocation-expectinginput-doesn-t-work-]in-dynam)
+- windowsserver.uservoice.com/forums/301869-powershell/suggestions/13737072--myinvocation-expectinginput-doesn-t-work-]in-dynam

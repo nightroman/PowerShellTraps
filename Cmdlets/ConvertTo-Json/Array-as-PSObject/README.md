@@ -13,4 +13,4 @@ Scripts
 
 ***
 
-- [UserVoice](https://windowsserver.uservoice.com/forums/301869-powershell/suggestions/15123162-convertto-json-doesn-t-serialize-simple-objects-pr)
+- windowsserver.uservoice.com/forums/301869-powershell/suggestions/15123162-convertto-json-doesn-t-serialize-simple-objects-pr

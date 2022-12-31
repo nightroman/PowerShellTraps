@@ -14,5 +14,5 @@ Scripts
 
 ***
 
-- [UserVoice](https://windowsserver.uservoice.com/forums/301869-powershell/suggestions/15053526--bug-group-object-with-ashashtable-and-custom-ex)
 - [StackOverflow](http://stackoverflow.com/questions/28190053/group-object-diffencies-with-or-without-code-block)
+- windowsserver.uservoice.com/forums/301869-powershell/suggestions/15053526--bug-group-object-with-ashashtable-and-custom-ex

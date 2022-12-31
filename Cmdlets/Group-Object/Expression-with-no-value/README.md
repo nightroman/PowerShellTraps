@@ -15,4 +15,4 @@ Scripts
 ***
 
 - [Different-kinds-of-null](../../../Basic/Different-kinds-of-null)
-- [UserVoice](https://windowsserver.uservoice.com/forums/301869-powershell/suggestions/13833771-group-object-fails-with-a-nullreferenceexception-f)
+- windowsserver.uservoice.com/forums/301869-powershell/suggestions/13833771-group-object-fails-with-a-nullreferenceexception-f
