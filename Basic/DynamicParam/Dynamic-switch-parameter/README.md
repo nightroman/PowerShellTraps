@@ -1,15 +1,17 @@
 # Dynamic switch parameter
 
-Dynamic switches specified before positional parameter arguments with omitted
-parameter names swallow these arguments and make a command invalid, either due
-to incorrect syntax or shifted arguments. In the latter case a command may even
-work without errors with incorrect input parameters.
+Dynamic switches specified before positional parameters with omitted names
+affect positional arguments and make commands invalid, either due to incorrect
+syntax or shifted arguments. Note, commands may even work without errors with
+incorrectly treated parameters.
 
 Workarounds
 
-- Specify dynamic switches with values `-ReadOnly:$true`.
-- Or specify dynamic switches after positional parameters.
-- Or do not omit parameter names of positional parameters.
+- Specify dynamic switches after positional parameters.
+- Do not omit parameter names of positional parameters.
+
+> Used to work as a workaround, not working anymore in the latest v5.1+
+> - Specify dynamic switches with values `-ReadOnly:$true`.
 
 Scripts
 
