@@ -20,4 +20,5 @@ Scripts
 
 - Stack Overflow [Dynamic switches before positional parameters may not work as expected](http://stackoverflow.com/q/25560038/323582)
 - Invoke-Build [#4](https://github.com/nightroman/Invoke-Build/issues/4)
+- PowerShell [#19495](https://github.com/PowerShell/PowerShell/issues/19495)
 - Microsoft Connect 960194
