@@ -12,8 +12,8 @@ $Major = $PSVersionTable.PSVersion.Major
 
 # bootstrap
 if ($MyInvocation.ScriptName -notlike '*Invoke-Build.ps1') {
-	$InvokeBuildVersion = '5.10.1'
-	$ErrorActionPreference = 'Stop'
+	$InvokeBuildVersion = '5.11.0'
+	$ErrorActionPreference = 1
 	$PSScriptRoot = Split-Path $MyInvocation.MyCommand.Definition
 	$ib = "$PSScriptRoot/packages/InvokeBuild/$InvokeBuildVersion/Invoke-Build.ps1"
 
@@ -27,8 +27,7 @@ if ($MyInvocation.ScriptName -notlike '*Invoke-Build.ps1') {
 		Save-Script Invoke-PowerShell -Path "$PSScriptRoot/packages" -Force
 	}
 
-	& $ib -Task $Tasks -File $MyInvocation.MyCommand.Path @PSBoundParameters
-	return
+	return & $ib -Task $Tasks -File $MyInvocation.MyCommand.Path @PSBoundParameters
 }
 
 # saved script alias

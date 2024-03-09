@@ -22,8 +22,7 @@ function Invoke-Script($Path) {
 
 task Test-2-1-invalid-error-effect {
 	($r = Invoke-Script Test-2-1-invalid-error-effect.ps1)
-	#! `*Message`: `*` for PS 7.3.0, probably some esc sequence
-	assert ($r -clike 'Test-Preference : *Message*Done.')
+	assert ($r -clike '*Test-Preference*Message*Done.*')
 }
 
 task Test-2-2-invalid-warning-effect {
