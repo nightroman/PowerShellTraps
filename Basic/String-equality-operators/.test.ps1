@@ -15,6 +15,10 @@ task Test-2 {
 
 	equals $r2 $false
 	if ($Version -ge ${7.2.1}) {
+		if ($Culture -eq 'en-GB' -and $UICulture -eq 'en-US') {
+			equals $r1 $false
+			return
+		}
 		if ($Culture -eq 'en-GB' -and $UICulture -eq 'en-GB') {
 			equals $r1 $false
 			return
@@ -23,11 +27,14 @@ task Test-2 {
 			"r1=$r1 used to be true but keeps changing in GHA"
 			return
 		}
+
+		Write-Warning "Untested cultures $Culture, $UICulture"
+		return
 	}
 	elseif ($Version.Major -ge 5) {
 		equals $r1 $true
 		return
 	}
 
-	Write-Warning "Untested version $Version or cultures $Culture, $UICulture"
+	Write-Warning "Untested version $Version"
 }
