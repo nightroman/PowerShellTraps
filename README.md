@@ -129,6 +129,8 @@ to their directory. See also [TESTS]. Some scripts require
     - [`Get-ChildItem -LiteralPath -Recurse` gets nothing for a directory with brackets](Cmdlets/Get-ChildItem/Directory-with-brackets)
     - [`Get-ChildItem -Recurse` and missing `-Path` unexpected search](Cmdlets/Get-ChildItem/Missing-path-and-Recurse)
     - [`Get-ChildItem -LiteralPath -Recurse` ignores `-Include`](Cmdlets/Get-ChildItem/v5-LiteralPath-Recurse-ignores-Include)
+- Get-Content
+    - [`Get-Content` with `OutVariable` and `ReadCount`](Cmdlets/Get-Content/OutVariable-and-ReadCount)
 - Get-Event
     - [`Get-Event` erratic failures in v2-4](Cmdlets/Get-Event/v2-4-Erratic-failure)
 - Get-Item
