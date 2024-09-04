@@ -62,6 +62,7 @@ to their directory. See also [TESTS]. Some scripts require
 - [Runspace pool memory leaks with `Close()`](Basic/RunspacePool)
 - [Statements are not expressions](Basic/Statements-are-not-expressions)
 - [ErrorRecord formatting may fail in the strict mode in the default host](Basic/Strict-mode-ErrorRecord-formatting)
+- [String as Boolean](Basic/String-as-Boolean)
 - [String constructor](Basic/String-constructor)
 - [String equality operators](Basic/String-equality-operators)
 - [`switch` is a looping construct](Basic/Switch-is-a-looping-construct)
