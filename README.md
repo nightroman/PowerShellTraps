@@ -46,6 +46,7 @@ to their directory. See also [TESTS]. Some scripts require
 - [Invocation with odd paths](Basic/Invocation-with-odd-paths)
 - [LastExitCode](Basic/LastExitCode)
 - [Local action preference variables](Basic/Local-ActionPreference)
+- [Magic method `Where`](Basic/Magic-method-Where)
 - [Misleading error location](Basic/Misleading-error-location)
 - [Missing ternary operator](Basic/Missing-ternary-operator)
 - [Negative number literal argument](Basic/Negative-number-literal-argument)
