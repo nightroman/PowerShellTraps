@@ -153,7 +153,9 @@ to their directory. See also [TESTS]. Some scripts require
     - [`Invoke-Expression` `ErrorAction` is ignored in favour of `$ErrorActionPreference`](Cmdlets/Invoke-Expression/ErrorAction)
 - Invoke-RestMethod
     - [`Invoke-RestMethod` returns an array not unrolled](Cmdlets/Invoke-RestMethod/Not-unrolled-result)
-- [`Join-Path` fails if the path drive does not exist](Cmdlets/Join-Path)
+- Join-Path
+    - [`Join-Path` fails if the path drive does not exist](Cmdlets/Join-Path/Drive-does-not-exist)
+    - [`Join-Path` with path separator](Cmdlets/Join-Path/With-path-separator)
 - Read-Host
     - [v5 output before `Read-Host`](Cmdlets/Read-Host/v5-Output-before-Read-Host)
 - Remove-Item
