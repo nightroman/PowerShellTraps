@@ -115,9 +115,9 @@ to their directory. See also [TESTS]. Some scripts require
 - ConvertFrom-Csv
     - [`ConvertFrom-Csv` has undocumented partial comment support](Cmdlets/ConvertFrom-Csv/Partial-comment-support)
 - ConvertFrom-Json
+    - [`ConvertTo-Json` different number types](Cmdlets/ConvertFrom-Json/Different-number-types)
     - [`ConvertFrom-Json` returns an array not unrolled](Cmdlets/ConvertFrom-Json/Not-unrolled-result)
     - [`ConvertFrom-Json` pipeline input](Cmdlets/ConvertFrom-Json/Piping-content)
-    - [`ConvertFrom-Json` long integers in v6](Cmdlets/ConvertFrom-Json/v6-long-integers)
 - ConvertTo-Json
     - [`ConvertTo-Json` Array as PSObject](Cmdlets/ConvertTo-Json/Array-as-PSObject)
     - [`ConvertTo-Json` without `Compress` may change data](Cmdlets/ConvertTo-Json/v3-Without-Compress)
