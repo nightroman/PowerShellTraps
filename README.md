@@ -40,6 +40,7 @@ to their directory. See also [TESTS]. Some scripts require
     - [Dynamic switch parameter](Basic/DynamicParam/Dynamic-switch-parameter)
     - [`$MyInvocation.ExpectingInput` is false in `DynamicParam`](Basic/DynamicParam/ExpectingInput-is-false)
 - [Enums evaluated to true](Basic/Enums-evaluated-to-true)
+- [Enums without `[Flags]` attribute](Basic/Enums-without-FlagsAttribute)
 - [Errors of unusual type](Basic/Errors-of-unusual-type)
 - [FormatEnumerationLimit](Basic/FormatEnumerationLimit)
 - [Function invoked like method](Basic/Function-invoked-like-method)
