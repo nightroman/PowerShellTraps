@@ -11,10 +11,9 @@ Set-StrictMode -Version Latest
 $Major = $PSVersionTable.PSVersion.Major
 
 # bootstrap
-if ($MyInvocation.ScriptName -notlike '*Invoke-Build.ps1') {
-	$InvokeBuildVersion = '5.11.0'
+if (!$MyInvocation.ScriptName.EndsWith('Invoke-Build.ps1')) {
 	$ErrorActionPreference = 1
-	$PSScriptRoot = Split-Path $MyInvocation.MyCommand.Definition
+	$InvokeBuildVersion = '5.14.14'
 	$ib = "$PSScriptRoot/packages/InvokeBuild/$InvokeBuildVersion/Invoke-Build.ps1"
 
 	if (!(Test-Path -LiteralPath $ib)) {

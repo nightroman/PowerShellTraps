@@ -26,6 +26,7 @@ to their directory. See also [TESTS]. Some scripts require
 - [Automatic variables as parameters or local variables](Basic/Automatic-variables)
 - [Break and Continue with not matching label](Basic/Break-and-Continue-with-not-matching-label)
 - [Break and Continue without loop](Basic/Break-and-Continue-without-loop)
+- [Collection as Boolean](Basic/Collection-as-Boolean)
 - [Collection property enumeration](Basic/Collection-property-enumeration)
 - [Comparison operators work differently with scalars and collections](Basic/Comparison-operators-with-collections)
 - [Compound assignment operators](Basic/Compound-assignment-operators)
