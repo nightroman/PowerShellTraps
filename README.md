@@ -181,6 +181,7 @@ to their directory. See also [TESTS]. Some scripts require
 - [`Wait-Process` fails if a process name is not found](Cmdlets/Wait-Process)
 - [`Where-Object`](Cmdlets/Where-Object)
 - [`Write-Debug`](Cmdlets/Write-Debug)
+- [`Write-Information` writes nothing in `ForEach` method](Cmdlets/Write-Information)
 - [`Write-Progress`](Cmdlets/Write-Progress)
 <!--Cmdlets-->
 
