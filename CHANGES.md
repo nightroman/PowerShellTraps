@@ -165,7 +165,7 @@ The following tests are disabled for v7:
 -- Fixed
 - [Basic/Properties-of-XmlNode](Basic/Properties-of-XmlNode)
 -- Fixed "Adapted properties accept only string values"
-- [Cmdlets/ConvertFrom-Json/v6-long-integers](Cmdlets/ConvertFrom-Json/v6-long-integers)
+- [Cmdlets/ConvertFrom-Json/Different-number-types](Cmdlets/ConvertFrom-Json/Different-number-types)
 -- Integers are returned as `[long]`, not `[int]`
 - [Cmdlets/ConvertTo-Json/Array-as-PSObject](Cmdlets/ConvertTo-Json/Array-as-PSObject)
 -- Fixed
